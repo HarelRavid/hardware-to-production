@@ -12,14 +12,14 @@ Parent domain: Prototype Workshop
 - H2P-PW-027 — DLP Printing
 - H2P-PW-028 — Continuous Liquid Interface Printing
 
-## Existing cross-process objects
+## Cross-process objects
 - H2P-PW-029 — FDM Design Rules
 - H2P-PW-030 — Resin Printing Design Rules
 - H2P-PW-031 — SLS/MJF Design Rules
-- H2P-PW-032 — Additive Support Strategy (legacy registry title; canonical expanded object is H2P-PW-181)
+- H2P-PW-032 — Additive Support Strategy
 - H2P-PW-033 — Additive Orientation Strategy
 - H2P-PW-034 — Additive Dimensional Compensation
-- H2P-PW-035 — Additive Post-processing (legacy registry title; canonical expanded object is H2P-PW-185)
+- H2P-PW-035 — Additive Post-processing
 - H2P-PW-036 — Additive Prototype Accuracy
 - H2P-PW-037 — Additive Prototype Surface Finish
 - H2P-PW-038 — Functional 3D Printed Fixtures
@@ -32,11 +32,9 @@ Parent domain: Prototype Workshop
 - H2P-PW-178 — Polymer PBF Material Selection
 - H2P-PW-179 — Polymer AM Moisture Management
 - H2P-PW-180 — Polymer AM Environmental Compatibility
-- H2P-PW-181 — Additive Support Strategy
 - H2P-PW-182 — Polymer AM Threads and Inserts
 - H2P-PW-183 — SLA Post-Cure State
 - H2P-PW-184 — Polymer AM Design Rules
-- H2P-PW-185 — Polymer AM Post-processing
 
-## Registry note
-Objects 181 and 185 are expanded canonical replacements for earlier generic placeholders 032 and 035. The older IDs are not deleted; they should later be converted into aliases/deprecated pointers via an ADR so historical links remain stable.
+## Registry rule
+Existing IDs are canonical and immutable. If an existing placeholder is expanded, its original ID is retained. No new ID may be created for the same concept merely because the entry becomes more detailed.
