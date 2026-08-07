@@ -113,3 +113,54 @@ Statement: Burr removal and edge break can affect assembly, sealing, handling, i
 - Confidence: High
 - Provenance: [GNR, IND, SYN]
 - Related Objects: H2P-PW-067
+
+## H2P-CLM-CNC-016 — Inspection should follow the functional tolerance scheme
+Statement: Prototype inspection should prioritize function-critical datums, fits, seal lands, alignment and geometric controls rather than measuring all dimensions with equal depth.
+- Classification: Project Synthesis / Standards Context
+- Confidence: Very High
+- Provenance: [GNR, STD, GOV, SYN]
+- Evidence: ASME Y14.5-2018 (R2024); NIST dimensional-metrology work
+- Related Objects: H2P-PW-062, H2P-PW-063, H2P-PW-113
+
+## H2P-CLM-CNC-017 — On-machine probing does not automatically replace independent final inspection
+Statement: On-machine measurement can support setup verification, intermediate checks and process correction, but final acceptance may still require independent metrology when machine error, uncertainty or traceability requirements matter.
+- Classification: Government Evidence / Project Synthesis
+- Confidence: High
+- Provenance: [GNR, GOV, SYN]
+- Evidence: NIST On-Machine Measurement Use Cases and Information for Machining Operations (2019)
+- Related Objects: H2P-PW-113, H2P-PW-063
+
+## H2P-CLM-CNC-018 — Material family name is insufficient for production-representative CNC prototypes
+Statement: When the prototype is intended to reproduce service behavior, the exact alloy/grade/condition matters; 'aluminum', 'stainless', 'nylon' or 'PEEK-like' is too broad for strength, corrosion, thermal or wear validation.
+- Classification: Engineering Synthesis
+- Confidence: Very High
+- Provenance: [GNR, SYN, IND]
+- Related Objects: H2P-PW-064, H2P-PW-174
+
+## H2P-CLM-CNC-019 — Expensive production materials should be used only when their behavior is part of the learning objective
+Statement: High-cost materials such as titanium or PEEK can be unnecessary in early form-fit prototypes when the question is geometry rather than service behavior; cheaper surrogate material may shorten cost/lead time if the limitation is explicit.
+- Classification: Project Synthesis
+- Confidence: High
+- Provenance: [GNR, SYN]
+- Related Objects: H2P-PW-064, H2P-PW-003, H2P-PW-019
+
+## H2P-CLM-CNC-020 — In-house CNC can reduce learning latency when iteration frequency is high
+Statement: Internal machining capability can be strategically valuable even when unit cost is not lowest because direct engineer-machine feedback and short revision loops reduce elapsed learning time.
+- Classification: Project Synthesis / Industrial Practice
+- Confidence: High
+- Provenance: [GNR, IND, SYN]
+- Related Objects: H2P-PW-008, H2P-PW-009, H2P-PW-020
+
+## H2P-CLM-CNC-021 — Outsourcing is favored when specialized machine or metrology capability dominates
+Statement: External machining is often the better prototype route when 5-axis, turn-mill, hard machining, certified material, special finishing or high-end inspection capability would otherwise require disproportionate internal investment or lead time.
+- Classification: Project Synthesis / Industrial Practice
+- Confidence: High
+- Provenance: [GNR, IND, SYN]
+- Related Objects: H2P-PW-008, H2P-PW-171, H2P-PW-165
+
+## H2P-CLM-CNC-022 — CNC and AM are often complementary rather than mutually exclusive
+Statement: Hybrid prototype workflows can combine AM for rapid complex geometry with CNC finishing of critical datums, bores, sealing surfaces or interfaces.
+- Classification: Project Synthesis
+- Confidence: High
+- Provenance: [GNR, SYN, IND]
+- Related Objects: H2P-PW-049, H2P-PW-021, H2P-PW-022, H2P-PW-024, H2P-PW-025, H2P-PW-173
