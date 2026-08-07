@@ -6,9 +6,10 @@ domain: Prototype Workshop
 subdomain: CNC & Subtractive Prototyping
 lifecycle: [Prototype, Engineering Prototype, EVT, DVT, Pilot]
 status: Researching
+provenance: [GNR, IND, SYN]
 ---
 
-# Prototype Workholding
+# 2.2.4 — Prototype Workholding
 
 ## Definition
 The strategy used to locate, constrain and support a workpiece during machining while preserving access to required features and maintaining repeatable references between operations.
@@ -48,7 +49,7 @@ Prefer the simplest workholding that reliably preserves datum relationships, too
 | DEPENDS_ON | H2P-PW-062 Machining Datum Strategy | Strong | Very High | Workholding must preserve references | Machining fundamentals |
 
 ## Evidence notes
-Haas workholding documentation illustrates the breadth of vise, chuck, collet, rotary and support options used across mills and lathes. Treat product-specific hardware as examples of categories, not normative recommendations.
+Commercial workholding documentation illustrates vise, chuck, collet, rotary and support categories across mills and lathes. Product-specific hardware is treated as examples, not normative recommendations.
 
 ## Open gaps
 Add formal fixture-design references, 3-2-1 location principles, clamp-force considerations and distortion studies.
