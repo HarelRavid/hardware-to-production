@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-Research exists to mature predefined Knowledge Objects and create defensible relationships between them. The goal is not to accumulate links.
+Research exists to mature predefined Knowledge Objects, create defensible Engineering Claims and Relationships, and support explicit Engineering Decisions. The goal is not to accumulate links.
 
 ## 2. Step 1 — Map the Research Space
 
@@ -10,16 +10,18 @@ Before searching, define:
 
 - target Domain and Subdomain;
 - candidate Knowledge Objects;
+- Engineering Questions the domain must eventually answer;
+- candidate Engineering Decisions;
 - key research questions;
 - expected lifecycle relevance;
 - likely standards bodies and source families;
-- known neighboring objects.
+- known neighboring Objects.
 
 ## 3. Step 2 — Create / Confirm Object IDs
 
-Each candidate object receives a stable ID and status `Mapped` before significant research is attached to it.
+Each candidate Object receives a stable ID and status `Mapped` before significant research is attached to it.
 
-If research reveals a genuinely separate concept, create a new object instead of overloading an existing one.
+If research reveals a genuinely separate concept, create a new Object instead of overloading an existing one.
 
 ## 4. Step 3 — Search by Evidence Layer
 
@@ -48,16 +50,25 @@ Each source should be entered into the source index with:
 - language;
 - URL / locator;
 - access status;
-- objects supported;
+- Objects / Claims supported;
 - read status;
 - last verification date.
 
-## 6. Step 5 — Extract Claims, Not Just Summaries
+## 6. Step 5 — Extract Engineering Claims
 
-For every useful source, extract:
+The source itself is not the final knowledge product.
+
+For every meaningful source ask:
+
+1. Which Engineering Claims does this source support?
+2. Which existing Claims does it refine, qualify, limit or contradict?
+3. Under what material/process/lifecycle/environmental context is each Claim valid?
+4. Which Engineering Decisions can use the Claim?
+
+Extract, when relevant:
 
 - explicit definitions;
-- requirements;
+- normative requirements;
 - quantitative limits;
 - decision criteria;
 - process sequences;
@@ -65,19 +76,40 @@ For every useful source, extract:
 - causal statements;
 - lifecycle implications;
 - terminology differences;
+- failure mechanisms;
+- exceptions;
 - unresolved questions.
 
-Claims should be attached to the relevant object and relationships.
+Claims follow `ENGINEERING_CLAIM_MODEL.md`.
 
-## 7. Step 6 — Build Relationships During Research
+## 7. Step 6 — Preserve Context for Numerical Claims
 
-Whenever research demonstrates a logical connection between objects, create a typed relationship immediately.
+Never store a numerical engineering value without enough context to interpret it.
 
-Every relationship includes:
+Capture as applicable:
+
+- material / grade;
+- machine / process family;
+- parameter set;
+- orientation;
+- specimen / feature geometry;
+- conditioning;
+- post-processing;
+- test method / standard;
+- temperature / humidity / environment;
+- sample size and uncertainty where available.
+
+Do not convert a narrow datasheet or experiment into a universal process capability.
+
+## 8. Step 7 — Build Relationships During Research
+
+Whenever research demonstrates a logical connection between Objects, Claims, Decisions or Sources, create the typed relationship immediately.
+
+Every meaningful relationship includes:
 
 - type;
 - direction;
-- inverse;
+- inverse where defined;
 - reason;
 - strength;
 - confidence;
@@ -85,9 +117,9 @@ Every relationship includes:
 
 Do not postpone graph creation until the end of research.
 
-## 8. Step 7 — Triangulate Important Claims
+## 9. Step 8 — Triangulate Important Claims
 
-Seek multiple independent sources for claims that materially affect engineering decisions, especially:
+Seek multiple independent sources for Claims that materially affect engineering decisions, especially:
 
 - safety;
 - regulatory requirements;
@@ -95,48 +127,95 @@ Seek multiple independent sources for claims that materially affect engineering 
 - material compatibility;
 - manufacturing selection;
 - reliability;
+- dimensional / mechanical performance;
 - cost/scaling rules;
 - causal failure claims.
 
-## 9. Step 8 — Preserve Disagreement
+Manufacturer-specific data may remain single-source when the Claim is explicitly limited to that manufacturer's material/machine/process context.
+
+## 10. Step 9 — Preserve Disagreement
 
 When credible sources disagree:
 
-- record both positions;
+- retain both Claims or evidence positions;
 - identify scope/context differences;
-- create contradiction relationships where appropriate;
-- avoid premature project recommendations.
+- create contradiction/qualification relationships where appropriate;
+- seek a narrower context that may reconcile them;
+- avoid premature Project Recommendations.
 
-## 10. Step 9 — Synthesize
+## 11. Step 10 — Build Engineering Decisions
+
+Once enough Claims exist, convert recurring engineering questions into Decision Objects.
+
+For each decision define:
+
+- input variables;
+- constraints/disqualifiers;
+- candidate options;
+- Claims that discriminate between options;
+- tradeoffs;
+- exceptions;
+- escalation path when evidence is insufficient.
+
+Decision branches must be traceable to Claims or explicitly marked Project Heuristics.
+
+## 12. Step 11 — Capture Pitfalls and Heuristics
+
+During research, record recurrent reasoning or execution mistakes as Engineering Pitfalls.
+
+Record useful non-normative shortcuts as Engineering Heuristics.
+
+Never mix Pitfalls/Heuristics with normative requirements or Verified Facts.
+
+## 13. Step 12 — Synthesize
 
 Only after evidence collection should the project produce a synthesis or recommendation.
 
-Project synthesis must be visibly distinguishable from normative requirements or source claims.
+Project Synthesis must be visibly distinguishable from normative requirements, Academic Consensus, Industrial Best Practice or manufacturer guidance.
 
-## 11. Step 10 — Review for Graph Completeness
+## 14. Step 13 — Review for Graph Completeness
 
-Before marking an object `Reviewed`, verify:
+Before marking an Object `Reviewed`, verify:
 
 - it has appropriate upstream/downstream links;
-- no important referenced concept lacks an object;
+- important assertions exist as Claims rather than unsupported prose;
+- no important referenced concept lacks an Object;
 - vague `related to` links have been replaced by typed relationships;
 - lifecycle tags are correct;
-- major standards and evidence families have been checked.
+- major standards and evidence families have been checked;
+- key Engineering Questions have a path toward Decision Objects.
 
-## 12. Step 11 — Validate Podcast Coverage
+## 15. Step 14 — Validate Podcast Coverage
 
-Before `Podcast Ready`, confirm that the object can support the type of discussion expected in an episode without requiring new foundational research.
+Before `Podcast Ready`, confirm that the Object cluster can support the expected discussion without requiring new foundational research.
 
-## 13. Source Status
+The expected path should exist:
+
+`Listener Question → Decision → Claims → Objects → Sources`
+
+The podcast should be able to explain both the knowledge and the practical decision consequences.
+
+## 16. Source Status
 
 Recommended source state progression:
 
-Found → Accessed → Read → Extracted → Cross-checked → Linked → Cited
+Found → Accessed → Read → Claim-Extracted → Cross-checked → Linked → Cited
 
-## 14. Research Quality Rule
+## 17. Claim Status
+
+Candidate → Extracted → Corroborating → Reviewed → Validated → Published
+
+Alternative terminal/intermediate states:
+
+- Disputed
+- Superseded
+
+## 18. Research Quality Rule
 
 A large number of sources does not equal maturity. Prefer a smaller set of authoritative, complementary sources over repetitive low-authority material.
 
-## 15. Link Maintenance
+Likewise, a large number of Claims does not equal maturity. Prefer atomic, useful, correctly scoped Claims over fragmented trivia.
+
+## 19. Link Maintenance
 
 Public listener-facing sources should be periodically checked for broken links or superseded editions. Standards should include edition/year information wherever possible.
