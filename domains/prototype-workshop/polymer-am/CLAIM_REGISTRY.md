@@ -106,14 +106,90 @@ This registry seeds the Engineering Claim layer for the Polymer AM cluster. Clai
 - Supports Decisions: prototype route selection; DVT readiness; production validation planning
 - Evidence: SRC-PW-028; SRC-PW-023; process-specific standards
 
+## H2P-CLM-000009 — Published design-rule numbers are process-specific starting points, not universal AM limits
+
+**Statement:** Numerical wall, clearance, hole and tolerance values published by a service provider or machine vendor should be treated as capability guidance for a defined process context, not as universal limits for an AM technology.
+
+- Classification: Project Synthesis
+- Confidence: Very High
+- Evidence level: NIST measurement framework + process-specific standards + industrial guides
+- Applicable context: FDM, SLA, SLS, MJF and other AM processes
+- Limitations: A specific supplier may warrant its own tighter or looser values.
+- Related Objects: H2P-PW-029, H2P-PW-030, H2P-PW-031, H2P-PW-036
+- Supports Decisions: tolerance allocation; supplier selection; design-rule use
+- Evidence: SRC-PW-030; SRC-PW-031; ISO/ASTM 52911-2; Forge Labs FDM/MJF guides
+
+## H2P-CLM-000010 — Critical AM bores and fits may require secondary machining or calibration
+
+**Statement:** When a prototype contains critical bores, bearing seats, sealing diameters or controlled fits, printing to nominal alone may be less robust than printing with machining/calibration allowance and finishing the feature afterward.
+
+- Classification: Industrial Best Practice / Project Synthesis
+- Confidence: High
+- Evidence level: Industrial design guidance + NIST accuracy framework
+- Applicable context: Polymer AM prototypes with function-critical interfaces
+- Limitations: Some validated machine/material combinations can meet requirements directly.
+- Related Objects: H2P-PW-029, H2P-PW-030, H2P-PW-031, H2P-PW-034, H2P-PW-036
+- Supports Decisions: hole strategy; fit strategy; post-processing route
+- Evidence: Forge Labs FDM/MJF guides; SRC-PW-031
+
+## H2P-CLM-000011 — FDM repeated-use fine threads are generally better implemented with inserts or post-machined threads
+
+**Statement:** For repeated assembly in FDM thermoplastic prototypes, fine printed threads are generally less robust than appropriately designed inserts or post-machined/tapped features.
+
+- Classification: Industrial Best Practice
+- Confidence: High
+- Evidence level: Industrial design guidance
+- Applicable context: FDM prototype fastening
+- Limitations: Large coarse printed threads can be adequate for low-load or low-cycle applications.
+- Related Objects: H2P-PW-029, H2P-PW-182
+- Supports Decisions: fastener strategy; enclosure/jig design
+- Evidence: Forge Labs FDM Design Guidelines
+
+## H2P-CLM-000012 — Powder-bed self-support does not eliminate design constraints
+
+**Statement:** SLS/MJF generally avoid dedicated support structures because the powder bed supports geometry, but design must still address powder escape, thermal distortion, surface condition and machine/material-specific feature limits.
+
+- Classification: Standards-Based Guidance + Industrial Best Practice
+- Confidence: Very High
+- Evidence level: ISO/ASTM 52911-2 + industrial design guidance
+- Applicable context: Polymer powder-bed prototypes
+- Limitations: MJF is not identical to laser PBF and requires its own capability record.
+- Related Objects: H2P-PW-024, H2P-PW-025, H2P-PW-031, H2P-PW-032
+- Supports Decisions: enclosed geometry; process selection; powder-removal design
+- Evidence: SRC-PW-025; Formlabs Fuse design guidance; Forge Labs MJF guide
+
+## H2P-CLM-000013 — Large flat powder-bed parts are a thermal-warpage risk
+
+**Statement:** Large flat surfaces in polymer powder-bed AM are more susceptible to distortion and should not be treated as inherently tolerance-stable merely because supports are unnecessary.
+
+- Classification: Industrial Best Practice / Standards Context
+- Confidence: High
+- Evidence level: Industrial guidance + process-specific standard scope
+- Applicable context: SLS/MJF polymer parts
+- Limitations: Magnitude depends on part size, orientation, material, nesting and process controls.
+- Related Objects: H2P-PW-031, H2P-PW-034, H2P-PW-178
+- Supports Decisions: orientation; process selection; dimensional validation
+- Evidence: Forge Labs MJF Design Guidelines; ISO/ASTM 52911-2
+
+## H2P-CLM-000014 — Dimensional compensation must be derived from measured systematic bias
+
+**Statement:** CAD or process compensation should be based on repeatable measured bias for a defined machine/material/process state, rather than applying generic shrinkage factors or arbitrary oversizing.
+
+- Classification: Project Synthesis
+- Confidence: Very High
+- Evidence level: NIST accuracy/qualification framework + configuration-management logic
+- Applicable context: Additive manufacturing
+- Limitations: Compensation is ineffective against primarily random variation.
+- Related Objects: H2P-PW-034, H2P-PW-036, H2P-PW-017
+- Supports Decisions: compensation strategy; validation planning; process capability
+- Evidence: SRC-PW-031; SRC-PW-032
+
 ## Next Claim Work
 
 Next expansion should create claims for:
 
 - moisture sensitivity and conditioning of PA-family AM materials;
 - support-induced surface and geometry effects in SLA/FFF;
-- powder-bed support freedom vs powder-removal constraints;
-- threaded-feature strategy by process/material/load;
-- wall/feature/clearance rules with machine-specific context;
-- dimensional compensation and warpage;
-- environmental exposure limitations (UV, heat, chemical compatibility).
+- snap-fit and living-hinge suitability by material/process;
+- environmental exposure limitations (UV, heat, chemical compatibility);
+- supplier-specific clearance and minimum-feature rules with validated conditions.
