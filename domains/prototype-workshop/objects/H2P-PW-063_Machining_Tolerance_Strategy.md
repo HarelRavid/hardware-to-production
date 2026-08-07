@@ -6,9 +6,10 @@ domain: Prototype Workshop
 subdomain: CNC & Subtractive Prototyping
 lifecycle: [Prototype, Engineering Prototype, EVT, DVT, Pilot]
 status: Researching
+provenance: [GNR, STD, IND, SYN]
 ---
 
-# Machining Tolerance Strategy
+# 2.2.6.7 — Machining Tolerance Strategy
 
 ## Definition
 Allocating dimensional and geometric tolerances to prototype-machined features according to functional need, process capability, inspection method, cost and production-representativeness goals.
@@ -24,16 +25,20 @@ Do not tighten every dimension simply because CNC can achieve tighter values. Ti
 - Distinguish supplier default capability from guaranteed tolerance on a specific feature/material/geometry.
 - Consider whether the prototype tolerance should represent intended production capability or simply enable the immediate experiment.
 
-## Provider-specific reference
-Protolabs Network currently publishes a general CNC design-guide example of roughly ±0.125 mm standard capability and approximately ±0.025 mm as feasible for tighter cases. These are service-specific guidance values, not universal CNC process limits.
+## Standards Context
+ASME Y14.5-2018 (reaffirmed 2024) is a current authoritative GD&T reference for communicating form, orientation, location and datum requirements. It defines design requirements; it does not itself guarantee a machining process capability.
+
+## Provider-specific examples
+Quick-turn providers publish general machining tolerances around ±0.1 to ±0.13 mm for selected services, with tighter options under specified conditions. These are useful supplier-capability examples, not universal CNC limits.
 
 ## Relationships
 | Type | Target Object | Strength | Confidence | Reason | Evidence |
 |---|---|---|---|---|---|
 | GUIDES | H2P-PW-049 CNC Milling | Strong | Very High | Tolerances affect process sequence and finishing | Machining practice |
 | GUIDES | H2P-PW-050 CNC Turning | Strong | Very High | Fits/diameters drive turning process and inspection | Machining practice |
-| DEPENDS_ON | H2P-PW-062 Machining Datum Strategy | Strong | Very High | Geometric controls require reference strategy | GD&T context |
-| SUPPORTS | H2P-PW-174 Prototype Production Representativeness | Medium | High | Prototype tolerance may or may not match production capability | Project synthesis |
+| DEPENDS_ON | H2P-PW-062 Machining Datum Strategy | Strong | Very High | Geometric controls require reference strategy | ASME Y14.5 |
+| SUPPORTS | H2P-PW-174 Prototype Production Representativeness | Medium | High | Prototype tolerance may or may not match production capability | GNR+SYN |
+| INCREASES | H2P-PW-199 CNC Prototype Cost Drivers | Strong | High | Unnecessary tight tolerances add processing/inspection effort | IND+SYN |
 
 ## Open gaps
-Add authoritative tolerance-capability datasets by process/material and cross-link to ISO GPS / ASME Y14.5 during DFM research.
+Add ISO GPS cross-reference and process/material-specific capability datasets during DFM research.
