@@ -1,12 +1,43 @@
 # Hardware to Production Knowledge Ontology
 
-## Purpose
+**Baseline: v1.0**
+
+## 1. Purpose
 
 This ontology defines the stable high-level knowledge architecture used by the Knowledge OS. It is intentionally broader than the podcast episode list.
 
-## Domain 01 — Product Development
+The stable hierarchy is:
 
-Subdomains:
+**Knowledge Layer → Domain → Module → Knowledge Object**
+
+Questions drive research and navigation. Claims carry evidence. Decisions consume Claims. Sources support Claims.
+
+## 2. Controlled Object Types
+
+The v1.0 object vocabulary is:
+
+- Domain
+- Module
+- Knowledge Object
+- Engineering Decision
+- Engineering Claim
+- Engineering Pattern
+- Engineering Principle
+- Failure Mode
+- Standard / Regulation
+- Book / Handbook
+- Paper / Academic Source
+- Template / Checklist
+- Case Study
+- Open Question
+- Engineering Assumption
+- Knowledge Conflict
+
+Adding a new top-level object type requires an ADR.
+
+## 3. Domain 01 — Product Development
+
+Modules:
 - Systems Engineering
 - Requirements Engineering
 - Product Architecture
@@ -19,9 +50,9 @@ Subdomains:
 - Configuration Management
 - Product Risk
 
-## Domain 02 — Prototype Workshop
+## 4. Domain 02 — Prototype Workshop
 
-Subdomains:
+Modules:
 - Prototype Strategy
 - Rapid Iteration
 - Workshop Architecture
@@ -43,9 +74,9 @@ Subdomains:
 - Inventory & Consumables
 - Make vs Buy / Outsourcing
 
-## Domain 03 — Manufacturing Processes
+## 5. Domain 03 — Manufacturing Processes
 
-Subdomains:
+Modules:
 - Machining
 - Casting
 - Injection Molding
@@ -54,17 +85,19 @@ Subdomains:
 - Thermoforming / Vacuum Forming
 - Additive Manufacturing
 - Sheet Metal Forming
+- Metal Forming
 - Welding & Joining
 - Adhesive Bonding
+- Mechanical Fastening
 - Heat Treatment
 - Surface Treatment
 - Coating & Finishing
 - Electronics Manufacturing
 - Cable/Harness Manufacturing
 
-## Domain 04 — Materials Engineering
+## 6. Domain 04 — Materials Engineering
 
-Subdomains:
+Modules:
 - Metals
 - Polymers
 - Elastomers
@@ -77,9 +110,9 @@ Subdomains:
 - Corrosion & Degradation
 - Surface Engineering
 
-## Domain 05 — Design for X
+## 7. Domain 05 — Design for X
 
-Subdomains:
+Modules:
 - DFM
 - DFA
 - DFT
@@ -96,9 +129,9 @@ Subdomains:
 - Tolerance Design
 - GD&T
 
-## Domain 06 — Manufacturing Engineering
+## 8. Domain 06 — Manufacturing Engineering
 
-Subdomains:
+Modules:
 - Process Planning
 - Process Flow
 - Routing
@@ -115,9 +148,9 @@ Subdomains:
 - Fixtures
 - Material Flow
 
-## Domain 07 — Quality Engineering
+## 9. Domain 07 — Quality Engineering
 
-Subdomains:
+Modules:
 - APQP
 - PPAP
 - DFMEA
@@ -137,9 +170,9 @@ Subdomains:
 - MRB
 - Nonconformance
 
-## Domain 08 — NPI & Industrialization
+## 10. Domain 08 — NPI & Industrialization
 
-Subdomains:
+Modules:
 - NPI Frameworks
 - Manufacturing Readiness
 - Design Transfer
@@ -156,9 +189,9 @@ Subdomains:
 - Industrialization Ownership
 - Cross-functional Handoffs
 
-## Domain 09 — Factory Design
+## 11. Domain 09 — Factory Design
 
-Subdomains:
+Modules:
 - Factory Layout
 - Line Architecture
 - Utilities
@@ -170,9 +203,9 @@ Subdomains:
 - Safety
 - Facility Constraints
 
-## Domain 10 — Automation
+## 12. Domain 10 — Automation
 
-Subdomains:
+Modules:
 - Automation Strategy
 - Automation Economics
 - PLC
@@ -190,9 +223,9 @@ Subdomains:
 - Industrial Data
 - OT Cybersecurity
 
-## Domain 11 — Supply Chain
+## 13. Domain 11 — Supply Chain
 
-Subdomains:
+Modules:
 - Sourcing
 - Supplier Selection
 - Supplier Qualification
@@ -209,9 +242,9 @@ Subdomains:
 - Obsolescence
 - Supply Risk
 
-## Domain 12 — Business & Manufacturing Strategy
+## 14. Domain 12 — Business & Manufacturing Strategy
 
-Subdomains:
+Modules:
 - Product Cost
 - Should Cost
 - CAPEX
@@ -224,9 +257,9 @@ Subdomains:
 - Capacity Investment
 - Cost of Poor Quality
 
-## Domain 13 — Regulations & Standards
+## 15. Domain 13 — Regulations & Standards
 
-Subdomains:
+Modules:
 - Quality Management
 - Machinery Safety
 - Electrical Safety
@@ -237,9 +270,9 @@ Subdomains:
 - Documentation Standards
 - Metrology & Laboratory Standards
 
-## Domain 14 — Case Studies
+## 16. Domain 14 — Case Studies
 
-Subdomains:
+Modules:
 - Successful Industrialization
 - Failed Industrialization
 - Prototype-to-Production Failures
@@ -249,9 +282,9 @@ Subdomains:
 - Ramp-up Case Studies
 - Startup Hardware Case Studies
 
-## Domain 15 — Engineering Management
+## 17. Domain 15 — Engineering Management
 
-Subdomains:
+Modules:
 - Technical Leadership
 - Program Management
 - Concurrent Engineering
@@ -264,18 +297,38 @@ Subdomains:
 - Lessons Learned
 - Knowledge Management
 
-## Cross-cutting Lifecycle Axis
+## 18. Cross-cutting Lifecycle Axis
 
-Concept → POC → Prototype → Engineering Prototype → MVP → Alpha → Beta → EVT → DVT → PVT → Pilot → Ramp-up → Mass Production → Sustainment → End of Life
+Concept → POC → Prototype → Engineering Prototype → MVP → Alpha → Beta → EVT → DVT → PVT → Pilot → Bridge Production → Ramp-up → Serial / Mass Production → Sustainment → End of Life
 
-## Cross-cutting Evidence Axis
+## 19. Cross-cutting Evidence Axis
 
-Normative Requirement → Verified Fact → Academic Evidence → Industrial Best Practice → Expert Opinion → Project Synthesis
+Normative Requirement → Verified Fact → Academic Evidence → Academic Consensus → Industrial Best Practice → Manufacturer Guidance → Expert Opinion → Project Synthesis / Heuristic
 
-## Cross-cutting Relationship Axis
+## 20. Cross-cutting Provenance Axis
 
-All object-to-object links must use controlled types from `RELATIONSHIP_MODEL.md`.
+AI-originated content retains `GNR` provenance permanently, even after external verification. Additional source provenance is accumulated rather than replacing origin metadata.
 
-## Governance
+## 21. Cross-cutting Question Axis
 
-Changes to top-level Domains or the fundamental ontology require an ADR. Adding new Topics or Objects inside an existing Subdomain does not normally require an ADR.
+Every Domain and major Module maintains `Questions Answered`. Questions are not hierarchy nodes; they are navigation and research entry points that map to Decisions, Claims and Objects.
+
+## 22. Cross-cutting Uncertainty Axis
+
+Uncertainty is explicitly represented using:
+
+- Open Questions
+- Engineering Assumptions
+- Knowledge Conflicts
+
+Unknown or conflicting knowledge must not be hidden inside prose.
+
+## 23. Cross-cutting Relationship Axis
+
+All entity-to-entity links must use controlled types from `RELATIONSHIP_MODEL.md` and include context/evidence where the relationship makes a technical, normative or causal claim.
+
+## 24. Governance
+
+Changes to top-level Domains, hierarchy levels or object types require an ADR. Adding new Modules or Objects inside the existing ontology does not normally require an ADR.
+
+Knowledge OS v1.0 is the architecture baseline. Content growth should occur within this model rather than continually extending it.
