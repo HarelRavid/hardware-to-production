@@ -1,8 +1,10 @@
 # Knowledge OS Relationship Model
 
+**Baseline: v1.0**
+
 ## 1. Purpose
 
-Relationships are first-class knowledge claims. A relationship must describe why two objects are connected, not merely that they are related.
+Relationships are first-class knowledge claims. A relationship must describe why two entities are connected, not merely that they are related.
 
 Each relationship record contains:
 
@@ -14,9 +16,14 @@ inverse_type:
 reason:
 strength:
 confidence:
+provenance: [GNR]
 evidence: []
+applicable_context: []
+assumptions: []
 status:
 ```
+
+AI-originated relationships retain `GNR` provenance permanently, even after external evidence is added.
 
 ## 2. Relationship Strength
 
@@ -38,7 +45,7 @@ status:
 
 | Forward | Inverse | Meaning |
 |---|---|---|
-| DERIVED_FROM | SOURCE_FOR_DERIVATION | conclusion or artifact derived from another object |
+| DERIVED_FROM | SOURCE_FOR_DERIVATION | conclusion or artifact derived from another entity |
 | BASED_ON | BASIS_FOR | method, concept or claim uses another as its foundation |
 | INFERRED_FROM | SUPPORTS_INFERENCE | conclusion inferred rather than explicitly stated |
 | SUPPORTED_BY | SUPPORTS | evidence supports a claim/object |
@@ -49,7 +56,18 @@ status:
 | INTERPRETS | INTERPRETED_BY | provides interpretation of source material |
 | SUPERSEDES | SUPERSEDED_BY | newer authoritative replacement |
 
-### B. Dependency & Lifecycle
+### B. Questions, Assumptions & Conflict
+
+| Forward | Inverse | Meaning |
+|---|---|---|
+| ANSWERS_QUESTION | ANSWERED_BY | entity helps answer an Engineering Question |
+| OPENS_QUESTION | OPENED_BY | evidence/claim reveals a new unresolved question |
+| RESOLVES_QUESTION | RESOLVED_BY | evidence/claim closes an Open Question within stated scope |
+| DEPENDS_ON_ASSUMPTION | ASSUMED_BY | conclusion/decision depends materially on an explicit assumption |
+| PARTICIPATES_IN_CONFLICT | CONFLICT_CONTAINS | entity is one side/evidence element in a Knowledge Conflict |
+| RESOLVES_CONFLICT | RESOLVED_BY | synthesis/evidence resolves a Knowledge Conflict within stated scope |
+
+### C. Dependency & Lifecycle
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -64,7 +82,7 @@ status:
 | CONSUMES | CONSUMED_BY | uses another object as input/resource |
 | GATES | GATED_BY | defines a formal readiness/approval gate |
 
-### C. Engineering Analysis & Design
+### D. Engineering Analysis & Design
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -81,7 +99,7 @@ status:
 | DETECTS | DETECTED_BY | identifies condition, feature or failure |
 | MITIGATES | MITIGATED_BY | reduces risk or impact |
 
-### D. Manufacturing & Assembly
+### E. Manufacturing & Assembly
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -101,7 +119,7 @@ status:
 | REPAIRS | REPAIRED_BY | restores function after failure/damage |
 | MAINTAINS | MAINTAINED_BY | sustains equipment/process capability |
 
-### E. Materials & Compatibility
+### F. Materials & Compatibility
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -113,7 +131,7 @@ status:
 | COATED_WITH | COATING_FOR | coating applied to target |
 | BONDED_WITH | BONDING_AGENT_FOR | adhesive/bonding agent joins target |
 
-### F. Quality, Risk & Documentation
+### G. Quality, Risk & Documentation
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -128,7 +146,7 @@ status:
 | CAUSES | CAUSED_BY | causal relationship supported by evidence |
 | CONTRIBUTES_TO | CONTRIBUTED_TO_BY | contributory but not sole cause |
 
-### G. Standards & Governance
+### H. Standards & Governance
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -140,7 +158,7 @@ status:
 | EXEMPTED_BY | PROVIDES_EXEMPTION_FOR | exemption/exception relationship |
 | COMPLIES_WITH | COMPLIED_WITH_BY | conformance relationship |
 
-### H. Alternatives, Comparison & Selection
+### I. Alternatives, Comparison & Selection
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -152,7 +170,7 @@ status:
 | SUITABLE_FOR | SUITED_BY | appropriate for use case/application |
 | UNSUITABLE_FOR | UNSUITED_BY | poor/invalid choice for use case/application |
 
-### I. Organization & Responsibility
+### J. Organization & Responsibility
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -163,7 +181,7 @@ status:
 | HANDED_OFF_TO | RECEIVES_HANDOFF_FROM | transfer of responsibility/work |
 | COLLABORATES_WITH | COLLABORATES_WITH | cross-functional collaboration |
 
-### J. Podcast & Navigation
+### K. Podcast & Navigation
 
 | Forward | Inverse | Meaning |
 |---|---|---|
@@ -183,9 +201,9 @@ Good: `CNC Milling → PROCESSES_MATERIAL → Aluminum Alloys`
 
 ## 6. Evidence Requirements
 
-Relationships that imply regulation, causation, mandatory dependency, technical compatibility, performance, or chronology should carry evidence whenever possible.
+Relationships that imply regulation, causation, mandatory dependency, technical compatibility, performance, preference, chronology or conflict should carry evidence whenever possible.
 
-Relationships used only for navigation may use project synthesis as evidence.
+Relationships used only for navigation may use Project Synthesis as evidence, but AI-originated navigation logic still retains `GNR` provenance.
 
 ## 7. Inverse Relationships
 
@@ -195,12 +213,16 @@ Inverse relationships are logical views of the same claim and should not be trea
 
 ## 8. Conflict Handling
 
-When sources conflict, do not delete one side. Create explicit `CONTRADICTED_BY` links, capture context, and preserve applicability conditions.
+When sources conflict, do not delete one side. Create explicit `CONTRADICTED_BY` links and a Knowledge Conflict record when the disagreement is decision-relevant. Capture context, assumptions and applicability conditions.
 
-## 9. Context Matters
+## 9. Assumption Handling
 
-Compatibility, preference, suitability, causation and sequencing often depend on conditions. The relationship reason must state important scope such as material, volume, tolerance, industry, regulatory context or lifecycle phase.
+If a relationship is true only under an assumption (for example annual volume, service environment or target tolerance), link that assumption explicitly using `DEPENDS_ON_ASSUMPTION` rather than hiding it in prose.
 
-## 10. Future Extension
+## 10. Context Matters
 
-The relationship vocabulary may expand through ADRs. Prefer adding precise relationships over introducing vague types such as `RELATED_TO`.
+Compatibility, preference, suitability, causation and sequencing often depend on conditions. The relationship reason/applicable context must state important scope such as material, volume, tolerance, industry, regulatory context or lifecycle phase.
+
+## 11. Architecture Freeze
+
+Knowledge OS v1.0 freezes this controlled relationship model as the baseline. New relationship types should be added only when existing types cannot express a recurring engineering statement precisely, and material extensions require an ADR. Avoid vague relations such as `RELATED_TO`.
