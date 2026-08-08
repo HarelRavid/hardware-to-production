@@ -1,135 +1,178 @@
 # Knowledge Object Model
 
+**Baseline: v1.0**
+
 ## 1. Purpose
 
-A Knowledge Object is the smallest durable unit of the Hardware to Production Knowledge OS. Objects are nodes in the knowledge graph. They are not merely pages or files.
+A Knowledge Object is the smallest durable organizational unit of the Hardware to Production Knowledge OS. Objects are nodes in the knowledge graph; they are not merely pages or files.
 
-Every object has a stable ID, a defined type, metadata, evidence, and typed relationships to other objects.
+Engineering Claims remain the atomic evidence-bearing units. Objects organize those Claims and connect them to Decisions, Questions, lifecycle context and Sources.
 
-## 2. Object Types
+## 2. Stable Hierarchy
 
-Initial controlled vocabulary:
+**Knowledge Layer → Domain → Module → Knowledge Object**
 
-- Concept
-- Principle
-- Method
-- Process
-- Lifecycle Stage
-- Deliverable
-- Document
-- Standard
-- Regulation
-- Requirement
-- Machine
-- Equipment
-- Tool
-- Software
-- Material
-- Manufacturing Process
-- Test Method
-- Measurement Method
-- Formula
-- KPI
-- Role
-- Organization
-- Risk
+The hierarchy organizes navigation. Stable Object IDs preserve identity even when a Module or navigation path changes.
+
+## 3. Controlled Top-Level Object Types
+
+Knowledge OS v1.0 recognizes:
+
+- Domain
+- Module
+- Knowledge Object
+- Engineering Decision
+- Engineering Claim
+- Engineering Pattern
+- Engineering Principle
 - Failure Mode
+- Standard / Regulation
+- Book / Handbook
+- Paper / Academic Source
+- Template / Checklist
 - Case Study
-- Source
-- Checklist
-- Template
-- Podcast Episode
+- Open Question
+- Engineering Assumption
+- Knowledge Conflict
 
-New object types require an ADR if they materially alter the model.
+A Knowledge Object may use a more specific semantic subtype in metadata (for example Process, Material, Machine, Tool, Method, KPI, Role, Software, Test Method), but new top-level architectural object types require an ADR.
 
-## 3. Mandatory Metadata
+## 4. Mandatory Metadata
 
 ```yaml
 id: H2P-XXXXXX
 title:
 aliases: []
-object_type:
+object_type: Knowledge Object
+semantic_type:
 domain:
-subdomain:
+module:
+knowledge_path:
 lifecycle: []
-status:
+status: Draft
+evidence_maturity: L0
+provenance: [GNR]
 summary:
 tags: []
+questions_answered: []
+related_decisions: []
+open_questions: []
+assumptions: []
+knowledge_conflicts: []
 created:
 last_reviewed:
 ```
 
-## 4. Knowledge Status
+`GNR` must remain in provenance for AI-originated content even after validation.
 
-Controlled state progression:
+## 5. Knowledge Status
 
-Idea → Mapped → Researching → Draft → Reviewed → Validated → Podcast Ready → Published
+Controlled work-state progression:
 
-A status change should represent a real maturity increase, not editorial progress alone.
+`Draft → Researching → Verified → Referenced → Podcast Ready → Published → Archived`
 
-## 5. Core Content Structure
+Status describes workflow/maturity of the Object as a usable knowledge artifact. Evidence Maturity is a separate field and must not be inferred from status.
 
-Every mature object should contain, when applicable:
+## 6. Evidence Maturity
+
+- L0 — concept / unverified working knowledge
+- L1 — supported by at least one suitable external source
+- L2 — multiple independent suitable sources
+- L3 — supported or bounded by applicable standards / normative guidance where such guidance exists
+- L4 — relevant industrial validation or strong case evidence
+- L5 — mature, widely accepted engineering principle within its stated scope
+
+## 7. Core Content Structure
+
+Every mature Object should contain, when applicable:
 
 1. Definition
-2. Purpose
-3. Problem Solved
-4. Lifecycle Position
-5. Typical Owner / Responsible Role
-6. Inputs / Preconditions
-7. Outputs / Deliverables
-8. How It Works
-9. Decision Criteria
-10. Limitations
-11. Common Mistakes
-12. Standards / Regulations
-13. Academic Evidence
-14. Professional Books / Handbooks
-15. Industrial Guidance
-16. Case Studies
-17. Related Objects
-18. Open Questions / Evidence Gaps
-19. Podcast Mapping
-20. Future Toolkit Mapping — reserved, not developed yet
-21. Future Learning Path Mapping — reserved, not developed yet
+2. Engineering Meaning
+3. Decision Impact
+4. Purpose / Problem Solved
+5. Lifecycle Position
+6. Typical Owner / Responsible Role
+7. Inputs / Preconditions
+8. Outputs / Deliverables
+9. How It Works
+10. Decision Criteria / Tradeoffs
+11. Limitations / Applicability
+12. Failure Modes / Common Mistakes
+13. Standards / Regulations
+14. Academic Evidence
+15. Professional Books / Handbooks
+16. Industrial Guidance
+17. Case Studies
+18. Engineering Claims
+19. Typed Relationships
+20. Questions Answered
+21. Open Questions / Evidence Gaps
+22. Engineering Assumptions
+23. Knowledge Conflicts
+24. Listener Tags / Podcast Mapping
+25. Future Toolkit Mapping — reserved, not developed in v1
+26. Future Learning Path / Atlas Mapping — reserved, not developed in v1
 
-Not every object requires every section. Empty sections should not be padded with low-value content.
+Not every Object requires every section. `Not applicable` is preferable to padding with low-value content.
 
-## 6. Claim Classification
+## 8. Questions Answered
 
-Important statements should be labeled or written so their evidence class is clear:
+Every mature Object should identify the real engineering questions it helps answer. Questions are navigation/research entry points and do not replace the stable hierarchy.
 
-- normative requirement;
-- verified fact;
-- academic finding;
-- industry practice;
-- expert opinion;
-- project synthesis/recommendation.
+Examples:
 
-## 7. Stable Identity
+- When should this process be selected?
+- What causes this failure mode?
+- Which design constraints control this decision?
+- What must be validated before scale-up?
 
-Object IDs do not change when titles or terminology change.
+## 9. Open Questions
 
-Aliases capture alternate terminology. Example: an object may retain one stable ID while recognizing multiple industry terms for a lifecycle stage.
+Known unknowns should be explicit rather than hidden in prose. Open Questions should link to relevant Claims, Sources and Decisions and record the evidence gap that prevents closure.
 
-## 8. No Orphan Objects
+## 10. Engineering Assumptions
 
-A mature object should normally have at least three meaningful graph relationships. Foundational objects may temporarily have fewer.
+Assumptions such as annual volume, service life, duty cycle, environmental exposure or target cost must be represented explicitly when they materially affect an Object or Decision.
+
+An assumption changing should trigger reevaluation of dependent Decisions/Claims.
+
+## 11. Knowledge Conflicts
+
+When credible Sources or Claims disagree, preserve the conflict. A mature Object should link to a Knowledge Conflict record rather than silently select one position without explaining context.
+
+## 12. Stable Identity
+
+Object IDs do not change when titles, navigation paths or terminology change.
+
+Aliases capture alternate terminology. `knowledge_path` is navigational and may change; `id` is identity and must remain stable.
+
+## 13. No Orphan Objects
+
+A mature Object should normally have multiple meaningful graph relationships. Foundational Objects may temporarily have fewer.
 
 Relationships exist because of engineering meaning, not to satisfy a numerical target.
 
-## 9. Object Granularity
+## 14. Object Granularity
 
-Create a separate object when the concept can reasonably:
+Create a separate Object when the concept can reasonably:
 
 - have its own definition;
 - have different lifecycle relevance;
 - have different evidence;
-- be independently referenced by multiple other objects;
+- be independently referenced by multiple other Objects;
+- support a distinct Decision;
 - or support a distinct podcast discussion.
 
-Do not fragment trivial synonyms into separate objects.
+Do not fragment trivial synonyms into separate Objects.
 
-## 10. Versioning
+## 15. Provenance Rule
 
-Content evolves, identity remains stable. Material changes in meaning, taxonomy or architectural behavior should be captured in ADRs.
+All AI-originated Objects include `GNR`. External verification adds provenance codes; it does not erase origin.
+
+Object prose may summarize external evidence, but episode-critical engineering assertions should be expressed as Claims with traceable evidence.
+
+## 16. Versioning and Architecture Freeze
+
+Content evolves; identity remains stable.
+
+Knowledge OS v1.0 freezes the hierarchy, core object types, status model, provenance policy and explicit representation of Questions, Assumptions and Conflicts. Future architectural changes require an ADR.
