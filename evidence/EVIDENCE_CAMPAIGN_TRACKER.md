@@ -8,8 +8,8 @@ started_on: 2026-08-09
 | Priority | Evidence package | Podcast leverage | Status |
 |---|---|---|---|
 | A0 | Early hardware development / Opening Arc | A1–A8 + bridge to Episodes 1–10 | BREADTH COMPLETE |
-| A1 | Product development / NPI / production readiness | Episodes 1–5 | IN PROGRESS |
-| A2 | DFM / DFA / DFT foundations | Episodes 6–10 | NEXT |
+| A1 | Product development / NPI / production readiness | Episodes 1–5 | BREADTH COMPLETE |
+| A2 | DFM / DFA / DFT foundations | Episodes 6–10 | IN PROGRESS — NEXT ACTIVE CAMPAIGN |
 | A3 | Manufacturing process selection / lifecycle economics | Episode 11 + process arc | QUEUED |
 | A4 | Quality foundations: PFMEA/control plan/MSA/SPC/capability | Episodes 23–24, 32 | QUEUED |
 | A5 | Pilot/PVT/ramp/yield/capacity | Episodes 26–31 | QUEUED |
@@ -17,19 +17,25 @@ started_on: 2026-08-09
 | A7 | Automation business case / qualification / OEE | Episodes 41–46 | QUEUED |
 | A8 | Manufacturing Data Hub standards / semantic integration | Episodes 47–52 | QUEUED |
 
-## A0 completion summary
-A0 now includes a mixed primary-source backbone:
-- NASA systems engineering, V&V, TRL and configuration management
-- NIST engineering-change management, conceptual process planning, rapid-prototyping/manufacturing material and MEP case evidence
-- commercial embedded/electronics guidance from Espressif, TI and Microchip
-- KiCad/Git/GitHub lightweight configuration-control implementation patterns
-- Zephyr/Espressif hardware-firmware revision compatibility examples
-- UK HSE/OPSS/GOV.UK product-safety and design-stage conformity guidance
+## A0 — Breadth result
+Opening Arc now has authoritative systems-engineering foundations plus commercial electronics/configuration corroboration. Remaining weak areas were explicitly transferred to Pass 2 rather than disguised as verified facts.
 
-A0 critical claims, applicability boundaries, GNR items and Pass-2 targets are explicitly represented. The remaining weak area — direct empirical proof that a particular prototype route creates downstream manufacturing debt — is intentionally retained as a Pass-2 depth target rather than blocking breadth completion.
+## A1 — Breadth result
+Product readiness now has a multi-sector evidence backbone:
+- NASA TRL for technology maturity;
+- MRL for manufacturing maturity/progression;
+- NASA PRR for multidimensional production-readiness evidence;
+- NIST NPI research for production-system development;
+- AIAG APQP/Core Tools/PPAP for automotive launch/process-readiness corroboration;
+- NIST-hosted commercial semiconductor NPI case separating functional prototype from high-volume-manufacturing compatibility/qualification.
 
-## Current A1 findings
-Primary-source backbone includes NASA TRL, NASA Production Readiness Review, NASA MRL material and NIST NPI/production-line research. Industry EVT/DVT/PVT terminology is treated separately from normative readiness frameworks.
+Editorial conclusions supported for Episodes 1–5:
+1. functional prototype != production readiness;
+2. technology maturity != manufacturing maturity;
+3. production readiness is multidimensional;
+4. production-system engineering is a parallel workstream;
+5. EVT/DVT/PVT labels should be defined locally and not treated as universal standards;
+6. DEV/LVP/SVP guidance should scale discipline rather than copy aerospace/automotive bureaucracy.
 
 ## Campaign rule
 Breadth pass does not attempt exhaustive research. Each package must first identify:
@@ -43,7 +49,7 @@ Breadth pass does not attempt exhaustive research. Each package must first ident
 A package moves from IN PROGRESS to BREADTH COMPLETE only when all five items above are represented and the strongest primary sources are captured or explicitly unavailable.
 
 ## Immediate sequence
-1. Reconcile A0 findings into A1 at the Production-Intent bridge.
-2. Complete A1 breadth.
-3. Open A2 — DFM / DFA / DFT foundations.
-4. Continue Breadth Pass across A3–A8 before deep clause-level work, except where a critical claim requires immediate depth.
+1. A2 — DFM / DFA / DFT foundations: build source-family map and critical claim register.
+2. Give special attention to tolerance economics, DFA evidence, DFT/test access, prototype representativeness and material/process selection.
+3. Preserve DEV/LVP/SVP translation in every evidence package.
+4. After A2 breadth, move to A3 process selection/lifecycle economics.
