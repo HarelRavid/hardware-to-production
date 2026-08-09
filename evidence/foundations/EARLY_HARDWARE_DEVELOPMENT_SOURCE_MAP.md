@@ -13,7 +13,6 @@ The objective is not to impose aerospace process on startups. NASA material is u
 ## Primary source backbone captured
 
 ### NASA Systems Engineering Handbook
-Source: NASA Systems Engineering Handbook (current web edition; handbook lineage includes NASA/SP-2016-6105 Rev2).
 Use for:
 - stakeholder needs and technical requirements
 - system architecture
@@ -30,7 +29,7 @@ Use for:
 - verification methods: analysis, inspection, demonstration, test
 - test-article pedigree
 - developmental/engineering-unit evaluation versus formal verification/qualification/acceptance
-Key relevance: provides evidence that test article type/pedigree and intended inference should be explicit.
+Key relevance: test article type/pedigree and intended inference should be explicit.
 
 ### NASA TRL definitions
 Use for:
@@ -47,8 +46,34 @@ Use for:
 - keeping product and product information consistent
 Key relevance to opening arc: configuration discipline should begin before production; waiting until industrialization loses learning and makes prototype comparisons unreliable.
 
-### NPR 7123.1D / endorsed standards list
-Use for standards discovery only at this breadth stage, including systems life-cycle, V&V and configuration-management standards. Clause-level applicability remains Pass-2 work.
+### Espressif Hardware Design Guidelines
+Source family: official ESP Hardware Design Guidelines and reference designs.
+Use for:
+- schematic/PCB design discipline
+- power, grounding, RF, crystal and layout constraints
+- reference-design use
+- end-product RF verification
+- design-specific checklist thinking
+Applicability: device/vendor specific, but strong commercial evidence that serious embedded product development requires structured schematic/layout review and end-product verification rather than only functional bring-up.
+
+### Texas Instruments custom-board design/checklist guidance
+Source family: TI official custom-board schematic/design guidelines and review checklists for Sitara/SimpleLink families.
+Use for:
+- structured schematic self-review before layout/build
+- companion use of datasheet, TRM, errata and application notes
+- reducing design errors that increase bring-up/test time
+- review evidence and checklist-based discipline
+Applicability: processor-family specific; transferable principle is that vendor guidance, design review and pre-build checklist activity are part of robust commercial hardware development.
+
+### Microchip Hardware Design Checklists
+Source family: official Microchip hardware-design considerations/checklists and reference design resources.
+Use for:
+- schematic and layout checklists
+- power sequencing/decoupling
+- grounding/stack-up/high-speed constraints
+- manufacturing constraints
+- design-review service/reference designs
+Applicability: device/application specific; strong corroboration for early design review and manufacture-aware PCB decisions.
 
 ## Opening Arc claim register
 
@@ -64,7 +89,7 @@ Podcast use: A1, A7 and later DVT/PVT discussion.
 
 ### C-EHD-003 — Test-article pedigree determines what evidence can legitimately be inferred
 status: STRONG
-Evidence basis: NASA V&V planning explicitly distinguishes breadboards, prototypes, engineering units, qualification units and operational/final units and asks what activities apply to each.
+Evidence basis: NASA V&V planning distinguishes breadboards, prototypes, engineering units, qualification units and operational/final units and asks what activities apply to each.
 Podcast use: A4–A7 and Prototype Representativeness framework.
 
 ### C-EHD-004 — A functional prototype is not equivalent to a production-ready product
@@ -84,7 +109,7 @@ Podcast use: A4–A6.
 
 ### C-EHD-007 — Hardware teams should plan verification approach while defining requirements
 status: STRONG
-Evidence basis: NASA V&V guidance explicitly recommends identifying verification approach while developing requirements and uses requirement-verification matrices.
+Evidence basis: NASA V&V guidance recommends identifying verification approach while developing requirements and uses requirement-verification matrices.
 Podcast use: A1, A3, A7.
 
 ### C-EHD-008 — System interfaces deserve explicit ownership and verification
@@ -92,14 +117,59 @@ status: MODERATE/STRONG CONCEPTUAL SUPPORT
 Evidence basis: NASA SE identifies interface definition/assessment as a core systems-engineering responsibility; broader industrial corroboration still needed for startup-oriented prescriptive guidance.
 Podcast use: A2–A3.
 
+### C-EHD-009 — Commercial embedded-hardware development benefits from pre-build schematic/layout review against vendor constraints
+status: STRONG, product-family-scoped
+Evidence basis: Espressif, TI and Microchip all publish official design guides, schematic/layout checklists, reference designs and/or review workflows intended to reduce design errors and improve successful product integration.
+Podcast use: A6.
+Applicability boundary: evidence supports the principle of disciplined board review; exact checklist items are component/vendor specific.
+
+### C-EHD-010 — A development board/reference design does not remove the need to verify the final end-product implementation
+status: STRONG, product-family-scoped
+Evidence basis: Espressif explicitly requires consideration/testing of the final product context for RF/antenna behavior; vendor reference designs are implementation aids, not blanket proof of the final enclosure/PCB/system performance.
+Podcast use: A4, A6, A7.
+
+### C-EHD-011 — PCB manufacturing constraints belong in design review, not only after layout is complete
+status: MODERATE/STRONG
+Evidence basis: Microchip hardware design considerations explicitly include manufacturing constraints in layout/design checklists; commercial semiconductor vendors commonly embed layout, stack-up, via, grounding and assembly-sensitive constraints in design guidance.
+Podcast use: A6 and bridge to DFM.
+
+## DEV / LVP / SVP interpretation for Opening Arc
+### DEV
+- lightweight requirements and interface ownership
+- explicit prototype purpose
+- capture BOM/firmware/mechanical revision per build
+- schematic/layout checklist before fabrication
+- test plan tied to critical requirements
+
+### LVP
+- move from ad-hoc prototype build to released repeatable configuration
+- controlled component alternates
+- board fabrication/assembly constraints and test access become explicit
+- serial/lot identity and failure history become valuable
+- fixture/test repeatability matters even if assembly is manual
+
+### SVP
+- approved production component sources/alternates
+- controlled PCB fab/assembly specification
+- manufacturing test coverage and measurement capability
+- configuration/effectivity discipline
+- regulatory, reliability and supplier evidence as required by product class
+
 ## Evidence gaps for Pass 1
-1. Commercial/startup hardware development references outside aerospace.
-2. Electronics/PCB/embedded development and transition-to-production evidence.
+1. Commercial/startup hardware development references that address team/process scaling directly.
+2. Lightweight configuration-management patterns appropriate to teams of 2–20 people.
 3. Mechanical prototype-to-production transition case studies.
 4. Empirical evidence around late requirement/interface changes and rework cost.
-5. Practical configuration-management patterns appropriate to teams of 2–20 people.
-6. Prototype fidelity/representativeness literature beyond aerospace.
-7. Regulatory/product-safety discovery timing by product class.
+5. Prototype fidelity/representativeness literature beyond aerospace.
+6. Regulatory/product-safety discovery timing by product class.
+7. Embedded firmware release/configuration evidence linked to physical hardware revisions.
+
+## Pass-2 depth targets
+- quantify evidence for late changes/rework and manufacturing debt
+- investigate electronics DFM/DFT and PCB assembly standards/guidance
+- build a practical minimum configuration package for prototype teams
+- obtain case studies where prototype assumptions failed at low-volume build
+- separate vendor-specific layout rules from transferable engineering principles
 
 ## Editorial boundary
 The Opening Arc should teach minimum useful engineering discipline, not transplant a large-enterprise stage-gate bureaucracy into a startup. Every practice should be presented with a scaling question: what is the lightest implementation that preserves the engineering intent at DEV, LVP and SVP?
