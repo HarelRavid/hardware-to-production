@@ -29,7 +29,7 @@ Use for:
 - verification methods: analysis, inspection, demonstration, test
 - test-article pedigree
 - developmental/engineering-unit evaluation versus formal verification/qualification/acceptance
-Key relevance: test article type/pedigree and intended inference should be explicit.
+Key relevance: provides evidence that test article type/pedigree and intended inference should be explicit.
 
 ### NASA TRL definitions
 Use for:
@@ -46,34 +46,47 @@ Use for:
 - keeping product and product information consistent
 Key relevance to opening arc: configuration discipline should begin before production; waiting until industrialization loses learning and makes prototype comparisons unreliable.
 
-### Espressif Hardware Design Guidelines
-Source family: official ESP Hardware Design Guidelines and reference designs.
+### KiCad official documentation — project files and Git integration
+Sources:
+- https://docs.kicad.org/9.0/en/getting_started_in_kicad/getting_started_in_kicad.html
+- https://docs.kicad.org/9.0/en/kicad/kicad.html
 Use for:
-- schematic/PCB design discipline
-- power, grounding, RF, crystal and layout constraints
-- reference-design use
-- end-product RF verification
-- design-specific checklist thinking
-Applicability: device/vendor specific, but strong commercial evidence that serious embedded product development requires structured schematic/layout review and end-product verification rather than only functional bring-up.
+- showing that even mainstream electronics design tooling treats the project as a multi-file controlled object
+- identifying project/schematic/PCB/manufacturing-output artifacts
+- practical version-control implementation using Git
+- lightweight prototype-team configuration history
+Applicability: tooling guidance, not a normative engineering-management standard.
 
-### Texas Instruments custom-board design/checklist guidance
-Source family: TI official custom-board schematic/design guidelines and review checklists for Sitara/SimpleLink families.
+### GitHub official documentation — tags and releases
+Sources:
+- https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
+- https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags
 Use for:
-- structured schematic self-review before layout/build
-- companion use of datasheet, TRM, errata and application notes
-- reducing design errors that increase bring-up/test time
-- review evidence and checklist-based discipline
-Applicability: processor-family specific; transferable principle is that vendor guidance, design review and pre-build checklist activity are part of robust commercial hardware development.
+- lightweight implementation pattern for identifying known-good software/firmware/configuration states
+- showing that tags can identify a specific point in repository history
+Applicability: software configuration mechanism; when used for hardware programs it must be linked to hardware/BOM/PCB/mechanical configuration rather than treated as complete product CM by itself.
 
-### Microchip Hardware Design Checklists
-Source family: official Microchip hardware-design considerations/checklists and reference design resources.
+### NISTIR 7922 — Engineering Change Management Concepts for Systems Modeling
+Source:
+- https://www.nist.gov/publications/engineering-change-management-concepts-systems-modeling
 Use for:
-- schematic and layout checklists
-- power sequencing/decoupling
-- grounding/stack-up/high-speed constraints
-- manufacturing constraints
-- design-review service/reference designs
-Applicability: device/application specific; strong corroboration for early design review and manufacture-aware PCB decisions.
+- engineering-change management rationale
+- cost and complexity created when system specifications change after build/delivery
+- revisiting previously completed engineering decisions/tasks after change
+Applicability: strong cross-industry systems/manufacturing reference; not a quantitative universal late-change cost curve.
+
+### Commercial embedded-hardware design guidance
+Source families captured in A0 research:
+- Espressif hardware design guidelines
+- Texas Instruments schematic/layout/reference-design guidance
+- Microchip hardware design/checklist/reference-design guidance
+Use for:
+- schematic review before fabrication
+- PCB layout constraints
+- power/decoupling/clock/reset/RF implementation guidance
+- use and limits of reference designs
+- DRC/review before manufacturing release
+Applicability: component/vendor-specific guidance; useful as commercial corroboration, not universal rules across all electronics.
 
 ## Opening Arc claim register
 
@@ -89,7 +102,7 @@ Podcast use: A1, A7 and later DVT/PVT discussion.
 
 ### C-EHD-003 — Test-article pedigree determines what evidence can legitimately be inferred
 status: STRONG
-Evidence basis: NASA V&V planning distinguishes breadboards, prototypes, engineering units, qualification units and operational/final units and asks what activities apply to each.
+Evidence basis: NASA V&V planning explicitly distinguishes breadboards, prototypes, engineering units, qualification units and operational/final units and asks what activities apply to each.
 Podcast use: A4–A7 and Prototype Representativeness framework.
 
 ### C-EHD-004 — A functional prototype is not equivalent to a production-ready product
@@ -98,18 +111,18 @@ Evidence basis: TRL prototype progression addresses technology demonstration; pr
 Podcast use: bridge from A8 to Episode 1.
 
 ### C-EHD-005 — Configuration management has value before production
-status: STRONG CONCEPTUAL SUPPORT
-Evidence basis: NASA describes CM as maintaining true product representation, distinguishing versions, controlling changes and keeping product/documentation consistent across design, fabrication, test, integration and operation.
+status: STRONG CONCEPTUAL SUPPORT + COMMERCIAL IMPLEMENTATION SUPPORT
+Evidence basis: NASA describes CM as maintaining true product representation, distinguishing versions, controlling changes and keeping product/documentation consistent across design, fabrication, test, integration and operation. KiCad 9 includes Git integration for tracking design changes, while Git/GitHub tagging can identify known points in firmware/software history.
 Podcast use: A8.
 
 ### C-EHD-006 — Early prototype technology choices can create downstream manufacturing debt
 status: GNR SYNTHESIS
-Rationale: highly plausible and central to podcast thesis, but needs broader empirical/industrial evidence before being presented as a general factual claim.
+Rationale: central podcast thesis but still needs broader empirical/industrial evidence tying prototype-route decisions to later redesign, tooling, qualification, supply or cost consequences.
 Podcast use: A4–A6.
 
 ### C-EHD-007 — Hardware teams should plan verification approach while defining requirements
 status: STRONG
-Evidence basis: NASA V&V guidance recommends identifying verification approach while developing requirements and uses requirement-verification matrices.
+Evidence basis: NASA V&V guidance explicitly recommends identifying verification approach while developing requirements and uses requirement-verification matrices.
 Podcast use: A1, A3, A7.
 
 ### C-EHD-008 — System interfaces deserve explicit ownership and verification
@@ -117,59 +130,69 @@ status: MODERATE/STRONG CONCEPTUAL SUPPORT
 Evidence basis: NASA SE identifies interface definition/assessment as a core systems-engineering responsibility; broader industrial corroboration still needed for startup-oriented prescriptive guidance.
 Podcast use: A2–A3.
 
-### C-EHD-009 — Commercial embedded-hardware development benefits from pre-build schematic/layout review against vendor constraints
-status: STRONG, product-family-scoped
-Evidence basis: Espressif, TI and Microchip all publish official design guides, schematic/layout checklists, reference designs and/or review workflows intended to reduce design errors and improve successful product integration.
-Podcast use: A6.
-Applicability boundary: evidence supports the principle of disciplined board review; exact checklist items are component/vendor specific.
+### C-EHD-009 — Lightweight version control is practical for small electronics/firmware teams
+status: STRONG IMPLEMENTATION SUPPORT / not a universal process prescription
+Evidence basis: KiCad 9 integrates Git directly into the project manager and supports commits, branches, push/pull and repository creation for electronics projects. GitHub tags/releases identify specific repository states.
+Podcast use: A8.
+Practical translation:
+- DEV: controlled project repository + meaningful commits + build/revision notes
+- LVP: tagged released hardware/firmware states linked to BOM/PCB/mechanical revision and test evidence
+- SVP: PLM/controlled product configuration and formal effectivity, while Git remains an engineering source/history system where appropriate
 
-### C-EHD-010 — A development board/reference design does not remove the need to verify the final end-product implementation
-status: STRONG, product-family-scoped
-Evidence basis: Espressif explicitly requires consideration/testing of the final product context for RF/antenna behavior; vendor reference designs are implementation aids, not blanket proof of the final enclosure/PCB/system performance.
-Podcast use: A4, A6, A7.
+### C-EHD-010 — Firmware revision should be part of physical-unit configuration when product behavior depends on it
+status: STRONG SYNTHESIS / needs more product-specific primary evidence in Pass 2
+Evidence basis: configuration-control logic plus tagged software/firmware history implies that the hardware serial alone is insufficient when firmware changes function, calibration, safety or test behavior.
+Podcast use: A6, A8 and later genealogy episodes.
 
-### C-EHD-011 — PCB manufacturing constraints belong in design review, not only after layout is complete
-status: MODERATE/STRONG
-Evidence basis: Microchip hardware design considerations explicitly include manufacturing constraints in layout/design checklists; commercial semiconductor vendors commonly embed layout, stack-up, via, grounding and assembly-sensitive constraints in design guidance.
-Podcast use: A6 and bridge to DFM.
+### C-EHD-011 — Engineering changes can force previously completed decisions and work to be revisited
+status: STRONG
+Evidence basis: NISTIR 7922 describes engineering change as revisiting decisions/tasks considered completed and notes significant manufactured-system cost can arise from changing specifications after systems have been built and delivered.
+Podcast use: A1, A3, A8 and Episode 31.
+Important boundary: this supports change cost/complexity qualitatively; it does not establish a universal “10x/100x cost of late change” curve.
 
-## DEV / LVP / SVP interpretation for Opening Arc
-### DEV
-- lightweight requirements and interface ownership
-- explicit prototype purpose
-- capture BOM/firmware/mechanical revision per build
-- schematic/layout checklist before fabrication
-- test plan tied to critical requirements
+### C-EHD-012 — A schematic/PCB project is a controlled multi-artifact configuration, not just a PCB file
+status: STRONG IMPLEMENTATION SUPPORT
+Evidence basis: KiCad project documentation identifies project, schematic, PCB, libraries/settings and manufacturing-output files and warns that project-level design information can be lost when artifacts are separated from the project context.
+Podcast use: A6, A8.
 
-### LVP
-- move from ad-hoc prototype build to released repeatable configuration
-- controlled component alternates
-- board fabrication/assembly constraints and test access become explicit
-- serial/lot identity and failure history become valuable
-- fixture/test repeatability matters even if assembly is manual
+## Lightweight configuration-management pattern for teams of 2–20
+This is a GNR-derived implementation pattern backed by the CM principles and tooling evidence above; it is not presented as a standard.
 
-### SVP
-- approved production component sources/alternates
-- controlled PCB fab/assembly specification
-- manufacturing test coverage and measurement capability
-- configuration/effectivity discipline
-- regulatory, reliability and supplier evidence as required by product class
+Minimum DEV baseline:
+1. one controlled repository/location for mechanical, electronics and firmware artifacts or explicit linked repositories;
+2. unique prototype/build ID;
+3. BOM/critical-component snapshot;
+4. schematic/PCB/mechanical revision identity;
+5. firmware commit/tag or immutable build identifier;
+6. short build/change log: what changed and why;
+7. test result linked to the exact unit/configuration tested.
 
-## Evidence gaps for Pass 1
-1. Commercial/startup hardware development references that address team/process scaling directly.
-2. Lightweight configuration-management patterns appropriate to teams of 2–20 people.
-3. Mechanical prototype-to-production transition case studies.
-4. Empirical evidence around late requirement/interface changes and rework cost.
-5. Prototype fidelity/representativeness literature beyond aerospace.
-6. Regulatory/product-safety discovery timing by product class.
-7. Embedded firmware release/configuration evidence linked to physical hardware revisions.
+LVP extension:
+- released baseline/tag
+- controlled approved substitutions
+- unit/lot genealogy at risk-appropriate granularity
+- rework/deviation record
+- manufacturing/test files tied to release revision
 
-## Pass-2 depth targets
-- quantify evidence for late changes/rework and manufacturing debt
-- investigate electronics DFM/DFT and PCB assembly standards/guidance
-- build a practical minimum configuration package for prototype teams
-- obtain case studies where prototype assumptions failed at low-volume build
-- separate vendor-specific layout rules from transferable engineering principles
+SVP extension:
+- formal PLM/MES/QMS/effectivity model where justified
+- supplier and production-process revisions
+- serialized/lot genealogy
+- controlled software deployment/calibration configuration
+
+## Evidence gaps remaining before A0 Breadth Complete
+1. Mechanical prototype-to-production commercial case studies.
+2. Broader prototype-fidelity/representativeness literature outside aerospace.
+3. Stronger primary evidence for firmware/hardware co-configuration in commercial products.
+4. Regulatory/product-safety discovery timing by product class.
+5. More empirical evidence tying early prototype choices to downstream manufacturing debt.
+
+## Pass-2 depth targets already identified
+- quantify/document engineering-change propagation and cost without relying on folklore multipliers;
+- collect mechanical examples where prototype process masked serial-process failure modes;
+- build PCB/PCBA production-transition source pack: DFM, panelization, assembly, test, component lifecycle and change control;
+- define practical product-configuration object linking hardware revision, BOM, firmware, calibration and test evidence;
+- compare lightweight Git-based DEV configuration control with PLM-level LVP/SVP needs.
 
 ## Editorial boundary
 The Opening Arc should teach minimum useful engineering discipline, not transplant a large-enterprise stage-gate bureaucracy into a startup. Every practice should be presented with a scaling question: what is the lightest implementation that preserves the engineering intent at DEV, LVP and SVP?
