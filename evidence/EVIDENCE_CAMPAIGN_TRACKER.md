@@ -9,7 +9,7 @@ started_on: 2026-08-09
 |---|---|---|---|
 | A0 | Early hardware development / Opening Arc | A1–A8 + bridge to Episodes 1–10 | BREADTH COMPLETE |
 | A1 | Product development / NPI / production readiness | Episodes 1–5 | BREADTH COMPLETE |
-| A2 | DFM / DFA / DFT foundations | Episodes 6–10 | IN PROGRESS — DFM/GD&T BACKBONE CAPTURED |
+| A2 | DFM / DFA / DFT foundations | Episodes 6–10 | IN PROGRESS — DFM/GD&T/DFA/DFT BACKBONE CAPTURED |
 | A3 | Manufacturing process selection / lifecycle economics | Episode 11 + process arc | QUEUED |
 | A4 | Quality foundations: PFMEA/control plan/MSA/SPC/capability | Episodes 23–24, 32 | QUEUED |
 | A5 | Pilot/PVT/ramp/yield/capacity | Episodes 26–31 | QUEUED |
@@ -18,28 +18,38 @@ started_on: 2026-08-09
 | A8 | Manufacturing Data Hub standards / semantic integration | Episodes 47–52 | QUEUED |
 
 ## A0 — Breadth result
-Opening Arc now has authoritative systems-engineering foundations plus commercial electronics/configuration corroboration. Remaining weak areas were explicitly transferred to Pass 2 rather than disguised as verified facts.
+Opening Arc has authoritative systems-engineering foundations plus commercial electronics/configuration corroboration. Remaining weak areas were explicitly transferred to Pass 2 rather than disguised as verified facts.
 
 ## A1 — Breadth result
-Product readiness now has a multi-sector evidence backbone spanning technology maturity, manufacturing maturity, production-readiness reviews, NPI production-system development and automotive launch/process-readiness practice.
+Product readiness has a multi-sector evidence backbone:
+- NASA TRL for technology maturity;
+- MRL for manufacturing maturity/progression;
+- NASA PRR for multidimensional production-readiness evidence;
+- NIST NPI research for production-system development;
+- AIAG APQP/Core Tools/PPAP for automotive launch/process-readiness corroboration;
+- NIST-hosted commercial semiconductor NPI case separating functional prototype from high-volume-manufacturing compatibility/qualification.
 
 ## A2 — Current findings
-Strong primary-source backbone now exists for two core areas:
-- NIST: early conceptual design should connect to process planning, manufacturability and manufacturing-cost assessment;
-- ASME Y14.5: GD&T is a standardized design-intent language spanning design, manufacturing/tooling and inspection.
+Backbone captured so far:
+- NIST conceptual-process-planning research for early DFM/manufacturability;
+- ASME Y14.5 / ISO GPS family for functional geometric specification and design-intent communication;
+- NIST/CIRP/assembly research showing assembly sequence, handling/time, feasibility and human factors can be design variables;
+- IEEE 1149.1 primary standards-family evidence for embedding test access into electronic architecture;
+- Keysight production-test guidance corroborating the practical connection between board design, test access and coverage.
 
-Editorial conclusions already supported:
-1. manufacturability belongs in design, not only after design release;
-2. GD&T should be taught as functional/cross-functional communication, not drafting-symbol memorization;
-3. “tighter tolerance = better engineering” is an unsafe simplification, while quantitative cost/yield consequences still require Pass-2 evidence.
+Current editorial conclusions support:
+1. DFM belongs in product design, not only after release;
+2. DFA is broader than reducing part count and should include sequence/access/handling/human-error opportunity;
+3. testability can be lost through product architecture and therefore needs early design attention;
+4. GD&T/tolerance must communicate function and be reconciled with manufacturing/inspection reality.
 
-A2 remaining breadth priorities:
-- authoritative DFA evidence and assembly-error/mistake-prevention sources;
-- DFT/test-access standards and industrial guidance;
-- material/process selection evidence;
-- serviceability/repairability evidence;
-- non-aerospace prototype-representativeness examples;
-- lifecycle/cross-process decision evidence.
+Current A2 gaps:
+- material/process selection;
+- serviceability/repairability;
+- non-aerospace prototype representativeness;
+- lifecycle/cost tradeoff evidence;
+- general-system DFT examples beyond electronics;
+- strong case studies/myths for Episodes 6–10.
 
 ## Campaign rule
 Breadth pass does not attempt exhaustive research. Each package must first identify:
@@ -53,8 +63,6 @@ Breadth pass does not attempt exhaustive research. Each package must first ident
 A package moves from IN PROGRESS to BREADTH COMPLETE only when all five items above are represented and the strongest primary sources are captured or explicitly unavailable.
 
 ## Immediate sequence
-1. Continue A2 with DFA and DFT first.
-2. Add material/process selection and serviceability.
-3. Capture representative case studies/myths for Episodes 6–10.
-4. Promote A2 to BREADTH COMPLETE only after the source-family gaps are visible and bounded.
-5. Then move to A3 — manufacturing process selection/lifecycle economics.
+1. Finish A2 with material/process selection, service/repair and prototype-representativeness source families.
+2. Promote A2 to BREADTH COMPLETE when remaining gaps are bounded.
+3. Open A3 — manufacturing process selection / lifecycle economics.
