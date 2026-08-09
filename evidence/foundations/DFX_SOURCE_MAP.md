@@ -1,6 +1,6 @@
 # DFM / DFA / DFT Foundations — Evidence Source Map
 
-status: IN PROGRESS — DFM/GD&T/DFA/DFT BACKBONE CAPTURED
+status: BREADTH COMPLETE
 campaign: A2
 maps_to: MASTER_WBS Section 2; PODCAST_MAP Episodes 6–10
 provenance: primary-source-first
@@ -15,14 +15,22 @@ Use for:
 - conceptual process planning
 - manufacturability during early design
 - assembly-design exploration/optimization
-- tolerancing/measurement/manufacturing integration
-- process selection and digital manufacturing information
+- process/material selection
+- manufacturing cost/time estimation during design
 
 Key sources:
-- NIST conceptual process-planning research: manufacturability and process planning belong in early design rather than only after release.
-- Szykman & Kim, NIST / Journal of Mechanical Design, "Combining Interactive Exploration and Optimization for Assembly Design" (1998): assembly design is treated as a design-space problem with explicit constraints, design rationale and multiple alternatives.
+- Conceptual Process Planning — A Definition and Functional Decomposition
+- Incorporating Process Planning into Conceptual Design
+- Manufacturing Process and Material Selection During Conceptual Design
+- A Decision Support System for Material and Manufacturing Process Selection
+- A Web-Based Process/Material Advisory System
+- A System for Generating Process and Material Selection Advice During Embodiment Design
 
-Applicability: strong cross-industry engineering research; specific optimization methods are examples, not universal required workflows.
+Core evidence:
+- manufacturability and manufacturing cost should be assessed during early design;
+- material and process selection are coupled multi-attribute decisions;
+- selected processes constrain detailed design;
+- alternatives should balance functional requirements with manufacturing economics rather than optimize material or process in isolation.
 
 ### ASME Y14.5 / ISO GPS standards family
 Use for:
@@ -30,155 +38,152 @@ Use for:
 - datum/reference concepts
 - communication of design intent across design, manufacturing and inspection
 - specification versus verification boundaries
-Applicability: exact standard/version and jurisdiction/customer requirements must be tracked; no copyrighted clause reproduction.
+Applicability: exact edition and customer/jurisdiction requirements must be tracked; no copyrighted clause reproduction.
 
 ### DFA academic / industrial research
 Captured source families:
-- CIRP / Procedia CIRP assembly-design literature
-- Journal of Manufacturing Systems robotic-assembly research
-- industrial ergonomics/assembly-quality research
+- NIST / Journal of Mechanical Design assembly-design work
+- CIRP assembly-sequence and operating-time literature
+- industrial electronics NPI human-factors/DFA research
 
-Key evidence captured:
-- DFA methods explicitly evaluate assembly sequence, handling/insertion or operating time rather than treating assembly as an afterthought.
-- Carter (Journal of Manufacturing Systems, 1990) used laboratory/industrial task-time data in a robotic-DFA method and showed assembly-time estimates could materially change when realistic gripper-change effects were included.
-- Kanai et al. / CIRP work uses DFA and predetermined-time standards to compare feasible assembly sequences by operating time.
-- A 2017 industrial electronics NPI study developed a human-factors design-for-assembly scorecard during early design of tasks, fixtures and tooling and linked assembly complexity/human factors to quality outcomes.
-
-Applicability boundary: Boothroyd-Dewhurst style metrics are methodology-specific; podcast conclusions should focus on transferable principles such as sequence, handling, orientation, access, force, verification and human-error opportunity.
+Core evidence:
+- assembly sequence, access, handling, orientation and operating time can be evaluated as design variables;
+- human factors and tooling/task design can influence assembly quality;
+- DFA is broader than simple part-count reduction.
 
 ### IEEE 1149.1 / boundary-scan DFT
-Primary standards-family evidence captured from IEEE working-group / standards pages.
+Primary standards-family evidence supports:
+- embedding test access during IC architecture;
+- testing assembled-board interconnections;
+- observability/control/programming/debug through standardized test access;
+- recovering testability as physical probe access decreases.
 
-IEEE 1149.1 purpose/scope supports:
-- including test logic during IC design;
-- testing interconnections after ICs are assembled onto a PCB/substrate;
-- observing, modifying or loading internal data during test/programming/configuration/debug;
-- overcoming loss of physical probe access in dense assemblies through standardized embedded test access.
-
-Applicability: electronics/PCB-specific DFT mechanism, not a universal DFT architecture for mechanical or process systems.
+Applicability: electronics-specific implementation of a broader testability principle.
 
 ### Keysight commercial DFT guidance
 Use for:
-- board-level boundary-scan implementation
+- board-level DFT implementation
 - test-access constraints in dense PCBAs
-- chain architecture and signal integrity
-- coverage analysis from schematic/netlist/BSDL data
-- practical evidence that DFT choices affect production-test coverage and debugging
+- coverage analysis
+- relationship between design choices and production-test coverage/debugging
 
-Applicability: experienced test-equipment/vendor guidance, subordinate to standards and product-specific validation.
+### Material / process / lifecycle evidence
+NIST sources now provide a strong source family showing material and process choice should be considered together during conceptual/embodiment design.
 
-### AIAG / automotive Core Tools
+Additional lifecycle source family:
+- NIST circular-product/circular-economy manufacturing models and literature
+
 Use for:
-- product/process risk linkage
-- APQP/Control Plan/FMEA/MSA/SPC/PPAP relationships
-- design/process development connection
-Applicability: automotive-specific requirements; broader engineering logic must be separated from contractual requirements.
+- downstream lifecycle stages feeding back into design decisions;
+- repair, reuse, remanufacturing and recovery as lifecycle considerations;
+- material information as a product-lifecycle decision input.
 
-### Materials/process-selection literature and databases
-Target use:
-- material/process compatibility
-- manufacturing route consequences
-- whole-chain tradeoffs
-Status: source capture still open.
+Boundary: circular-economy research does not by itself prove that every product should be field-repairable; it supports the broader claim that service/recovery consequences can be legitimate design inputs.
+
+### Prototype representativeness
+NASA systems-engineering material remains the strongest primary source captured in Breadth Pass for explicit prototype/test-article pedigree and fidelity.
+
+Core evidence:
+- prototype/engineering/qualification/final units have different pedigree and inference boundaries;
+- prototype fidelity should be sufficient for the conclusion being drawn;
+- experience from prototypes can feed manufacturing, integration and maintainability improvements.
+
+Breadth boundary:
+- non-aerospace empirical prototype-route mismatch case studies remain a Pass-2 target rather than being overstated here.
 
 ## Claim register
 
 ### C-DFX-001 — Manufacturability should be evaluated during design, not only after design release
 status: STRONG
-Evidence basis: NIST early-design/conceptual process-planning work + APQP logic.
-Podcast use: Episode 6.
+Evidence basis: NIST conceptual-process-planning / DFM work.
 
 ### C-DFX-002 — DFM optimization of one part/process can worsen whole-product assembly/test/lifecycle performance
-status: GNR SYNTHESIS
-Need: systems/cost evidence and case studies.
-Podcast use: Episodes 6, 11, 19.
+status: STRONG SYNTHESIS / case-study depth open
+Evidence basis: NIST process/material multi-attribute decision work + DFA/DFT/lifecycle sources.
+Boundary: requires case-specific tradeoff evidence; no universal numerical weighting is asserted.
 
 ### C-DFX-003 — DFA is broader than part-count reduction
 status: STRONG DIRECTION
-Evidence basis: assembly-design research explicitly models assembly sequence, geometric feasibility, handling/operating time, human factors and tooling/task design. These dimensions go beyond simply minimizing part count.
-Podcast use: Episode 7.
+Evidence basis: assembly-design research on sequence, handling, feasibility, time, tooling and human factors.
 
-### C-DFX-004 — Assembly sequence and accessibility can be engineering design variables, not merely shop-floor planning details
+### C-DFX-004 — Assembly sequence and accessibility can be engineering design variables
 status: STRONG
-Evidence basis: CIRP/NIST assembly-design research evaluates feasible sequences and their time/constraint consequences during design.
-Podcast use: Episode 7.
 
-### C-DFX-005 — Human factors in assembly can affect quality and should be considered before workstation/tooling freeze
+### C-DFX-005 — Human factors in assembly can affect quality and should be considered before tooling/workstation freeze
 status: MODERATE/STRONG INDUSTRIAL SUPPORT
-Evidence basis: industrial electronics NPI research used early human-factors/DFA methods to identify assembly-quality risks during design/ramp.
-Podcast use: Episodes 7 and 25.
 
 ### C-DFX-006 — Testability should be designed before production-test/EOL architecture is locked
-status: STRONG FOR ELECTRONICS / broader-system generalization requires care
-Evidence basis: IEEE 1149.1 explicitly embeds test-access structures into IC architecture to make assembled-board testing feasible when physical probe access is constrained. Keysight implementation guidance shows coverage depends on design choices made in the board architecture/layout.
-Podcast use: Episode 8.
+status: STRONG FOR ELECTRONICS / broader generalization bounded
 
-### C-DFX-007 — DFT is fundamentally about controllability/observability/access to the failure mechanisms or nodes being tested
-status: STRONG FOR ELECTRONICS
-Evidence basis: IEEE 1149.1 and boundary-scan practice provide a concrete standardized implementation of this principle.
-Podcast use: Episode 8.
+### C-DFX-007 — DFT is fundamentally about controllability, observability and access to what must be verified/diagnosed
+status: STRONG FOR ELECTRONICS; general systems translation is synthesis
 
-### C-DFX-008 — Dense/high-complexity electronics can lose physical test access, making embedded/architectural DFT more valuable
+### C-DFX-008 — Dense/high-complexity electronics can lose physical test access, increasing value of architectural DFT
 status: STRONG
-Evidence basis: IEEE 1149.1 working-group need statement and Keysight DFT guidance cite increasing density/limited physical access as drivers for boundary scan.
-Podcast use: Episode 8.
 
 ### C-DFX-009 — Tighter tolerances are not automatically better
 status: STRONG ENGINEERING DIRECTION
-Evidence basis: GD&T exists to communicate functional design intent and interchangeability; tolerance must be related to function rather than minimized indiscriminately. Quantitative cost/capability evidence remains Pass 2.
-Podcast use: Episode 9.
+Boundary: quantitative tolerance-cost relationships are Pass-2 work.
 
 ### C-DFX-010 — Tolerance architecture should connect function, process capability and measurement capability
 status: STRONG SYNTHESIS
-Evidence direction: ASME/ISO GPS + later MSA/capability campaign.
-Podcast use: Episode 9.
 
-### C-DFX-011 — Material selection cannot be separated from manufacturing route and supply maturity
-status: MODERATE/STRONG DIRECTION
-Need: material/process-selection literature.
-Podcast use: Episodes 6, 10, 11.
+### C-DFX-011 — Material selection cannot be separated from manufacturing route
+status: STRONG
+Evidence basis: NIST material/process selection research treats them as coupled decisions during early design.
 
-### C-DFX-012 — Prototype evidence transfers only across dimensions for which the prototype is representative
-status: STRONG CONCEPTUAL SUPPORT from A0; non-aerospace depth still open.
-Podcast use: Episodes 6, 9, 10.
+### C-DFX-012 — Material/process selection is a multi-attribute decision, not a single-property optimization
+status: STRONG
+Evidence basis: NIST decision-support/process-selection work.
 
-## Editorial conclusions now supportable
-1. DFM belongs in design, not as a release-afterthought.
-2. DFA should be taught through sequence, handling, orientation, access, force, verification and human-error opportunity — not only part count.
-3. DFT is best understood as designing access/controllability/observability before physical/product architecture removes that access.
-4. GD&T/tolerancing should communicate functional intent across design, manufacturing and inspection rather than becoming a competition to specify the smallest numbers.
-5. DEV/LVP/SVP implementations should scale the rigor, not change the underlying engineering logic.
+### C-DFX-013 — Service/repair/recovery consequences can legitimately feed back into product design
+status: MODERATE/STRONG LIFECYCLE SUPPORT
+Evidence basis: NIST circular-product/circular-economy activity models explicitly use downstream lifecycle data to inform design and include repair/remanufacturing/reuse flows.
+Boundary: product-specific repairability requirement still depends on business, safety, regulatory and lifecycle context.
+
+### C-DFX-014 — Prototype evidence transfers only across dimensions for which the prototype is sufficiently representative
+status: STRONG CONCEPTUAL SUPPORT
+Evidence basis: explicit test-article/product-form distinctions and prototype-fidelity logic in NASA systems engineering.
+Boundary: non-aerospace case-study evidence remains Pass 2.
+
+### C-DFX-015 — Process/material decisions made early constrain later detailed design and manufacturing economics
+status: STRONG
+Evidence basis: NIST conceptual/embodiment design and advisory-system research.
+
+## Editorial conclusions supportable for Episodes 6–10
+1. DFM belongs inside product design, not after release.
+2. Material and process selection should be treated together.
+3. DFA should be taught through sequence, handling, orientation, access, force, verification and human-error opportunity — not only part count.
+4. DFT is designing the access/observability/controllability needed for verification and diagnosis before product architecture removes that access.
+5. GD&T/tolerancing communicates functional intent across design, manufacturing and inspection; smaller numbers are not automatically better engineering.
+6. Service/repair/lifecycle consequences are valid design inputs when relevant to the product strategy.
+7. Prototype conclusions must be bounded by prototype fidelity and pedigree.
+8. DEV/LVP/SVP should scale implementation rigor while preserving the same engineering questions.
 
 ## DEV / LVP / SVP lens
 ### DEV
-Optimize learning speed while recording which DFX constraints are intentionally deferred. Prototype conveniences must be labeled when they remove production assembly/test constraints.
+Optimize learning speed while explicitly recording deferred DFX constraints and prototype-fidelity limits.
 
 ### LVP
-Design must support repeatable manual/semi-automated assembly, practical access, mistake-resistant orientation, economical inspection/test, controlled substitutions and sensible tolerances.
+Design for repeatable manual/semi-automated assembly, practical inspection/test access, controlled substitutions, economically sensible tolerances and feasible service/rework where intended.
 
 ### SVP
-Design/process architecture must support capability, rate, scalable suppliers/tooling, high-throughput test where justified, controlled variation, service strategy and robust failure diagnosis.
+Design/process architecture must support capability, rate, scalable tooling/suppliers, production test, controlled variation, lifecycle strategy and robust diagnostics.
 
-## Breadth gaps to close
-1. material/process-selection source backbone;
-2. serviceability/repairability evidence;
-3. non-aerospace prototype representativeness cases;
-4. cross-process lifecycle-cost decision evidence;
-5. stronger general-system DFT examples outside electronics;
-6. top myths/mistakes/case studies for Episodes 6–10.
-
-## Pass-2 candidates
+## Pass-2 depth targets
 - tolerance-cost quantitative examples;
-- DFA case studies with measured assembly-time/error reduction;
-- board/system DFT examples and test-coverage tradeoffs;
-- material/process substitution failures;
-- prototype-route mismatch case studies;
+- measured DFA assembly-time/error-reduction case studies;
+- board/system DFT coverage and defect-class tradeoffs;
+- product-specific serviceability/repair economics;
+- non-aerospace prototype-route mismatch case studies;
+- quantitative lifecycle economics and cost-per-good-part examples;
 - standards/version applicability mapping;
-- compare physical test-point access, boundary scan, functional test and software diagnostics by defect class.
+- case studies showing material/process choice forcing later redesign or manufacturing constraints.
 
 ## Readiness
-Source map: IN PROGRESS
+Source map: BREADTH COMPLETE
 Critical claims identified: YES
-Primary-source backbone: GOOD for DFM/GD&T/DFT; MODERATE for DFA
+Primary-source backbone: YES
+Weak/GNR claims visibly bounded: YES
 Applicability conflicts visible: YES
 Podcast Ready: NO
