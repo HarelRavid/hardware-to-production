@@ -1,8 +1,9 @@
 # Podcast Map
 
 status: CANONICAL PODCAST ROADMAP
-version: 1.1
+version: 2.0
 aligned_with: MASTER_WBS.md v1.0
+editorial_model: Hardware Evolution Journey
 
 ## 1. Purpose
 
@@ -14,38 +15,225 @@ The MASTER_WBS is the canonical knowledge-development roadmap and numbering auth
 
 These three structures are related but are not required to share the same numbering.
 
-## 2. Working premise
+The podcast is intended to guide a hardware team across the full journey from early development to commercial production, not only explain industrialization after a prototype already works.
+
+## 2. Audience and mission
+
+### Primary audience A — Founders and early hardware development teams
+Teams that may still be defining architecture, building first prototypes or deciding how mechanical, electronics, embedded, test and manufacturing choices fit together.
+
+The podcast should help them understand:
+- which engineering disciplines and responsibilities are needed;
+- what should be solved now versus deferred;
+- which prototype shortcuts are legitimate;
+- which shortcuts create manufacturing debt;
+- what must change before producing tens or hundreds of units;
+- what commercial production will eventually require so they can avoid designing themselves into a corner.
+
+### Primary audience B — Early production / industrialization teams
+Teams that have a first working prototype and are now:
+- upgrading prototype components into industrial/production-intent components;
+- moving from bench assembly into repeatable low-volume production;
+- building tens or hundreds of units manually or semi-automatically;
+- introducing suppliers, tooling, test, quality, documentation and traceability;
+- preparing for scalable commercial production.
+
+### Secondary audience
+- NPI and industrialization engineers
+- manufacturing and process engineers
+- quality, reliability and test engineers
+- technical founders and engineering managers
+- supply-chain and operations teams
+- product managers working with physical products
+- automation and manufacturing-data engineers
+- students transitioning into industrial hardware roles
+
+## 3. Working premise
 
 A working hardware product is not yet a production-ready product.
 
-The podcast explains the engineering, manufacturing, quality, supply-chain, operational, data and organizational changes required to move from development hardware to repeatable, scalable production.
+More importantly, decisions made before the first prototype can determine whether the product will later be manufacturable, testable, serviceable and economically scalable.
 
-## 3. Audience
+The podcast therefore follows the product through three practical production contexts:
 
-### Primary
-- Hardware development engineers
-- NPI and industrialization engineers
-- Manufacturing and process engineers
-- Technical founders and engineering managers
+### DEV — Development / Prototype
+Goal: learn, prove function, reduce technical uncertainty and expose integration problems quickly.
 
-### Secondary
-- Quality, reliability and test engineers
-- Supply-chain and operations teams
-- Product managers working with physical products
-- Automation and manufacturing-data engineers
-- Students transitioning into industrial hardware roles
+### LVP — Low-Volume Production
+Typical context: tens to hundreds of units, often manual or semi-automated, with increasing process discipline but limited justification for full automation or high-NRE tooling.
 
-## 4. Editorial rules
+### SVP — Serial / Commercial Production
+Goal: repeatable, capable, traceable, economically sustainable production at commercial scale with controlled suppliers, process, quality, change and lifecycle support.
 
-1. Episode order is optimized for understanding, not for Data Hub domain numbering.
-2. Every episode must map back to one or more MASTER_WBS domains.
+DEV / LVP / SVP are internal podcast lenses, not claimed industry-standard lifecycle terms.
+
+## 4. Hardware Evolution Ladder
+
+The recurring journey framework is:
+
+`Idea → Requirements → Architecture → POC → Integrated Prototype → Engineering Prototype → Production-Intent Hardware → LVP → Production Validation → Ramp → SVP`
+
+At every major transition the podcast evaluates at least:
+- design/configuration maturity;
+- material and component maturity;
+- BOM and supplier maturity;
+- manufacturing process maturity;
+- tooling/fixture/equipment maturity;
+- assembly method;
+- test/calibration strategy;
+- quality controls and measurement capability;
+- documentation/configuration control;
+- traceability/genealogy;
+- reliability/serviceability;
+- cost/volume economics;
+- exit evidence required to justify the next step.
+
+## 5. Recurring five-question lens
+
+Every technical episode should explicitly answer, where relevant:
+
+1. What should the team do now during DEV?
+2. What is acceptable as a prototype shortcut but dangerous to carry forward?
+3. What changes when producing tens or hundreds of units in LVP?
+4. What must change before SVP / commercial serial production?
+5. What should be designed or documented today to avoid manufacturing debt later?
+
+This lens is mandatory editorial structure, not optional commentary.
+
+## 6. Editorial rules
+
+1. Episode order is optimized for the hardware journey, not Data Hub domain numbering.
+2. Every episode must map back to one or more MASTER_WBS domains or explicitly identify a knowledge gap.
 3. Podcast claims must come from verified Data Hub claims or be visibly identified as unresolved/GNR during research.
 4. Architecture-complete Data Hub domains are not automatically Podcast Ready.
 5. Podcast Ready requires evidence verification, standards/applicability review and editorial synthesis.
 6. Manufacturing processes should be explained through decisions, trade-offs and failure modes rather than encyclopedic process lists.
 7. Cross-domain concepts should reuse the authoritative Data Hub object rather than create duplicate podcast-specific engineering truth.
+8. DEV/LVP/SVP distinctions must be used when advice changes materially with production maturity.
+9. Prototype shortcuts should be presented with an explicit expiration condition or risk where practical.
+10. Episodes should tell the listener not only what exists, but what they will need next and why.
 
-# 5. Proposed Season Architecture
+# 7. Opening Arc — Before the Product Works
+
+The Opening Arc is deliberately placed before the original industrialization journey. It closes the gap for founders and early development teams without renumbering the original 60-episode roadmap.
+
+## Opening Episode A1 — From an Idea to Engineering Requirements
+Maps primarily to: 1, 2 and requirements interfaces across the WBS.
+
+Core questions:
+- What problem are we solving and what must the hardware actually do?
+- Which requirements are functional, environmental, safety, regulatory, manufacturing or service related?
+- Which assumptions should be made explicit before CAD or PCB work accelerates?
+- What does “good enough for the first prototype” actually mean?
+
+DEV focus: build the smallest useful requirement set that prevents random engineering.
+LVP horizon: identify requirements that will later affect suppliers, inspection and process control.
+SVP horizon: recognize requirements that will become CTQs, compliance evidence or production limits.
+
+## Opening Episode A2 — The Hardware Team Map: Who Owns What?
+Maps to: 1.3 plus cross-domain ownership throughout 2–9.
+
+Coverage:
+- systems/product engineering
+- mechanical
+- electronics/PCB
+- embedded/firmware/software boundary
+- test
+- manufacturing/NPI
+- quality/reliability
+- supply chain
+- regulatory/safety boundary
+
+Core question: which responsibilities can one startup engineer temporarily combine, and which responsibilities must never disappear?
+
+## Opening Episode A3 — System Architecture and Interfaces Before Detailed Design
+Maps to: 2 and cross-domain architecture decisions.
+
+Coverage:
+- subsystem boundaries
+- mechanical/electrical/fluid/thermal/software interfaces
+- connector and service interfaces
+- power/data paths
+- load paths
+- environmental boundaries
+- interface ownership
+
+Key lesson: integration failures often originate at interfaces owned by nobody.
+
+## Opening Episode A4 — Choosing Prototype Technologies Without Trapping the Product
+Maps to: 1.1, 1.6, 2.7, 3.0, Prototype Workshop knowledge.
+
+Coverage:
+- COTS versus custom
+- breadboards/dev boards
+- 3D printing
+- CNC prototype parts
+- soft/bridge tooling
+- temporary wiring/connectors
+- lab fixtures
+- outsourced prototype fabrication
+- knowing what evidence transfers to production and what does not
+
+Anchor framework: Prototype-to-Production Representativeness Check.
+
+## Opening Episode A5 — Mechanical Design for the First Serious Prototype
+Maps to: 2.1, 2.2, 2.4, 2.5, 2.6 and relevant Section 3 process domains.
+
+Coverage:
+- architecture before detail
+- loads and interfaces
+- materials
+- fastening/joining choices
+- tolerances
+- access
+- thermal/environmental considerations
+- what can be crude in DEV and what should already reflect intended production logic
+
+## Opening Episode A6 — Electronics, PCB and Embedded Hardware for the First Serious Prototype
+Maps to: DFT/traceability/configuration aspects of Sections 2, 4, 6 and 9; detailed electronics-manufacturing expansion may require future Data Hub enrichment.
+
+Coverage:
+- dev board versus custom PCB
+- power architecture
+- connectors and harnesses
+- sensors/actuators
+- programming/debug access
+- test points
+- component lifecycle/availability
+- firmware/configuration identity
+- what changes for tens/hundreds and then serial production
+
+Editorial note: if evidence population reveals insufficient electronics-manufacturing depth in MASTER_WBS V1.0, create a controlled V1.x gap decision rather than inventing unsupported coverage.
+
+## Opening Episode A7 — Development Verification Before Production Verification
+Maps to: 1, 2.3, 2.6, 4.8, 6.6.
+
+Coverage:
+- proving function
+- abuse/boundary testing
+- environmental and load testing
+- debugging instrumentation
+- test fixtures during development
+- separating engineering validation from production acceptance testing
+- learning what should eventually become automated or controlled
+
+## Opening Episode A8 — Configuration Management from Prototype #1
+Maps to: 1.6, 6.7, 9.4–9.7.
+
+Coverage:
+- prototype IDs
+- BOM revision
+- PCB/firmware/mechanical revision
+- test result linkage
+- supplier/component substitution
+- build notes
+- why “we know what changed” stops working surprisingly early
+
+Key lesson: lightweight configuration discipline in DEV is cheaper than reconstructing history after failures appear.
+
+---
+
+# 8. Core Journey — From Working Product to Commercial Production
 
 ## Part I — Understanding the Gap
 
@@ -56,6 +244,7 @@ Core questions:
 - What separates a functional prototype from a production-ready product?
 - Why can one successful build prove very little about manufacturing readiness?
 - What is manufacturing debt?
+- Which problems become visible only when one build becomes fifty or five thousand?
 
 ### Episode 2 — POC, Prototype, MVP and Production-Intent Hardware
 Maps to: 1.1, 1.6, 2.7
@@ -97,7 +286,7 @@ Maps to: 2.6, 6.6
 
 # Part III — Manufacturing Processes: How the Part Should Actually Be Made
 
-This part is intentionally decision-oriented. The Data Hub contains the deep process encyclopedia; the podcast teaches how to choose and reason about the processes.
+This part is intentionally decision-oriented. For every process family the episode must distinguish DEV, LVP and SVP routes and explain when a bridge process should be abandoned.
 
 ## Episode 11 — How to Select a Manufacturing Process
 Maps to: 3.0, 3.1
@@ -126,7 +315,9 @@ Coverage:
 - thermoforming
 - rotational molding
 - compression/transfer/RIM
-- when machining or AM may still be better
+- machining/AM/urethane or bridge-process alternatives where applicable
+- when low-volume economics justify staying with an alternate route
+- what eventually forces the shift to serial tooling/process control
 
 ## Episode 13 — Metal Parts: Casting, Forming or Machining?
 Maps to: 3.3, 3.4, 3.6
@@ -136,6 +327,7 @@ Coverage:
 - forging/forming/extrusion
 - machining/material removal
 - near-net + finish machining
+- prototype versus low-volume versus serial route
 
 ## Episode 14 — Joining: Welding, Adhesives, Brazing, Soldering and Fasteners
 Maps to: 3.5
@@ -148,6 +340,7 @@ Coverage:
 - qualification
 - process monitoring
 - repair
+- manual joining in LVP versus process qualification/automation in SVP
 
 ## Episode 15 — Composite Manufacturing
 Maps to: 3.8
@@ -187,6 +380,8 @@ Coverage:
 ---
 
 # Part IV — Building the Production System
+
+This part marks the transition from “we can build it” to “we can build it repeatedly.” LVP examples should receive explicit emphasis before SVP systems are introduced.
 
 ## Episode 20 — From EBOM to MBOM and Process Flow
 Maps to: 4.1, 4.2
@@ -335,31 +530,41 @@ Maps to: 10.7
 ## Episode 60 — From Prototype to Production: The Full Decision Story
 Maps to: 10.8 and cross-domain synthesis
 
-# 6. Episode Research Brief
+Episode 60 should explicitly replay the Hardware Evolution Ladder and show how the same product would be treated differently in DEV, LVP and SVP.
+
+# 9. Episode Research Brief
 
 Every episode should eventually contain:
 
 1. Practical problem
-2. Representative failure scenario
-3. Definitions and boundaries
-4. What changes between development and production
-5. Roles and ownership
-6. Required deliverables
-7. Decision criteria
-8. Applicable standards and evidence
-9. Common failure modes
-10. Practical checklist
-11. Decision objects / frameworks
-12. Open questions and knowledge conflicts
-13. Guest profile and interview questions
-14. Sources for show notes
-15. Cross-links to other episodes
+2. Listener stage / Hardware Evolution Ladder position
+3. Representative failure scenario
+4. Definitions and boundaries
+5. DEV approach
+6. Prototype shortcuts and their expiration conditions
+7. LVP approach for tens/hundreds
+8. SVP / commercial-production approach
+9. What should be prepared early to avoid manufacturing debt
+10. Roles and ownership
+11. Required deliverables
+12. Decision criteria
+13. Applicable standards and evidence
+14. Common failure modes
+15. Practical checklist
+16. Decision objects / frameworks
+17. Open questions and knowledge conflicts
+18. Guest profile and interview questions
+19. Sources for show notes
+20. Cross-links to other episodes
 
-# 7. Podcast Readiness Gate
+# 10. Podcast Readiness Gate
 
 An episode is not Podcast Ready until:
 
 - relevant Data Hub domains are identified;
+- target listener stage is explicit;
+- DEV/LVP/SVP distinctions are included wherever engineering advice materially changes;
+- prototype shortcuts have limits/risks where relevant;
 - core Claims are evidence-linked;
 - standards carry revision and applicability;
 - unresolved conflicts are visible;
@@ -369,30 +574,55 @@ An episode is not Podcast Ready until:
 - common mistakes/myths are supported or clearly labeled;
 - source pack is complete enough for show notes and technical review.
 
-# 8. Research-to-Episode Workflow
+# 11. Research-to-Episode Workflow
 
-`Question → Data Hub Objects → Claims → Evidence → Standards/Conflicts → Decision Framework → Case Study → Episode Research Pack → Technical Review → Script/Recording → Show Notes`
+`Audience/Stage → Question → Data Hub Objects → Claims → Evidence → Standards/Conflicts → DEV/LVP/SVP Comparison → Decision Framework → Case Study → Episode Research Pack → Technical Review → Script/Recording → Show Notes`
 
-# 9. Anchor Frameworks
+# 12. Anchor Frameworks
 
 The podcast will progressively build and reuse the following cross-episode frameworks:
 
-1. Hardware Manufacturing Readiness Matrix
-2. Manufacturing Process Selection Framework
-3. Prototype-to-Production Representativeness Check
-4. Joint/Assembly Selection Framework
-5. Control Plan / Process Qualification Logic
-6. Pilot & Production Validation Exit Criteria
-7. Supplier Capability Assessment Framework
-8. Automation Business-Case Framework
-9. Manufacturing Data / Genealogy Model
-10. Manufacturing Atlas decision layer
+1. Hardware Evolution Ladder
+2. DEV / LVP / SVP Lens
+3. Hardware Manufacturing Readiness Matrix
+4. Manufacturing Process Selection Framework
+5. Prototype-to-Production Representativeness Check
+6. Joint/Assembly Selection Framework
+7. Control Plan / Process Qualification Logic
+8. Pilot & Production Validation Exit Criteria
+9. Supplier Capability Assessment Framework
+10. Automation Business-Case Framework
+11. Manufacturing Data / Genealogy Model
+12. Manufacturing Atlas decision layer
 
-# 10. Governance
+# 13. Audience coverage test
+
+Before approving a Part/episode sequence, verify that it serves at least one of the two primary audiences and does not accidentally require knowledge the target listener has not yet been given.
+
+### Audience A test — Founder / early development team
+Can the listener understand:
+- what disciplines and decisions are needed now;
+- what a credible next prototype should prove;
+- what future manufacturing constraints should influence today's choices;
+- how the design should evolve before tens/hundreds and commercial production?
+
+### Audience B test — First-prototype / early production team
+Can the listener understand:
+- which prototype components/processes should be industrialized first;
+- how to establish repeatable low-volume production;
+- what documentation/tooling/test/quality/supplier systems are required next;
+- what evidence is needed before commercial scale?
+
+If either intended audience is assumed to know a critical concept that has not yet appeared, add a cross-reference, prelude or episode gap rather than silently assuming it.
+
+# 14. Governance
 
 1. MASTER_WBS.md is the canonical knowledge-development and numbering roadmap.
 2. PODCAST_MAP.md is the canonical editorial roadmap.
 3. Changes to Data Hub numbering happen in MASTER_WBS first.
 4. Changes to episode sequence happen here and do not automatically renumber the Data Hub.
-5. Every new episode must map to existing MASTER_WBS domains or explicitly identify a WBS gap before publication.
-6. Deep process content lives in the Data Hub; podcast episodes synthesize and teach decisions rather than duplicate the encyclopedia.
+5. Opening Arc uses A1–A8 so the established 1–60 episode numbering remains stable.
+6. Every new episode must map to existing MASTER_WBS domains or explicitly identify a WBS gap before publication.
+7. Deep process content lives in the Data Hub; podcast episodes synthesize and teach decisions rather than duplicate the encyclopedia.
+8. DEV/LVP/SVP are editorial maturity lenses, not claimed industry-standard lifecycle names.
+9. If the Opening Arc exposes a genuine Data Hub coverage gap, record it through Knowledge OS governance before expanding MASTER_WBS V1.x.
