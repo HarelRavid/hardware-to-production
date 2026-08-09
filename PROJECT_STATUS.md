@@ -3,73 +3,67 @@
 last_updated: 2026-08-09
 status_basis: MASTER_WBS.md
 
-## Important: progress has multiple dimensions
-A domain can have its architecture complete while its knowledge population, evidence verification and podcast synthesis remain open. Therefore a single percentage can be misleading.
+## Program status
+**Knowledge Architecture V1.0: CLOSED**
+**Phase 2 — Evidence Population & Verification: ACTIVE**
+
+Architecture closure was accepted by the project owner on 2026-08-09 and recorded in `ARCHITECTURE_V1_CLOSED.md`.
 
 ## Architecture progress by top-level WBS section
-0. Governance & Knowledge OS — substantial foundation exists; canonical audit required
-1. Product Development -> Production Readiness — substantial architecture exists; canonical audit required
-2. DFM / DFA / DFT Foundations — substantial architecture exists; canonical audit required
+0. Governance & Knowledge OS — ARCHITECTURE COMPLETE
+1. Product Development -> Production Readiness — ARCHITECTURE COMPLETE
+2. DFM / DFA / DFT Foundations — ARCHITECTURE COMPLETE
 3. Manufacturing Processes — ARCHITECTURE COMPLETE
 4. Production System Engineering — ARCHITECTURE COMPLETE
 5. Pilot, Validation & Ramp — ARCHITECTURE COMPLETE
 6. Quality, Reliability & Compliance — ARCHITECTURE COMPLETE
 7. Supply Chain & Supplier Industrialization — ARCHITECTURE COMPLETE
 8. Automation & Scale — ARCHITECTURE COMPLETE
-9. Manufacturing Data Hub / Manufacturing Atlas — ARCHITECTURE COMPLETE after reconciliation with Knowledge OS
-10. Case Studies & Podcast Synthesis — editorial foundation exists; canonical architecture/systematic population remains open
+9. Manufacturing Data Hub / Manufacturing Atlas — ARCHITECTURE COMPLETE
+10. Case Studies & Podcast Synthesis — ARCHITECTURE COMPLETE
 
 ## Current position
-Canonical Sections 3–9 are architecture complete: 7 consecutive top-level sections.
-Next: audit/reconcile Sections 0–2, then close Section 10 architecture.
-
-## Relative architecture estimate
-Clearly architecture-complete canonical sections: 3–9 = 7/11 top-level sections (~64%).
-However Sections 0, 1, 2 and 10 are not empty: substantial foundation already exists in earlier work. After accounting for that foundation, practical architecture maturity is estimated at ~80–90%.
+All 11 canonical top-level Sections (0–10) are architecture complete.
+The default operating mode has changed from architecture-first to evidence-first.
 
 ## Practical project estimate
 ### A. Knowledge architecture / ontology / WBS
-Estimated: ~80–90% complete.
-Reason: Sections 3–9 are closed; Knowledge OS and early product/DFM foundations already exist but need canonical reconciliation; Section 10 needs final synthesis architecture.
+**100% complete for V1.0.**
+Future structural changes require demonstrated gaps and controlled architecture decisions.
 
 ### B. Knowledge population
-Estimated: ~25–35% complete.
-Reason: architecture now covers most of the intended universe, but many modules still contain open population backlogs for quantitative methods, industrial examples, standards, literature and domain-specific evidence.
+Estimated: ~30–40% complete.
+Reason: a large structured knowledge base exists, but many domain modules still need quantitative methods, standards, literature, case studies and source-backed examples.
 
 ### C. Evidence verification / standards extraction
 Estimated: ~15–25% complete.
-Reason: verified sources exist in parts of the repository, but many claims remain intentionally marked GNR and clause-level standards extraction remains a major workstream.
+Reason: many important sources are already present, but GNR remains extensive and clause-level standards verification is a major remaining workstream.
 
 ### D. Podcast-ready research packs
 Estimated: ~15–20% complete.
-Reason: editorial/podcast mapping exists and architecture is approaching closure, but most topics still need evidence population, conflict resolution and episode-level synthesis.
+Reason: `PODCAST_MAP.md`, case-study architecture and Episode Research Pack templates are ready; most episodes still need evidence population and synthesis.
 
 ### E. Overall program maturity
-Estimated: ~40–50% complete.
+Estimated: ~45–55% complete.
 This is a planning estimate, not a mathematically measured completion percentage.
 
-## Major remaining architecture milestones
-1. Audit/reconcile Section 0 — Governance & Knowledge OS
-2. Audit/reconcile Section 1 — Product Development -> Production Readiness
-3. Audit/reconcile Section 2 — DFM / DFA / DFT Foundations
-4. Close Section 10 — Case Studies & Podcast Synthesis architecture
-5. Run whole-WBS architecture gap audit and cross-link audit
+## Active roadmap
+`EVIDENCE_POPULATION_ROADMAP.md` is now the primary Phase 2 execution roadmap.
 
-## Phase transition ahead
-After canonical architecture closure, shift deliberately from architecture-first to evidence-first population:
-- standards and clause-level applicability
-- handbooks/books
-- peer-reviewed papers
-- manufacturer/industry guidance
-- industrial case studies
-- quantitative process windows/capability evidence
-- claim verification/conflict resolution
-- decision-model population
-- episode research packs and scripts
+Initial evidence priorities:
+1. cross-domain NPI/DFX/quality/ramp/supplier/automation foundations;
+2. high-leverage manufacturing-process evidence;
+3. current standards and clause-level applicability;
+4. GNR claim verification;
+5. industrial case studies;
+6. Podcast Research Packs and show-note source packs.
+
+## Phase 2 working rule
+Question / Decision -> Knowledge Objects -> Claims -> Evidence -> Applicability -> Conflicts / Assumptions -> Verification -> Decision Framework -> Case Study -> Podcast Research Pack.
 
 ## Manufacturing Atlas status
-Section 9 architecture is now complete. The Atlas is defined as the semantic/navigation/decision layer connecting product, process, resource, genealogy, quality and Knowledge OS graphs while respecting authoritative source systems and historical truth.
+Section 9 architecture is complete. The Atlas is the semantic/navigation/decision layer connecting product, process, resource, genealogy, quality and Knowledge OS graphs while respecting authoritative source systems, temporal truth and controlled write authority.
 
 ## Critical warning
-Architecture COMPLETE does not mean Podcast Ready.
-Architecture tells us what must be known and how it relates. Evidence population determines what we can responsibly teach, compare and recommend.
+Architecture COMPLETE does not mean the content is verified or Podcast Ready.
+Phase 2 exists to convert structured knowledge into evidence-backed engineering guidance.
