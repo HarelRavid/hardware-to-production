@@ -1,11 +1,19 @@
 # Phase 2 — Evidence Population & Verification Roadmap
 
 status: ACTIVE
-version: 1.0
+version: 1.1
 started_on: 2026-08-09
+updated_on: 2026-08-10
 
 ## Objective
-Move from architecture-complete knowledge structure to source-backed, scoped and Podcast-Ready engineering knowledge.
+Move from architecture-defined knowledge structure to source-backed, scoped and Podcast-Ready engineering knowledge.
+
+## Architecture maturity terminology
+- **DEFINED** — coherent conceptual architecture exists.
+- **EVIDENCE VALIDATED** — important architecture/engineering claims have been checked against authoritative evidence with applicability limits.
+- **IMPLEMENTATION VALIDATED** — architecture has been exercised against a representative implementation/reference dataset and conflict/failure cases.
+
+Architecture V1.0 closure records that the canonical structure is DEFINED; it does not imply evidence or implementation validation.
 
 ## Prioritization model
 Each work package should be ranked by:
@@ -18,14 +26,16 @@ Each work package should be ranked by:
 - availability of strong primary sources
 
 ## Priority A — Foundational cross-domain evidence
-1. Product development / NPI / EVT-DVT-PVT / production readiness terminology and evidence boundaries
-2. DFM / DFA / DFT foundational methods
-3. Process-selection frameworks and lifecycle economics
-4. Quality foundations: PFMEA/control plans/MSA/SPC/capability
-5. Pilot/PVT/ramp/yield/capacity definitions and evidence
-6. Supplier industrialization / qualification / change control
-7. Automation business case / qualification / OEE boundaries
-8. Manufacturing Data Hub semantic and integration standards
+1. Early hardware development / Opening Arc
+2. Product development / NPI / EVT-DVT-PVT / production readiness
+3. DFM / DFA / DFT foundational methods
+4. Process-selection frameworks and lifecycle economics
+5. Quality foundations: PFMEA/control plans/MSA/SPC/capability
+6. Pilot/PVT/ramp/yield/capacity definitions and evidence
+7. Supplier industrialization / qualification / change control
+8. Automation business case / qualification / OEE boundaries
+9. Manufacturing Data Hub semantic and integration standards
+10. OT/ICS cybersecurity for connected manufacturing environments
 
 ## Priority B — Manufacturing-process standards and evidence
 For each process family in Section 3:
@@ -55,7 +65,7 @@ Recommended population order for podcast leverage:
 13. Ceramics/Powder-Based Manufacturing
 14. Process Integration
 
-## Priority C — Standards extraction
+## Priority C — Standards extraction & applicability
 Create/maintain clause-level Standard Objects for standards that materially support episode-critical claims or engineering decisions.
 
 Minimum metadata:
@@ -68,6 +78,13 @@ Minimum metadata:
 - normative/informative role
 - claims/decisions supported or bounded
 - supersession/history
+
+### Applicability Statement reference implementations
+Build at least two worked examples during Phase 2:
+1. **Process/requirement example:** ISO 21307 or another suitably bounded manufacturing standard, demonstrating Standard -> Clause/Evidence -> Claim -> Applicability Statement -> Decision linkage.
+2. **System/integration example:** ISA-95/IEC 62264 or IEC 62443, demonstrating applicability across system boundary, role, context and architecture decision.
+
+The purpose is to validate the Applicability Statement object and workflow, not to imply that these standards apply universally.
 
 ## Priority D — Claim verification campaign
 For each domain:
@@ -90,6 +107,7 @@ Target case studies that teach transferable decisions rather than only famous st
 - yield/ramp recoveries
 - process-change failures
 - traceability/quality escapes
+- OT/ICS integration/security failures where lessons are relevant to connected production systems
 
 ## Priority F — Podcast Research Packs
 Use PODCAST_MAP.md as editorial priority, but do not promote an episode to Podcast Ready until:
@@ -99,6 +117,19 @@ Use PODCAST_MAP.md as editorial priority, but do not promote an episode to Podca
 - quantitative examples are scoped;
 - at least one useful case/example is included where appropriate;
 - show-note sources are assembled.
+
+## Dedicated OT/ICS evidence package
+Before the Manufacturing Data/AI/Security podcast arc is Podcast Ready, create an evidence package covering as applicable:
+- IEC 62443 family structure and applicability;
+- zones/conduits and segmentation;
+- identity/access for users, machines and services;
+- remote/vendor access;
+- IT/OT boundary design;
+- secure write-back to operational systems;
+- patch/change/configuration constraints;
+- logging/monitoring/incident response;
+- safety/security interaction;
+- applicability to startups/LVP versus larger SVP environments.
 
 ## Phase 2 operating rhythm
 ### Pass 1 — Breadth
