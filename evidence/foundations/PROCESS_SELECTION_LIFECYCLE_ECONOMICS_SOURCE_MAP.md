@@ -1,6 +1,6 @@
 # Manufacturing Process Selection & Lifecycle Economics — Evidence Source Map
 
-status: IN PROGRESS — BRIDGE MANUFACTURING BACKBONE CAPTURED
+status: BREADTH COMPLETE
 campaign: A3
 maps_to: MASTER_WBS 3.0, 3.1 and cross-process economics; PODCAST_MAP Episode 11 + process arc
 provenance: primary-source-first
@@ -51,6 +51,30 @@ Evidence role:
 - manufacturing economics can be decomposed into broader standardized cost categories and supply-chain components;
 - useful for reinforcing cost-boundary discipline;
 - not a direct part-level process-selection calculator and must not be presented as one.
+
+### NIST MEP — Supplier selection and capacity guidance
+Evidence role:
+- supplier selection should not default to piece price;
+- total cost can improve even when a supplier's quoted component price is higher if the supplier removes internal processing, logistics or other burden;
+- supplier quality systems, capacity, staffing, equipment, maintenance and logistics affect real production risk/cost;
+- supplier capacity and capability are therefore valid process-route decision inputs.
+
+Applicability boundary: MEP guidance is practitioner-oriented and should not be treated as a normative supplier-capacity threshold standard.
+
+### NIST — Electronics manufacturing supply-chain information models
+Evidence role:
+- vendor process capability can be compared directly with product manufacturing requirements;
+- supports the principle that supplier capability is part of process-route feasibility, not an afterthought after a process is selected.
+
+### NIST MEP — First-pass-yield / rework case evidence
+Evidence role:
+- case evidence shows that rework/poor FPY can materially consume time and cost and that improving FPY can free capacity and reduce processing burden;
+- supports inclusion of yield/rework in route economics, while not implying a universal quantitative cost relationship.
+
+### NIST — Deburring/chamfering process-improvement case
+Evidence role:
+- process consistency improvements reduced rework/scrap and manufacturing cost in the documented application;
+- reinforces that secondary operations and rework can materially affect total route economics.
 
 ### Commercial bridge-manufacturing examples — Protolabs
 Evidence role:
@@ -128,7 +152,7 @@ For two candidate routes A and B, a useful first-order educational model is:
 TotalCost_A(Q) = Fixed_A + Q * VariableGoodPart_A
 TotalCost_B(Q) = Fixed_B + Q * VariableGoodPart_B
 
-where VariableGoodPart must use expected good output rather than ideal machine-cycle cost when yield/rework/inspection materially differ.
+where VariableGoodPart should reflect expected accepted output and route-specific burdens when yield, rework, inspection or secondary operations materially differ.
 
 Simple break-even quantity, only when assumptions are sufficiently linear:
 Q* = (Fixed_B - Fixed_A) / (VariableGoodPart_A - VariableGoodPart_B)
@@ -167,6 +191,21 @@ Do not use fixed universal quantities such as 10/100/1,000/10,000 as engineering
 - automation/tooling now meets ROI and flexibility needs;
 - commercial schedule, inventory or supply economics favor the target route.
 
+## Make-versus-buy boundary
+A3 answers **which manufacturing route/process chain best fits the product and production context**.
+A6 answers **which supplier/source/industrialization strategy should execute that route**.
+
+The decisions overlap when supplier-specific capability, capital, lead time, capacity, IP, quality or logistics changes the feasible route itself.
+
+### Make/buy questions retained in A3 only when they change route feasibility
+- Do we already own capable equipment/tooling/process knowledge?
+- Is required supplier capability commercially available?
+- Does outsourcing remove or add secondary operations/logistics burden?
+- Does the supplier's demonstrated capacity match the target rate?
+- Does internal production require NRE/capital that changes the process break-even?
+
+Detailed supplier qualification, contracting, resilience and change control remain in A6.
+
 ## Claim register
 
 ### C-PS-001 — Manufacturing-process selection is a multi-attribute decision, not a single-variable unit-cost choice
@@ -186,8 +225,8 @@ status: STRONG DIRECTION
 Evidence basis: NIST process models include sequences, setup, handling and processing; deeper quantitative process-chain cases remain Pass 2.
 
 ### C-PS-005 — Lowest quoted piece price is not necessarily lowest cost per good part
-status: STRONG SYNTHESIS
-Evidence basis: NIST cost/process models and AM supply-chain literature show relevant costs outside nominal transformation price. Quantitative examples remain Pass 2.
+status: STRONG
+Evidence basis: NIST cost/process work plus NIST MEP supplier-selection guidance explicitly distinguishes quoted unit cost from total-cost consequences.
 
 ### C-PS-006 — Prototype convenience is not sufficient evidence for serial-process selection
 status: STRONG SYNTHESIS from A0/A2/A3
@@ -199,15 +238,15 @@ Evidence basis: NIST AM economics supports tooling-avoidance/low-batch advantage
 
 ### C-PS-008 — '3D printing is always cheaper at low volume' is false as a universal rule
 status: STRONG
-Evidence basis: NIST SP 1176 reports many instances where AM product cost exceeds traditional methods while identifying contexts where small-batch economics can favor AM.
+Evidence basis: NIST AM economics reports contexts where small-batch economics can favor AM while emphasizing the limitations and context-dependence of cost studies.
 
 ### C-PS-009 — A process-cost comparison is incomplete if its system boundary omits material secondary costs that differ between routes
 status: STRONG DIRECTION
 Evidence basis: NIST AM supply-chain review explicitly notes that many comparisons omit inventory, transportation and supply-disruption effects.
 
-### C-PS-010 — Cost-per-good-part should use expected accepted output, not ideal cycle economics, when routes differ materially in yield/rework/inspection
-status: ENGINEERING SYNTHESIS — NEEDS DIRECT CORROBORATION
-Keep visible for Pass 2 rather than promote to verified fact solely from logic.
+### C-PS-010 — Yield, rework and inspection can materially alter effective route economics and capacity
+status: STRONG DIRECTION + INDUSTRIAL CASE SUPPORT
+Evidence basis: NIST MEP FPY/rework case evidence and NIST process-improvement case evidence show major time/cost/capacity effects from rework, scrap and process consistency. General part-level equations remain Pass 2.
 
 ### C-PS-011 — Bridge manufacturing can reduce schedule/capital risk before final production commitment
 status: MODERATE/STRONG INDUSTRIAL SUPPORT
@@ -223,6 +262,14 @@ status: STRONG SYNTHESIS from A0/A2
 Basis: process/material/tooling changes can alter failure mechanisms, tolerance distributions, surface state, residual stress, assembly behavior or inspection strategy.
 Pass 2: collect concrete commercial cases.
 
+### C-PS-014 — Supplier capability and capacity can change whether a nominally suitable process route is actually feasible
+status: STRONG
+Evidence basis: NIST electronics supply-chain capability modeling and NIST MEP supplier-selection/capacity guidance.
+
+### C-PS-015 — Make-versus-buy should not be separated from route economics when ownership/capital/capability changes fixed cost, capacity, lead time or risk
+status: STRONG SYNTHESIS
+Evidence basis: process-selection economics + supplier capability/capacity/TCO evidence. Detailed sourcing policy remains A6.
+
 ## DEV / LVP / SVP lens
 ### DEV
 Optimize learning speed and reversibility. Tooling avoidance can be economically valuable, but record which prototype-route assumptions do not transfer to production.
@@ -235,20 +282,27 @@ Evaluate stable process chains using capacity, yield, capability, tooling life/a
 
 ## Myth register
 - '3D printing is always cheaper at low volume' — REJECT as universal claim; context dependent.
-- 'Injection molding is always cheapest at volume' — OPEN; likely directionally common in appropriate geometry/material but requires assumptions and counterexamples.
-- 'CNC is too expensive for production' — OPEN; cannot state without geometry/material/tolerance/volume/automation context.
+- 'Injection molding is always cheapest at volume' — REJECT as universal claim; requires geometry/material/tooling/yield/capacity assumptions.
+- 'CNC is too expensive for production' — REJECT as universal claim; depends on geometry/material/tolerance/volume/automation and route alternatives.
 - 'The process with the lowest quote wins' — REJECT as decision rule.
 - 'Break-even volume is a property of the process' — REJECT; it is a property of compared routes and assumptions.
 - 'Once volume reaches X, switch processes' — REJECT as universal rule.
+- 'Outsourcing is always cheaper because the supplier owns the machines' — REJECT as universal rule; total cost and risk depend on capability, capacity, logistics, quality and internal alternatives.
 
-## Breadth gaps to close
-1. direct authoritative treatment of yield/rework/inspection in part-level cost-per-good-part;
-2. tooling/NRE/tool-life and stepped-capacity economics outside AM;
-3. cross-process bridge cases across metals/polymers beyond supplier examples;
-4. supplier maturity/capacity as process-selection variable;
-5. cross-process cases: injection molding vs machining/AM, casting + machining, forming + finish operations;
-6. explicit make-versus-buy boundary and when it belongs to A3 versus supplier campaign;
-7. stronger evidence for design-change flexibility versus dedicated-tooling lock-in.
+## Breadth-result boundary
+Breadth is complete because the package now contains:
+1. authoritative source families;
+2. episode-critical claims;
+3. explicit weak/GNR areas;
+4. applicability/conflict boundaries;
+5. clear Pass-2 depth targets.
+
+Remaining work is depth rather than missing architecture:
+- transparent cross-process numerical comparisons;
+- tool-life/cavity/stepped-capacity economics;
+- quantitative yield/rework/inspection cost models;
+- bridge-route case studies across metals/polymers;
+- detailed make/buy models and supplier qualification in A6.
 
 ## Pass-2 candidates
 - transparent break-even examples with stated assumptions rather than universal thresholds;
@@ -261,11 +315,12 @@ Evaluate stable process chains using capacity, yield, capability, tooling life/a
 - cases where a bridge process masked a serial-route failure mechanism.
 
 ## Readiness
-Source map: IN PROGRESS — BRIDGE MANUFACTURING BACKBONE CAPTURED
+Source map: BREADTH COMPLETE
 Critical claims identified: YES
 Primary-source backbone: YES
 Volume/tooling direction: YES, quantitative generalization intentionally avoided
 Bridge-manufacturing evidence: CAPTURED
 Cost-boundary model: DEFINED
-Quantitative process-chain cases: OPEN
+Make/buy boundary: DEFINED
+Quantitative process-chain cases: PASS 2
 Podcast Ready: NO
