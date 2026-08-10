@@ -13,32 +13,34 @@ started_on: 2026-08-09
 | A3 | Manufacturing process selection / lifecycle economics | Episode 11 + process arc | BREADTH COMPLETE |
 | A4 | Quality foundations: PFMEA/control plan/MSA/SPC/capability | Episodes 23–24, 32 | BREADTH COMPLETE |
 | A5 | Pilot/PVT/ramp/yield/capacity | Episodes 26–31 | BREADTH COMPLETE |
-| A6 | Supplier industrialization / qualification / change control | Episodes 30, 37–40 | IN PROGRESS — ACTIVE CAMPAIGN |
-| A7 | Automation business case / qualification / OEE | Episodes 41–46 | QUEUED |
+| A6 | Supplier industrialization / qualification / change control | Episodes 30, 37–40 | BREADTH COMPLETE |
+| A7 | Automation business case / qualification / OEE | Episodes 41–46 | IN PROGRESS — ACTIVE CAMPAIGN |
 | A8 | Manufacturing Data Hub standards / semantic integration | Episodes 47–52 | QUEUED |
 
 ## A5 — Breadth result
-Pilot/ramp/capacity now has a decision-oriented evidence backbone:
-- NASA PRR criteria for readiness to produce the required number of systems with production plans, controls, resources, documentation and production configuration;
-- AIAG PPAP production-run logic for consistent quality at production rates in automotive contexts;
-- NIST MEP evidence connecting FPY/rework to processing time, lead time and released capacity;
-- NIST throughput/bottleneck research showing system throughput and bottleneck location depend on linked resources and product mix;
-- explicit distinctions among takt, cycle time, throughput, capacity, lead time and WIP;
-- sustained-run-at-rate framework that records duration, mix, accepted output, downtime, rework, staffing and abnormal intervention;
-- ramp-learning and engineering-change cut-in/effectivity framework.
+Pilot/ramp/capacity has a decision-oriented evidence backbone covering production-readiness criteria, run-at-rate logic, FPY/rework flow impact, takt/cycle/throughput/capacity distinctions, bottleneck/WIP reasoning, sustained-rate evidence and ramp change/effectivity.
+
+## A6 — Breadth result
+Supplier industrialization now has a cross-sector evidence backbone:
+- NIST MEP supplier-selection/TCO/resilience guidance;
+- SAE AS9102C for aerospace First Article Inspection boundaries;
+- AIAG PPAP for production-process approval, actual production runs/rates and submission/notification logic in automotive contexts;
+- PRI/Nadcap for process-specific technical accreditation and recurring oversight of aerospace/defense critical processes;
+- explicit separation of supplier selection, first-article verification, production-process approval, ongoing capability and resilience;
+- supplier-change/effectivity/requalification model;
+- sub-tier/common-mode dependency and dual-source resilience logic.
 
 Editorial conclusions supported:
-1. pilot/PVT tests the production system, not only product function;
-2. production representativeness is multidimensional;
-3. one successful build is weak evidence of repeatability;
-4. yield/rework consume flow and capacity;
-5. system capacity should be reasoned from constraints rather than average local utilization;
-6. hitting target rate briefly is not equivalent to sustainable run-at-rate;
-7. WIP accumulation is a diagnostic signal, not proof of output;
-8. ramp improvement should be tied to actual learning/intervention mechanisms;
-9. engineering changes during ramp require controlled effectivity and revalidation impact assessment.
+1. supplier selection is not supplier qualification;
+2. a conforming first article is not proof of serial capability;
+3. FAI and PPAP answer different questions and have different applicability;
+4. supplier approval is configuration/process/site/sub-tier dependent;
+5. critical/special processes may require qualification of the process itself, not only final inspection;
+6. capacity is distinct from technical capability;
+7. two nominal sources can share one hidden failure mode;
+8. ongoing supplier performance/change control matters after initial approval.
 
-A5 Pass-2 targets include worked run-at-rate, WIP/bottleneck, learning/ramp, pilot-readiness and change-effectivity cases.
+A6 Pass-2 targets include worked FAI-vs-PPAP comparison, supplier change case, capacity/run-at-rate case, special-process/sub-tier escape case, scorecard model and hidden-common-mode dual-source case.
 
 ## Campaign rule
 Breadth pass does not attempt exhaustive research. Each package must first identify:
@@ -49,10 +51,10 @@ Breadth pass does not attempt exhaustive research. Each package must first ident
 5. Pass-2 depth targets.
 
 ## Promotion rule
-A package moves from IN PROGRESS to BREADTH COMPLETE only when all five items above are represented and the strongest primary sources are captured or explicitly unavailable.
+A package moves from IN PROGRESS to BREADTH COMPLETE when all five items above are represented and the strongest primary sources are captured or remaining gaps are explicitly bounded for Pass 2.
 
 ## Immediate sequence
-1. A6 — Supplier Industrialization / Qualification / Change Control.
-2. Build evidence for supplier capability versus quotation, qualification/PPAP/FAI boundaries, special-process/sub-tier control, supplier change notification, dual sourcing and supplier performance/resilience.
-3. Keep automotive/aerospace/customer-specific requirements distinct from transferable general manufacturing principles.
-4. After A6 breadth, move to A7 Automation / Qualification / OEE.
+1. A7 — Automation Business Case / Qualification / OEE.
+2. Build evidence for when not to automate, automation ROI/TCO, process maturity prerequisites, FAT/SAT/qualification, OEE interpretation, maintenance/reliability and human/automation boundaries.
+3. Separate automation feasibility from automation desirability.
+4. After A7 breadth, move to A8 Manufacturing Data Hub standards / semantic integration and OT/ICS evidence.
