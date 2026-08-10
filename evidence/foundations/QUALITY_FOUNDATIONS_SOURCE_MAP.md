@@ -1,166 +1,163 @@
 # Quality Foundations — PFMEA, Control Plan, MSA, SPC & Capability — Evidence Source Map
 
-status: IN PROGRESS — SPC/CAPABILITY/METROLOGY BACKBONE CAPTURED
+status: BREADTH COMPLETE
 campaign: A4
 maps_to: MASTER_WBS 4.7, 4.8, 4.9, 6.1–6.4; PODCAST_MAP Episodes 23–24, 32
 provenance: primary-source-first
 
 ## Purpose
-Build the evidence backbone for the quality system that connects product/process risk to controls, measurement adequacy, statistical stability and capability.
+Build the evidence backbone for the quality system that connects product/process risk to controls, measurement adequacy, statistical stability, capability and reaction.
 
-## Source backbone
+## Authoritative source backbone
 
 ### AIAG / Automotive Core Tools
 Evidence role:
-- APQP relationship to DFMEA/PFMEA, Control Plan, MSA, SPC and PPAP;
-- risk-to-control linkage;
-- measurement-system and capability expectations in automotive contexts.
-Applicability: contractual/industry-specific requirements must not be generalized as universal manufacturing law.
-Status: primary mapping still to be deepened.
+- APQP, PFMEA, Control Plan, MSA, SPC and PPAP are intended as linked quality-planning/control tools in automotive contexts;
+- AIAG training/material explicitly links Process Flow, PFMEA and Control Plan and teaches using APQP/FMEA information to construct Control Plans;
+- current Control Plan material includes prototype, pre-launch/safe-launch and production contexts.
 
-### ISO 9001 and sector QMS overlays
+Key sources:
+- AIAG & VDA Process FMEA: Understanding and Implementing with Control Plans
+- AIAG Control Plan manual / Control Plan Understanding and Implementing
+- AIAG Core Tools Support material showing explicit relational links among Process Flow, PFMEA and Control Plan
+
+Applicability boundary: automotive Core Tools are not universal legal requirements for all hardware sectors. Podcast use should extract engineering logic and identify sector-specific obligations separately.
+
+### NIST / SEMATECH statistical engineering
 Evidence role:
-- quality planning, control of nonconforming outputs, monitoring/measurement and documented evidence boundaries.
-Applicability: management-system requirements are not substitutes for technical process-capability methods.
-Status: clause-level mapping reserved for Pass 2.
+- process control/stability is distinct from capability/conformance;
+- control limits are derived from process behavior and are not engineering specification limits;
+- capability analysis compares a stable process distribution with specification limits and requires data/model assumptions.
 
-### NIST/SEMATECH e-Handbook — Process Monitoring and Control
+### NIST Gauge R&R / measurement-system references
 Evidence role:
-- explicitly separates process control/stability from process capability;
-- capability compares the natural variation of a stable/in-control process with engineering specification limits;
-- Cp/Cpk/Cpm require stated assumptions and sufficient data;
-- NIST notes common capability-index estimates generally need a sufficiently large independent sample and commonly assume normality for the standard formulas;
-- an in-control process can still be unacceptable relative to specifications, which is treated as a distinct problem from an out-of-control process.
+- production gauges can require characterization of repeatability, reproducibility, stability, bias, resolution, linearity, hysteresis, drift and configuration/operator effects;
+- measurement adequacy is broader than calibration status.
 
-Editorial consequence: control limits and specification limits must never be taught as interchangeable concepts.
-
-### NIST/SEMATECH e-Handbook — Measurement Process Characterization
+### ASQ SPC references
 Evidence role:
-- measurement is itself a process with bias, short-term variability, long-term variability and uncertainty;
-- measurement-process quality requires characterization/control when metrology error matters;
-- production-process conclusions can be distorted when measurement error is material.
+- control charts are diagnostic tools used to detect common/special-cause variation and support process-control decisions;
+- reaction should be based on the nature of process variation rather than indiscriminate adjustment.
 
-### NIST — Metrology and Process Control: Dealing with Measurement Uncertainty
-Evidence role:
-- measurements used to adjust manufacturing processes carry uncertainty;
-- uncertainty creates decision risk: good product can be rejected and faulty product can pass;
-- measurement uncertainty must be related to tolerance and decision consequence rather than ignored.
+## Canonical quality chain
+Requirement / CTQ -> failure mechanism / risk -> prevention/detection control -> measurement method -> measurement-system adequacy -> data collection -> stability assessment -> capability assessment -> reaction plan / quality gate -> learning into PFMEA/Control Plan.
 
-### NIST — Measurement Uncertainty
-Evidence role:
-- measurement results require a defined measurand/reference and carry uncertainty;
-- supports the broader principle that measured data is evidence with quality/uncertainty, not perfect truth.
+This sequence is editorial synthesis, not a single standard requirement.
 
-### NIST — Model-Based Manufacturing Capability Definition
-Evidence role:
-- manufacturing capability is dynamic and decision/context dependent;
-- measured/predicted capability should inform lifecycle and manufacturing decisions.
-Applicability: this project is broader manufacturing-systems research, not a replacement for Cp/Cpk definitions.
-
-### ISO/IEC 17025 and metrology references
-Evidence role:
-- calibration/testing competence and traceability boundaries;
-- measurement uncertainty and evidence quality where applicable.
-Applicability: laboratory accreditation requirements do not automatically apply to every shop-floor measurement activity.
-Status: applicability mapping remains open.
-
-## Core conceptual chain
-Risk / failure mechanism -> CTQ / requirement -> prevention/control method -> measurement/test method -> measurement adequacy -> process monitoring -> stability assessment -> capability assessment -> reaction plan / quality gate -> NCR/CAPA learning.
-
-The chain is intentionally directional: capability statistics should not be the starting point if the CTQ, measurement method or process state is not understood.
-
-## Claim register
+## PFMEA -> Control Plan logic
+PFMEA identifies process failure modes, effects, causes and current/preventive/detection controls. The Control Plan operationalizes selected controls into production characteristics, control/measurement methods, sample/frequency and reaction expectations.
 
 ### C-QF-001 — PFMEA and Control Plan should be linked rather than treated as independent paperwork
-status: STRONG DIRECTION / PRIMARY MAPPING OPEN
-Evidence target: AIAG Core Tools / APQP-Control Plan-FMEA relationships.
+status: STRONG FOR AUTOMOTIVE CORE-TOOLS CONTEXT / STRONG TRANSFERABLE LOGIC
+Evidence basis: AIAG material explicitly teaches Process FMEA and Control Plan linkages and construction of Control Plans using APQP/FMEA outputs.
+Podcast use: Episode 23.
 
-### C-QF-002 — Inspection does not substitute for a capable/stable process
-status: STRONG ENGINEERING DIRECTION
-Evidence basis: NIST distinguishes process monitoring/control, capability and acceptance sampling as different activities. Deeper direct corroboration remains Pass 2.
-
-### C-QF-003 — Measurement-system adequacy must be understood before interpreting process capability or making measurement-driven process decisions
-status: STRONG
-Evidence basis: NIST measurement-process characterization and metrology/process-control uncertainty work.
-Boundary: the required MSA method depends on measurement technology, decision and industry; Gauge R&R is not the only valid measurement-system analysis.
-
-### C-QF-004 — Control limits and specification limits answer different questions
-status: STRONG
-Evidence basis: NIST control-chart limits derive from process behavior/historical variability; engineering specification limits define acceptable product requirements and are used separately in capability analysis.
-
-### C-QF-005 — A process can be statistically stable yet incapable of meeting specifications
-status: STRONG
-Evidence basis: NIST explicitly treats the condition 'in control but unacceptable' separately and defines capability as comparison of a stable process to specification limits.
-
-### C-QF-006 — Capability indices are meaningful only under stated assumptions and data conditions
-status: STRONG
-Evidence basis: NIST capability guidance states standard Cp/Cpk/Cpm estimates require sufficient independent data and standard formulas assume a distribution model such as normality.
-Editorial rule: never present a Cp/Cpk value without process state, data basis and relevant assumptions.
-
-### C-QF-007 — Quality controls should be selected from failure/risk mechanisms and CTQs rather than generic inspection habit
+### C-QF-002 — Risk analysis is useful only if important risks change design/process controls, validation or monitoring
 status: STRONG SYNTHESIS
-Evidence target: PFMEA/Control Plan methodologies and process-specific examples.
+Boundary: scoring/ranking methods are methodology-specific; do not turn RPN or Action Priority into universal engineering truth.
 
-### C-QF-008 — Measurement uncertainty can create both false reject and false accept risk
+## MSA boundary
+A measurement system should be evaluated in relation to the decision it supports.
+
+### C-QF-003 — Calibration alone does not prove a measurement system is adequate for a production decision
 status: STRONG
-Evidence basis: NIST metrology/process-control research.
+Evidence basis: NIST Gauge R&R explicitly evaluates repeatability, reproducibility, stability, bias, resolution, linearity, hysteresis, drift and configuration effects.
+Podcast use: Episode 24.
 
-### C-QF-009 — Statistical control is not the same as product conformance
+### C-QF-004 — Measurement-system adequacy should be understood before interpreting small process differences or capability indices
+status: STRONG DIRECTION
+Evidence basis: observed variation can include both process and measurement effects; direct quantitative acceptability thresholds depend on method/industry/decision.
+
+## SPC and capability
+### C-QF-005 — Control limits and specification limits answer different questions
 status: STRONG
-Evidence basis: NIST separation of process-control and capability/acceptance questions.
+Control limits characterize expected process behavior under the charting model; specifications come from product/engineering requirements.
+Podcast use: Episode 32.
 
-### C-QF-010 — A capability statistic calculated from a materially inadequate measurement system can misrepresent the underlying manufacturing process
+### C-QF-006 — Stable does not mean capable
+status: STRONG
+A process can be statistically stable and still fail to meet specifications adequately.
+
+### C-QF-007 — In-spec observations do not prove statistical control
+status: STRONG
+An unstable process may temporarily produce conforming product while special-cause variation remains present.
+
+### C-QF-008 — Capability indices require assumptions, suitable data and meaningful measurement
+status: STRONG
+Do not present Cp/Cpk as universal truth from tiny, nonrepresentative or unstable datasets.
+
+## Sampling, 100% inspection and reaction plans
+### Inspection boundary
+Inspection strategy depends on defect mechanism, detectability, measurement capability, cost, risk, process stability and whether inspection itself can introduce error/damage.
+
+### C-QF-009 — 100% inspection is not automatically equivalent to 100% defect containment
+status: STRONG ENGINEERING DIRECTION / quantitative Pass-2 depth open
+Reason: measurement systems have false-accept/false-reject risk and coverage limitations; operator/equipment effects may remain.
+
+### C-QF-010 — Sampling is a decision/risk tool, not a substitute for process control
 status: STRONG SYNTHESIS
-Evidence basis: NIST measurement error/uncertainty + capability framework. Pass 2 should add worked examples.
+Sampling can support lot acceptance or monitoring, but it does not create a stable/capable process.
 
-## Podcast teaching sequence
-1. Start with the requirement/CTQ and failure consequence.
-2. Ask what process condition or failure mechanism must be prevented/detected.
-3. Define how the characteristic is measured and whether the measurement is adequate for the decision.
-4. Separate specification limits from process-derived control limits.
-5. Establish whether repeated-process data is stable enough for capability reasoning.
-6. Only then calculate/interpret capability where appropriate.
-7. Define reaction plan when process or product evidence violates the relevant boundary.
+### Reaction-plan principle
+A control or monitoring method is incomplete without a defined response to abnormal conditions.
+
+Reaction plan should define as applicable:
+- trigger/signal;
+- immediate containment/hold boundary;
+- response owner;
+- stop/escalate/adjust rules;
+- disposition of potentially affected product;
+- verification after correction;
+- PFMEA/Control Plan/update feedback when learning changes risk/control assumptions.
+
+### C-QF-011 — Reaction plans should distinguish special-cause investigation from routine process adjustment
+status: STRONG DIRECTION
+Evidence basis: SPC sources distinguish common and special causes; indiscriminate adjustment can add variation.
 
 ## DEV / LVP / SVP lens
 ### DEV
-Use lightweight risk tracking, characterize measurement limitations, and learn defect mechanisms. Do not fake statistical confidence from tiny or nonrepresentative samples. Verification evidence may be engineering-test oriented rather than SPC oriented.
+Use lightweight risk tracking and characterize measurement limitations. Focus on learning failure mechanisms and avoid fake statistical confidence from tiny/nonrepresentative samples.
 
 ### LVP
-Introduce structured PFMEA/control planning, controlled inspection/test, basic MSA where decisions depend on measurement, defect/FPY tracking and early SPC where repeated data supports it. Low volume may constrain classical capability studies; document the evidence limitation rather than manufacturing a confident index.
+Introduce structured PFMEA/control planning, controlled inspection/test, fit-for-purpose MSA, defect/FPY tracking and basic SPC where repeated data supports it. Use explicit containment/reaction even if the process remains manual.
 
 ### SVP
-Use qualified measurement systems, stable sampling/data definitions, capability/SPC appropriate to the process, reaction plans, traceable quality gates and closed-loop NCR/CAPA. Sector/customer requirements may impose additional methods and thresholds.
+Use qualified measurement systems, stable data definitions, SPC/capability appropriate to the process, reaction plans, traceable quality gates and closed-loop NCR/CAPA. Sector-specific Core Tools requirements may apply.
 
 ## Myth register
-- 'Inside spec means the process is in control' — REJECT.
-- 'Inside control limits means the product meets spec' — REJECT.
-- 'Cp/Cpk tells you everything about process quality' — REJECT.
-- 'A calibrated gauge is automatically adequate for every manufacturing decision' — REJECT as universal claim; calibration/traceability and decision adequacy are different questions.
-- '100% inspection guarantees quality' — OPEN for deeper evidence; reject as simplistic decision rule, but define contexts where 100% screening is justified.
-- 'Gauge R&R is the only MSA method' — REJECT as universal claim.
+- "Inside spec means the process is in control" — FALSE.
+- "Inside control limits means the product is good" — FALSE.
+- "A calibrated gauge is an adequate measurement system" — FALSE.
+- "Cp/Cpk tells the whole story" — FALSE.
+- "100% inspection means zero escapes" — FALSE AS UNIVERSAL CLAIM.
+- "PFMEA is complete when the spreadsheet is approved" — FALSE AS ENGINEERING PRACTICE; value depends on controls/learning linkage.
+- "Sampling fixes an unstable process" — FALSE.
+- "Gauge R&R is the only valid MSA method" — FALSE AS UNIVERSAL CLAIM.
 
-## Breadth gaps to close
-1. primary-source mapping of PFMEA -> Control Plan relationship;
-2. AIAG/other authoritative MSA terminology and applicability;
-3. sampling/inspection boundary and when 100% inspection is/not useful;
-4. reaction-plan linkage to SPC/control plans;
-5. myths/case studies for Episodes 23, 24 and 32;
-6. sector applicability differences: general manufacturing vs automotive/medical/aerospace.
+## Breadth result
+Source families represented:
+- PFMEA/Control Plan linkage — YES
+- MSA/Gauge R&R — YES
+- SPC/common-special cause — YES
+- stability versus capability — YES
+- sampling/100% inspection boundary — DEFINED with Pass-2 quantitative depth open
+- reaction-plan logic — YES
+- applicability conflicts — YES
 
 ## Pass-2 targets
-- worked PFMEA -> control-plan example;
-- Gauge R&R / measurement-system example with applicability;
-- control-chart example showing common vs special cause;
-- capability example with assumptions and measurement caveat;
-- case where inspection passed while process remained unstable;
-- low-volume example where capability evidence is limited by sample size;
-- sector-specific applicability comparison.
+- worked PFMEA -> Control Plan example;
+- Gauge R&R / measurement-system example;
+- control-chart example showing common versus special cause and a reaction decision;
+- capability example with explicit assumptions and measurement caveat;
+- quantitative false-accept/false-reject / guard-banding example;
+- sampling-plan example with acceptance-risk interpretation;
+- case where 100% inspection still allowed escapes;
+- sector applicability comparison: general manufacturing vs automotive/medical/aerospace.
 
 ## Readiness
-Source map: IN PROGRESS — SPC/CAPABILITY/METROLOGY BACKBONE CAPTURED
+Source map: BREADTH COMPLETE
 Critical claims identified: YES
-Primary-source backbone: PARTIAL / STRONG FOR STATISTICAL-METROLOGY SIDE
-PFMEA/Control Plan primary mapping: OPEN
+Primary-source backbone: YES
 Applicability conflicts visible: YES
+Quantitative depth: OPEN for Pass 2
 Podcast Ready: NO
