@@ -1,6 +1,6 @@
 # Manufacturing Process Selection & Lifecycle Economics — Evidence Source Map
 
-status: IN PROGRESS — ECONOMICS BACKBONE EXPANDED
+status: IN PROGRESS — BRIDGE MANUFACTURING BACKBONE CAPTURED
 campaign: A3
 maps_to: MASTER_WBS 3.0, 3.1 and cross-process economics; PODCAST_MAP Episode 11 + process arc
 provenance: primary-source-first
@@ -52,6 +52,21 @@ Evidence role:
 - useful for reinforcing cost-boundary discipline;
 - not a direct part-level process-selection calculator and must not be presented as one.
 
+### Commercial bridge-manufacturing examples — Protolabs
+Evidence role:
+- aluminum injection tooling can be used as an intermediate bridge before higher-capital steel tooling;
+- pilot/low-volume molding can validate design, assembly and market demand before mass-production commitment;
+- bridge tooling can reduce schedule and capital exposure while long-term tooling is not yet justified.
+
+Applicability boundary: supplier-specific capabilities and quoted volume ranges are examples, not universal process thresholds.
+
+### Commercial bridge-manufacturing examples — Formlabs
+Evidence role:
+- 3D-printed molds combined with injection molding provide a concrete example of a hybrid bridge route;
+- short-run molding may be used for functional prototypes, pilot production or low-volume end-use parts.
+
+Applicability boundary: tool durability, material compatibility, tolerance/capability and economics are application-specific.
+
 ## Canonical process-selection decision dimensions
 - function/performance
 - material
@@ -73,6 +88,7 @@ Evidence role:
 - supplier maturity/capacity
 - automation/flexibility
 - change frequency/product mix
+- forecast confidence / demand volatility
 - logistics/lead time/inventory
 - supply disruption exposure where material
 - cost per good part
@@ -120,6 +136,37 @@ Q* = (Fixed_B - Fixed_A) / (VariableGoodPart_A - VariableGoodPart_B)
 ### Required warning
 This equation is an educational first-order model, not a universal manufacturing law. Real routes may have stepped tooling, cavities, nonlinear labor, MOQ, capacity limits, learning curves, maintenance, tool replacement, supplier pricing tiers and design changes.
 
+## Bridge Manufacturing framework
+Bridge manufacturing is a deliberate temporary or intermediate route used to learn, supply early demand, validate production assumptions or reduce schedule/capital risk before committing to the intended long-term route.
+
+It is not a single technology. Examples can include:
+- CNC before casting/forging/molding;
+- AM for low-volume end-use parts before dedicated tooling;
+- aluminum/soft tooling before hardened production tooling;
+- 3D-printed molds for short-run molding;
+- manual/semi-automated assembly before dedicated automation;
+- a prototype route combined with production-representative finishing, inspection or test.
+
+### Bridge decision questions
+1. What uncertainty is the bridge buying down: design, demand, process, supplier, tooling or schedule?
+2. Which properties/failure mechanisms are representative of the intended route, and which are not?
+3. What is the bridge's NRE, cost per good part, lead time and capacity envelope?
+4. How likely is another design change before long-term tooling/process lock-in?
+5. What is the cost of waiting for the intended serial route versus producing now?
+6. What requalification/revalidation will be required when the route changes?
+7. What is the explicit exit trigger from the bridge?
+
+### Exit triggers from a bridge route
+Do not use fixed universal quantities such as 10/100/1,000/10,000 as engineering rules. Transition when one or more of these become true:
+- demand/rate exceeds bridge capacity or lead-time needs;
+- cumulative variable-cost penalty justifies long-term NRE;
+- design stability is sufficient to justify tooling lock-in;
+- bridge process cannot achieve CTQ/capability/reliability requirements;
+- inspection/rework burden becomes uneconomic;
+- supplier/process risk changes materially;
+- automation/tooling now meets ROI and flexibility needs;
+- commercial schedule, inventory or supply economics favor the target route.
+
 ## Claim register
 
 ### C-PS-001 — Manufacturing-process selection is a multi-attribute decision, not a single-variable unit-cost choice
@@ -162,15 +209,29 @@ Evidence basis: NIST AM supply-chain review explicitly notes that many compariso
 status: ENGINEERING SYNTHESIS — NEEDS DIRECT CORROBORATION
 Keep visible for Pass 2 rather than promote to verified fact solely from logic.
 
+### C-PS-011 — Bridge manufacturing can reduce schedule/capital risk before final production commitment
+status: MODERATE/STRONG INDUSTRIAL SUPPORT
+Evidence basis: NIST tooling/low-volume economics plus commercial bridge-tooling examples.
+Boundary: benefit depends on design stability, demand, representativeness, qualification and the economics of the specific route.
+
+### C-PS-012 — The correct exit from a bridge process should be decision-triggered, not based on a universal quantity threshold
+status: STRONG SYNTHESIS
+Evidence basis: source material shows process economics are context-specific and practical supplier ranges vary materially.
+
+### C-PS-013 — Switching from a bridge route to the serial route can invalidate part of the prior evidence and require revalidation
+status: STRONG SYNTHESIS from A0/A2
+Basis: process/material/tooling changes can alter failure mechanisms, tolerance distributions, surface state, residual stress, assembly behavior or inspection strategy.
+Pass 2: collect concrete commercial cases.
+
 ## DEV / LVP / SVP lens
 ### DEV
-Optimize learning speed and reversibility. Tooling avoidance can be economically valuable, but record which prototype route assumptions do not transfer to production.
+Optimize learning speed and reversibility. Tooling avoidance can be economically valuable, but record which prototype-route assumptions do not transfer to production.
 
 ### LVP
-Explicitly compare bridge manufacturing, manual/semi-automated routes, soft tooling, machining, AM and supplier routes. Include expected design-change rate and tooling lead time, not only piece price.
+Use bridge routes deliberately. Compare manual/semi-automated routes, AM/CNC/soft tooling and supplier options using cost per good part, design-change flexibility, quality/test burden, representativeness and expected demand.
 
 ### SVP
-Evaluate stable process chains using capacity, yield, capability, tooling life/amortization, automation, supplier maturity, maintenance and full process-chain economics.
+Evaluate stable process chains using capacity, yield, capability, tooling life/amortization, automation, supplier maturity, maintenance and full process-chain economics. A mature serial route can still be a flexible process if it wins the whole-system decision.
 
 ## Myth register
 - '3D printing is always cheaper at low volume' — REJECT as universal claim; context dependent.
@@ -178,11 +239,12 @@ Evaluate stable process chains using capacity, yield, capability, tooling life/a
 - 'CNC is too expensive for production' — OPEN; cannot state without geometry/material/tolerance/volume/automation context.
 - 'The process with the lowest quote wins' — REJECT as decision rule.
 - 'Break-even volume is a property of the process' — REJECT; it is a property of compared routes and assumptions.
+- 'Once volume reaches X, switch processes' — REJECT as universal rule.
 
 ## Breadth gaps to close
 1. direct authoritative treatment of yield/rework/inspection in part-level cost-per-good-part;
 2. tooling/NRE/tool-life and stepped-capacity economics outside AM;
-3. bridge-manufacturing case studies;
+3. cross-process bridge cases across metals/polymers beyond supplier examples;
 4. supplier maturity/capacity as process-selection variable;
 5. cross-process cases: injection molding vs machining/AM, casting + machining, forming + finish operations;
 6. explicit make-versus-buy boundary and when it belongs to A3 versus supplier campaign;
@@ -195,13 +257,15 @@ Evaluate stable process chains using capacity, yield, capability, tooling life/a
 - near-net + finish-machining cases;
 - process-chain comparison cases;
 - supplier/tooling lead-time effects;
-- design-change flexibility versus dedicated-tooling lock-in.
+- design-change flexibility versus dedicated-tooling lock-in;
+- cases where a bridge process masked a serial-route failure mechanism.
 
 ## Readiness
-Source map: IN PROGRESS — ECONOMICS BACKBONE EXPANDED
+Source map: IN PROGRESS — BRIDGE MANUFACTURING BACKBONE CAPTURED
 Critical claims identified: YES
 Primary-source backbone: YES
 Volume/tooling direction: YES, quantitative generalization intentionally avoided
+Bridge-manufacturing evidence: CAPTURED
 Cost-boundary model: DEFINED
 Quantitative process-chain cases: OPEN
 Podcast Ready: NO
