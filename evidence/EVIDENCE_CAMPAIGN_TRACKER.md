@@ -33,9 +33,9 @@ Controlled gaps retained:
 
 | Rank | Depth package | Status |
 |---|---|---|
-| P2.01 | Hardware Evolution / technology vs manufacturing readiness definitions and evidence gates | ACTIVE — PRIMARY BACKBONE CAPTURED |
-| P2.02 | Configuration/change-control worked example from prototype through production | NEXT |
-| P2.03 | PFMEA → Control Plan → MSA → SPC → Capability worked example | QUEUED |
+| P2.01 | Hardware Evolution / technology vs manufacturing readiness definitions and evidence gates | NEAR PODCAST READY — definitions, Sentinel Node, DEV/LVP/SVP matrix and listener checklist captured |
+| P2.02 | Configuration/change-control worked example from prototype through production | ACTIVE — primary CM backbone + Sentinel change/effectivity/cut-in example captured |
+| P2.03 | PFMEA → Control Plan → MSA → SPC → Capability worked example | NEXT |
 | P2.04 | Pilot/PVT/run-at-rate/capacity exit-criteria worked example | QUEUED |
 | P2.05 | Process-selection / bridge-manufacturing quantitative economics | QUEUED |
 | P2.06 | Supplier qualification / FAI / PPAP / change-control worked example | QUEUED |
@@ -45,22 +45,34 @@ Controlled gaps retained:
 | P2.10 | Cross-industry case-study evidence packs | QUEUED / A9 |
 
 ## P2.01 — Current result
-Created `evidence/pass2/P2_01_HARDWARE_READINESS_DEFINITIONS.md`.
+Primary depth backbone is captured using NASA Technology Readiness Levels, NASA Production Readiness Review and DoD Manufacturing Readiness Levels, with explicit separation between source-defined maturity models and the podcast's editorial Hardware Evolution Ladder.
 
-Primary depth backbone:
-- NASA Technology Readiness Levels for technology maturity and demonstrated environment/integration;
-- NASA Production Readiness Review for readiness to build/integrate/test required quantities;
-- DoD Manufacturing Readiness Levels for manufacturing maturity progression from development through pilot/low-rate/full-rate production.
+Reusable artifacts now include:
+- `evidence/pass2/P2_01_HARDWARE_READINESS_DEFINITIONS.md`
+- `evidence/pass2/P2_01_WORKED_EXAMPLE_SENTINEL_NODE.md`
+- `evidence/pass2/P2_01_DEV_LVP_SVP_READINESS_MATRIX.md`
+- `evidence/pass2/P2_01_LISTENER_READINESS_CHECKLIST.md`
 
-Key controlled conclusion:
-**technology maturity and manufacturing readiness are different dimensions.**
-The podcast's Hardware Evolution Ladder remains an editorial framework and must not be presented as a NASA/DoD standard lifecycle.
+P2.01 remaining gate: technical review, source-note packaging and episode-level editorial mapping.
 
-The Ladder now has evidence-oriented exit themes for:
-Idea → Requirements → Architecture → POC → Integrated Prototype → Engineering Prototype → Production-Intent Hardware → LVP → Production Validation → Ramp → SVP.
+## P2.02 — Current result
+Primary configuration-management backbone is captured from NASA CM guidance and supporting configuration-management concepts.
 
-Next P2.01 action:
-build a reusable fictional hardware worked example that traverses the Ladder and records physical changes, evidence generated, evidence that does not transfer, manufacturing debt and next-stage blockers. This example will become a narrative spine for the Opening Arc and Episode 60.
+Controlled conclusions:
+- configuration management is lifecycle change control, not document revision alone;
+- baseline/revision, effectivity and as-built genealogy are distinct concepts;
+- an approved change is not fully implemented until released definition, production cut-in and affected-product disposition are controlled and verifiable;
+- reverification/requalification scope should be driven by changed assumptions and affected requirements rather than by a simplistic full-test/no-test rule.
+
+Reusable artifacts:
+- `evidence/pass2/P2_02_CONFIGURATION_CHANGE_CONTROL.md`
+- `evidence/pass2/P2_02_SENTINEL_EFFECTIVITY_CUTIN_EXAMPLE.md`
+
+P2.02 remaining gate:
+1. package the change-impact/reverification decision tree as a listener tool;
+2. add a compact Configuration Status Accounting example showing current + historical truth;
+3. technical review and source-note packaging;
+4. map the reusable material into the relevant podcast episodes.
 
 ## Depth-pass rules
 1. Prefer primary standards/authoritative sources and exact applicability boundaries.
@@ -73,5 +85,5 @@ build a reusable fictional hardware worked example that traverses the Ladder and
 ## Overall status
 Pass 1 Breadth: COMPLETE
 Pass 1 Audit: COMPLETE — PASS WITH CONTROLLED GAPS
-Pass 2 Depth: ACTIVE
+Pass 2 Depth: ACTIVE — P2.01 near Podcast Ready; P2.02 active
 Podcast Ready program: IN PROGRESS
