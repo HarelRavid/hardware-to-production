@@ -1,6 +1,6 @@
 # Phase 2 — Evidence Campaign Tracker
 
-status: PASS 1 AUDIT COMPLETE — PASS 2 READY / A9 OPEN
+status: PASS 2 DEPTH ACTIVE
 started_on: 2026-08-09
 updated_on: 2026-08-11
 
@@ -17,66 +17,61 @@ updated_on: 2026-08-11
 | A6 | Supplier industrialization / qualification / change control | Episodes 30, 37–40 | BREADTH COMPLETE |
 | A7 | Automation business case / qualification / OEE | Episodes 41–46 | BREADTH COMPLETE |
 | A8 | Manufacturing Data Hub standards / semantic integration / OT-ICS | Episodes 47–52 | BREADTH COMPLETE |
-| A9 | Case studies & cross-industry synthesis | Episodes 53–60 | OPEN — CASE CAMPAIGN |
+| A9 | Case studies / cross-industry synthesis | Episodes 53–60 | OPEN — dedicated case campaign |
 
-## Pass 1 result
-A0–A8 breadth packages are complete. The cross-domain audit is recorded in `evidence/PASS1_CROSS_DOMAIN_AUDIT.md`.
+## Pass 1 audit result
+PASS WITH CONTROLLED GAPS.
+No material architectural contradiction was identified across A0–A8. Cross-domain canonical ownership and terminology boundaries were established before depth research.
 
-Audit decision: **PASS WITH CONTROLLED GAPS**.
-No architecture-breaking contradiction was identified. Main governance issue is duplicated ownership of cross-domain concepts, now resolved through canonical-owner rules.
+Controlled gaps retained:
+- electronics manufacturing depth;
+- reliability-to-manufacturing-control bridge;
+- service/repair/field-return feedback;
+- case-study evidence for Episodes 53–60.
 
-## Canonical ownership summary
-- A0: early prototype representativeness / manufacturing debt
-- A1: product maturity / production intent / configuration-readiness governance
-- A2: DFM/DFA/DFT
-- A3: process selection / bridge manufacturing / generic lifecycle economics
-- A4: PFMEA / Control Plan / MSA / SPC / process capability
-- A5: pilot / PVT / ramp / rate / yield / capacity
-- A6: supplier qualification / FAI-PPAP boundary / supplier change / sub-tier control
-- A7: automation qualification / OEE / automation TCO / machinery-cell integration
-- A8: semantic identity / genealogy / provenance / system-of-record / OT-ICS integration
-- A9: documented case studies / cross-industry transfer / Episode 60 synthesis
+## Pass 2 — Depth queue
 
-## Controlled gaps from audit
-1. electronics manufacturing depth for Opening A6 and downstream DFT/production-test coverage;
-2. reliability-engineering bridge into manufacturing controls;
-3. serviceability/repair/field-return feedback loop;
-4. product/regulatory safety must be handled through scoped applicability rather than a universal regulation package;
-5. Episodes 53–60 require A9 case-study evidence.
+| Rank | Depth package | Status |
+|---|---|---|
+| P2.01 | Hardware Evolution / technology vs manufacturing readiness definitions and evidence gates | ACTIVE — PRIMARY BACKBONE CAPTURED |
+| P2.02 | Configuration/change-control worked example from prototype through production | NEXT |
+| P2.03 | PFMEA → Control Plan → MSA → SPC → Capability worked example | QUEUED |
+| P2.04 | Pilot/PVT/run-at-rate/capacity exit-criteria worked example | QUEUED |
+| P2.05 | Process-selection / bridge-manufacturing quantitative economics | QUEUED |
+| P2.06 | Supplier qualification / FAI / PPAP / change-control worked example | QUEUED |
+| P2.07 | Automation ROI/TCO + FAT/SAT/production-qualification worked example | QUEUED |
+| P2.08 | Manufacturing Atlas implementation reference model + applicability chains | QUEUED |
+| P2.09 | OT/ICS IEC 62443 applicability / zones-conduits example | QUEUED |
+| P2.10 | Cross-industry case-study evidence packs | QUEUED / A9 |
 
-## Pass-2 first priority queue
-P0:
-1. A0/A1 lifecycle/readiness definitions and Hardware Evolution Ladder evidence mapping;
-2. A1 configuration baseline/change-control worked example;
-3. A4 PFMEA→Control Plan→MSA→SPC→Capability worked example;
-4. A5 Pilot/PVT/run-at-rate/capacity exit-criteria worked example.
+## P2.01 — Current result
+Created `evidence/pass2/P2_01_HARDWARE_READINESS_DEFINITIONS.md`.
 
-P1:
-5. A3 quantitative process-selection/bridge-manufacturing economics;
-6. A6 supplier qualification ladder and applicability;
-7. A7 automation ROI/TCO + FAT/SAT/production qualification;
-8. A8 ISA-95/OPC UA/IEC 62443 + genealogy/effectivity/write-back reference architecture;
-9. electronics manufacturing gap package;
-10. reliability-to-manufacturing-control worked example.
+Primary depth backbone:
+- NASA Technology Readiness Levels for technology maturity and demonstrated environment/integration;
+- NASA Production Readiness Review for readiness to build/integrate/test required quantities;
+- DoD Manufacturing Readiness Levels for manufacturing maturity progression from development through pilot/low-rate/full-rate production.
 
-P2:
-11. A9 case-study population and cross-industry applicability matrices;
-12. Episode 60 end-to-end composite decision story;
-13. integrated Manufacturing Atlas implementation-validation scenarios.
+Key controlled conclusion:
+**technology maturity and manufacturing readiness are different dimensions.**
+The podcast's Hardware Evolution Ladder remains an editorial framework and must not be presented as a NASA/DoD standard lifecycle.
 
-## Important terminology guardrails from audit
-- product/design validation ≠ production validation ≠ supplier qualification ≠ FAT/SAT;
-- process capability ≠ production capacity ≠ supplier capability;
-- metrological traceability ≠ product genealogy/provenance;
-- semantic integration ≠ system-of-record ownership;
-- first article conformity ≠ serial capability;
-- high local OEE/utilization ≠ good system flow/profitability.
+The Ladder now has evidence-oriented exit themes for:
+Idea → Requirements → Architecture → POC → Integrated Prototype → Engineering Prototype → Production-Intent Hardware → LVP → Production Validation → Ramp → SVP.
 
-## Campaign rule
-Breadth complete does not mean EVIDENCE VALIDATED or PODCAST READY.
-Pass 2 deepens canonical claims once, then reuses them across episodes.
+Next P2.01 action:
+build a reusable fictional hardware worked example that traverses the Ladder and records physical changes, evidence generated, evidence that does not transfer, manufacturing debt and next-stage blockers. This example will become a narrative spine for the Opening Arc and Episode 60.
 
-## Immediate sequence
-1. Open/populate A9 enough to establish case-study candidate coverage for Episodes 53–60.
-2. Begin Pass-2 P0 with lifecycle/readiness definitions and the first configuration/change-control worked example.
-3. Continue through P0 before broad P1 execution unless new evidence exposes an architecture gap.
+## Depth-pass rules
+1. Prefer primary standards/authoritative sources and exact applicability boundaries.
+2. Separate quoted/source-defined concepts from Hardware-to-Production synthesis.
+3. Never convert an analogy to TRL/MRL/industry gates into a claimed equivalence without formal criteria.
+4. Every worked example must state assumptions and which conclusions transfer beyond the example.
+5. Cross-domain claims use the canonical owner established in the Pass-1 audit.
+6. Promote to Podcast Ready only after evidence, applicability, quantitative/case support and editorial synthesis are sufficient.
+
+## Overall status
+Pass 1 Breadth: COMPLETE
+Pass 1 Audit: COMPLETE — PASS WITH CONTROLLED GAPS
+Pass 2 Depth: ACTIVE
+Podcast Ready program: IN PROGRESS
