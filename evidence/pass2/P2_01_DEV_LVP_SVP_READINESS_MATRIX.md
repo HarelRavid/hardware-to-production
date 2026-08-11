@@ -1,9 +1,9 @@
 # Pass 2.01 — DEV / LVP / SVP Readiness Matrix
 
-status: ACTIVE — WORKED DECISION TOOL
+status: ACTIVE — WORKED DECISION TOOL + LISTENER CHECKLIST
 created_on: 2026-08-11
 maps_to: Opening Arc A1–A8; Episodes 1–5, 26–31, 60
-companion: P2_01_HARDWARE_READINESS_DEFINITIONS.md; P2_01_WORKED_EXAMPLE_SENTINEL_NODE.md
+companion: P2_01_HARDWARE_READINESS_DEFINITIONS.md; P2_01_WORKED_EXAMPLE_SENTINEL_NODE.md; P2_01_LISTENER_READINESS_CHECKLIST.md
 
 ## Purpose
 Turn DEV/LVP/SVP from an editorial lens into a practical decision tool. The matrix does not prescribe universal phase gates. It shows how the burden of evidence changes as a team moves from learning whether the product can work, to proving it can be built repeatedly, to proving the production system can sustain business-required output.
@@ -22,12 +22,7 @@ Applicability boundary: aerospace/defense review structures are evidence sources
 ### DEV — Development / Learning System
 Primary question: **Can the product concept and architecture satisfy the intended need, and what uncertainty must we retire next?**
 
-Optimized for:
-- learning speed;
-- technical-risk retirement;
-- architecture exploration;
-- requirements discovery/refinement;
-- fast iteration.
+Optimized for learning speed, technical-risk retirement, architecture exploration, requirements discovery/refinement and fast iteration.
 
 Acceptable when explicit and risk-bounded:
 - hand assembly;
@@ -49,21 +44,8 @@ Dangerous if mistaken for production evidence:
 - test configuration not recorded;
 - shortcuts whose expiration condition is unknown.
 
-Exit direction toward LVP:
-The product and production-intent definition must become stable enough that repeated builds teach us about the intended production system rather than only about prototype craftsmanship.
-
 ### LVP — Low-Volume Production / Learning Production System
 Primary question: **Can ordinary production resources repeatedly build conforming units using a controlled, increasingly representative process?**
-
-Optimized for:
-- repeatability learning;
-- production-risk retirement;
-- yield/defect discovery;
-- operator and work-instruction learning;
-- supplier/process qualification;
-- test/inspection validation;
-- capacity-model validation;
-- controlled engineering change.
 
 Expected evidence grows materially:
 - controlled product configuration/BOM/drawings;
@@ -86,30 +68,8 @@ Still potentially appropriate:
 - temporary tooling when its limitations are understood;
 - higher inspection intensity while process knowledge matures.
 
-Red flags:
-- every unit needs engineering intervention;
-- configuration cannot be reconstructed;
-- process settings depend on tribal knowledge;
-- production route changes without revalidation assessment;
-- yield only reported after rework;
-- rate calculated from ideal machine cycle rather than accepted system output;
-- supplier qualification inferred from one good sample.
-
-Exit direction toward SVP:
-Demonstrate that the integrated production system can sustain required output, quality and economics under defined operating assumptions without exceptional intervention.
-
 ### SVP — Scaled / Serial Volume Production
 Primary question: **Can the production system sustain the business-required rate, quality, cost and change discipline over time?**
-
-Optimized for:
-- sustained output;
-- controlled variation;
-- predictable quality/cost/delivery;
-- supply resilience;
-- maintenance and recovery;
-- scalable training/operations;
-- controlled product/process change;
-- field/service feedback and continuous improvement.
 
 Expected evidence:
 - sustained capacity/rate evidence under representative mix and downtime;
@@ -123,94 +83,59 @@ Expected evidence:
 - production data and field/service feedback connected to improvement;
 - automation justified and qualified where used.
 
-Red flags:
-- volume increase is achieved only through overtime/firefighting;
-- quality is maintained only by sorting/containment;
-- automation hides an unstable process;
-- alternate suppliers/components bypass qualification;
-- change implementation cannot identify affected serial/lot range;
-- cost model still relies mainly on prototype quotations/ideal cycle assumptions.
-
 ## Readiness matrix by dimension
 
-| Dimension | DEV | LVP | SVP |
-|---|---|---|---|
-| Product requirements | learning/refining critical requirements | controlled requirements sufficient for production validation | controlled requirements with disciplined change/field feedback |
-| Configuration | enough identity to know what was tested | reproducible controlled build configuration | full effectivity/change cut-in/genealogy discipline |
-| Materials/components | prototype substitutes may be acceptable if explicit | increasingly production-intent and qualified | controlled approved sources with resilience/change rules |
-| Manufacturing process | chosen to answer engineering questions | representative route proven through repeated builds | controlled route sustaining rate/quality/cost |
-| Tooling/fixtures | temporary/rapid tooling acceptable | production-representative for critical operations | production-capable, maintained, controlled, spare/recovery strategy |
-| Work instructions | engineer knowledge may dominate | operators can execute defined work with bounded support | scalable standard work/training/change control |
-| Measurement/test | lab-grade/engineering test acceptable | production test/inspection adequacy demonstrated | validated, maintained measurement/test system with reaction plans |
-| Quality controls | defect discovery and learning | PFMEA/control-plan/reaction logic functioning in practice | controls demonstrate sustained effectiveness and capability |
-| Yield/rework | informative but often not production representative | FPY/rework/scrap captured by operation/failure mode | sustained yield economics and improvement system |
-| Suppliers | availability/technical exploration | qualification, first-article/PPAP-type evidence as applicable | ongoing capability, change control, sub-tier/resilience management |
-| Rate/capacity | generally not proven | bottleneck/rate assumptions tested in representative runs | sustained capacity under representative mix/downtime/staffing |
-| Automation | avoid locking unstable work unless learning requires it | targeted/semi-automation often valuable | automation justified by TCO, qualified, maintainable, change-aware |
-| Traceability | enough to preserve engineering learning | enough to reconstruct builds, defects and changes | scalable genealogy/effectivity/auditability |
-| Economics | rough architecture/process tradeoffs | cost per good part begins using actual yield/labor/process data | actual TCO/cost/capacity behavior drives decisions |
-| Service/lifecycle | identify foreseeable service constraints | serviceability/spares/diagnostics increasingly validated | field-return/service data closes loop to product/process controls |
-
-## What is allowed to stay “dirty”?
-The right question is not whether a shortcut exists. It is whether the shortcut:
-1. is visible;
-2. is bounded to a maturity stage/use case;
-3. does not invalidate the evidence being claimed;
-4. has an owner/expiration trigger;
-5. is retired before it becomes a hidden production dependency.
-
-### Example — acceptable DEV shortcut
-Sentinel Node uses a bench power supply instead of the target internal power architecture to validate the sensing principle.
-
-Valid evidence: sensing concept can work under controlled electrical conditions.
-Invalid inference: target power architecture, EMC behavior, thermal behavior and production test are validated.
-
-### Example — dangerous LVP shortcut
-Every Sentinel Node requires the design engineer to manually adjust a hidden calibration coefficient until final test passes.
-
-This is no longer merely fast learning. It is evidence that the production definition/process/test system is incomplete or uncontrolled.
+| Dimension | DEV | LVP | SVP | Sentinel Node illustration |
+|---|---|---|---|---|
+| Product requirements | learning/refining critical requirements | controlled requirements sufficient for production validation | controlled requirements with disciplined change/field feedback | sensing concept → defined accuracy/sealing/connector CTQs → field-return feedback tied to requirements |
+| Configuration | enough identity to know what was tested | reproducible controlled build configuration | full effectivity/change cut-in/genealogy discipline | dev-board/config notes → PCB/BOM/FW revision-controlled builds → returned serial linked to exact HW/FW/gasket/supplier state |
+| Materials/components | prototype substitutes may be acceptable if explicit | increasingly production-intent and qualified | controlled approved sources with resilience/change rules | dev-board sensor → intended sensor/PCB/component set → alternate sensor requires controlled qualification/change |
+| Manufacturing process | chosen to answer engineering questions | representative route proven through repeated builds | controlled route sustaining rate/quality/cost | CNC enclosure → production-intent molded enclosure validation → controlled molding/assembly route |
+| Tooling/fixtures | temporary/rapid tooling acceptable | production-representative for critical operations | production-capable, maintained, controlled, spare/recovery strategy | lab fixture → controlled connector/sealing/calibration fixtures → maintained/spared production fixtures |
+| Work instructions | engineer knowledge may dominate | operators can execute defined work with bounded support | scalable standard work/training/change control | designer assembles prototype → operators build from WI → standardized training/change-controlled instructions |
+| Measurement/test | lab-grade/engineering test acceptable | production test/inspection adequacy demonstrated | validated, maintained measurement/test system with reaction plans | bench instruments → controlled final/calibration test → sustained test system with maintenance/GR&R-like evidence as relevant |
+| Quality controls | defect discovery and learning | PFMEA/control-plan/reaction logic functioning in practice | controls demonstrate sustained effectiveness and capability | sealing/connector failures become PFMEA/control inputs → reaction plan works in LVP → capability/field feedback close loop |
+| Yield/rework | informative but often not production representative | FPY/rework/scrap captured by operation/failure mode | sustained yield economics and improvement system | prototype rework accepted → 15% final-test loss traced to connector-pin damage → sustained FPY and cost tracked |
+| Suppliers | availability/technical exploration | qualification, first-article/PPAP-type evidence as applicable | ongoing capability, change control, sub-tier/resilience management | prototype sourcing → intended sensor/gasket/PCB suppliers qualified → alternate-source/change discipline |
+| Rate/capacity | generally not proven | bottleneck/rate assumptions tested in representative runs | sustained capacity under representative mix/downtime/staffing | assembly looks fast → calibration/test identified as constraint → sustained output validated at required business rate |
+| Automation | avoid locking unstable work unless learning requires it | targeted/semi-automation often valuable | automation justified by TCO, qualified, maintainable, change-aware | manual calibration/assembly → selective fixture/semi-auto test → dedicated automation only if economics/process maturity justify |
+| Traceability | enough to preserve engineering learning | enough to reconstruct builds, defects and changes | scalable genealogy/effectivity/auditability | prototype notebook/config log → lot/unit build history → serial-level change/field investigation capability |
+| Economics | rough architecture/process tradeoffs | cost per good part begins using actual yield/labor/process data | actual TCO/cost/capacity behavior drives decisions | CNC/AM prototype economics → bridge-process cost/yield → serial tooling/TCO based on real production behavior |
+| Service/lifecycle | identify foreseeable service constraints | serviceability/spares/diagnostics increasingly validated | field-return/service data closes loop to product/process controls | design for access/diagnostics → repair path/spares defined → returns linked to configuration/process evidence |
 
 ## Evidence-transfer rule
 Evidence transfers forward only when the changed configuration/process/environment does not invalidate the question previously answered.
 
 At every major change ask:
-- What requirement was the old evidence supporting?
-- What physical/process assumptions made that evidence valid?
-- Which of those assumptions changed?
-- Does the change require analysis, partial regression, requalification or full re-verification?
+1. What requirement was the old evidence supporting?
+2. What physical/process assumptions made that evidence valid?
+3. Which assumptions changed?
+4. Does the change require analysis, regression, partial requalification or full re-verification?
 
-This prevents the common failure mode: “we tested it on the prototype” when the production-intent material, geometry, supplier, firmware, tooling or assembly method has changed.
+Sentinel examples:
+- changing sensor mounting can invalidate vibration-response evidence;
+- changing CNC enclosure to injection molding can invalidate sealing/warpage/tolerance evidence;
+- changing sensor supplier can affect firmware calibration, measurement behavior and qualification evidence;
+- changing assembly fixture can alter connector-damage rates and therefore process-control evidence.
 
-## Minimum transition questions
+## Podcast listener tool
+The compact listener-facing version now lives in `P2_01_LISTENER_READINESS_CHECKLIST.md`.
 
-### DEV → LVP
-- Is the build configuration reproducible?
-- Are production-intent differences from prototypes explicit?
-- Can non-designers build/test it from controlled information?
-- Are CTQs/failure mechanisms linked to controls?
-- Can we identify what changed between units/lots?
-- Are critical suppliers/processes sufficiently representative?
-- Will the planned build teach us about the intended production route?
+It uses twelve evidence dimensions and a 0–3 maturity indication:
+- `0 — unknown/not controlled`
+- `1 — engineering/DEV evidence`
+- `2 — repeatable LVP evidence`
+- `3 — sustained SVP evidence`
 
-### LVP → SVP
-- Is accepted output sustainable, not just briefly demonstrated?
-- What is the true constraint/bottleneck?
-- What happens to yield and cycle time without engineering rescue?
-- Are measurement and controls trustworthy for CTQ decisions?
-- Can supply support planned rate and changes?
-- Are maintenance/downtime/recovery included in capacity?
-- Is cost per good part based on actual production behavior?
-- Can product/process changes be cut in without losing genealogy or evidence?
+Important guardrail: the checklist is not a simple average score. One weak critical dimension can block a transition.
 
-## Podcast listener tool — “Where are we lying to ourselves?”
+## “Where are we lying to ourselves?”
 Ask five questions:
-1. **What are we claiming is ready?** Technology, design, process, supplier, quality system, rate or business economics?
+1. **What are we claiming is ready?**
 2. **What evidence proves that specific claim?**
 3. **Was the evidence generated with a representative configuration/process/environment?**
 4. **What expert intervention or hidden workaround was required?**
-5. **What changes since the evidence was generated could invalidate it?**
-
-If the team cannot answer these, the readiness label is probably ahead of the evidence.
+5. **What changed since the evidence was generated that could invalidate it?**
 
 ## Claims
 ### P2-C-MAT-001 — DEV/LVP/SVP should describe the maturity of the evidence burden, not simply unit-count bands
@@ -233,15 +158,15 @@ basis: NASA PRR focuses required quantity/readiness; DoD MRL uses environment, p
 Use this matrix as a conversation and evidence-planning tool. Tailor depth to product risk, complexity, regulation, lifecycle, volume and business model. A simple low-risk product may need far less formal evidence than aerospace, medical, automotive or safety-critical hardware.
 
 ## Next integration
-1. Map Sentinel Node examples into each matrix row.
-2. Convert the matrix into a compact listener checklist for show notes.
-3. Use the transition questions to audit Opening Arc A1–A8.
-4. Feed configuration/change-control gaps into P2.02.
-5. Feed quality evidence gaps into P2.03.
-6. Feed pilot/rate gaps into P2.04.
+1. Use listener checklist in show notes and episode research packs.
+2. Use transition questions to audit Opening Arc A1–A8.
+3. Feed configuration/change-control gaps into P2.02.
+4. Feed quality evidence gaps into P2.03.
+5. Feed pilot/rate gaps into P2.04.
 
 ## Readiness
 Decision matrix: CAPTURED
 Evidence boundaries: CAPTURED
-Worked-example linkage: PARTIAL — NEXT
-Podcast-ready checklist: NEXT
+Worked-example linkage: CAPTURED
+Podcast-ready checklist: CAPTURED
+P2.01 readiness package: NEAR PODCAST READY — technical review/source-note packaging remains
