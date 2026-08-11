@@ -1,6 +1,6 @@
 # Pass 2.01 — Hardware Evolution & Manufacturing Readiness Definitions
 
-status: ACTIVE — DEPTH PASS
+status: ACTIVE — DEPTH PASS / WORKED EXAMPLE CAPTURED
 created_on: 2026-08-11
 maps_to: Opening Arc A1–A8; Episodes 1–5, 26–31; Hardware Evolution Ladder
 canonical_owners: A0 Early Hardware Development; A1 Product Readiness/NPI; A5 Pilot/Ramp/Capacity
@@ -170,7 +170,7 @@ status: GOVERNANCE RULE
 
 ### P2-C-RDY-005 — Exit evidence should be tied to the uncertainty being retired at that stage rather than a universal document checklist
 status: STRONG ENGINEERING SYNTHESIS
-Needs additional case/examples before Podcast Ready.
+Worked example now captured; cross-industry corroboration remains useful before Podcast Ready.
 
 ## Myths to reject
 - “TRL 6 means we are ready for production.”
@@ -199,27 +199,34 @@ Applies when: reasoning about progression from manufacturing development through
 Does not imply: DoD acquisition milestone language or numerical MRL assignment applies universally.
 Decision linkage: LVP/ramp/SVP readiness matrix.
 
-## Worked-example target for next step
-Build one fictional hardware product through the complete Ladder and show, at each transition:
-- what changed physically;
-- what evidence was generated;
-- what evidence did NOT transfer;
-- what production debt remained;
-- what would block the next stage.
+## Worked example — CAPTURED
+Canonical fictional product: **Sentinel Node**, an industrial vibration/temperature condition-monitoring device.
 
-This becomes the reusable narrative spine for Opening Arc + Episode 60.
+File: `evidence/pass2/P2_01_WORKED_EXAMPLE_SENTINEL_NODE.md`
+
+The example carries one product through Idea → Requirements → Architecture → POC → Integrated Prototype → Engineering Prototype → Production Intent → LVP → Production Validation → Ramp → SVP and explicitly tracks:
+- physical configuration changes;
+- evidence generated;
+- evidence that does not transfer after representative changes;
+- manufacturing debt and expiration triggers;
+- production-system learning;
+- supplier/change-control issues;
+- capacity/yield/test bottlenecks;
+- genealogy and field-feedback implications.
+
+This example is intended as a reusable narrative spine, especially for Opening Arc and Episode 60.
 
 ## Remaining depth work
 1. Extract NASA systems-engineering review definitions/criteria for requirements/design/verification gates where useful.
 2. Extract current DoD MRL thread/sub-thread structure at useful depth without importing acquisition bureaucracy into the podcast.
 3. Reconcile readiness terminology with NPI/PVT conventions already captured in A1/A5.
-4. Build the worked hardware example.
-5. Map readiness evidence to DEV/LVP/SVP listener-facing checklist.
+4. Map readiness evidence to DEV/LVP/SVP listener-facing checklist.
+5. Perform episode-level readiness review for A1–A8 / Episodes 1–5 and 26–31.
 6. Promote only evidence-backed portions to Podcast Ready.
 
 ## Readiness
 Primary-source depth backbone: CAPTURED
 Applicability boundaries: CAPTURED
 Canonical synthesis: CAPTURED
-Worked example: NEXT
+Worked example: CAPTURED
 Podcast Ready: NOT YET
