@@ -1,12 +1,13 @@
 # A1 Research Pack — From an Idea to Engineering Requirements
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: Audience A — founders / early hardware development teams
 secondary_audience: systems, mechanical, electronics, embedded, test, NPI leads
 lifecycle: DEV-FIRST / CROSS-STAGE
 entry_point: PRIMARY SERIES ENTRY
 technical_depth: foundation
+source_note: podcast/pilot/A1_SOURCE_VERIFICATION_NOTE.md
 
 ## 1. Episode promise
 
@@ -78,37 +79,35 @@ Need / user problem
 
 Requirements are not a one-time waterfall handoff. They mature with evidence, but changes should remain visible once they start driving dependent engineering decisions.
 
-## 5. Core claim register — draft
+## 5. Core claim register — stable set
 
-| ID | Claim | Class | Priority | Status | Applicability / note |
+| ID | Claim | Class | Priority | Evidence state | Applicability / note |
 |---|---|---|---|---|---|
-| A1-C01 | A product idea is not yet an engineering requirement set; teams need explicit functional, interface and constraint statements before detailed design becomes coordinated. | V6 supported by V2/V5 | P0 | UNVERIFIED | General systems-engineering principle. |
-| A1-C02 | Useful engineering requirements should be clear enough to support verification or an explicit method of determining satisfaction. | V2/V6 | P0 | UNVERIFIED | Avoid claiming a universal wording rule until source verified. |
-| A1-C03 | Requirements and assumptions should be traceable to the need/constraint they serve and to downstream verification/design evidence where practical. | V2/V6 | P1 | UNVERIFIED | Scale approach to team size. |
-| A1-C04 | Interfaces deserve explicit ownership because multidisciplinary failures often arise from incompatible assumptions across subsystem boundaries. | V5/V6 | P1 | UNVERIFIED | Narrative/general engineering lesson; source support needed. |
+| A1-C01 | A product idea is not yet an engineering requirement set; teams need explicit functional, interface and constraint statements before detailed design becomes coordinated. | V6 supported by V2/V5 | P0 | SUPPORTED / synthesis boundary explicit | General systems-engineering principle; not presented as a universal normative statement. |
+| A1-C02 | Useful engineering requirements should be clear enough to support verification or an explicit method of determining satisfaction. | V2/V6 | P0 | STRONGLY SUPPORTED | NASA requirements-verification guidance supports planning verification while developing requirements. |
+| A1-C03 | Requirements and assumptions should be traceable to the need/constraint they serve and to downstream verification/design evidence where practical. | V2/V6 | P1 | PARTIALLY SUPPORTED | NASA supports requirement identity/source/verification linkage; broader traceability remains to be packaged if used strongly. |
+| A1-C04 | Interfaces deserve explicit ownership because multidisciplinary failures often arise from incompatible assumptions across subsystem boundaries. | V5/V6 | P1 | OPEN | Narrative/general engineering synthesis; source support can be added before script ready. |
 | A1-C05 | A prototype-stage requirement may legitimately remain a range, target or TBD when uncertainty is acknowledged and a learning activity is defined. | V6 | P1 | SYNTHESIS | Internal lifecycle guidance, not an external standard requirement. |
-| A1-C06 | Safety, regulatory and environmental constraints should be surfaced early because they can constrain architecture, materials, electrical design, enclosure, testing and manufacturing choices. | V2/V6 | P0 | UNVERIFIED | Do not imply specific regulation without product/jurisdiction. |
-| A1-C07 | Not every requirement should become a production CTQ; CTQs are the subset where variation/control matters materially to product/process outcomes. | V6 + P2.03 | P0 | UNVERIFIED | Must align with canonical quality language. |
-| A1-C08 | Once a requirement controls supplier specifications, tooling, acceptance criteria or compliance evidence, changing it becomes a configuration/change-control event rather than casual prototype editing. | V6 + P2.02 | P0 | UNVERIFIED | Backbone synthesis; validate underlying CM principle. |
-| A1-C09 | Development verification and production acceptance testing are different evidence problems even when they measure related characteristics. | V6 + P2.03 | P1 | UNVERIFIED | Cross-link A7 / production-test episodes. |
+| A1-C06 | Safety, regulatory and environmental constraints should be surfaced early because they can constrain architecture, materials, electrical design, enclosure, testing and manufacturing choices. | V2/V6 | P0 | OPEN / scoped | Do not imply specific regulation without product/jurisdiction. |
+| A1-C07 | Not every requirement should become a production CTQ; CTQs are the subset where variation/control matters materially to product/process outcomes. | V6 + P2.03 | P0 | BACKBONE-SUPPORTED | Preview only; canonical quality language comes from P2.03. |
+| A1-C08 | Once a requirement controls supplier specifications, tooling, acceptance criteria or compliance evidence, changing it becomes a configuration/change-control event rather than casual prototype editing. | V6 + P2.02 | P0 | BACKBONE-SUPPORTED | Configuration/change principle inherited from P2.02. |
+| A1-C09 | Development verification and production acceptance testing are different evidence problems even when they measure related characteristics. | V6 + P2.03 | P1 | PARTIALLY SUPPORTED | NASA V&V supports verification planning; production-acceptance distinction remains lifecycle synthesis. |
 | A1-C10 | Requirements maturity should increase from DEV to LVP to SVP rather than being treated as either “none” or “fully frozen.” | V6 | P1 | SYNTHESIS | Hardware Evolution Ladder application. |
 
-## 6. P0 source targets
+## 6. Source package status
 
-A1 is not standards-heavy, but several core statements deserve authoritative support before scripting.
+See `podcast/pilot/A1_SOURCE_VERIFICATION_NOTE.md`.
 
-### Systems-engineering / requirements sources
-Priority source families:
-- NASA Systems Engineering Handbook / requirements guidance;
-- INCOSE Systems Engineering Handbook / requirements guidance where legally accessible and quotable;
-- relevant government systems-engineering requirements guides;
-- standards such as ISO/IEC/IEEE 29148 only for claims that actually require its normative terminology/applicability.
+Primary sources located:
+- NASA Systems Engineering Handbook / Requirements Verification Matrix and V&V planning guidance;
+- ISO/IEC/IEEE 29148:2018 official ISO record;
+- ISO/IEC/IEEE DIS 29148 Edition 3 revision-watch record.
 
-Important guardrail:
-Do not turn A1 into a lecture on ISO/IEC/IEEE 29148. Use the standard only where exact requirements-engineering claims materially benefit from it.
-
-### Safety/regulatory awareness
-Use product-neutral authoritative engineering guidance to support the need for early hazard/regulatory consideration, while stating clearly that actual legal/standard obligations depend on product, industry and jurisdiction.
+Standards guardrail:
+- ISO/IEC/IEEE 29148:2018 remains the current published edition in the checked ISO record and was confirmed in 2024;
+- an Edition 3 DIS is under development in 2026;
+- the draft must not be substituted for the current published standard;
+- exact normative claims remain blocked until the licensed/full text and clause support are available.
 
 ## 7. Requirement taxonomy for the episode
 
@@ -117,7 +116,7 @@ The listener should learn a practical taxonomy, not an encyclopedic standards ta
 ### A. Functional
 What must the product do?
 
-Example:
+Examples:
 - detect an event;
 - move a load;
 - maintain a temperature;
@@ -187,7 +186,7 @@ Examples:
 - assembly/service accessibility;
 - calibration/test requirements.
 
-These are not all “manufacturing requirements” in a formal normative sense; they are practical constraints that should become visible early if they affect architecture.
+These are practical constraints that should become visible early if they affect architecture; they are not all formal “manufacturing requirements” in every methodology.
 
 ## 8. The Minimum Useful Requirements Sheet — listener tool
 
@@ -298,21 +297,19 @@ The requirement record therefore matures with evidence rather than pretending al
 ## 12. Common failure modes to cover narratively
 
 ### Failure 1 — Starting CAD from a sentence
-Each discipline invents missing requirements locally.
-Result: integration conflict appears late.
+Each discipline invents missing requirements locally; integration conflict appears late.
 
 ### Failure 2 — Writing requirements as design solutions
-Example: “use motor X” when the actual requirement is torque/speed/environment/interface.
-Sometimes the component really is mandated; the episode should teach the distinction.
+Example: “use motor X” when the actual requirement is torque/speed/environment/interface. Sometimes a component really is mandated; the episode teaches the distinction.
 
 ### Failure 3 — False precision
-A startup writes “±0.1 mm” or “5-year life” because a spreadsheet wants a number, not because evidence or customer need supports it.
+A startup writes a tolerance or lifetime because a spreadsheet wants a number, not because evidence or customer need supports it.
 
 ### Failure 4 — Invisible assumptions
 The most dangerous requirement is often the one nobody wrote because “everyone knew.”
 
 ### Failure 5 — No verification intent
-A requirement reaches DVT/PVT before anyone asks how it will be measured.
+A requirement reaches later validation before anyone asks how it will be measured.
 
 ### Failure 6 — Compliance discovered after architecture lock
 A regulatory/safety/environment constraint forces enclosure, isolation, spacing, materials, firmware behavior or test architecture to change late.
@@ -359,14 +356,14 @@ Related tracks:
 - DFX / Industrialization / NPI
 - Reliability / Validation / Compliance
 
-## 17. Research backlog before CLAIM SET STABLE
+## 17. Remaining backlog before EVIDENCE VERIFIED
 
-1. Locate and package authoritative systems-engineering requirements guidance.
-2. Decide which A1 claims actually warrant ISO/IEC/IEEE 29148 support versus general NASA/INCOSE guidance.
-3. Verify terminology around requirement quality/verifiability without overclaiming normative universality.
-4. Add one credible real-world or anonymized interface/requirements failure example if it improves narrative value.
-5. Technical review from a systems-engineering perspective.
-6. Confirm the Minimum Useful Requirements Sheet remains practical for a 2–10 person startup team.
+1. Acquire/licence full ISO/IEC/IEEE 29148 if clause-level normative claims will appear in script.
+2. Add exact support references for any P0 29148 claim used authoritatively.
+3. Add interface-focused support if A1-C04 becomes a strong causal claim.
+4. Add product-neutral safety/regulatory support only if the script makes a consequential claim beyond scoped engineering guidance.
+5. Reuse verified P2.02/P2.03 evidence for configuration/CTQ boundaries.
+6. Technical systems-engineering review.
 
 ## 18. Current assessment
 
@@ -376,8 +373,13 @@ Navigation entry-point fit: STRONG
 Standards burden: LOW–MEDIUM
 Quantitative burden: LOW
 Backbone risk: LOW
-Source verification: OPEN
+Claim-set stability: PASS
+Source verification: STARTED
 
-Next status target:
+Current maturity:
 
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+`CLAIM SET STABLE`
+
+Next target:
+
+`EVIDENCE VERIFIED`
