@@ -1,7 +1,7 @@
 # Hardware-to-Production Podcast — Season & Listener Navigation Architecture
 
 status: CANONICAL EDITORIAL NAVIGATION
-version: 1.0
+version: 1.1
 baseline: Knowledge Backbone V1
 purpose: Divide the 68-episode roadmap into listener-friendly seasons and entry paths without changing the frozen technical backbone.
 
@@ -230,6 +230,7 @@ Every Episode Research Pack must add:
 - Next logical episodes
 - Topic tags
 - DEV / LVP / SVP relevance score: Primary / Secondary / Context
+- Standalone recap required: YES / NO
 
 ## 6. Topic-tag taxonomy
 
@@ -272,21 +273,70 @@ Episode → P2 → WBS → Claims → Evidence.
 
 This preserves technical traceability without making the podcast feel like a standards database.
 
-## 8. Pilot Batch placement
+## 8. Problem-based “start here” routes
+
+The published catalogue should additionally expose practical entry cards/routes:
+
+- **I only have an idea / early prototype** → A1
+- **The product works; how do I manufacture it?** → Episode 1
+- **We are about to build tens/hundreds** → Episode 20, then Season 5
+- **Yield/quality is unstable** → Episode 23 or 28/32 depending symptom
+- **We cannot hit output / capacity** → Episode 29, then Season 8
+- **We need to industrialize suppliers** → Season 7
+- **We are considering automation** → Episode 41
+- **We are introducing MES / manufacturing data / connected automation** → Episode 35 recap, then Season 9
+- **We need to understand standards/compliance** → Episode 36 plus the domain-specific episode
+
+These routes are navigation aids; they do not alter prerequisite truth.
+
+## 9. Role-based recommended paths
+
+### Founder / technical co-founder
+A1 → A2 → A3 → A4 → A8 → 1 → 4 → 6 → 8 → 11 → 20 → 26 → 37 → 41
+
+### New NPI / industrialization engineer
+1 → 3 → 4 → 5 → 20 → 21 → 23 → 24 → 26 → 27 → 29 → 30 → 31 → 32 → 35
+
+### Quality / reliability
+4 → 8 → 9 → 10 → 23 → 24 → 28 → 32 → 33 → 34 → 35 → 36 → 39 → 40
+
+### Manufacturing / process engineer
+6 → 7 → 9 → 11 → relevant 12–19 → 20 → 21 → 22 → 25 → 26 → 28 → 29 → 41
+
+### Automation / operations
+20 → 21 → 22 → 24 → 25 → 27 → 29 → 41 → Season 8 → Season 9
+
+### Manufacturing-data / MES
+A8 → 20 → 23 → 24 → 31 → 33 → 35 → Season 9
+
+## 10. Pilot Batch placement
 
 The first five Episode Research Packs are deliberately distributed across the navigation architecture:
 
-| Pilot | Season | Why selected |
-|---|---|---|
-| A1 — From an Idea to Engineering Requirements | S1 | tests founder/DEV entry point |
-| A4 — Choosing Prototype Technologies Without Trapping the Product | S1/S3 bridge | tests prototype-shortcut expiration and process migration |
-| 1 — The product works. Why can’t we manufacture it? | S2 | tests main industrialization entry point |
-| 23 — DFMEA/PFMEA/Control Plan/Quality Gates | S4/S6 bridge | tests standards-heavy quality packaging |
-| 29 — Capacity/Bottlenecks/Takt/Line Balance | S5 | tests quantitative worked-evidence packaging |
+| Pilot | Season | Entry behavior | Why selected |
+|---|---|---|---|
+| A1 — From an Idea to Engineering Requirements | S1 | YES | tests founder/DEV entry point |
+| A4 — Choosing Prototype Technologies Without Trapping the Product | S1 | WITH RECAP | tests prototype-shortcut expiration and process migration |
+| 1 — The product works. Why can’t we manufacture it? | S2 | YES | tests main industrialization entry point |
+| 23 — DFMEA/PFMEA/Control Plan/Quality Gates | S4 | WITH RECAP | tests standards-heavy quality packaging and mid-catalogue entry |
+| 29 — Capacity/Bottlenecks/Takt/Line Balance | S5 | WITH RECAP | tests quantitative worked-evidence packaging and problem-based entry |
+
+The pilot succeeds only if Episode 23 and Episode 29 can stand on concise prerequisite recaps rather than requiring the listener to consume the entire prior catalogue.
 
 If these five pass the Episode Packaging Contract, they become reference templates for the rest of the catalogue.
 
-## 9. Freeze compatibility
+## 11. Pilot navigation acceptance criteria
+
+For each pilot episode verify:
+1. a new listener can identify whether the episode is for them within the opening minute;
+2. missing prerequisite concepts can be recapped in ≤3–5 minutes without creating new technical truth;
+3. the listener knows the current lifecycle stage;
+4. DEV/LVP/SVP distinctions are visible where relevant;
+5. at least one clear next-episode route is provided;
+6. topic tags and role/stage paths correctly surface the episode;
+7. internal P2/WBS terminology stays out of the listener-facing narrative unless pedagogically necessary.
+
+## 12. Freeze compatibility
 
 This architecture does not reopen Knowledge Backbone V1.
 It changes listener-facing organization only.
@@ -298,7 +348,7 @@ A season move or title change is editorial refinement unless it changes:
 - DEV/LVP/SVP lifecycle logic;
 - backbone/global invariants.
 
-## 10. Result
+## 13. Result
 
 The podcast should be marketed and navigated as a set of focused learning journeys, not as “68 episodes you must finish.”
 
