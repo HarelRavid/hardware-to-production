@@ -69,18 +69,27 @@ This taxonomy is an internal teaching aid, not a normative external classificati
 ## 5. Stable claim register
 | ID | Claim | Class | Priority | Status | Publication note |
 |---|---|---|---|---|---|
-| A3-C01 | Subsystems that function individually can still fail at system level because the interaction/interface conditions were not compatible or demonstrated. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | General systems-engineering support required. |
-| A3-C02 | Useful interface definition can include physical, functional, behavioral, state, tolerance, environmental and ownership information depending on the interaction claim. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | Do not imply one universal ICD format. |
-| A3-C03 | Cross-boundary ownership should be explicit because an interface normally depends on at least two sides and often several disciplines. | V6 + A2 | P0 | SYNTHESIS STABLE | A2 owns responsibility mapping. |
-| A3-C04 | Interface verification should address relevant failure conditions and variation, not only nominal fit/function. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | A7 owns verification-planning depth. |
+| A3-C01 | Subsystems that function individually can still fail at system level because the interaction/interface conditions were not compatible or demonstrated. | V6 + V2 | P0 | SOURCE LOCATED / CLAIM STABLE | NASA integration/interface-management guidance supports system-level interface compatibility and discrepancy handling. |
+| A3-C02 | Useful interface definition can include physical, functional, behavioral, state, tolerance, environmental and ownership information depending on the interaction claim. | V6 + V2 | P0 | SOURCE LOCATED / CLAIM STABLE | NASA IRD outline supports responsibility, units/tolerances, mechanical, data/timing and environmental interface requirements; our broader taxonomy remains synthesis. |
+| A3-C03 | Cross-boundary ownership should be explicit because an interface normally depends on at least two sides and often several disciplines. | V6 + A2 | P0 | SOURCE LOCATED / CLAIM STABLE | NASA IRD outline explicitly includes responsibility and change authority. |
+| A3-C04 | Interface verification should address relevant interface requirements and conditions, not only nominal fit/function. | V6 + V2 | P0 | SOURCE LOCATED / CLAIM STABLE | NASA integration/V&V guidance requires interface compatibility and inclusion of interfaces in V&V plans. |
 | A3-C05 | Manufacturing/test interfaces can constrain architecture and should be considered before enclosure/tooling/test access is irreversibly locked. | V6 + P2.01/P2.03 | P1 | BACKBONE-SUPPORTED / STABLE | Product-specific timing. |
-| A3-C06 | A change on one side of an interface can invalidate interaction evidence when the changed dependency contributes to the demonstrated claim. | V6 + INTERACTION CLAIM/P2.02 | P0 | BACKBONE-SUPPORTED / STABLE | Preserve evidence-impact logic. |
+| A3-C06 | A change on one side of an interface can invalidate interaction evidence when the changed dependency contributes to the demonstrated claim. | V6 + INTERACTION CLAIM/P2.02 | P0 | SOURCE LOCATED + BACKBONE-STABLE | NASA procedural guidance supports analyzing and controlling changes affecting both sides of an interface. |
 | A3-C07 | Naming a connector, API, mounting pattern or protocol does not necessarily define all conditions needed to prove interface compatibility. | V6 | P1 | SYNTHESIS STABLE | Practical guardrail. |
 | A3-C08 | Interface maturity can increase progressively DEV→LVP→SVP; early teams need visible assumptions, not maximal documentation from day one. | V6 | P1 | SYNTHESIS STABLE | Lifecycle framing. |
 
-Core claims: 8. Open P0 source families: systems/interface management + verification support.
+Core claims: 8. P0 source family located: NASA Systems Engineering Handbook / NPR 7123 interface-management guidance. Exact source-note packaging remains before EVIDENCE VERIFIED.
 
-## 6. Listener tool — Interface Contract Sheet
+## 6. Source-verification note
+Primary authoritative support located:
+- NASA Systems Engineering Handbook, Appendix L — Interface Requirements Document outline: purpose/scope, responsibility/change authority, interface responsibilities, engineering units/tolerances, structural/mechanical, data/protocol/timing, environment and other interface requirements.
+- NASA Systems Engineering Handbook, Integration Plan / V&V guidance: integration of components/subsystems, interface compatibility and inclusion of interfaces in verification/validation planning.
+- NASA NPR 7123 systems-engineering procedural requirements: interface management during system design and product integration, cross-interface traceability, change control and resolution when changes affect both sides.
+
+Publication boundary:
+NASA is used to support the engineering principles of explicit interface definition, responsibility, integration and verification. Our lightweight Interface Contract Sheet and DEV/LVP/SVP maturity model are repository synthesis and are not presented as NASA-required artifacts for commercial startups.
+
+## 7. Listener tool — Interface Contract Sheet
 For one interface capture:
 | Field | Question |
 |---|---|
@@ -98,7 +107,7 @@ For one interface capture:
 | Temporary assumptions/TBDs | what is still provisional? |
 | Expiration trigger | when must the interface become controlled? |
 
-## 7. Integration Risk Review
+## 8. Integration Risk Review
 Ask for each critical interface:
 1. What happens if both sides are “within spec” but incompatible?
 2. Which assumption exists only on one side?
@@ -109,7 +118,7 @@ Ask for each critical interface:
 7. What supplier/configuration change would require re-verification?
 8. Is there one accountable owner for resolving cross-boundary conflict?
 
-## 8. Worked examples
+## 9. Worked examples
 ### Mechanical/electrical connector
 Mechanical team reserves envelope but not mating/service clearance; electronics team places connector at edge; enclosure closes but cable cannot be inserted after assembly.
 
@@ -122,7 +131,7 @@ Hardware revision changes sensor startup behavior; firmware assumes prior timing
 ### Production-test interface
 Final enclosure design removes access to programming/test points; late fixture becomes complex or requires an extra connector/process step.
 
-## 9. Sentinel Node interface example
+## 10. Sentinel Node interface example
 Critical connector interface includes:
 - board-side connector geometry/location;
 - mating part/supplier configuration;
@@ -137,7 +146,7 @@ Critical connector interface includes:
 
 Episode lesson: “uses connector X” is not an interface contract.
 
-## 10. Boundary with adjacent episodes
+## 11. Boundary with adjacent episodes
 - A2 owns **who owns/reviews the responsibility**.
 - A3 owns **what the interface contract must make visible**.
 - A4 owns **whether a prototype implementation represents the eventual claim**.
@@ -146,7 +155,7 @@ Episode lesson: “uses connector X” is not an interface contract.
 
 This boundary prevents Season 1 from repeating the same systems-engineering material under different titles.
 
-## 11. Common failure modes
+## 12. Common failure modes
 - CAD-fit-only interface review.
 - Pinout/protocol documented but startup/error states undefined.
 - Each discipline assumes the other side absorbs tolerance.
@@ -154,10 +163,10 @@ This boundary prevents Season 1 from repeating the same systems-engineering mate
 - Test/programming/service access discovered after enclosure lock.
 - Interface change treated as local ECO even though interaction evidence changes.
 
-## 12. Applicability statement
+## 13. Applicability statement
 This episode teaches general multidisciplinary interface discipline. It does not prescribe a particular systems-engineering documentation standard or regulated interface-control process. Safety-critical/regulated programs may require more formal ICDs, analyses, reviews and verification records.
 
-## 13. What this episode must NOT claim
+## 14. What this episode must NOT claim
 - every interface needs a large formal ICD in early DEV;
 - interfaces are only connectors/mechanical boundaries;
 - subsystem compliance proves system interaction;
@@ -165,15 +174,14 @@ This episode teaches general multidisciplinary interface discipline. It does not
 - freezing interfaces early is always beneficial;
 - a checklist replaces specialist analysis for safety/regulatory interfaces.
 
-## 14. Evidence backlog after claim stabilization
+## 15. Evidence backlog after claim stabilization
 Before EVIDENCE VERIFIED:
-1. Attach authoritative systems-engineering/interface-management support.
-2. Attach authoritative support for planning verification against interface requirements/conditions.
-3. Verify any product-specific safety/regulatory examples only when their applicability is explicit.
-4. Technical review: systems + mechanical + electronics/embedded.
-5. Real-world case remains optional; do not add one merely to satisfy a format.
+1. Package exact NASA page/section references into episode source notes.
+2. Verify any product-specific safety/regulatory examples only when applicability is explicit.
+3. Technical review: systems + mechanical + electronics/embedded.
+4. Real-world case remains optional; do not add one merely to satisfy a format.
 
-## 15. Current assessment
+## 16. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
@@ -181,7 +189,7 @@ Standards burden: LOW-MEDIUM
 Quantitative burden: LOW
 Backbone risk: LOW
 Claim set: STABLE
-Source verification: CONTROLLED BACKLOG
+Source verification: AUTHORITATIVE SOURCE FAMILY LOCATED
 
 Next status target:
 `CLAIM SET STABLE → EVIDENCE VERIFIED`
