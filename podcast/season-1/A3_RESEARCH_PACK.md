@@ -1,6 +1,6 @@
 # A3 Research Pack — System Architecture & Interfaces: Preventing Cross-Discipline Integration Failure
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: Audience A — founders / early hardware development teams
 secondary_audience: systems, mechanical, electronics, embedded, test, NPI
@@ -25,7 +25,7 @@ Canonical listener question:
 
 **Prototype shortcut:** interfaces can remain provisional while architecture is still learning.
 
-**Shortcut expires when:** another subsystem, supplier, verification activity, tooling, enclosure, compliance or field service decision depends on the interface.
+**Shortcut expires when:** another subsystem, supplier, verification activity, tooling, enclosure, compliance or field-service decision depends on the interface.
 
 **Next:** A4 prototype technology selection → A5/A6 serious prototypes → A7 verification.
 
@@ -40,13 +40,13 @@ Temporary connectors, jumper wires, oversize envelopes and provisional protocols
 An interface must become controlled when dependent teams/suppliers/tests need a stable contract.
 
 ### LVP change
-Interfaces need released drawings/specifications, tolerances, pinouts/protocols, service/access requirements and controlled verification.
+Interfaces need released drawings/specifications, tolerances, pinouts/protocols, service/access requirements and controlled verification appropriate to the product.
 
 ### SVP evidence
 Interface compatibility must remain controlled across supplier lots, configuration changes, manufacturing variation and field/service conditions.
 
 ### Manufacturing-debt prevention
-Do not let interface definition live only in CAD screenshots, Slack messages or one engineer’s memory.
+Do not let interface definition live only in CAD screenshots, chat messages or one engineer’s memory.
 
 ### Listener action
 Pick the three interfaces most likely to create late integration failure and build an Interface Contract Sheet for each.
@@ -62,19 +62,23 @@ Typical interface classes:
 - software/firmware/hardware state: boot/update/configuration dependencies;
 - user/service: access, replacement, calibration, maintenance;
 - manufacturing/test: fixture access, programming, test points, assembly datum;
-- regulatory/safety boundary: isolation, guarding, creepage/clearance or other product-specific constraints where applicable.
+- regulatory/safety boundary: product-specific constraints where applicable.
 
-## 5. Claim register — draft
-| ID | Claim | Class | Priority | Status | Note |
+This taxonomy is an internal teaching aid, not a normative external classification.
+
+## 5. Stable claim register
+| ID | Claim | Class | Priority | Status | Publication note |
 |---|---|---|---|---|---|
-| A3-C01 | Subsystems that work individually can still fail as a system because of incompatible interface assumptions. | V5/V6 | P0 | OPEN | General systems-engineering support needed. |
-| A3-C02 | Interface definitions should state more than physical connection; behavior, tolerances, limits, states and ownership may matter to the claim. | V2/V6 | P0 | OPEN | Avoid universal formalism. |
-| A3-C03 | Interface ownership should be explicit because responsibility commonly spans more than one discipline. | V6 + A2 | P0 | BACKBONE-SUPPORTED | Ownership synthesis. |
-| A3-C04 | Interface verification should be planned against the failure modes/conditions that matter, not only nominal fit/function. | V2/V6 | P0 | OPEN | Link A7. |
-| A3-C05 | Production-intent manufacturing/test interfaces can constrain product architecture and should enter before tooling/test lock-in. | V6 + P2.01/P2.03 | P1 | BACKBONE-SUPPORTED | DFT/DFX link. |
-| A3-C06 | Changing one side of an interface can invalidate evidence on the other side when the affected claim depends on the interaction. | V6 + INTERACTION CLAIM/P2.02 | P0 | BACKBONE-SUPPORTED | Global change/evidence rule. |
-| A3-C07 | A connector, API, mounting pattern or protocol name does not by itself fully define an interface contract. | V6 | P1 | SYNTHESIS | Practical guardrail. |
-| A3-C08 | Interface definition maturity should increase DEV→LVP→SVP rather than being either fully formal or absent. | V6 | P1 | SYNTHESIS | Lifecycle framing. |
+| A3-C01 | Subsystems that function individually can still fail at system level because the interaction/interface conditions were not compatible or demonstrated. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | General systems-engineering support required. |
+| A3-C02 | Useful interface definition can include physical, functional, behavioral, state, tolerance, environmental and ownership information depending on the interaction claim. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | Do not imply one universal ICD format. |
+| A3-C03 | Cross-boundary ownership should be explicit because an interface normally depends on at least two sides and often several disciplines. | V6 + A2 | P0 | SYNTHESIS STABLE | A2 owns responsibility mapping. |
+| A3-C04 | Interface verification should address relevant failure conditions and variation, not only nominal fit/function. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | A7 owns verification-planning depth. |
+| A3-C05 | Manufacturing/test interfaces can constrain architecture and should be considered before enclosure/tooling/test access is irreversibly locked. | V6 + P2.01/P2.03 | P1 | BACKBONE-SUPPORTED / STABLE | Product-specific timing. |
+| A3-C06 | A change on one side of an interface can invalidate interaction evidence when the changed dependency contributes to the demonstrated claim. | V6 + INTERACTION CLAIM/P2.02 | P0 | BACKBONE-SUPPORTED / STABLE | Preserve evidence-impact logic. |
+| A3-C07 | Naming a connector, API, mounting pattern or protocol does not necessarily define all conditions needed to prove interface compatibility. | V6 | P1 | SYNTHESIS STABLE | Practical guardrail. |
+| A3-C08 | Interface maturity can increase progressively DEV→LVP→SVP; early teams need visible assumptions, not maximal documentation from day one. | V6 | P1 | SYNTHESIS STABLE | Lifecycle framing. |
+
+Core claims: 8. Open P0 source families: systems/interface management + verification support.
 
 ## 6. Listener tool — Interface Contract Sheet
 For one interface capture:
@@ -116,7 +120,7 @@ Electronics meets bench function; enclosure/material/thermal path changes create
 Hardware revision changes sensor startup behavior; firmware assumes prior timing and passes bench testing only under warm restart.
 
 ### Production-test interface
-Final enclosure design removes access to programming/test points; late fixture becomes complex or requires extra connector/process step.
+Final enclosure design removes access to programming/test points; late fixture becomes complex or requires an extra connector/process step.
 
 ## 9. Sentinel Node interface example
 Critical connector interface includes:
@@ -133,7 +137,16 @@ Critical connector interface includes:
 
 Episode lesson: “uses connector X” is not an interface contract.
 
-## 10. Common failure modes
+## 10. Boundary with adjacent episodes
+- A2 owns **who owns/reviews the responsibility**.
+- A3 owns **what the interface contract must make visible**.
+- A4 owns **whether a prototype implementation represents the eventual claim**.
+- A7 owns **how the claim will be verified**.
+- A8 owns **how interface/configuration identity and changes remain controlled**.
+
+This boundary prevents Season 1 from repeating the same systems-engineering material under different titles.
+
+## 11. Common failure modes
 - CAD-fit-only interface review.
 - Pinout/protocol documented but startup/error states undefined.
 - Each discipline assumes the other side absorbs tolerance.
@@ -141,10 +154,10 @@ Episode lesson: “uses connector X” is not an interface contract.
 - Test/programming/service access discovered after enclosure lock.
 - Interface change treated as local ECO even though interaction evidence changes.
 
-## 11. Applicability statement
+## 12. Applicability statement
 This episode teaches general multidisciplinary interface discipline. It does not prescribe a particular systems-engineering documentation standard or regulated interface-control process. Safety-critical/regulated programs may require more formal ICDs, analyses, reviews and verification records.
 
-## 12. What this episode must NOT claim
+## 13. What this episode must NOT claim
 - every interface needs a large formal ICD in early DEV;
 - interfaces are only connectors/mechanical boundaries;
 - subsystem compliance proves system interaction;
@@ -152,21 +165,23 @@ This episode teaches general multidisciplinary interface discipline. It does not
 - freezing interfaces early is always beneficial;
 - a checklist replaces specialist analysis for safety/regulatory interfaces.
 
-## 13. Research backlog before CLAIM SET STABLE
-1. Package authoritative systems-engineering/interface-management support.
-2. Cross-check A2 ownership and A7 verification boundaries.
-3. Verify language around configuration-linked interaction evidence.
-4. Add one real-world case only if it improves teaching.
-5. Technical review: systems + mechanical + electronics/embedded.
+## 14. Evidence backlog after claim stabilization
+Before EVIDENCE VERIFIED:
+1. Attach authoritative systems-engineering/interface-management support.
+2. Attach authoritative support for planning verification against interface requirements/conditions.
+3. Verify any product-specific safety/regulatory examples only when their applicability is explicit.
+4. Technical review: systems + mechanical + electronics/embedded.
+5. Real-world case remains optional; do not add one merely to satisfy a format.
 
-## 14. Current assessment
+## 15. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
 Standards burden: LOW-MEDIUM
 Quantitative burden: LOW
 Backbone risk: LOW
-Source verification: OPEN
+Claim set: STABLE
+Source verification: CONTROLLED BACKLOG
 
 Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+`CLAIM SET STABLE → EVIDENCE VERIFIED`
