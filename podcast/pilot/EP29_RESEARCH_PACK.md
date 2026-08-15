@@ -1,6 +1,6 @@
 # Episode 29 Research Pack — Capacity, Bottlenecks, Takt Time and Line Balance
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 3 — Build the Production System
 primary_audience: Audience B — NPI / manufacturing / operations teams
 secondary_audience: founders, process engineers, automation engineers, finance/ops leads
@@ -58,6 +58,8 @@ Required good units over available production time.
 A planning pace:
 `available production time / required good units`
 
+Verified source boundary: Lean Enterprise Institute defines takt time as available production time divided by customer demand and describes it as the production pace needed to match demand. For the episode, use this as authoritative lean-practice support, not as a statutory/normative requirement.
+
 Guardrail: takt is demand-derived, not the measured cycle time of a station.
 
 ### Cycle time
@@ -75,21 +77,42 @@ Good released units per time interval. This is the primary system output lens.
 ### Bottleneck / constraint
 The resource or condition currently limiting accepted system throughput. It can move after an improvement.
 
-## 5. Core claim register — draft
+## 5. Core claim register — stable
 | ID | Claim | Class | Priority | Status | Note |
 |---|---|---|---|---|---|
-| EP29-C01 | Takt time is demand-derived available production time per required good unit; it should not be confused with measured station cycle time. | V2/V6 | P0 | OPEN | Source needed; equation/arithmetic straightforward. |
-| EP29-C02 | System capacity is not equal to the fastest or slowest isolated nominal machine rate without considering flow, availability, quality, rework and dependencies. | V6 + P2.04 | P0 | BACKBONE-STABLE | Quantitative examples required. |
+| EP29-C01 | Takt time is demand-derived available production time per required good unit; it should not be confused with measured station cycle time. | V2/V6 | P0 | SOURCE LOCATED / CLAIM STABLE | Lean Enterprise Institute authoritative lean-practice source. |
+| EP29-C02 | System capacity is not equal to the fastest or slowest isolated nominal machine rate without considering flow, availability, quality, rework and dependencies. | V6 + P2.04 | P0 | BACKBONE-STABLE | Quantitative examples checked. |
 | EP29-C03 | Accepted sustainable throughput is a more decision-relevant output than short peak machine speed. | V6 + Global Invariant | P0 | BACKBONE-STABLE | Core backbone invariant. |
-| EP29-C04 | Improving a non-constraint resource may increase local utilization/WIP without materially improving system throughput. | V5/V6 | P0 | OPEN | Source enrichment from Theory of Constraints/operations literature useful. |
+| EP29-C04 | Improving a non-constraint resource may increase local output/WIP without materially improving serial-system throughput. | V5/V6 | P0 | CLAIM STABLE / SOURCE ENRICHMENT OPEN | Demonstrated by serial-flow arithmetic; operations/TOC enrichment remains useful. |
 | EP29-C05 | The system constraint can move after an improvement, so capacity must be re-measured/re-modeled. | V6 + MOVING CONSTRAINT LOOP | P0 | BACKBONE-STABLE | Stress-test repair. |
-| EP29-C06 | Yield and rework can materially reduce good-unit capacity even when gross station cycle time is unchanged. | V3/V6 | P0 | BACKBONE-STABLE | Show math. |
-| EP29-C07 | OEE can help decompose equipment losses but does not prove root cause or system capacity. | V2/V6 + P2.07 | P0 | BACKBONE-STABLE | Cross-link automation/OEE. |
-| EP29-C08 | Run-at-rate or capacity evidence should be representative of intended production conditions for the claim being made. | V2/V6 | P0 | OPEN | Source terminology/applicability verification required. |
+| EP29-C06 | Yield and rework can materially reduce good-unit capacity even when gross station cycle time is unchanged. | V3/V6 | P0 | ARITHMETIC VERIFIED | Worked examples independently checked. |
+| EP29-C07 | OEE can help decompose equipment losses but does not prove root cause or system capacity. | V2/V6 + P2.07 | P0 | BACKBONE-STABLE / SOURCE PACK OPEN | Preserve P2.07 guardrail. |
+| EP29-C08 | Capacity evidence should be representative of intended production conditions for the claim being made. | V2/V6 | P0 | CLAIM STABLE / SOURCE ENRICHMENT OPEN | Formal customer-specific Run-at-Rate requirements intentionally deferred unless scoped. |
 | EP29-C09 | Capacity expansion decisions should compare simpler flow/process improvements, labor/shift changes, parallelization and automation economically rather than default to equipment purchase. | V6 + P2.05/P2.07 | P1 | BACKBONE-STABLE | Decision synthesis. |
 
-## 6. Listener tool — Capacity Reality Sheet
+## 6. Source verification note
+### Verified/located support
+Lean Enterprise Institute (LEI), Takt Time / Lean Lexicon:
+- supports `takt time = available production time / customer demand`;
+- frames takt as the pace/heartbeat used to match production with demand.
 
+LEI Standardized Work guidance:
+- explicitly uses process capacity sheets to calculate machine capacities in linked processes and identify bottlenecks;
+- links standardized work to takt, work sequence and standard in-process inventory.
+
+### Source-vs-synthesis boundary
+The following remain repository synthesis unless a later episode/source pack explicitly adopts an external definition:
+- Accepted Throughput as the preferred backbone output lens;
+- Capacity Evidence Ladder;
+- Capacity Reality Sheet;
+- Constraint Hunt;
+- MOVING CONSTRAINT LOOP;
+- the rule that investment decisions should compare process/flow/labor/parallelization/automation alternatives.
+
+### Formal Run-at-Rate boundary
+Do not teach a universal formal Run-at-Rate procedure in this episode. Customer/industry-specific production-rate demonstrations belong only when the applicable method, customer requirement and acceptance criteria are identified.
+
+## 7. Listener tool — Capacity Reality Sheet
 Record for each major operation:
 
 | Field | Meaning |
@@ -108,8 +131,7 @@ Record for each major operation:
 | Effective good rate | measured/modelled accepted output |
 | Evidence class | measured / demonstrated / assumed |
 
-## 7. Constraint Hunt — listener tool
-
+## 8. Constraint Hunt — listener tool
 1. Map process flow from released input to accepted unit.
 2. Put demand/takt at the top.
 3. Measure cycle-time distributions at major steps.
@@ -121,7 +143,7 @@ Record for each major operation:
 9. Improve or protect that constraint.
 10. Re-measure because the constraint may move.
 
-## 8. Worked example A — basic takt
+## 9. Worked example A — basic takt
 Illustrative assumptions:
 - required output: 240 accepted units/8-hour shift;
 - gross shift: 480 min;
@@ -131,13 +153,15 @@ Illustrative assumptions:
 Takt:
 `420 / 240 = 1.75 min/good unit = 105 s/good unit`
 
-If a critical station has a sustained good-output interval of 130 s/unit, it cannot support demand without another change in flow/capacity.
+Arithmetic audit: PASS.
+
+If a critical serial station has a sustained accepted-output interval of 130 s/unit, it cannot support the 105 s demand pace without a change in flow/capacity.
 
 If its best demonstrated cycle is 80 s but recurring recovery/downtime/rework makes accepted output 130 s/unit, the 80 s number is not the capacity claim we need.
 
 All numbers are pedagogical.
 
-## 9. Worked example B — yield changes good capacity
+## 10. Worked example B — yield changes good capacity
 Station nominal process rate:
 - 360 units/hour gross output.
 
@@ -154,41 +178,54 @@ Scenario 2:
 First-pass good output:
 `360 × 0.90 = 324 good units/hour`
 
+Difference:
+`352.8 - 324 = 28.8 good units/hour`
+
+Arithmetic audit: PASS.
+
 Nominal machine speed did not change, but first-pass good capacity fell by 28.8 units/hour.
 
 If failed units consume rework capacity, the system penalty is larger and must be modeled as a loop rather than just multiplying by yield.
 
-## 10. Worked example C — rework recursion
+## 11. Worked example C — one-pass rework workload
 Illustrative simplified loop:
 - 100 units enter;
 - 90% pass first time;
 - 10% require one rework attempt;
-- rework consumes 60% of the original station time per unit;
-- 80% of reworked units pass.
+- rework consumes 60% of the original station time per reworked unit;
+- 80% of reworked units pass;
+- only one rework opportunity is modeled.
 
 Accepted units after one rework opportunity:
 `90 + (10 × 0.80) = 98`
 
-But process workload is not 100 unit-equivalents:
+Process workload:
 `100 + (10 × 0.60) = 106 unit-equivalents of station time`
 
-Therefore accepted output per unit of constrained resource is lower than an FPY-only view suggests.
+Accepted units per original-time equivalent:
+`98 / 106 ≈ 0.9245 accepted units per original unit-time equivalent`
 
-The episode should later show the generalized recurrence only if it improves understanding; do not bury the listener in math.
+Arithmetic audit: PASS.
 
-## 11. Worked example D — local improvement does not move system output
+Guardrail: this is not an infinite recursion model. If failed rework can re-enter the loop repeatedly, use a recurrence/geometric model and state its assumptions explicitly.
+
+## 12. Worked example D — local improvement does not move system output
 Three serial operations, simplified effective capacities:
 - A = 100 good units/hour;
 - B = 70 good units/hour;
 - C = 90 good units/hour.
 
-System ceiling is approximately constrained by B at 70 good units/hour, absent other flow effects.
+Under the simplified serial/no-buffer-loss assumption, the system ceiling is approximately 70 good units/hour because B is the current constraint.
 
-Improving C from 90 → 120 does not make the serial system a 100/120-unit-per-hour line; B still constrains near 70.
+Improving C from 90 → 120 leaves the simplified ceiling near 70 because B is unchanged.
 
-Improving B from 70 → 95 may cause C or A to become the next constraint. Re-run the Constraint Hunt.
+Improving B from 70 → 95 changes the simplified limiting capacity to C at 90 good units/hour; the constraint has moved.
 
-## 12. Sentinel Node example
+Arithmetic/logic audit: PASS.
+
+Guardrail: real systems can include buffers, blocking/starving, batch behavior, shared labor, changeovers and reliability interactions; the example teaches the local-vs-system principle, not a universal line model.
+
+## 13. Sentinel Node example
 Illustrative LVP route:
 1. PCB programming;
 2. connector insertion;
@@ -206,7 +243,7 @@ Capacity review shows:
 Decision:
 do not buy insertion automation solely from local utilization. First protect/expand calibration constraint, reduce retest causes, then re-measure. If the constraint moves to insertion, automation can be reconsidered with current evidence.
 
-## 13. OEE boundary
+## 14. OEE boundary
 If equipment OEE is used:
 `OEE = Availability × Performance × Quality`
 
@@ -217,8 +254,9 @@ Do not infer:
 - system throughput from one machine OEE;
 - economic justification for automation from a higher OEE target alone.
 
-## 14. Capacity evidence ladder
+Exact OEE source/definition remains a Podcast-Ready verification item inherited from P2.07; Episode 29 does not need to settle competing implementation conventions to stabilize its claim set.
 
+## 15. Capacity evidence ladder
 ### Estimate
 Engineering estimate based on assumed cycle time/staffing/yield.
 
@@ -233,10 +271,10 @@ Repeated performance over a period that captures meaningful variation/changeover
 
 These are repository synthesis labels; do not present them as an external standard.
 
-## 15. Applicability statement
-This episode teaches general manufacturing-flow/capacity reasoning. Exact definitions of takt, capacity, run-at-rate, OEE and contractual production-rate demonstrations can vary by company, industry and customer requirement. Any external required threshold or formal Run-at-Rate method must be sourced and scoped before publication.
+## 16. Applicability statement
+This episode teaches general manufacturing-flow/capacity reasoning. Exact definitions of capacity, OEE and contractual production-rate demonstrations can vary by company, industry and customer requirement. Takt is used here in the lean-production sense supported by LEI. Any external required threshold or formal Run-at-Rate method must be sourced and scoped before publication.
 
-## 16. What this episode must NOT claim
+## 17. What this episode must NOT claim
 - takt equals cycle time;
 - bottleneck is permanently the slowest nominal machine;
 - 100% utilization is the goal for every resource;
@@ -246,39 +284,37 @@ This episode teaches general manufacturing-flow/capacity reasoning. Exact defini
 - automation is the default capacity solution;
 - one universal utilization/OEE target applies to all factories.
 
-## 17. Quantitative gate
-Before CLAIM SET STABLE / EVIDENCE VERIFIED:
-1. independently verify every equation and unit;
-2. label all illustrative numbers;
-3. define gross vs net available time explicitly;
-4. distinguish input units, gross output, FPY, accepted output and shipped/released output;
-5. model rework as a capacity-consuming loop where material to the conclusion;
-6. perform sensitivity if a recommendation changes with uncertain availability/yield/demand;
-7. avoid false precision from tiny time-study samples.
+## 18. Quantitative gate — pilot result
+1. Every equation/unit in the four worked examples independently checked. — PASS
+2. All illustrative numbers explicitly pedagogical. — PASS
+3. Gross vs net available time explicitly separated. — PASS
+4. Input/gross/FPY/accepted output distinctions visible. — PASS
+5. Rework modeled as capacity-consuming workload where material. — PASS
+6. Sensitivity required later when an episode recommendation depends on uncertain real inputs. — RULE RETAINED
+7. False precision from tiny time-study samples prohibited. — RULE RETAINED
 
-## 18. Research/source backlog before CLAIM SET STABLE
-1. Package authoritative support for takt/cycle-time distinctions.
-2. Package operations/constraint support for local-vs-system optimization.
-3. Verify OEE definition/source and preserve P2.07 guardrails.
-4. Decide whether any formal Run-at-Rate methodology belongs here or later supplier/pilot episodes.
-5. Independently check all worked-example arithmetic.
-6. Cross-check P2.04 capacity/ramp and P2.05 economics examples.
-7. Technical review: manufacturing/process + operations/NPI.
+## 19. Remaining work before EVIDENCE VERIFIED / PODCAST READY
+1. Package final citation/source note for LEI takt/standardized-work support.
+2. Add an authoritative OEE source in the P2.07/Episode source pack and preserve the equipment-vs-system boundary.
+3. Optional: add operations/TOC literature for constraint/local-optimization enrichment without making the episode dependent on branded TOC terminology.
+4. Technical review: manufacturing/process + operations/NPI.
+5. Decide during scripting whether to include a sensitivity mini-example; do not add math merely for density.
 
-## 19. Pilot-test objective
+## 20. Pilot-test objective
 Episode 29 tests the packaging system under a quantitative practitioner topic.
 
 Pilot PASS signal:
 A listener should be able to take a real process flow and distinguish demand/takt, cycle time, nominal capacity, effective good capacity and the current constraint — then explain why the proposed local improvement would or would not increase accepted system output.
 
-## 20. Current assessment
+## 21. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
 Standards burden: LOW-MEDIUM
 Quantitative burden: HIGH
-Backbone risk: MEDIUM — arithmetic/definition discipline required
-Source verification: OPEN
+Backbone risk: LOW-MEDIUM after arithmetic/source-boundary audit
+Source verification: PARTIAL / sufficient for CLAIM SET STABLE
+Arithmetic verification: PASS
 
 Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+`CLAIM SET STABLE → PILOT BATCH AUDIT → EVIDENCE VERIFIED`
