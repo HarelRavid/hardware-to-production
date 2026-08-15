@@ -1,6 +1,6 @@
 # A2 Research Pack — Hardware Team Map: Which Disciplines Do You Actually Need?
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: Audience A — founders / early hardware development teams
 secondary_audience: engineering managers, technical co-founders, first hires, NPI leads
@@ -14,7 +14,7 @@ Help an early hardware team identify the disciplines, ownership boundaries and m
 Canonical listener question:
 > Who actually needs to own what, and which missing discipline will become an expensive integration problem later?
 
-The episode should prevent two opposite errors:
+The episode prevents two opposite errors:
 1. hiring a large organization before the work justifies it; and
 2. assuming one strong generalist can permanently absorb every discipline without explicit ownership or review.
 
@@ -77,17 +77,19 @@ The exact team varies by product, but a general hardware program may need respon
 
 This is a responsibility map, not a mandatory org chart.
 
-## 5. Claim register — draft
-| ID | Claim | Class | Priority | Status | Note |
+## 5. Stable claim register
+| ID | Claim | Class | Priority | Status | Publication note |
 |---|---|---|---|---|---|
-| A2-C01 | Hardware development is inherently multidisciplinary, and important responsibilities should have explicit ownership even when one person covers multiple disciplines. | V6 + V2/V5 | P0 | OPEN | General systems-engineering support useful. |
-| A2-C02 | Org-chart titles are less useful than mapping decisions, interfaces, evidence and release responsibilities. | V6 | P0 | SYNTHESIS | Core practical thesis. |
-| A2-C03 | Cross-discipline gaps often appear first at interfaces and verification boundaries rather than inside one component. | V5/V6 | P1 | OPEN | Link A3. |
-| A2-C04 | Early teams can legitimately use generalists/external specialists, provided critical ownership and review remain visible. | V6 | P1 | SYNTHESIS | Avoid universal staffing prescriptions. |
-| A2-C05 | Manufacturing, quality and supplier disciplines should enter before production launch when design decisions start constraining process, test, sourcing or industrialization. | V6 + P2.01/P2.06 | P0 | BACKBONE-SUPPORTED | Timing varies by product. |
-| A2-C06 | Safety/regulatory responsibility cannot be inferred from “someone in engineering will handle it later.” | V2/V6 | P0 | OPEN | Product/jurisdiction applicability required. |
-| A2-C07 | A decision can be outsourced; accountability for integrating its consequences cannot disappear. | V6 | P1 | SYNTHESIS | Useful contractor/consultant lesson. |
-| A2-C08 | As teams move DEV→LVP→SVP, ownership shifts from learning/architecture toward release, process, supplier, quality and field accountability. | V6 | P1 | SYNTHESIS | DEV/LVP/SVP lens. |
+| A2-C01 | Hardware development is multidisciplinary; consequential responsibilities should be visible and owned even when one person covers several disciplines. | V6 + V2 | P0 | CLAIM STABLE / SOURCE VERIFICATION OPEN | Source support should establish multidisciplinary systems-engineering logic, not prescribe our discipline list. |
+| A2-C02 | Mapping decisions, interfaces, evidence and release responsibility is more useful for an early team than assuming job titles uniquely define ownership. | V6 | P0 | SYNTHESIS STABLE | Internal practical thesis. |
+| A2-C03 | Cross-discipline gaps commonly become visible at interfaces, integration and verification boundaries. | V6 + A3 | P1 | SYNTHESIS STABLE | A3 owns the technical depth. |
+| A2-C04 | Generalists and external specialists are legitimate in DEV if critical ownership, review and integration remain explicit. | V6 | P1 | SYNTHESIS STABLE | No universal staffing prescription. |
+| A2-C05 | Manufacturing, quality, supplier and test responsibility should enter while design decisions are still shaping process, sourcing, test and industrialization—not only after a prototype is declared complete. | V6 + P2.01/P2.06 | P0 | BACKBONE-SUPPORTED / STABLE | Timing remains product-specific. |
+| A2-C06 | Safety/compliance responsibility must be explicitly scoped to product, risk and jurisdiction rather than deferred to an unnamed future owner. | V6 + V2 | P0 | CLAIM STABLE / APPLICABILITY VERIFICATION OPEN | Avoid legal/professional-licensure claims without jurisdiction. |
+| A2-C07 | Work may be outsourced, but the product team still needs ownership of integration, acceptance and downstream consequences. | V6 | P1 | SYNTHESIS STABLE | Contractor/supplier lesson. |
+| A2-C08 | DEV→LVP→SVP increases the importance of release, process, supplier, quality, configuration and field accountability. | V6 | P1 | SYNTHESIS STABLE | Internal lifecycle lens. |
+
+Core claims: 8. Open P0 source items: 2 families (multidisciplinary systems-engineering support; product-specific safety/compliance applicability).
 
 ## 6. Listener tool — Hardware Discipline Map
 For each discipline/responsibility capture:
@@ -135,7 +137,14 @@ Manufacturing/process, quality, supplier and test ownership become direct contri
 
 Lesson: the organization grows because evidence and interfaces grow, not because a maturity chart demands job titles.
 
-## 9. Common failure modes
+## 9. Boundary with A3
+A2 owns **responsibility visibility**: who owns a decision/evidence boundary and when current coverage expires.
+
+A3 owns **interface technical definition**: what crosses the boundary, what variation/states matter and how compatibility is demonstrated.
+
+A2 should not become an interface-engineering episode; A3 should not become an org-design episode.
+
+## 10. Common failure modes
 - Founder owns everything implicitly; nobody can reconstruct decisions.
 - Mechanical/electrical teams optimize locally and discover connector/thermal/service conflict late.
 - Compliance is treated as a certification purchase rather than architecture input.
@@ -143,10 +152,10 @@ Lesson: the organization grows because evidence and interfaces grow, not because
 - Quality is hired after pilot and inherits undocumented acceptance logic.
 - NPI becomes a late handoff instead of a development participant.
 
-## 10. Applicability statement
+## 11. Applicability statement
 This episode provides a general hardware responsibility map. It does not prescribe a universal team size, reporting structure, professional licensure model or regulated-industry staffing requirement. Actual required competence and sign-off depend on product, jurisdiction, risk and contractual obligations.
 
-## 11. What this episode must NOT claim
+## 12. What this episode must NOT claim
 - every startup needs a specialist for every discipline immediately;
 - one job title maps to one discipline;
 - NPI/manufacturing should control early product design;
@@ -154,21 +163,22 @@ This episode provides a general hardware responsibility map. It does not prescri
 - a RACI chart alone solves ownership;
 - the listed discipline taxonomy is an external standard.
 
-## 12. Research backlog before CLAIM SET STABLE
-1. Add authoritative systems-engineering support for multidisciplinary responsibility/interface ownership.
-2. Cross-check overlap with A3 so interfaces are not duplicated.
-3. Validate LVP timing against P2.01 industrialization lifecycle.
-4. Add one credible case/anonymized failure only if it improves narrative value.
-5. Technical review from startup CTO + NPI perspective.
+## 13. Evidence backlog after claim stabilization
+Before EVIDENCE VERIFIED:
+1. Attach authoritative systems-engineering support for multidisciplinary development and responsibility/interface management.
+2. Verify any safety/compliance examples only in their product/jurisdiction context.
+3. Technical review from startup CTO + NPI perspective.
+4. Do not add a case study unless it improves the ownership lesson without adding unnecessary narrative burden.
 
-## 13. Current assessment
+## 14. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
 Standards burden: LOW
 Quantitative burden: LOW
 Backbone risk: LOW
-Source verification: OPEN
+Claim set: STABLE
+Source verification: CONTROLLED BACKLOG
 
 Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+`CLAIM SET STABLE → EVIDENCE VERIFIED`
