@@ -1,6 +1,6 @@
 # A6 Research Pack — Serious Electronics/Embedded Prototype: From Dev Board to Controlled Hardware
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: A — founders/developers/early hardware teams
 secondary_audience: electronics, embedded, test and NPI engineers
@@ -15,17 +15,22 @@ The prototype works on a dev board with jumper wires and a laptop attached. The 
 
 A working circuit is not yet a reproducible product configuration.
 
-## Core claim set — draft
-1. Electronics prototype maturity is multidimensional: functional behavior, electrical margins, interfaces, firmware/configuration, component lifecycle, assembly, testability and environment mature at different rates.
-2. Dev boards and lab instruments are excellent learning tools but can hide power, timing, EMC, thermal, programming and production-test dependencies.
-3. Hardware revision, BOM revision, firmware version, configuration/calibration data and test evidence must become traceably linked before repeated builds create ambiguity.
-4. Component selection must evolve from “works electrically” toward availability, lifecycle, package/assembly compatibility, approved alternates and evidence for substitutions.
-5. Design-for-test and programming strategy should begin before LVP because production cannot rely on engineering debug access as its normal verification method.
-6. A passing bench test does not prove environmental, reliability, EMC, safety or serial-production performance outside the demonstrated test envelope.
-7. Every bodge wire, jumper, manual calibration, firmware workaround and bench-only dependency should be treated as visible development debt with an owner/expiration condition.
-8. The next electronics build should retire the most consequential uncertainty rather than merely produce a cleaner PCB.
+## Stable core claim set
+A6-C01 — Electronics prototype maturity is multidimensional: function, electrical margins, interfaces, firmware/configuration, components, assembly, testability and environment mature at different rates.
 
-Target final core claims: 6–8.
+A6-C02 — Dev boards and lab instruments can accelerate learning while hiding dependencies in power, timing/noise, thermal behavior, EMC, programming and production test.
+
+A6-C03 — Hardware revision, BOM revision, firmware version, configuration/calibration identity and test evidence must become traceably linked before repeated builds create ambiguity.
+
+A6-C04 — Component selection must evolve from “works electrically” toward availability/lifecycle, package/assembly compatibility, alternate strategy and evidence-based substitution.
+
+A6-C05 — Design-for-test and programming strategy should begin before LVP because normal production verification cannot depend indefinitely on engineering-only debug access.
+
+A6-C06 — A passing bench test supports only the demonstrated configuration/test envelope; it does not automatically prove environmental, reliability, EMC, safety or serial-production performance.
+
+A6-C07 — Bodge wires, jumpers, manual calibration, firmware workarounds and bench-only dependencies should remain visible development debt with owners and expiration conditions.
+
+A6-C08 — The next electronics build should retire the most consequential uncertainty rather than merely produce a cleaner PCB.
 
 ## Audience contract
 ### DEV takeaway
@@ -38,7 +43,7 @@ Dev kits, breadboards, jumper wires, external power supplies, manual flashing, b
 They expire when decisions depend on product power architecture, timing/noise, EMC, thermal behavior, production programming/test, field update, component availability, assembly repeatability or released configuration.
 
 ### LVP change
-At tens/hundreds of units, the team needs controlled BOM/AVL intent, repeatable programming, production test boundaries, traceability, configuration/calibration handling, defect/rework history and a disciplined substitute/change process.
+At tens/hundreds of units, the team needs controlled BOM/AVL intent, repeatable programming, production-test boundaries, traceability, configuration/calibration handling, defect/rework history and a disciplined substitute/change process.
 
 ### SVP evidence
 Serial production requires evidence tied to released hardware/firmware/configuration and controlled manufacturing/test processes, plus applicable product qualification/compliance evidence.
@@ -50,94 +55,78 @@ Make bench-only dependencies and engineering interventions visible before they b
 Run an Electronics Prototype Debt Scan on the current prototype.
 
 ## Listener Tool 1 — Electronics Prototype Debt Scan
-Check each category:
-- dev-board dependency;
-- external lab supply/instrument dependency;
+Check:
+- dev-board/lab-instrument dependency;
 - bodge/jumper/manual wiring;
-- untracked firmware build;
-- untracked calibration/configuration;
-- manual flashing/debug interface;
-- unavailable/single-source component;
-- unqualified alternate;
-- thermal hot spot/margin unknown;
-- power-up/brownout/reset behavior unknown;
-- interface timing/noise margin unknown;
-- production test access undefined;
-- serial number/traceability undefined;
+- untracked firmware or calibration/configuration;
+- manual flashing/debug dependency;
+- unavailable/single-source component or unqualified alternate;
+- thermal/power/reset/timing/noise margin unknown;
+- production-test access undefined;
+- serial identity/traceability undefined;
 - rework not recorded;
-- compliance/reliability evidence assumed from component datasheets.
+- compliance/reliability assumed from component evidence.
 
-For each item: `Accept now? → Owner → Expiration trigger → Next evidence`.
+For each: `Accept now? → Owner → Expiration trigger → Next evidence`.
 
 ## Listener Tool 2 — Controlled Build Identity
-Minimum record for a serious repeated build:
-`Unit ID → PCB/HW revision → BOM revision → firmware/software version → configuration/calibration version → programmed by/method → test procedure/version → result → deviations/rework`
+Minimum serious repeated-build record:
+`Unit ID → PCB/HW revision → BOM revision → firmware/software version → configuration/calibration version → programming method → test procedure/version → result → deviations/rework`
 
-This can start in a spreadsheet; the principle matters before the software system.
+This can begin in a spreadsheet; enterprise tooling is not a prerequisite.
 
 ## Worked example — Sentinel Node controller
 Illustrative only.
 
-DEV prototype:
-- commercial MCU development board;
-- USB-powered during debugging;
-- sensor module on breakout board;
-- manually flashed firmware;
-- laptop script reads output;
-- no persistent unit identity.
+DEV article uses a commercial MCU board, USB/debug power, breakout sensor, manually flashed firmware and laptop script with no persistent unit identity.
 
-What it may prove: algorithm feasibility, sensor communication, basic user flow.
+It may support algorithm feasibility, sensor communication and basic user-flow learning.
 
-What it does not automatically prove:
-- final power integrity/brownout behavior;
-- PCB EMC behavior;
-- thermal margins inside enclosure;
-- production programming time;
-- test coverage without debug console;
-- field firmware/configuration control;
-- component/substitute qualification;
-- serial assembly yield/rework behavior.
+It does not automatically support final power integrity, PCB EMC, enclosure thermal margin, production programming/test time, field configuration control, component/substitute qualification or serial assembly yield/rework claims.
 
-Serious next build: introduce controlled custom hardware only where needed to retire these risks, and bind test evidence to HW/BOM/FW/configuration identity.
+Serious next build: introduce controlled custom hardware only where required to retire these risks and bind resulting evidence to HW/BOM/FW/configuration identity.
 
-## Standards/evidence hooks
-Later source verification may include, depending on actual episode claims:
+## Evidence/standards boundary
+Possible later source families, depending on script claims:
 - IPC-A-610 / J-STD-001 for assembly/acceptability context;
 - IPC-2221 / IPC-6012 for PCB design/performance context;
-- IPC/WHMA-A-620 where harnesses are material;
-- J-STD-033 for moisture-sensitive device handling where applicable;
-- JEDEC qualification/test methods for component/package reliability examples;
-- product-specific IEC/EN/UL EMC/electrical-safety standards only with defined product scope/jurisdiction.
+- IPC/WHMA-A-620 for harnesses;
+- J-STD-033 for moisture-sensitive device handling;
+- JEDEC test methods for component/package reliability examples;
+- product-specific IEC/EN/UL EMC/electrical-safety standards only after scope/jurisdiction is defined.
 
-Guardrail: this episode must not imply IPC acceptance proves product reliability or that component certification proves system compliance.
+Guardrails:
+- IPC acceptance is not product reliability proof.
+- Component certification/qualification is not automatically system compliance.
+- No IPC/JEDEC class, threshold or requirement enters the final script without edition/applicability verification.
 
-## Initial claim classes
-- Claims 1, 2, 3, 7, 8: V6 synthesis with P2.02/P2.03/P2.06 support.
-- Claims 4, 5: V6/V2; authoritative electronics/manufacturing support desirable; P1.
-- Claim 6: V6 general evidence-boundary principle; any named compliance requirement becomes V1/P0.
+## Claim classes / P0 state
+- C01/C02/C03/C07/C08: V6 synthesis with P2.02/P2.03/P2.06 support.
+- C04/C05: V6/V2; authoritative electronics/manufacturing support desirable; P1.
+- C06: V6 evidence-envelope principle; any named compliance requirement becomes V1/P0.
+- Open P0 for current conceptual core: 0.
 
-## P0 backlog
-No exact normative requirement is needed for the conceptual episode core.
-Any exact IPC/JEDEC/IEC/UL requirement, acceptance class, numeric criterion or compliance statement is P0 before final script.
-
-## Common failure modes to teach
-- firmware that passed test cannot be reconstructed;
+## Common failure modes
+- tested firmware/build cannot be reconstructed;
 - BOM substitute treated as electrically equivalent without impact assessment;
 - dev-board regulator/debugger hides final power behavior;
 - production depends on engineer-only debug tools;
 - calibration stored on someone's laptop;
-- test fixture created after design freezes access points;
+- test fixture arrives after access points are frozen;
 - component datasheet qualification mistaken for assembled-product qualification;
-- reworked unit passes final test and its failed history disappears.
+- reworked unit passes final test and failed history disappears.
 
 ## Navigation
-Prerequisite recap: A3 interface ownership + A4 shortcut expiration, 60–90 seconds.
+Prerequisite recap: A3 interface ownership + A4 shortcut expiration in 60–90 seconds.
 Can stand alone: yes, especially for electronics teams.
 Recommended next: A7 verification planning, A8 configuration management, Episode 1 industrialization transition.
 
-## Claim-set-stable exit criteria
-- reduce to 6–8 non-overlapping core claims;
-- verify terminology for BOM/AVL/programming/test/configuration without making industry-specific mandates;
-- make electronics reliability/compliance boundaries explicit;
-- map future IPC/JEDEC standards work into Source Verification Backlog;
-- preserve a lightweight DEV implementation path rather than enterprise-tool assumptions.
+## Claim-set-stable result
+PASS.
+- Eight non-overlapping claims retained.
+- Lightweight DEV implementation path preserved.
+- Configuration/evidence identity explicitly links to frozen backbone rather than introducing a new model.
+- Reliability/compliance boundary is explicit.
+- Electronics standards remain in the Source Verification gate.
+
+Next maturity target: EVIDENCE VERIFIED after P1 source support and any selected IPC/JEDEC/IEC claims are verified.
