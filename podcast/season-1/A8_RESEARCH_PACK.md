@@ -1,6 +1,6 @@
 # A8 Research Pack — Configuration Management from Prototype #1
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: Audience A — founders / early hardware development teams
 secondary_audience: systems, mechanical, electronics, embedded, test, NPI, quality, suppliers
@@ -51,7 +51,7 @@ Do not allow successful prototype behavior to become detached from the exact con
 ### Listener action
 Assign identities to the last five prototype units/builds and attempt to reconstruct each one completely.
 
-## 4. Core conceptual chain
+## 4. Stable conceptual chain
 Definition
 → revision/version
 → build/unit identity
@@ -63,19 +63,31 @@ Definition
 → new configuration
 → re-verification where affected
 
-## 5. Core claim register — draft
-| ID | Claim | Class | Priority | Status | Note |
-|---|---|---|---|---|---|
-| A8-C01 | Evidence should remain linked to the exact product/configuration that generated it. | V2/V6 + P2.02 | P0 | BACKBONE-STABLE / source enrichment open | |
-| A8-C02 | Definition, as-built/as-run state and evidence are distinct objects that should remain traceably linked. | V6 + Global Invariant | P0 | BACKBONE-STABLE | |
-| A8-C03 | Lightweight configuration control can begin in DEV without enterprise PLM/MES tooling. | V6 | P1 | SYNTHESIS STABLE | |
-| A8-C04 | Rework/deviation should add history rather than overwrite the failed/original state. | V6 + Global Invariant | P0 | BACKBONE-STABLE | |
-| A8-C05 | A change should trigger impact/re-verification only where it affects relevant claims/evidence dependencies. | V6 + P2.02 | P0 | BACKBONE-STABLE | |
-| A8-C06 | Hardware, firmware/software, calibration/configuration and test procedure identity can interact and must be considered together when they contribute to the claim. | V6 + INTERACTION CLAIM | P0 | BACKBONE-STABLE | |
-| A8-C07 | Multiple suppliers/lots/alternates increase the importance of as-built identity because nominal part equivalence may not prove equal evidence. | V6 + P2.06 | P1 | BACKBONE-STABLE | |
-| A8-C08 | Configuration control becomes a production enabler when it allows defects, changes and field signals to be segmented by actual population. | V6 + P2.08/FIELD EVIDENCE LOOP | P1 | BACKBONE-STABLE | |
+## 5. Stable core claim set
+A8-C01 — Evidence should remain linked to the exact product/configuration that generated it.
 
-## 6. Listener tool — Minimum Prototype Configuration Record
+A8-C02 — Definition, as-built/as-run state and evidence are distinct objects that should remain traceably linked.
+
+A8-C03 — Lightweight configuration control can begin in DEV without enterprise PLM/MES tooling.
+
+A8-C04 — Rework/deviation should add history rather than overwrite the failed/original state.
+
+A8-C05 — A change should trigger impact/re-verification only where it affects relevant claims/evidence dependencies.
+
+A8-C06 — Hardware, firmware/software, calibration/configuration and test procedure identity can interact and must be considered together when they contribute to the claim.
+
+A8-C07 — Multiple suppliers/lots/alternates increase the importance of as-built identity because nominal part equivalence may not prove equal evidence.
+
+A8-C08 — Configuration control becomes a production enabler when it allows defects, changes and field signals to be segmented by actual population.
+
+## 6. Claim classes / source status
+- C01/C02/C04/C05/C06/C08: V6 + frozen backbone/global invariants.
+- C03: V6 synthesis; lightweight implementation rule.
+- C07: V6 + P2.06 supplier/change principles.
+- Open P0 normative claims in conceptual core: 0.
+- Any exact ISO 10007, NASA or industry-specific configuration requirement becomes P0 when used as normative language.
+
+## 7. Listener tool — Minimum Prototype Configuration Record
 For each prototype/build/unit capture:
 | Field | Minimum record |
 |---|---|
@@ -92,7 +104,7 @@ For each prototype/build/unit capture:
 | Deviations/rework | original failure + action + final state |
 | Owner | person responsible for record |
 
-## 7. Change Impact Check
+## 8. Change Impact Check
 When something changes ask:
 1. What exactly changed?
 2. Which units/builds receive the change?
@@ -103,7 +115,7 @@ When something changes ask:
 7. How will effectivity be recorded?
 8. Can old/new populations be reconstructed later?
 
-## 8. Sentinel Node worked example
+## 9. Sentinel Node worked example
 Unit SN-DEV-07:
 - enclosure Rev B;
 - PCB Rev A2;
@@ -116,7 +128,7 @@ Unit SN-DEV-07:
 
 If the unit later passes environmental testing, the evidence must preserve both the original fail/rework history and the final configuration. A later connector supplier change should trigger an impact decision against only the claims/evidence that depend on connector behavior rather than automatically invalidating every test ever run.
 
-## 9. Common failure modes
+## 10. Common failure modes
 - filenames like FINAL_v7_really_final;
 - test report has no reconstructable HW/FW version;
 - engineer changes firmware between tests without recording it;
@@ -126,7 +138,7 @@ If the unit later passes environmental testing, the evidence must preserve both 
 - every change causes total re-test because evidence dependencies are unknown;
 - no effectivity date/serial boundary for change.
 
-## 10. Standards/source targets
+## 11. Standards/source targets
 Priority authoritative source families:
 - NASA / government configuration-management guidance;
 - ISO 10007 or other CM guidance where exact terminology is useful and applicable;
@@ -135,10 +147,10 @@ Priority authoritative source families:
 Guardrail:
 Do not imply a startup must implement a formal aerospace-grade CM system from prototype #1. The episode teaches minimum product truth and reconstructability.
 
-## 11. Applicability statement
+## 12. Applicability statement
 General hardware configuration/evidence discipline. Regulated, aerospace, medical, automotive, defense and contractual programs may impose formal CM, release, traceability, approval and record-retention requirements beyond this lightweight DEV model.
 
-## 12. What this episode must NOT claim
+## 13. What this episode must NOT claim
 - enterprise PLM is required in DEV;
 - every minor edit needs a formal ECO immediately;
 - configuration control means freezing design early;
@@ -146,21 +158,12 @@ General hardware configuration/evidence discipline. Regulated, aerospace, medica
 - a final PASS erases prior failure/rework;
 - version control alone proves full product genealogy.
 
-## 13. Research backlog before CLAIM SET STABLE
-1. Attach authoritative configuration-management support for identification/status/change principles.
-2. Verify any ISO 10007 terminology before normative use.
-3. Ensure boundary with deep P2.02 episode remains clean: A8 teaches minimum DEV discipline, not full enterprise change control.
-4. Technical review: systems/configuration + NPI/quality.
-5. Validate lightweight record is practical for 2–10 person teams.
+## 14. Claim-set-stable result
+PASS.
+- Eight distinct claims retained.
+- A8 remains the lightweight DEV configuration foundation; deep change-control mechanics stay in P2.02/later episodes.
+- No enterprise tooling requirement was introduced.
+- Global invariants on definition/execution/evidence, rework history and evidence-dependent change remain intact.
+- Standards-specific CM claims remain behind the Source Verification gate.
 
-## 14. Current assessment
-Episode structure: STRONG
-Audience fit: STRONG
-Navigation fit: STRONG
-Standards burden: LOW–MEDIUM
-Quantitative burden: LOW
-Backbone risk: LOW
-Source verification: OPEN
-
-Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+Next maturity target: EVIDENCE VERIFIED after authoritative configuration-management support and any selected standards-specific claims are verified.
