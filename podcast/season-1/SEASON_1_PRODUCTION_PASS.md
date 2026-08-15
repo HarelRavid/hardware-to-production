@@ -1,6 +1,6 @@
 # Season 1 Full Production Pass — Build the Right Thing
 
-status: ACTIVE
+status: COMPLETE — FULL REVIEW PASS WITH CONTROLLED EVIDENCE BACKLOG
 scope: A1–A8
 production_mode: RUN CONTINUOUSLY WITHOUT INTERMEDIATE APPROVAL
 
@@ -8,7 +8,7 @@ production_mode: RUN CONTINUOUSLY WITHOUT INTERMEDIATE APPROVAL
 Convert the stable A1–A8 claim architecture into complete episode-production blueprints suitable for later evidence verification, technical review and script writing.
 
 ## Required output per episode
-Each production blueprint must contain:
+Each production blueprint contains:
 1. listener transformation;
 2. narrative hook;
 3. segment-by-segment teaching flow;
@@ -23,17 +23,7 @@ Each production blueprint must contain:
 ## Season learning arc
 Idea → Requirements → Ownership → Architecture/interfaces → Prototype strategy → Mechanical evidence → Electronics evidence → Verification intent → Configuration identity
 
-## Production principles
-- Do not turn the season into a glossary.
-- Every episode must change what the listener can do after listening.
-- Keep startup/early-team implementation lightweight.
-- Make shortcuts legitimate but time-bounded.
-- Preserve Claim → Evidence → Applicability throughout.
-- Avoid implying that enterprise PLM/MES/QMS tooling is required in DEV.
-- Standards-specific assertions remain source-gated until verified.
-- Each episode must be independently enterable with a short recap path.
-
-## Output paths
+## Completed output paths
 - A1_PRODUCTION_BLUEPRINT.md
 - A2_PRODUCTION_BLUEPRINT.md
 - A3_PRODUCTION_BLUEPRINT.md
@@ -42,12 +32,18 @@ Idea → Requirements → Ownership → Architecture/interfaces → Prototype st
 - A6_PRODUCTION_BLUEPRINT.md
 - A7_PRODUCTION_BLUEPRINT.md
 - A8_PRODUCTION_BLUEPRINT.md
+- SEASON_1_FULL_REVIEW.md
 
-## Season exit gate
-After all eight blueprints exist:
-1. run cross-episode overlap audit;
-2. verify learning progression;
-3. verify listener tools are nonduplicative;
-4. verify all source/standards gaps are visible;
-5. verify no hidden prerequisite burden;
-6. issue Season 1 Full Review decision.
+## Exit-gate result
+PASS WITH CONTROLLED EVIDENCE BACKLOG.
+- cross-episode overlap controlled;
+- learning progression coherent;
+- listener tools nonduplicative;
+- source/standards gaps visible;
+- no hidden prerequisite burden;
+- no Knowledge Backbone change required.
+
+## Next maturity lane
+`PRODUCTION BLUEPRINT COMPLETE → SOURCE/EVIDENCE PACK → TECHNICAL REVIEW → SCRIPT READY`
+
+Season 2 production remains paused until the Season 1 review/concept is accepted or the user explicitly directs otherwise.
