@@ -1,6 +1,6 @@
 # Episode 5 Research Pack — EVT, DVT, PVT, Pilot and Ramp Without the Buzzwords
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 2 — Turn the Prototype into a Product
 primary_audience: Audience A + Audience B
 secondary_audience: systems, NPI, manufacturing, quality, operations, program management
@@ -9,38 +9,34 @@ entry_point: LIFECYCLE/GATE TRANSLATION
 technical_depth: foundation-practitioner
 
 ## 1. Episode promise
-Explain common hardware phase labels without pretending they have one universal definition, and teach teams to replace label-driven decisions with explicit entry questions, evidence objectives and exit decisions.
+Explain common hardware phase labels without pretending they have one universal definition, and replace label-driven decisions with explicit evidence objectives and exit decisions.
 
 Canonical listener question:
-> What are EVT, DVT, PVT, pilot and ramp actually supposed to accomplish — and what should we do when our industry or company uses different names?
+> What are EVT, DVT, PVT, pilot and ramp actually supposed to accomplish — and what if our company uses different names?
 
 ## 2. Navigation card
 **You are here:** readiness evidence → lifecycle transitions → designing for production.
-
-**Best for:** teams building a development/NPI plan, preparing design-validation/pilot builds or translating customer/company phase terminology.
-
+**Best for:** teams planning development/NPI, validation/pilot builds or translating customer/company phase terminology.
 **Prerequisite:** Episode 4 recommended; standalone recap provided.
-
 **You will leave with:** Phase Evidence Card + Gate Translation Table.
-
 **Next:** Episode 6 DFM → Episode 7 DFA/mistake prevention → later pilot/ramp episodes.
 
 ## 3. Core thesis
-EVT/DVT/PVT/pilot/ramp are useful planning language only when the team states what evidence each phase/build is intended to create and what decision follows.
+EVT/DVT/PVT/pilot/ramp can be useful planning shorthand only when the team states what evidence each phase/build is intended to create and what decision follows. The labels themselves are not treated here as universal standards-defined gates.
 
-Different companies and industries use these labels differently. The podcast therefore treats them as common shorthand, not standards-defined universal gates.
-
-## 4. Draft claim register
+## 4. Stable claim register
 | ID | Claim | Priority | Status |
 |---|---|---|---|
-| EP05-C01 | EVT/DVT/PVT terminology is not universally defined across all hardware industries and companies. | P0 | SOURCE VERIFICATION REQUIRED BEFORE EXTERNAL ATTRIBUTION |
-| EP05-C02 | A useful lifecycle gate has an explicit purpose, entry context, evidence objective and exit/decision. | P0 | SYNTHESIS/BACKBONE |
-| EP05-C03 | Phase labels should not substitute for configuration identity, representativeness or verification evidence. | P0 | BACKBONE-STABLE |
-| EP05-C04 | Product and manufacturing evidence often mature in parallel rather than in a perfectly sequential handoff. | P0 | BACKBONE-SUPPORTED |
-| EP05-C05 | Pilot builds should be designed as evidence-generating production-system experiments, not merely quantity milestones. | P0 | BACKBONE-SUPPORTED |
-| EP05-C06 | Ramp introduces population/rate/variation/recovery questions that a small pilot may not expose. | P1 | BACKBONE-SUPPORTED |
-| EP05-C07 | A phase may legitimately repeat or split when evidence gaps remain; build count alone does not advance maturity. | P1 | SYNTHESIS |
-| EP05-C08 | Customer/regulated programs may define mandatory gates/evidence that override generic podcast terminology. | P0 | APPLICABILITY GUARDRAIL |
+| EP05-C01 | EVT/DVT/PVT terminology must not be presented as universally defined across all hardware industries/companies without a scoped source. | P0 | APPLICABILITY GUARDRAIL / STABLE |
+| EP05-C02 | A useful internal lifecycle gate states purpose, entry context, evidence objective and resulting decision. | P0 | SYNTHESIS/BACKBONE STABLE |
+| EP05-C03 | Phase labels cannot substitute for configuration identity, representativeness or verification evidence. | P0 | BACKBONE-STABLE |
+| EP05-C04 | Product and manufacturing evidence can mature in parallel rather than through a perfectly sequential handoff. | P0 | BACKBONE-SUPPORTED / STABLE |
+| EP05-C05 | A pilot should be designed to generate production-system evidence, not treated merely as a quantity milestone. | P0 | BACKBONE-SUPPORTED / STABLE |
+| EP05-C06 | Ramp introduces population, rate, variation and recovery questions a small pilot may not expose. | P1 | BACKBONE-SUPPORTED / STABLE |
+| EP05-C07 | A phase/build may repeat or split when evidence gaps remain; build count alone does not advance maturity. | P1 | SYNTHESIS STABLE |
+| EP05-C08 | Customer, regulatory or industry programs may define mandatory gates/evidence that govern their applicable scope. | P0 | APPLICABILITY GUARDRAIL / STABLE |
+
+Important publication rule: any specific external definition of EVT, DVT, PVT, pilot or ramp remains `SOURCE VERIFICATION REQUIRED` until tied to a named source and applicability context.
 
 ## 5. Phase Evidence Card
 For any named phase/build record:
@@ -59,75 +55,56 @@ For any named phase/build record:
 | Carryover gaps | What may remain open and why? |
 
 ## 6. Gate Translation Table
-Instead of translating labels literally, translate them by purpose:
-
-- **Engineering feasibility / architecture learning** — does the chosen architecture work and where are major technical risks?
-- **Design verification / production-intent product evidence** — does a bounded product configuration meet relevant requirements under representative conditions?
-- **Production-system validation / pilot evidence** — can intended suppliers/processes/tools/test/people repeatedly execute and reveal variation?
+Translate labels by purpose rather than literally:
+- **Engineering feasibility / architecture learning** — does the architecture work and where are major technical risks?
+- **Design verification / production-intent product evidence** — does a bounded configuration meet relevant requirements under representative conditions?
+- **Production-system validation / pilot evidence** — can intended suppliers/processes/tools/test/people repeatedly execute and expose variation?
 - **Ramp evidence** — can accepted output increase while yield, quality, recovery, traceability and economics remain controlled?
-- **Serial/commercial operation** — can the released product/process/supplier system sustain its required envelope and changes over time?
+- **Serial/commercial operation** — can the released product/process/supplier system sustain its required envelope and controlled changes over time?
 
-A company may call these EVT/DVT/PVT/pilot/ramp or use entirely different names.
+A company may call these EVT/DVT/PVT/pilot/ramp or something entirely different.
 
 ## 7. Pilot as an experiment
-A useful pilot asks in advance:
-- what process/supplier/tooling assumptions are being tested;
-- which CTQs and measurement systems matter;
-- what yield/rework/defect data must be captured;
-- which manual interventions are allowed and how they are recorded;
-- what rate/capacity learning is valid at this scale;
-- which changes are permitted during the build and how effectivity is controlled;
-- what evidence closes the pilot decision.
+Define in advance: process/supplier/tooling assumptions under test; CTQs/measurement; yield/rework/defect capture; permitted manual intervention; rate/capacity learning validity; change/effectivity rules; and the evidence that closes the decision.
 
-## 8. Worked example — Sentinel Node
-A team calls Build 3 “DVT.” The label is not enough.
+## 8. Sentinel Node example
+A team calls Build 3 “DVT.” The evidence card shows a bounded PCB/FW configuration, bridge enclosure process, representative connector source, environmental verification planned, prototype calibration station, nonfinal assembly fixture and no demonstrated supplier/process capability.
 
-Evidence card shows:
-- final-ish PCB and firmware configuration;
-- bridge enclosure process;
-- representative connector source;
-- environmental verification planned;
-- production calibration station still prototype;
-- assembly fixture not final;
-- supplier/process capability not demonstrated.
-
-Conclusion: the build may be appropriate for selected design-verification claims, but it is not automatically evidence that the production system is ready for ramp.
+Conclusion: the build may support selected design-verification claims, but the label cannot establish production-system readiness for ramp.
 
 ## 9. DEV/LVP/SVP lens
-### DEV
-Use phases to organize learning without pretending every experiment is release evidence.
+**DEV:** organize learning without treating every experiment as release evidence.
+**LVP:** connect product verification with controlled supplier/process/test/traceability learning.
+**SVP/ramp:** emphasize accepted throughput, population variation, capability, recovery, economics and controlled change while preserving product evidence.
 
-### LVP
-Use controlled builds to connect product verification with supplier/process/test/traceability learning.
+## 10. Boundary discipline
+Episode 2 owns build maturity labels/evidence. Episode 4 owns readiness dimensions. Episode 5 owns lifecycle/gate translation. Detailed pilot execution, capability and ramp economics remain in later dedicated episodes.
 
-### SVP/ramp
-Shift focus toward accepted throughput, population variation, capability, recovery, economics and controlled change while maintaining product evidence.
+## 11. Applicability statement
+Phase names are contextual. Where a customer, regulator, industry manual or quality system defines formal lifecycle gates, that definition governs its scope. The Gate Translation Table is an internal explanatory framework.
 
-## 10. Applicability statement
-Phase names are contextual. Where a customer, regulator, industry manual or quality system defines formal lifecycle gates, that definition governs its scope. The podcast's Gate Translation Table is an internal explanatory framework.
-
-## 11. What this episode must NOT claim
+## 12. What this episode must NOT claim
 - EVT/DVT/PVT have one universal definition;
 - every company must run exactly three validation phases;
-- a fixed unit count defines pilot or PVT success;
+- a fixed unit count defines pilot/PVT success;
 - finishing a phase means all gaps are closed;
 - pilot quantity proves capability;
 - ramp is merely increasing machine speed.
 
-## 12. Research backlog before CLAIM SET STABLE
-1. Gather authoritative examples of lifecycle terminology from multiple contexts without universalizing them.
-2. Cross-check Episode 4 readiness and later pilot/ramp content.
-3. Verify any named customer/industry phase definition before use.
-4. Technical review: systems/NPI/manufacturing/program perspective.
+## 13. Evidence backlog after claim stabilization
+1. Collect authoritative examples of lifecycle terminology only as scoped examples.
+2. Verify any named customer/industry phase definition before publication.
+3. Technical review: systems + NPI/manufacturing + program perspective.
+4. Preserve later pilot/ramp episode boundaries.
 
-## 13. Current assessment
+## 14. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
-Standards burden: MEDIUM because terminology is often misattributed
+Standards burden: MEDIUM
 Quantitative burden: LOW
 Backbone risk: LOW
-Source verification: OPEN
+Claim set: STABLE
+Source verification: CONTROLLED BACKLOG
 
-Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+Next status target: `CLAIM SET STABLE → EVIDENCE VERIFIED`
