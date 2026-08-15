@@ -1,6 +1,6 @@
 # A7 Research Pack — Verification Planning Before DVT/PVT Thinking
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 1 — Build the Right Thing
 primary_audience: Audience A — founders / early hardware development teams
 secondary_audience: systems, mechanical, electronics, embedded, test, NPI, quality
@@ -51,7 +51,7 @@ Do not wait for DVT/PVT labels to ask how a requirement will be demonstrated or 
 ### Listener action
 For the next major test, create a one-page Verification Intent Sheet before touching the lab setup.
 
-## 4. Core conceptual chain
+## 4. Stable conceptual chain
 Requirement / risk / interface claim
 → verification question
 → article/configuration
@@ -64,19 +64,30 @@ Requirement / risk / interface claim
 → decision
 → change / re-verification trigger
 
-## 5. Core claim register — draft
-| ID | Claim | Class | Priority | Status | Note |
-|---|---|---|---|---|---|
-| A7-C01 | A test result is meaningful only relative to the claim, configuration, conditions and method it actually exercised. | V2/V6 | P0 | OPEN | Authoritative verification guidance needed. |
-| A7-C02 | Verification planning should begin while requirements/interfaces are being matured, not only after the design is nominally complete. | V2/V6 | P0 | OPEN | Systems-engineering support. |
-| A7-C03 | Exploratory learning tests and formal release/qualification evidence are different evidence classes even if they use similar hardware or measurements. | V6 + P2.03 | P0 | BACKBONE-STABLE | |
-| A7-C04 | Test-article representativeness must be assessed claim-by-claim; a prototype can be representative for one claim and weak for another. | V6 + A4 | P0 | BACKBONE-STABLE | |
-| A7-C05 | Measurement adequacy matters before strong acceptance/capability conclusions are drawn. | V2/V6 + P2.03 | P0 | BACKBONE-STABLE / source open | |
-| A7-C06 | A change requires re-verification only where it affects the evidence dependency or demonstrated claim. | V6 + P2.02 | P0 | BACKBONE-STABLE | |
-| A7-C07 | Passing one end test does not automatically prove all intermediate failure mechanisms are controlled. | V6 + P2.03 | P1 | BACKBONE-STABLE | |
-| A7-C08 | Verification evidence should remain traceable to the configuration and procedure that generated it. | V2/V6 + P2.02/P2.08 | P0 | OPEN | Source support useful. |
+## 5. Stable core claim set
+A7-C01 — A test result is meaningful only relative to the claim, configuration, conditions and method it actually exercised.
 
-## 6. Listener tool — Verification Intent Sheet
+A7-C02 — Verification planning should begin while requirements/interfaces are being matured, not only after the design is nominally complete.
+
+A7-C03 — Exploratory learning tests and release/qualification evidence are different evidence classes even if they use similar hardware or measurements.
+
+A7-C04 — Test-article representativeness must be assessed claim-by-claim; a prototype can be representative for one claim and weak for another.
+
+A7-C05 — Measurement adequacy matters before strong acceptance/capability conclusions are drawn.
+
+A7-C06 — A change requires re-verification only where it affects the evidence dependency or demonstrated claim.
+
+A7-C07 — Passing one end test does not automatically prove all intermediate failure mechanisms are controlled.
+
+A7-C08 — Verification evidence should remain traceable to the configuration and procedure that generated it.
+
+## 6. Claim classes / source status
+- C01/C02/C08: V2/V6; authoritative verification/configuration support required during evidence verification.
+- C03/C04/C05/C06/C07: V6 + frozen-backbone principles; external source enrichment where useful.
+- Open P0 normative claims in conceptual core: 0.
+- Any future statement that a named standard mandates a method/criterion becomes V1/P0 before script use.
+
+## 7. Listener tool — Verification Intent Sheet
 For every consequential test:
 | Field | Question |
 |---|---|
@@ -93,7 +104,7 @@ For every consequential test:
 | Applicability | what exact claim/envelope does the result support? |
 | Re-test trigger | what change would require new evidence? |
 
-## 7. Evidence-to-Claim Review
+## 8. Evidence-to-Claim Review
 Before accepting a result ask:
 1. Did the tested configuration match the claim?
 2. Were relevant interfaces/materials/processes represented?
@@ -104,7 +115,7 @@ Before accepting a result ask:
 7. What change would invalidate the evidence?
 8. Is this learning evidence, release evidence, or both?
 
-## 8. Worked example — Sentinel Node environmental test
+## 9. Worked example — Sentinel Node environmental test
 Question: can the enclosure/connector interface maintain function after the target environmental exposure?
 
 Early exploratory test:
@@ -120,7 +131,7 @@ Not sufficient by itself for release if final resin, molded geometry, gasket com
 
 Production-intent verification later should explicitly bind the result to the released configuration and representative assembly/test conditions.
 
-## 9. Common failure modes
+## 10. Common failure modes
 - “We already tested that” with no reconstructable configuration.
 - test article differs from released design in a failure-relevant way.
 - acceptance threshold invented after data are seen.
@@ -129,7 +140,7 @@ Production-intent verification later should explicitly bind the result to the re
 - measurement uncertainty/resolution is ignored.
 - failed unit is reworked and only the final pass survives in records.
 
-## 10. Standards/source targets
+## 11. Standards/source targets
 Priority source families:
 - NASA Systems Engineering Handbook / verification guidance;
 - ISO/IEC/IEEE 29148 where exact requirements-verification language is useful and applicable;
@@ -138,10 +149,10 @@ Priority source families:
 Guardrail:
 This episode is about evidence architecture, not teaching a universal DVT/PVT prescription.
 
-## 11. Applicability statement
+## 12. Applicability statement
 General hardware verification-planning framework. It does not replace mandated qualification/validation protocols in regulated, safety-critical, aerospace, automotive, medical or customer-controlled programs.
 
-## 12. What this episode must NOT claim
+## 13. What this episode must NOT claim
 - every prototype test needs formal qualification paperwork;
 - a single test result proves serial production capability;
 - DVT/PVT are universal standards-defined phases;
@@ -149,21 +160,12 @@ General hardware verification-planning framework. It does not replace mandated q
 - every design change requires a full test campaign;
 - measurement data are trustworthy without considering method adequacy.
 
-## 13. Research backlog before CLAIM SET STABLE
-1. Package authoritative systems-engineering verification support.
-2. Verify terminology for verification vs validation without overgeneralizing industry-specific meanings.
-3. Cross-link measurement adequacy to Episode 24/P2.03.
-4. Technical review: systems/test + NPI/quality.
-5. Keep DVT/PVT labels contextual rather than universal.
+## 14. Claim-set-stable result
+PASS.
+- Eight non-overlapping claims retained.
+- A4 owns general representativeness; A7 owns verification intent/evidence use.
+- A8 owns configuration identity; A7 only requires enough configuration linkage to preserve test meaning.
+- DVT/PVT labels remain contextual, not universal.
+- Standards-specific claims remain behind the Source Verification gate.
 
-## 14. Current assessment
-Episode structure: STRONG
-Audience fit: STRONG
-Navigation fit: STRONG
-Standards burden: LOW–MEDIUM
-Quantitative burden: LOW
-Backbone risk: LOW
-Source verification: OPEN
-
-Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+Next maturity target: EVIDENCE VERIFIED after authoritative verification guidance and any selected standards-specific claims are verified.
