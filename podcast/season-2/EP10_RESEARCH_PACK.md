@@ -1,6 +1,6 @@
 # Episode 10 Research Pack — Designing for Reliability, Service and Repair
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 2 — Turn the Prototype into a Product
 primary_audience: Audience A + Audience B
 secondary_audience: reliability, mechanical, electronics, NPI, quality, service, operations
@@ -26,17 +26,17 @@ Reliability is not a final qualification test and serviceability is not a post-l
 
 A product can pass functional verification and still contain failure mechanisms that emerge only with time, cycles, environment, wear, contamination, misuse or accumulated variation.
 
-## 4. Draft claim register
+## 4. Stable claim register
 | ID | Claim | Priority | Status |
 |---|---|---|---|
-| EP10-C01 | Functional success at one time/configuration does not establish reliability over the intended life/environment. | P0 | BACKBONE-SUPPORTED |
-| EP10-C02 | Reliability evidence should be linked to identified failure mechanisms, loads/environment/duty cycle and configuration. | P0 | BACKBONE-SUPPORTED |
-| EP10-C03 | Design, manufacturing variation, suppliers and assembly/process conditions can all contribute to field reliability. | P0 | BACKBONE-SUPPORTED |
-| EP10-C04 | Serviceability/repairability are product architecture considerations because access, replacement, calibration, diagnostics and configuration influence recovery cost/time. | P0 | BACKBONE-SUPPORTED |
+| EP10-C01 | Functional success at one time/configuration does not establish reliability over the intended life/environment. | P0 | BACKBONE-SUPPORTED / STABLE |
+| EP10-C02 | Reliability evidence should be linked to identified failure mechanisms, loads/environment/duty cycle and configuration. | P0 | BACKBONE-SUPPORTED / STABLE |
+| EP10-C03 | Design, manufacturing variation, suppliers and assembly/process conditions can all contribute to field reliability. | P0 | BACKBONE-SUPPORTED / STABLE |
+| EP10-C04 | Serviceability/repairability are product-architecture considerations because access, replacement, calibration, diagnostics and configuration influence recovery cost/time. | P0 | BACKBONE-SUPPORTED / STABLE |
 | EP10-C05 | Field failures and returns should feed back into population segmentation, root cause, corrective configuration and effectiveness evidence. | P0 | FIELD EVIDENCE LOOP / BACKBONE-STABLE |
-| EP10-C06 | Accelerated tests support only the failure mechanisms and acceleration assumptions they validly exercise; acceleration is not automatically equivalent to field life. | P0 | SOURCE VERIFICATION REQUIRED |
+| EP10-C06 | Accelerated tests support only the failure mechanisms and acceleration assumptions they validly exercise; acceleration is not automatically equivalent to field life. | P0 | CONCEPT STABLE / SOURCE VERIFICATION REQUIRED |
 | EP10-C07 | A repaired/reworked unit retains failure and repair history; final PASS does not erase the event. | P0 | GLOBAL INVARIANT / STABLE |
-| EP10-C08 | Repair strategy must consider economics, safety/compliance, spare availability, traceability and whether field action changes the released configuration. | P1 | BACKBONE/SYNTHESIS |
+| EP10-C08 | Repair strategy must consider economics, safety/compliance, spare availability, traceability and whether field action changes the released configuration. | P1 | BACKBONE/SYNTHESIS STABLE |
 
 Publication guardrail: no universal life factor, acceleration model, MTBF target, confidence level or environmental test profile enters the script without exact technical/source applicability.
 
@@ -99,10 +99,10 @@ General hardware reliability/service foundation. Required life, test methods, sa
 - a repaired final PASS erases original failure;
 - one returned unit proves a population-wide root cause.
 
-## 15. Research backlog before CLAIM SET STABLE
-1. Cross-check reliability/service domains in the canonical backbone.
-2. Build authoritative source map for failure-mechanism and accelerated-test boundary claims.
-3. Add one simple life/field-data example only after assumptions are explicitly defined and audited.
+## 15. Evidence backlog after claim stabilization
+1. Build authoritative source map for failure-mechanism and accelerated-test boundary claims.
+2. Verify any product/industry-specific reliability method before attribution.
+3. Add numerical lifetime/acceleration examples only after model assumptions are explicit and independently audited.
 4. Preserve FIELD EVIDENCE LOOP mapping without duplicating later quality/CAPA content.
 5. Technical review: reliability + design + manufacturing/NPI + service/quality.
 
@@ -113,6 +113,7 @@ Navigation fit: STRONG
 Standards burden: HIGH when test methods are introduced
 Quantitative burden: MEDIUM-HIGH in later evidence work
 Backbone risk: LOW
-Source verification: OPEN
+Claim set: STABLE
+Source verification: CONTROLLED BACKLOG
 
-Next status target: `RESEARCH PACK OPEN → CLAIM SET STABLE`
+Next status target: `CLAIM SET STABLE → EVIDENCE VERIFIED`
