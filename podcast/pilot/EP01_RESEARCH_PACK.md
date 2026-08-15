@@ -1,6 +1,6 @@
 # Episode 1 Research Pack — The Product Works. Why Can’t We Manufacture It?
 
-status: RESEARCH PACK OPEN
+status: CLAIM SET STABLE
 season: Season 2 — From Working Prototype to Manufacturable Product
 primary_audience: Audience B — teams with a working prototype entering industrialization
 secondary_audience: founders, engineering leads, NPI, manufacturing, quality, supply chain
@@ -61,18 +61,19 @@ LVP is where product truth begins to be translated into controlled build/test/su
 ### SVP evidence
 Stable serial production requires evidence that product, process, measurement, supplier, configuration and rate controls collectively sustain acceptable output.
 
-## 5. Claim register — draft
+## 5. Claim register — stabilized
 | ID | Claim | Class | Priority | Status | Note |
 |---|---|---|---|---|---|
-| EP01-C01 | A successful prototype does not by itself demonstrate repeatable production capability. | V6 + backbone | P0 | STABLE BACKBONE | Central distinction. |
-| EP01-C02 | Verification/validation evidence and production acceptance/process-control evidence answer related but different questions. | V6 + P2.03 | P0 | OPEN | Source/terminology verification required. |
-| EP01-C03 | Manufacturing readiness is multidimensional: design/configuration, process, supplier, measurement/test, quality, people/standard work, rate/capacity and economics can mature at different speeds. | V6 | P0 | SYNTHESIS | Avoid presenting as an external standard taxonomy. |
-| EP01-C04 | Hidden expert intervention is a form of manufacturing dependency that must become visible before scaling. | V6 | P1 | SYNTHESIS | Narrative principle. |
-| EP01-C05 | CTQs should flow from product/process risk and requirements rather than from inspecting every dimension equally. | V6 + P2.03 | P0 | BACKBONE-SUPPORTED | Quality terminology review needed. |
-| EP01-C06 | Configuration identity is necessary to relate build/test evidence to the product version that generated it. | V6 + P2.02 | P0 | BACKBONE-SUPPORTED | Cross-link A8. |
-| EP01-C07 | A supplier sample that meets drawing requirements is not by itself evidence of sustained supplier/process capability at production conditions. | V6 + P2.04 | P1 | OPEN | Need careful sourcing/application. |
-| EP01-C08 | Rate and cost can expose failure modes or constraints invisible in a few engineering builds. | V6 + P2.05/P2.06 | P1 | BACKBONE-SUPPORTED | Quantitative examples later. |
-| EP01-C09 | Industrialization should close evidence gaps deliberately rather than copy every prototype method into production. | V6 | P0 | STABLE SYNTHESIS | Episode conclusion. |
+| EP01-C01 | A successful prototype does not by itself demonstrate repeatable production capability. | V6 + backbone | P0 | CLAIM STABLE | Central distinction; supported across P2.01/P2.03/P2.04. |
+| EP01-C02 | Product verification/validation evidence and production acceptance/process-control evidence answer related but different questions. | V6 + P2.03 | P0 | CLAIM STABLE / source packaging open | Keep terminology application-neutral until episode source pack. |
+| EP01-C03 | Manufacturing readiness is multidimensional: design/configuration, process, supplier, measurement/test, quality, people/standard work, rate/capacity and economics can mature at different speeds. | V6 | P0 | CLAIM STABLE | Repository synthesis; do not present as external standard taxonomy. |
+| EP01-C04 | Hidden expert intervention is a manufacturing dependency that must become visible before scaling. | V6 | P1 | CLAIM STABLE | Synthesis; convert hero knowledge into controlled method where it affects release/repeatability. |
+| EP01-C05 | CTQs should flow from product/process risk and requirements rather than from inspecting every dimension equally. | V6 + P2.03 | P0 | CLAIM STABLE | Exact external terminology remains source-pack work. |
+| EP01-C06 | Configuration identity is necessary to relate build/test evidence to the product version that generated it. | V6 + P2.02/P2.08 | P0 | CLAIM STABLE | Global invariant alignment. |
+| EP01-C07 | A supplier sample that meets drawing requirements is not by itself evidence of sustained supplier/process capability at representative production conditions. | V6 + P2.06 | P1 | CLAIM STABLE / source packaging open | Avoid universal PPAP claim. |
+| EP01-C08 | Rate, yield and rework can materially change cost per accepted unit and expose constraints not visible in a few engineering builds. | V3/V6 + P2.04/P2.05 | P1 | CLAIM STABLE | Numerical mini-example included below. |
+| EP01-C09 | Industrialization should close evidence gaps deliberately rather than copy every prototype method into production. | V6 | P0 | CLAIM STABLE | Episode conclusion. |
+| EP01-C10 | Production readiness should be treated as a set of evidence-supported claims inside a defined configuration/process envelope, not as a universal binary label. | V6 + Global Invariants | P0 | CLAIM STABLE | Directly aligns P2.01/P2.02/P2.08. |
 
 ## 6. Manufacturability Evidence Gap Map — listener tool
 For the current product, score each row as `KNOWN / PARTIAL / UNKNOWN / NOT YET APPLICABLE` and record the next evidence action.
@@ -134,7 +135,35 @@ What may still be missing:
 
 Episode lesson: the prototype did not fail. It successfully revealed the next class of engineering work.
 
-## 9. Common failure modes
+## 9. Quantitative mini-example — why rate/yield matters
+Illustrative only.
+
+Assume a bridge process costs $42 of direct conversion per attempted unit before scrap/rework.
+
+Case A — 95% FPY, negligible rework:
+- expected direct conversion cost per first-pass good unit ≈ $42 / 0.95 = $44.21.
+
+Case B — 80% FPY, same nominal conversion cost:
+- expected direct conversion cost per first-pass good unit ≈ $42 / 0.80 = $52.50.
+
+Before adding rework labor, delay, extra test or capacity loss, the lower-yield route already appears ~18.8% more expensive per first-pass good unit than Case A.
+
+This example does NOT prove a universal production-cost formula. It illustrates why unit cost, yield and accepted throughput must be evaluated together.
+
+## 10. Cross-package consistency map
+Episode 1 must remain consistent with:
+
+- **P2.01** — readiness is evidence-based and multidimensional.
+- **P2.02** — definition/configuration/effectivity determine which evidence applies.
+- **P2.03** — CTQ/measurement/process-quality evidence cannot be replaced by final inspection alone.
+- **P2.04** — sustainable accepted throughput matters more than a short peak build rate.
+- **P2.05** — economics must use cost per good output, realistic yield/ramp/support assumptions.
+- **P2.06** — supplier approval is inside a demonstrated process/configuration/rate envelope.
+- **P2.08** — evidence must remain reconstructable to as-built/as-run truth.
+
+Global-invariant check: PASS at claim-set level.
+
+## 11. Common failure modes
 ### “Just build 100”
 Quantity is increased before the evidence gaps and learning objectives are defined.
 
@@ -156,10 +185,10 @@ A few excellent samples are mistaken for evidence of repeatability, capacity and
 ### Factory theater
 Fixtures, dashboards and automation are purchased before the product/process evidence model is understood.
 
-## 10. Applicability statement
+## 12. Applicability statement
 General hardware industrialization framework. It does not define contractual production-readiness criteria for regulated sectors, nor replace industry-specific APQP/PPAP/FAI/qualification requirements. Those methods can later be mapped onto the evidence dimensions where applicable.
 
-## 11. What this episode must NOT claim
+## 13. What this episode must NOT claim
 - a working prototype has little value;
 - production readiness is one universal TRL/MRL number;
 - every startup needs automotive APQP/PPAP;
@@ -168,29 +197,28 @@ General hardware industrialization framework. It does not define contractual pro
 - LVP/SVP are external standard lifecycle labels;
 - a fixed unit count proves readiness.
 
-## 12. Research backlog before CLAIM SET STABLE
-1. Verify terminology separating product V&V from production acceptance/process evidence.
-2. Source authoritative support for configuration-to-evidence traceability.
-3. Source supplier/process-capability distinction without overgeneralizing PPAP beyond applicability.
-4. Build one quantitative mini-example showing how rate/yield changes cost per good unit.
-5. Cross-check against P2.01–P2.10 and Global Invariants.
-6. Technical review: NPI + quality + manufacturing + systems.
+## 14. Remaining work before EVIDENCE VERIFIED
+1. Package authoritative support for product V&V versus production acceptance/process evidence.
+2. Package authoritative support for configuration-to-evidence traceability.
+3. Add supplier/process-capability source support without overgeneralizing PPAP.
+4. Independently recheck numerical examples during quantitative gate.
+5. Technical review: NPI + quality + manufacturing + systems.
 
-## 13. Pilot-test objective
+## 15. Pilot-test objective
 Episode 1 tests whether the packaging contract can synthesize many backbone domains into one accessible entry episode without becoming a checklist dump.
 
 PASS signal:
 A team with a working prototype should be able to identify its five highest-risk missing evidence classes and define the next build around closing them.
 
-## 14. Current assessment
+## 16. Current assessment
 Episode structure: STRONG
 Audience fit: STRONG
 Navigation fit: STRONG
 Cross-domain burden: HIGH
 Standards burden: MEDIUM
 Quantitative burden: MEDIUM
-Backbone risk: MEDIUM — synthesis discipline required
-Source verification: OPEN
+Backbone risk: CONTROLLED
+Source verification: PARTIAL / episode source-pack work remains
 
 Next status target:
-`RESEARCH PACK OPEN → CLAIM SET STABLE`
+`CLAIM SET STABLE → EVIDENCE VERIFIED`
