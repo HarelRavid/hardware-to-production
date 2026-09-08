@@ -1,3 +1,9 @@
+> **HISTORICAL / SUPERSEDED FOR CURRENT SEASON-1 REVIEW**
+>
+> This review covers the earlier A1–A8-only Season 1 framing and is retained for traceability. It is **not the current full-series Season 1 review**.
+>
+> Current canonical Season 1 review: `podcast/season-1/SEASON_1_FULL_REVIEW_V2.md`, covering A1–A8 + EP01–10. Current episode/season routing is controlled by `PODCAST_MAP.md`, `podcast/PODCAST_SEASON_ARCHITECTURE.md`, and `podcast/CANONICAL_EDITORIAL_PRECEDENCE.md`.
+
 # Season 1 Full Review — Build the Right Thing
 
 status: PASS WITH CONTROLLED EVIDENCE BACKLOG
