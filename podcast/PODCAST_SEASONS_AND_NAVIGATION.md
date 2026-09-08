@@ -1,3 +1,9 @@
+> **HISTORICAL / SUPERSEDED FOR EDITORIAL ROUTING**
+>
+> This artifact is retained for historical rationale and traceability. Its season assignments, titles, entry routing and packaging metadata are **not current canonical editorial authority**.
+>
+> Current routing is controlled by `PODCAST_MAP.md`, `podcast/PODCAST_SEASON_ARCHITECTURE.md`, and `podcast/CANONICAL_EDITORIAL_PRECEDENCE.md`. The `status:` metadata below records this artifact's historical state at the time it was created and must not override those sources.
+
 # Podcast Seasons & Navigation Architecture
 
 status: CANONICAL EDITORIAL NAVIGATION
