@@ -1,54 +1,49 @@
 # Hardware-to-Production Data Hub — Project Status
 
-last_updated: 2026-08-14
-status_basis: MASTER_WBS.md + evidence campaign + Pass-2 worked-evidence artifacts + cross-framework contradiction audit
+last_updated: 2026-09-10
+status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + Season 6 case-evidence campaign + full-series production architecture audit
 
 ## Program status
 **Knowledge Architecture V1.0: CLOSED / DEFINED**
-**Phase 2 Pass 1 — Evidence Breadth: COMPLETE**
-**Phase 2 Pass 1 Audit: COMPLETE — PASS WITH CONTROLLED GAPS**
-**Phase 2 Pass 2 — Depth / Worked Evidence: COMPLETE AT FREEZE-CANDIDATE LEVEL**
-**Knowledge Backbone V1: FREEZE CANDIDATE — FINAL QA ACTIVE**
+**Knowledge Backbone V1: FROZEN**
+**Phase 2 Evidence Breadth / Pass-2 Backbone Depth: COMPLETE FOR V1 BASELINE**
+**Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
+**Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
+**Full-Series Production Architecture Audit: PASS**
+**Podcast Ready: NO — SOURCE LOCK / TECHNICAL REVIEW / SCRIPTING REMAIN**
 
-Architecture closure records that the canonical WBS, ontology and domain boundaries are defined. It does not imply that every normative claim has completed source-level verification or episode-level technical review.
+The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
+
+Architecture completion does not imply that every normative claim, standards clause, quantitative value or case-study fact has completed source-level and technical review.
 
 ## Maturity terminology
 - **DEFINED** — conceptual architecture exists and is internally coherent.
 - **BREADTH COMPLETE** — authoritative source families, critical claims, weak/GNR areas, applicability boundaries and depth targets are mapped.
 - **VALIDATED AGAINST EXAMPLE** — representative implementation/reference data has exercised the architecture and important conflict/failure cases.
 - **EVIDENCE VALIDATED** — important claims/boundaries have suitable authoritative evidence and explicit applicability.
-- **NEAR PODCAST READY** — depth, worked examples and canonical frameworks are present; source-note verification/technical/editorial packaging remains.
+- **PRODUCTION-ARCHITECTURE COMPLETE** — episode purpose, listener transformation, teaching flow, framework ownership, examples/cases and script gates are defined across the canonical roadmap.
 - **PODCAST READY** — episode-critical claims pass evidence, applicability, quantitative, case, technical and editorial gates.
 - **FROZEN V1** — backbone structure and canonical invariants are baselined; later structural changes require controlled gap/change justification.
 
-## Architecture progress
-Sections 0–10: **DEFINED for V1.0 (100%)**.
-Manufacturing Atlas/Data Hub architecture has additionally been validated against the Sentinel Node implementation example where applicable.
-Future structural changes require demonstrated gaps and controlled architecture decisions.
+## Knowledge Backbone V1
+Sections 0–10 remain **DEFINED and FROZEN for V1.0**.
 
-## Evidence breadth progress
-A0–A8: **BREADTH COMPLETE**.
-A9 cross-industry case-study campaign: **REPRESENTATIVE STRESS-TEST SET CAPTURED for V1 freeze candidate**; it remains extensible during episode packaging.
+All ten Pass-2 packages remain the canonical backbone:
+1. P2.01 Hardware Evolution / Readiness
+2. P2.02 Configuration & Change Control
+3. P2.03 PFMEA → Control Plan → MSA → SPC → Capability
+4. P2.04 Pilot / PVT / Run-at-Rate / Capacity / Ramp Exit
+5. P2.05 Process Economics / CapEx / NRE / Break-even / NPV / Sensitivity
+6. P2.06 Supplier Industrialization / FAI / PPAP / Change / Requalification
+7. P2.07 Automation / Qualification / OEE / Failure-Recovery / Release
+8. P2.08 Manufacturing Atlas / Digital Thread / Minimum Viable Atlas
+9. P2.09 OT/ICS Cybersecurity / IEC 62443 / Recovery / Remote Access
+10. P2.10 Cross-industry Case-Study Stress Test
 
-## Pass 2 depth status
-All ten planned depth packages have reached **NEAR PODCAST READY** at backbone level:
+No full-series production review found a contradiction requiring the backbone to reopen.
 
-1. **P2.01 Hardware Evolution / Readiness** — NEAR PODCAST READY
-2. **P2.02 Configuration & Change Control** — NEAR PODCAST READY
-3. **P2.03 PFMEA → Control Plan → MSA → SPC → Capability** — NEAR PODCAST READY
-4. **P2.04 Pilot / PVT / Run-at-Rate / Capacity / Ramp Exit** — NEAR PODCAST READY
-5. **P2.05 Process Economics / CapEx / NRE / Break-even / NPV / Sensitivity** — NEAR PODCAST READY
-6. **P2.06 Supplier Industrialization / FAI / PPAP / Change / Requalification** — NEAR PODCAST READY
-7. **P2.07 Automation / Qualification / OEE / Failure-Recovery / Release** — NEAR PODCAST READY
-8. **P2.08 Manufacturing Atlas / Digital Thread / Minimum Viable Atlas** — NEAR PODCAST READY
-9. **P2.09 OT/ICS Cybersecurity / IEC 62443 / Recovery / Remote Access** — NEAR PODCAST READY
-10. **P2.10 Cross-industry Case-Study Stress Test** — NEAR PODCAST READY
-
-The Pass-2 cross-framework contradiction audit found no unresolved architectural contradiction preventing V1 freeze. Case studies generated targeted backbone repairs rather than a need to redesign the architecture.
-
-## Canonical backbone repairs discovered by case-study stress testing
-The following concepts are required to remain discoverable and integrated during V1 final QA:
-
+## Canonical cross-domain repairs
+The following remain integrated cross-domain objects rather than new silos:
 1. FIELD EVIDENCE LOOP
 2. MINIMUM CONTROLLED PRODUCTION MODE
 3. INTERACTION CLAIM
@@ -59,11 +54,7 @@ The following concepts are required to remain discoverable and integrated during
 8. SIGNAL AGGREGATION
 9. FIELD EVENT
 
-These are cross-domain repairs, not new independent silos.
-
-## Global invariants for V1
-The final QA/freeze must preserve these principles across episode packs:
-
+## Global invariants
 1. Evidence supports a defined claim inside a defined applicability/configuration envelope.
 2. Change invalidates only the evidence dependencies it actually affects; reassessment scope is impact/evidence based.
 3. Definition, execution/as-built state and evidence are distinct but traceably linked.
@@ -75,57 +66,106 @@ The final QA/freeze must preserve these principles across episode packs:
 9. Cyber/configuration events that can alter manufacturing can invalidate manufacturing evidence and require containment/requalification logic.
 10. “Running again” after failure/cyber disruption is not full recovery until configuration, quality, genealogy/WIP and release evidence are trustworthy again.
 
+## Canonical podcast roadmap
+The listener-facing roadmap remains **68 canonical assets**:
+- Opening Arc A1–A8
+- Core Episodes EP01–EP60
+
+Current six-season routing:
+1. **Season 1 — Build the Right Hardware Before Production Finds Your Mistakes** — A1–A8 + EP01–10
+2. **Season 2 — How Hardware Is Actually Made** — EP11–19
+3. **Season 3 — Build the Factory Before You Need the Factory** — EP20–31
+4. **Season 4 — Quality, Suppliers and the Reality of Scale** — EP32–40
+5. **Season 5 — Automation, Data and the Connected Factory** — EP41–52
+6. **Season 6 — Manufacturing Atlas: Decision Playbooks and Case Studies** — EP53–60
+
+Canonical routing precedence is controlled by:
+1. `PODCAST_MAP.md`
+2. `podcast/PODCAST_SEASON_ARCHITECTURE.md`
+3. `podcast/EPISODE_PACKAGING_CONTRACT.md`
+4. frozen Knowledge Backbone / `MASTER_WBS.md`
+5. current season production blueprints and full reviews
+
+Historical navigation artifacts remain preserved but are explicitly superseded for current routing.
+
+## Season production status
+All six canonical seasons have passed production-architecture review:
+
+- Season 1 V2 — PASS WITH CONTROLLED EVIDENCE BACKLOG
+- Season 2 — PASS WITH CONTROLLED EVIDENCE BACKLOG
+- Season 3 — PASS WITH CONTROLLED EVIDENCE BACKLOG
+- Season 4 — PASS WITH CONTROLLED EVIDENCE BACKLOG
+- Season 5 — PASS WITH CONTROLLED EVIDENCE BACKLOG
+- Season 6 — PASS WITH CONTROLLED SCRIPT/EVIDENCE BACKLOG
+
+`podcast/FULL_SERIES_PRODUCTION_ARCHITECTURE_AUDIT.md` records the final result:
+
+**FULL 68-ASSET PRODUCTION ARCHITECTURE: PASS.**
+
+## Season 6 evidence status
+EP53–EP59 have dedicated public-case Evidence Packs using the required separation:
+
+`FACT → SOURCE INTERPRETATION → OUR FRAMEWORK LESSON`
+
+The case campaign covers failure reconstruction, successful industrialization, startup constraints, automotive, medical devices, aerospace and industrial equipment.
+
+EP60 uses the fictional Sentinel Node worked example and the frozen canonical frameworks for the full end-to-end decision story.
+
+Season 6 evidence is sufficient for production blueprints but not yet automatically SCRIPT READY. Exact source locators, current standards/regulatory status, quantitative values, attribution and domain-transfer language remain gated before script lock.
+
 ## Manufacturing Data Hub maturity language
-Do not use unqualified “COMPLETE architecture” to imply implementation or evidence validation.
+Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
+
 Use the most accurate level:
 
-`Architecture Drafted / Defined → Validated Against Implementation Example → Implementation Validated → Evidence/Podcast Ready`
+`Architecture Defined/Frozen → Production Architecture Complete → Source/Evidence Verified → Technically Reviewed → Script/Editorial Ready → PODCAST READY → Published`
 
-P2.08 demonstrates the second level for the Sentinel Node reference model; it does not claim a deployed production MES/PLM/QMS implementation has been validated.
+P2.08 remains an architecture validated against the Sentinel Node representative model; it is not a claim that a production MES/PLM/QMS deployment has been implementation-validated.
 
-## Podcast architecture status
-Canonical editorial roadmap: **68 episodes** — Opening A1–A8 + Episodes 1–60.
-Listener-facing season architecture: defined.
-Knowledge backbone coverage exists across the full roadmap.
-Episode scripts are intentionally not yet frozen because normative/source-note verification and episode packaging are the next controlled phase.
-
-## Practical completion estimate
-Planning estimates, not mathematically measured completion values:
+## Current completion view
+These are planning/maturity descriptions, not mathematically measured percentages.
 
 ### A. Knowledge architecture / ontology / WBS
-**100% defined for V1.0**
+**100% defined and frozen for V1.0.**
 
-### B. Foundational evidence breadth
-**~100% for V1 backbone scope**
+### B. Backbone evidence breadth / deep worked framework coverage
+**Complete for V1 baseline.**
+Additional evidence enrichment remains allowed without reopening V1.
 
-### C. Deep evidence / worked examples / cross-domain stress testing
-**~90–95% at backbone level**
-Remaining work is concentrated in source-level verification, applicability precision and episode-specific evidence extraction rather than new domain discovery.
+### C. Podcast production architecture
+**100% across the canonical 68 assets.**
+Episode purposes, ownership, narrative/teaching flows and publication gates are defined.
 
-### D. Podcast-ready research-pack maturity
-**~70–75% overall**
-The backbone is mature; 68 episode-specific source packs, technical review and editorial packaging remain substantial work.
+### D. Source/claim verification
+**PARTIAL / UNEVEN BY EPISODE.**
+Pilot packs and Season 6 cases contain substantial evidence work, but exact source-lock/standards/applicability verification is not complete across all 68 assets.
 
-### E. Overall program maturity
-**~80% toward a fully evidence-backed podcast research system; materially less toward 68 fully scripted/recorded episodes.**
+### E. Technical review / scripts / recording assets
+**NOT COMPLETE.**
+This is now the dominant remaining program workload.
 
-## Final QA before Knowledge Backbone V1 freeze
-1. Synchronize status/index/discoverability records. — ACTIVE
-2. Remove or qualify misleading maturity labels such as unqualified COMPLETE. — ACTIVE
-3. Build Source Verification Backlog separating:
-   - normative/standards claims;
-   - authoritative technical guidance;
-   - quantitative worked-example assumptions;
-   - case-study facts;
-   - GNR/synthesis frameworks.
-4. Re-run audience/stage coverage audit against the refined two-audience mission.
-5. Define the canonical Episode Packaging Contract.
-6. Confirm every case-study repair maps back into at least one canonical domain/package and podcast arc.
-7. Freeze Knowledge Backbone V1 only after these checks pass.
+## Current controlled backlog
+1. Complete episode-level source/claim verification.
+2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
+3. Verify all engineering-significant quantitative claims, assumptions and calculations.
+4. Finalize public case-study source locators/current-status checks.
+5. Run technical domain review by episode/batch.
+6. Produce episode outlines/scripts from the verified packs.
+7. Run editorial duplication/narrative review after scripting.
+8. Produce show notes/source packs.
+9. Pass final PODCAST READY gate.
+10. Create recording/publishing assets.
 
-## Path after freeze
-`Backbone V1 Freeze → Source Verification / Claim Packs → Episode Research Packs → Technical Review → Episode Outline/Script → Recording Assets / Show Notes`
+## Recommended next production mode
+Do not reopen episode architecture unless a verified source exposes a genuine structural contradiction.
+
+Process the remaining publication work in controlled batches:
+
+`Source/Claim Lock → Technical Review → Script/Outline → Editorial Review → Source Notes → PODCAST READY`
+
+Prefer coherent batches with shared standards/frameworks so one source-verification effort can support multiple episodes while preserving episode-specific applicability.
 
 ## Critical warning
-**NEAR PODCAST READY is not PODCAST READY.**
-The backbone is now structurally mature, but standards clauses, applicability statements, factual case claims and episode-critical quantitative claims must still be verified and packaged at source level before publication.
+**PRODUCTION-ARCHITECTURE COMPLETE is not PODCAST READY.**
+
+The full listener journey is now structurally complete and audited. Publication still requires source-level verification, technical review and script/editorial gates for consequential claims.
