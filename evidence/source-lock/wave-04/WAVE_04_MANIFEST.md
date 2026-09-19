@@ -1,7 +1,8 @@
 # Source-Lock Wave 04 — Automation / Machinery Safety / OEE
 
-status: ACTIVE — SHARED SOURCES LOCKED; CLAIM LOCK IN PROGRESS
+status: COMPLETE — PUBLICATION WORKFLOW PASS FOR CURRENT GENERIC SCRIPT SCOPE
 opened: 2026-09-19
+closed: 2026-09-19
 scope_type: shared-source-family wave
 baseline_head_at_open: 199e97df7fffd1670071cd1a51de93a122b87dc1
 
