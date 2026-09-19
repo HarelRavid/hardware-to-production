@@ -22,10 +22,9 @@ Current Claude Handoff Ready:
 
 No architecture redesign is required.
 
-The remaining preparation work is:
-EP14–EP19 source/evidence verification + technical review + final outlines,
-then one Season 2 continuity review,
-then 9 Handoff Manifests + 9 Claude Writing Prompts.
+Season 2 preparation lane is complete.
+All 9 episodes have Handoff Manifests and Claude Writing Prompts.
+See `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`.
 
 ## 2. Asset-by-asset readiness
 
@@ -34,21 +33,21 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 | EP11 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP12 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP13 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
-| EP14 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
-| EP15 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
-| EP16 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06F evidence/outline complete |
-| EP17 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06G evidence/outline complete |
-| EP18 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06H evidence/outline complete |
-| EP19 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06I evidence/outline complete |
+| EP14 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP15 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP16 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP17 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP18 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP19 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
 
 ## 3. Season 2 execution order
 
-1. 06D — EP14 Joining — **EVIDENCE/OUTLINE COMPLETE**
-2. 06E — EP15 Composites — **EVIDENCE/OUTLINE COMPLETE**
-3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
-4. 06G — EP17 Additive Manufacturing — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
-5. 06H — EP18 Surface / Cleaning / Heat Treatment — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
-6. 06I — EP19 Process Chains — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
+1. 06D — EP14 Joining — **COMPLETE***
+2. 06E — EP15 Composites — **COMPLETE***
+3. 06F — EP16 Ceramics / Powder / Sintering — **COMPLETE*** — **COMPLETE*** — **COMPLETE***
+4. 06G — EP17 Additive Manufacturing — **COMPLETE*** — **COMPLETE***
+5. 06H — EP18 Surface / Cleaning / Heat Treatment — **COMPLETE*** — **COMPLETE***
+6. 06I — EP19 Process Chains — **COMPLETE*** — **COMPLETE***
 7. Season 2 final continuity review
 8. EP11–19 Handoff Manifests
 9. EP11–19 Claude Writing Prompts
