@@ -1,7 +1,8 @@
 # Source-Lock Wave 02 — Quality Chain + Supplier Approval Evidence
 
-status: ACTIVE — SHARED SOURCES LOCKED; CLAIM LOCK IN PROGRESS
+status: COMPLETE — PUBLICATION WORKFLOW PASS FOR CURRENT GENERIC SCRIPT SCOPE
 opened: 2026-09-19
+closed: 2026-09-19
 scope_type: shared-source-family wave
 baseline_head_at_open: 14e0c1ca96fc67e18c6d5691389c1bee326747d2
 
