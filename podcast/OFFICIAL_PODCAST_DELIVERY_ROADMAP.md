@@ -599,7 +599,10 @@ CLAUDE HANDOFF READY.
 
 ## SEASON 5 — Automation, Data and the Connected Factory
 
-Status: **ACTIVE**
+Status: **CLAUDE HANDOFF READY — PASS (12/12)**
+
+Exit audit:
+`podcast/season-5/SEASON_5_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Canonical scope:
 EP41–EP52
@@ -639,7 +642,10 @@ CLAUDE HANDOFF READY.
 
 ## SEASON 6 — Manufacturing Atlas: Decision Playbooks and Case Studies
 
-Status: **ACTIVE — FINAL PREPARATION SEASON**
+Status: **CLAUDE HANDOFF READY — PASS (8/8)**
+
+Exit audit:
+`podcast/season-6/SEASON_6_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Canonical scope:
 EP53–EP60
@@ -741,24 +747,41 @@ NotebookLM output does not bypass editorial/technical QA.
 
 # 12. Official current priority
 
-CURRENT ACTIVE SEASON:
+PREPARATION PROGRAM STATUS:
 
-**Season 5 — Automation, Data and the Connected Factory**
+**COMPLETE — 68 / 68 CLAUDE HANDOFF READY**
 
-COMPLETED SEASONS:
+Season completion:
+- Season 1: 18 / 18 — PASS
+- Season 2: 9 / 9 — PASS
+- Season 3: 12 / 12 — PASS
+- Season 4: 9 / 9 — PASS
+- Season 5: 12 / 12 — PASS
+- Season 6: 8 / 8 — PASS
 
-- Season 1 — **18/18 CLAUDE HANDOFF READY — PASS**
-- Season 2 — **9/9 CLAUDE HANDOFF READY — PASS**
-- Season 3 — **12/12 CLAUDE HANDOFF READY — PASS**
-- Season 4 — **9/9 CLAUDE HANDOFF READY — PASS**
+Full-series exit audit:
+`podcast/FULL_SERIES_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
-CURRENT PREPARATION GOAL:
+CURRENT ACTIVE PHASE:
 
-EP41–EP52 → 12/12 CLAUDE HANDOFF READY.
+**Claude Two-Character Dialogue Production**
 
-Season 5 advantage:
-all 12 episodes already have mature publication packages; remaining work is primarily continuity/current-status recheck + handoff manifests/prompts.
+Canonical production order:
 
+A1 → A2 → A3 → A4 → A5 → A6 → A7 → A8 → EP01 → ... → EP60.
+
+For each asset:
+Claude draft → claim/technical review → quantitative/case review where applicable → editorial/two-character review → current-source recheck → final dialogue freeze → NotebookLM production package → audio generation → audio QA.
+
+FIRST ACTIVE ASSET:
+
+**A1 — From an Idea to Engineering Requirements**
+
+Prompt:
+`podcast/season-1/claude-handoff/A1/A1_CLAUDE_WRITING_PROMPT.md`
+
+Manifest:
+`podcast/season-1/claude-handoff/A1/A1_HANDOFF_MANIFEST.md`
 
 # 13. Canonical progress metrics
 
@@ -771,7 +794,7 @@ Track four metrics separately:
 Current baseline at roadmap activation: 29 / 68.
 
 ### C. Claude Handoff Ready
-New primary preparation metric.
+**68 / 68 — COMPLETE.**
 
 ### D. Final Dialogue / NotebookLM Ready
 Downstream production metric.
