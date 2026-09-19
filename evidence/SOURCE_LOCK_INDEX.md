@@ -187,7 +187,7 @@ Hard rule retained:
 No universal system-of-record assignment, ISA-95 software stack, OPC UA ontology claim, IEC 62443 topology/security level, or legal OT-security obligation is inferred without exact applicability.
 
 ### Wave 06 — Manufacturing Process Families
-Status: **ACTIVE — 06A PASS / 06B NEXT**
+Status: **ACTIVE — 06A/06B PASS / 06C NEXT**
 
 Master record:
 - `evidence/source-lock/wave-06/WAVE_06_MASTER_MANIFEST.md`
@@ -199,8 +199,13 @@ Sub-wave status:
   - `evidence/source-lock/wave-06/W6A_INTERNAL_TECHNICAL_REVIEW.md`
   - `evidence/source-lock/wave-06/W6A_PUBLICATION_GATE.md`
   - EP11 outline / full script / review / source notes complete.
-- **06B Polymers / Forming / Elastomers — NEXT**
-- 06C Metals / Machining / Casting / Forming — PLANNED
+- **06B Polymers / Forming / Elastomers — PASS**
+  - `evidence/source-lock/SOURCE_LOCK_WAVE_06B_POLYMERS_REGISTER.md`
+  - `evidence/source-lock/wave-06/W6B_EP12_CLAIM_LOCK.md`
+  - `evidence/source-lock/wave-06/W6B_INTERNAL_TECHNICAL_REVIEW.md`
+  - `evidence/source-lock/wave-06/W6B_PUBLICATION_GATE.md`
+  - EP12 outline / full script / review / source notes complete.
+- **06C Metals / Machining / Casting / Forming — NEXT**
 - 06D Joining — PLANNED
 - 06E Composites — PLANNED
 - 06F Ceramics / Powder / Sintering — PLANNED
