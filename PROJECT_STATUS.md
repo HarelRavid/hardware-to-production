@@ -252,13 +252,13 @@ Checked 2026-09-19:
 Generic measurement/capability claims are anchored primarily to open NIST sources rather than protected manual content.
 
 ### Publication-package count
-Full source-lock → script-review → source-notes workflow completed for **28 canonical assets**:
-A1, A7, A8, EP11, EP12, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40, EP41, EP42, EP43, EP44, EP45, EP46, EP47, EP48, EP49, EP50, EP51, EP52.
+Full source-lock → script-review → source-notes workflow completed for **29 canonical assets**:
+A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40, EP41, EP42, EP43, EP44, EP45, EP46, EP47, EP48, EP49, EP50, EP51, EP52.
 
-This does not mean those twenty-eight are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
+This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Wave 06C — Metals / Machining / Casting / Forming (EP13)**.
+**Wave 06D — Joining (EP14)**.
 
 Primary episode:
 - EP12 — Polymer Parts: Injection Molding and the Alternatives
@@ -278,14 +278,15 @@ Process-family rule:
 No generic wall, draft, shrinkage, tolerance, moisture or processing-temperature number enters the script without material/process/source applicability.
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
-Status: **ACTIVE — 06A/06B COMPLETE / 06C NEXT**.
+Status: **ACTIVE — 06A/06B/06C COMPLETE / 06D NEXT**.
 
 Completed sub-wave:
 - 06A Process Selection / EP11 — complete.
 - 06B Polymers / Forming / Elastomers / EP12 — complete.
+- 06C Metals / Machining / Casting / Forming / EP13 — complete.
 
 Next:
-- 06C Metals / Machining / Casting / Forming — EP13.
+- 06D Joining — EP14.
 
 Wave 06 is intentionally split by process family so material state, process physics, defect mechanisms, standards and supplier capability are not generalized across unrelated manufacturing routes.
 
@@ -314,14 +315,14 @@ Episode purposes, ownership, narrative/teaching flows and publication gates are 
 
 ### D. Source/claim verification
 **ACTIVE — WAVES 01–05 + WAVE 06A COMPLETE FOR 27 CANONICAL ASSETS.**
-Twenty-eight canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
+Twenty-nine canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
-Twenty-eight canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
+Twenty-nine canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
 
 ## Current controlled backlog
-1. Execute Source-Lock Wave 06C — Metals / Machining / Casting / Forming (EP13).
+1. Execute Source-Lock Wave 06D — Joining (EP14).
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
