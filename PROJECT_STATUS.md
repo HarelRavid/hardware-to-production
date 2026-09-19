@@ -258,7 +258,7 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Wave 06D — Joining (EP14)**.
+**Season 1 — A1–A8 + EP01–EP10 → CLAUDE HANDOFF READY**.
 
 Primary episode:
 - EP12 — Polymer Parts: Injection Molding and the Alternatives
@@ -278,7 +278,7 @@ Process-family rule:
 No generic wall, draft, shrinkage, tolerance, moisture or processing-temperature number enters the script without material/process/source applicability.
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
-Status: **ACTIVE — 06A/06B/06C COMPLETE / 06D NEXT**.
+Status: **PAUSED — 06A/06B/06C COMPLETE; RESUME AT 06D WHEN SEASON 2 BECOMES ACTIVE**.
 
 Completed sub-wave:
 - 06A Process Selection / EP11 — complete.
@@ -289,6 +289,27 @@ Next:
 - 06D Joining — EP14.
 
 Wave 06 is intentionally split by process family so material state, process physics, defect mechanisms, standards and supplier capability are not generalized across unrelated manufacturing routes.
+
+## Official delivery roadmap
+
+Current canonical delivery plan:
+- `podcast/OFFICIAL_PODCAST_DELIVERY_ROADMAP.md`
+
+Supporting Claude handoff contract:
+- `podcast/CLAUDE_EPISODE_HANDOFF_CONTRACT.md`
+
+Delivery order is now strictly:
+Season 1 → Season 2 → Season 3 → Season 4 → Season 5 → Season 6.
+
+Preparation endpoint per season:
+**CLAUDE HANDOFF READY** for every canonical asset in that season.
+
+The previous cross-series completion workplan is superseded.
+
+Current active preparation:
+**Season 1 — A1–A8 + EP01–EP10**.
+
+Wave 06 process-family work is paused after 06C and will resume at 06D when Season 2 becomes the active season.
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
@@ -322,7 +343,7 @@ Twenty-nine canonical assets have completed the full source-lock through source-
 Twenty-nine canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
 
 ## Current controlled backlog
-1. Execute Source-Lock Wave 06D — Joining (EP14).
+1. Complete Season 1 in canonical order until all 18 assets are CLAUDE HANDOFF READY.
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
