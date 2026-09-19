@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASONS 1–3 CLAUDE HANDOFF READY; SEASON 4 ACTIVE**
+**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASONS 1–5 CLAUDE HANDOFF READY; SEASON 6 ACTIVE**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -258,22 +258,27 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Season 5 — Automation, Data and the Connected Factory**
+**Season 6 — EP53–EP60**
 
 Current active preparation:
-- EP41–EP52
+- EP53–EP60
 
-All 12 already have mature publication packages from Waves 04–05.
+Existing assets:
+- EP53–59 Case Evidence Packs
+- EP53–60 Production Blueprints
+- Season 6 review PASS
 
-Remaining Season 5 preparation:
-- final season continuity / duplicate review;
-- current revision-watch rechecks where needed;
-- 12 Handoff Manifests;
-- 12 Claude Writing Prompts;
-- Season 5 exit audit.
+Remaining:
+- final freshness/source-status lock;
+- final claim/attribution lock;
+- technical review;
+- final outlines/source-note skeletons;
+- 8 Handoff Manifests;
+- 8 Claude Writing Prompts;
+- Season 6 exit audit.
 
-Season 5 exit target:
-**EP41–EP52 → 12/12 CLAUDE HANDOFF READY**
+Season 6 exit target:
+**EP53–EP60 → 8/8 CLAUDE HANDOFF READY**
 
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
@@ -306,7 +311,7 @@ Preparation endpoint per season:
 The previous cross-series completion workplan is superseded.
 
 Current active preparation:
-**Season 5 — EP41–EP52**.
+**Season 6 — EP53–EP60**.
 
 Season 1 is **CLAUDE HANDOFF READY — 18/18**.
 Season 2 is **CLAUDE HANDOFF READY — 9/9**.
@@ -320,14 +325,17 @@ Primary preparation metric under the official roadmap:
 - Season 2: **9 / 9 CLAUDE HANDOFF READY — PASS**
 - Season 3: **12 / 12 CLAUDE HANDOFF READY — PASS**
 - Season 4: **9 / 9 CLAUDE HANDOFF READY — PASS**
-- Season 5: **ACTIVE**
-- Season 6: not yet season-closed under the new handoff model
+- Season 5: **12 / 12 CLAUDE HANDOFF READY — PASS**
+- Season 6: **ACTIVE**
 
 Season 1 exit audit:
 - `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Season 1 Claude prompts/manifests:
 - `podcast/season-1/claude-handoff/`
+
+Season 5 exit audit:
+- `podcast/season-5/SEASON_5_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
