@@ -252,6 +252,20 @@ Handoff artifacts:
 Current active preparation:
 **Season 4 — EP32–EP40**
 
+### Season 4 — Handoff Completion Locks
+Status: **PASS — 9/9 CLAUDE HANDOFF READY**
+
+Season exit:
+- `podcast/season-4/SEASON_4_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Handoff artifacts:
+- 9 manifests;
+- 9 Claude writing prompts;
+- 22/22 mandatory handoff paths validated.
+
+Current active preparation:
+**Season 5 — EP41–EP52**
+
 ### Wave 07 — Case-Study Publication Lock
 Status: PARTIALLY PRE-BUILT / PLANNED FINAL LOCK
 
