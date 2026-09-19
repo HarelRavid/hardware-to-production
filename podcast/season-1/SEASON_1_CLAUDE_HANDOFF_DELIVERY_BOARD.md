@@ -53,11 +53,11 @@ Those legacy paths are supporting research only and must not be treated as seaso
 | A6 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
 | A7 | yes | yes | PASS | PASS | yes | yes | missing | missing | Publication Package Complete |
 | A8 | yes | yes | PASS | PASS | yes | yes | missing | missing | Publication Package Complete |
-| EP01 | yes | CLAIM SET STABLE | partial | open | missing | missing | missing | missing | S1-B |
-| EP02 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-B |
-| EP03 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-B |
-| EP04 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-B |
-| EP05 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-B |
+| EP01 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
+| EP02 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
+| EP03 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
+| EP04 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
+| EP05 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
 | EP06 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
 | EP07 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
 | EP08 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
@@ -132,8 +132,8 @@ EVT/DVT/PVT and other phase labels are examples, not universal standards.
 Burden:
 mostly LOW–MEDIUM standards, LOW quantitative, except EP01 has broad cross-domain scope.
 
-S1-B exit:
-EP01–05 Source Lock PASS + Technical Review PASS + final Script Outlines.
+S1-B exit: **ACHIEVED**
+EP01–05 Source Lock PASS + Technical Review PASS + final Script Outlines + source-note skeletons.
 
 ## 6. Workstream S1-C — DFX / test / tolerance / reliability
 
