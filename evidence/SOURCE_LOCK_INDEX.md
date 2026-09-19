@@ -150,26 +150,44 @@ Hard rule retained:
 No universal OEE benchmark, safety PL/SIL requirement, FAT/SAT release equivalence, machinery-law obligation or automated-test threshold is inferred without exact applicability/source lock.
 
 ### Wave 05 — Manufacturing Atlas / Digital Thread / OT Security
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
 
-Backbone:
-- P2.08
-- P2.09
+Direct episode scope:
+- EP47 — Systems of Record
+- EP48 — Product Genealogy / Recipes / Parameters / Measurements
+- EP49 — Standards / Claims / Evidence Knowledge Graph
+- EP50 — Manufacturing Atlas Decision System
+- EP51 — OPC UA / ISA-95 / Semantic Integration
+- EP52 — Engineering-Grade Manufacturing Data / OT Security
 
-Primary episodes:
-- EP35
-- EP47–52
-- EP59 recovery/configuration reuse
+Canonical records:
+- `evidence/source-lock/SOURCE_LOCK_WAVE_05_ATLAS_DIGITAL_THREAD_OT_SECURITY_REGISTER.md`
+- `evidence/source-lock/wave-05/WAVE_05_MANIFEST.md`
+- `evidence/source-lock/wave-05/W5_EP47_EP48_EP49_EP50_EP51_EP52_CLAIM_LOCK.md`
+- `evidence/source-lock/wave-05/W5_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/wave-05/WAVE_05_PUBLICATION_GATE.md`
 
-Source targets:
-- ISA-95 / IEC 62264;
-- OPC UA / companion-specification boundaries;
-- NIST digital-thread/manufacturing-data guidance;
-- IEC 62443 family;
-- NIST SP 800-82 Rev.3.
+Publication packages completed:
+- script outlines;
+- full script drafts;
+- script reviews;
+- source notes.
+
+Current source findings checked 2026-09-19:
+- ANSI/ISA-95.00.01-2025 current Part 1;
+- NIST Digital Thread updated Aug 2026;
+- NIST IR 8536 final Sep 9, 2026;
+- NIST SP 800-82 Rev.3 current final;
+- IEC 62443 role/status family locked at public-scope level.
+
+Final publication watch:
+- recheck IEC 62443-2-1:2024 before EP52 final publication lock because IEC stability date is 2026.
+
+Hard rule retained:
+No universal system-of-record assignment, ISA-95 software stack, OPC UA ontology claim, IEC 62443 topology/security level, or legal OT-security obligation is inferred without exact applicability.
 
 ### Wave 06 — Manufacturing Process Families
-Status: PLANNED
+Status: **NEXT**
 
 Primary episodes:
 - EP11–19
