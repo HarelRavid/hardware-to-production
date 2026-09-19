@@ -503,7 +503,10 @@ Then move to Season 3.
 
 ## SEASON 3 — Build the Factory Before You Need the Factory
 
-Status: **ACTIVE**
+Status: **CLAUDE HANDOFF READY — PASS (12/12)**
+
+Exit audit:
+`podcast/season-3/SEASON_3_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Canonical scope:
 EP20–EP31
@@ -735,18 +738,24 @@ CURRENT ACTIVE SEASON:
 
 **Season 4 — Quality, Suppliers and the Reality of Scale**
 
-COMPLETED PREPARATION:
+COMPLETED SEASONS:
 
-- Season 1 — 18/18 CLAUDE HANDOFF READY
-- Season 2 — 9/9 CLAUDE HANDOFF READY
-- Season 3 — 12/12 CLAUDE HANDOFF READY
+- Season 1 — **18/18 CLAUDE HANDOFF READY — PASS**
+- Season 2 — **9/9 CLAUDE HANDOFF READY — PASS**
+- Season 3 — **12/12 CLAUDE HANDOFF READY — PASS**
 
 CURRENT PREPARATION GOAL:
 
 EP32–EP40 → 9/9 CLAUDE HANDOFF READY.
 
+Known mature Season 4 packages:
+- EP32
+- EP39
+- EP40
 
----
+Primary remaining work:
+- EP33–EP38
+
 
 # 13. Canonical progress metrics
 
