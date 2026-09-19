@@ -1,3 +1,12 @@
+# HISTORICAL / SUPERSEDED DELIVERY PLAN
+
+status: SUPERSEDED BY `podcast/OFFICIAL_PODCAST_DELIVERY_ROADMAP.md`
+superseded: 2026-09-19
+
+This file is preserved for decision history only. Do not use it for current delivery order or season-completion gates.
+
+---
+
 # Hardware-to-Production Podcast — Completion & Recording Workplan
 
 status: ACTIVE — CANONICAL DELIVERY PLAN
