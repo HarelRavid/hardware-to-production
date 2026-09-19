@@ -258,21 +258,23 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Season 3 — Build the Factory Before You Need the Factory**
+**Season 4 — Quality, Suppliers and the Reality of Scale**
 
 Current active preparation:
-- EP20 — EBOM → MBOM / routing
-- EP21 — tooling / fixtures / equipment
-- EP22 — standard work / operator qualification
-- EP25 — layout / material flow
+- EP33 — Nonconformance / CAPA / Effectiveness
+- EP34 — Reliability Validation / Field Evidence
+- EP35 — Genealogy / Affected-Population Reconstruction
+- EP36 — Standards / Applicability / Compliance
+- EP37 — Make/Buy / Sourcing Strategy
+- EP38 — Supplier Capability / Qualification
 
-Already mature in Season 3:
-- EP23
-- EP24
-- EP26–EP31
+Already mature in Season 4:
+- EP32
+- EP39
+- EP40
 
-Season 3 exit target:
-**EP20–EP31 → 12/12 CLAUDE HANDOFF READY**
+Season 4 exit target:
+**EP32–EP40 → 9/9 CLAUDE HANDOFF READY**
 
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
@@ -305,7 +307,7 @@ Preparation endpoint per season:
 The previous cross-series completion workplan is superseded.
 
 Current active preparation:
-**Season 3 — EP20–EP31**.
+**Season 4 — EP32–EP40**.
 
 Season 1 is **CLAUDE HANDOFF READY — 18/18**.
 Season 2 is **CLAUDE HANDOFF READY — 9/9**.
@@ -317,8 +319,9 @@ Primary preparation metric under the official roadmap:
 
 - Season 1: **18 / 18 CLAUDE HANDOFF READY — PASS**
 - Season 2: **9 / 9 CLAUDE HANDOFF READY — PASS**
-- Season 3: **ACTIVE**
-- Seasons 4–6: not yet season-closed under the new handoff model
+- Season 3: **12 / 12 CLAUDE HANDOFF READY — PASS**
+- Season 4: **ACTIVE**
+- Seasons 5–6: not yet season-closed under the new handoff model
 
 Season 1 exit audit:
 - `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
@@ -358,13 +361,13 @@ Episode purposes, ownership, narrative/teaching flows and publication gates are 
 Twenty-nine canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
 
 ## Current controlled backlog
-1. Complete Season 3 in canonical order until all 12 assets are CLAUDE HANDOFF READY.
-2. Close source/claim/technical-review gaps for EP20, EP21, EP22 and EP25.
-3. Reuse existing verified packages for EP23, EP24 and EP26–EP31 as handoff reference inputs.
-4. Run Season 3 continuity/duplicate-ownership review.
-5. Create 12 Season 3 Handoff Manifests and Claude Writing Prompts.
-6. Run Season 3 exit audit.
-7. Continue to Season 4 only after Season 3 passes.
+1. Complete Season 4 until all EP32–EP40 are CLAUDE HANDOFF READY.
+2. Close source/claim/technical-review gaps for EP33–EP38.
+3. Reuse existing verified packages for EP32, EP39 and EP40.
+4. Run Season 4 continuity/duplicate-ownership review.
+5. Create 9 Season 4 Handoff Manifests and Claude Writing Prompts.
+6. Run Season 4 exit audit.
+7. Continue to Season 5 only after Season 4 passes.
 
 
 ## Recommended next production mode
