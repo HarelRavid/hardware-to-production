@@ -206,17 +206,26 @@ Generic measurement/capability claims are anchored primarily to open NIST source
 Full source-lock → script-review → source-notes workflow completed for **14 canonical assets**:
 A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40.
 
-This does not mean those eight are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
+This does not mean those fourteen are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
 **Wave 04 — Automation / Machinery Safety / OEE**.
 
 Primary backbone:
-- P2.04 Pilot / PVT / Run-at-Rate / Capacity / Ramp Exit
-- P2.05 Process Economics / CapEx / NRE / Break-even / NPV / Sensitivity
+- P2.07 Automation / Qualification / OEE / Failure-Recovery / Release
 
 Primary episode family:
-EP26–31 plus economics/rate dependencies reused in later automation/startup/synthesis episodes.
+- EP41–46
+- supporting interfaces into EP25 / EP29 / EP52 / EP59 where relevant
+
+Primary source families:
+- ISO 12100;
+- ISO 13849 series;
+- IEC 62061;
+- ISO 10218 series;
+- IEC 60204-1;
+- authoritative OEE definition/loss-model sources;
+- jurisdiction-specific machinery-safety obligations kept separate from standards guidance.
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
