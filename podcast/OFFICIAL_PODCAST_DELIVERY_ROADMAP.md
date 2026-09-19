@@ -547,6 +547,8 @@ CLAUDE HANDOFF READY.
 
 ## SEASON 4 — Quality, Suppliers and the Reality of Scale
 
+Status: **ACTIVE**
+
 Canonical scope:
 EP32–EP40
 Total assets: 9
@@ -730,18 +732,18 @@ NotebookLM output does not bypass editorial/technical QA.
 
 CURRENT ACTIVE SEASON:
 
-**Season 1**
+**Season 4 — Quality, Suppliers and the Reality of Scale**
+
+COMPLETED PREPARATION:
+
+- Season 1 — 18/18 CLAUDE HANDOFF READY
+- Season 2 — 9/9 CLAUDE HANDOFF READY
+- Season 3 — 12/12 CLAUDE HANDOFF READY
 
 CURRENT PREPARATION GOAL:
 
-A1–A8 + EP01–10 → 18/18 CLAUDE HANDOFF READY.
+EP32–EP40 → 9/9 CLAUDE HANDOFF READY.
 
-Wave 06 is paused after:
-- 06A PASS
-- 06B PASS
-- 06C PASS
-
-and resumes at 06D only after Season 1 is complete.
 
 ---
 
