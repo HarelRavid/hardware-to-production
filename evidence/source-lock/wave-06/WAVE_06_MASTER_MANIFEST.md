@@ -11,10 +11,13 @@ Source-lock Season 2 process-selection/deep-dive episodes without collapsing mat
 ## Canonical sub-waves
 
 ### 06A — Process Selection / Process Economics
+Status: **PASS — PUBLICATION PACKAGE COMPLETE**
 Primary episode: EP11 — How to Select a Manufacturing Process
 Shared dependencies: DFX foundations, Wave 03 economics.
+Canonical gate: `evidence/source-lock/wave-06/W6A_PUBLICATION_GATE.md`
 
 ### 06B — Polymers / Forming / Elastomers
+Status: **NEXT**
 Primary episode: EP12 — Polymer Parts: Injection Molding and the Alternatives
 
 ### 06C — Metals / Machining / Casting / Forming
