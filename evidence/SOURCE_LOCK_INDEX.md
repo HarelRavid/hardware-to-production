@@ -62,7 +62,7 @@ Handoff artifacts:
 - 18 Claude writing prompts;
 - 0 missing mandatory handoff paths.
 
-Current active preparation moves to Season 2 / Wave 06D.
+Season 1 handoff is complete. Season 2 handoff is also complete; current active preparation is Season 3.
 
 ### Wave 02 — Quality Chain + Supplier Approval Evidence
 Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
@@ -217,32 +217,26 @@ Master record:
 
 Sub-wave status:
 - **06A Process Selection / EP11 — PASS**
-  - `evidence/source-lock/SOURCE_LOCK_WAVE_06A_PROCESS_SELECTION_REGISTER.md`
-  - `evidence/source-lock/wave-06/W6A_EP11_CLAIM_LOCK.md`
-  - `evidence/source-lock/wave-06/W6A_INTERNAL_TECHNICAL_REVIEW.md`
-  - `evidence/source-lock/wave-06/W6A_PUBLICATION_GATE.md`
-  - EP11 outline / full script / review / source notes complete.
-- **06B Polymers / Forming / Elastomers — PASS**
-  - `evidence/source-lock/SOURCE_LOCK_WAVE_06B_POLYMERS_REGISTER.md`
-  - `evidence/source-lock/wave-06/W6B_EP12_CLAIM_LOCK.md`
-  - `evidence/source-lock/wave-06/W6B_INTERNAL_TECHNICAL_REVIEW.md`
-  - `evidence/source-lock/wave-06/W6B_PUBLICATION_GATE.md`
-  - EP12 outline / full script / review / source notes complete.
-- **06C Metals / Machining / Casting / Forming — PASS**
-  - `evidence/source-lock/SOURCE_LOCK_WAVE_06C_METALS_REGISTER.md`
-  - `evidence/source-lock/wave-06/W6C_EP13_CLAIM_LOCK.md`
-  - `evidence/source-lock/wave-06/W6C_INTERNAL_TECHNICAL_REVIEW.md`
-  - `evidence/source-lock/wave-06/W6C_PUBLICATION_GATE.md`
-  - EP13 outline / full script / review / source notes complete.
-- **06D Joining — NEXT**
-- 06E Composites — PLANNED
-- 06F Ceramics / Powder / Sintering — PLANNED
-- 06G Additive Manufacturing — PLANNED
-- 06H Surface / Cleaning / Heat Treatment — PLANNED
-- 06I Process-Chain Integration — PLANNED
+- **06B Polymers / EP12 — PASS**
+- **06C Metals / EP13 — PASS**
+- **06D Joining / EP14 — PASS**
+- **06E Composites / EP15 — PASS**
+- **06F Ceramics / Powder / Sintering / EP16 — PASS**
+- **06G Additive Manufacturing / EP17 — PASS**
+- **06H Surface / Cleaning / Heat Treatment / EP18 — PASS**
+- **06I Process Chains / EP19 — PASS**
 
-Wave 06 rule:
+Season 2 handoff:
+- `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+- 9/9 Handoff Manifests
+- 9/9 Claude Writing Prompts
+- 24/24 mandatory handoff paths validated
+
+Wave 06 rule retained:
 No universal process-family numeric limit, tolerance, material state, tooling threshold or qualification requirement is transferred between sub-waves without exact evidence/applicability.
+
+Current active preparation:
+**Season 3 — Production System Engineering**
 
 ### Wave 07 — Case-Study Publication Lock
 Status: PARTIALLY PRE-BUILT / PLANNED FINAL LOCK
