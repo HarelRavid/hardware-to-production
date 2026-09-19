@@ -75,27 +75,43 @@ Hard rule retained:
 Exact protected/manual-specific method details, thresholds, submission levels and customer-specific requirements remain gated. Wave 02 scripts intentionally do not require those details.
 
 ### Wave 03 — Pilot / Capacity / Ramp / Economics
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
 
-Backbone:
-- P2.04
-- P2.05
+Direct episode scope:
+- EP26 — Pilot Build Planning
+- EP27 — Production Validation
+- EP28 — Yield / Rework / Scrap
+- EP29 — Capacity / Bottlenecks / Takt
+- EP30 — Supplier Readiness / Contract-Manufacturer Management
+- EP31 — Engineering Changes During Ramp
 
-Primary episodes:
-- EP26–31
-- EP41–46 economics/rate dependencies
-- EP55 startup scale application
-- EP60 synthesis
+Canonical records:
+- `evidence/source-lock/SOURCE_LOCK_WAVE_03_RAMP_ECONOMICS_REGISTER.md`
+- `evidence/source-lock/wave-03/WAVE_03_MANIFEST.md`
+- `evidence/source-lock/wave-03/W3_EP26_EP27_EP28_EP29_EP30_EP31_CLAIM_LOCK.md`
+- `evidence/source-lock/wave-03/W3_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/wave-03/WAVE_03_PUBLICATION_GATE.md`
 
-Source targets:
-- NASA PRR/readiness guidance;
-- manufacturing-readiness source family where current authoritative access is available;
-- operations/capacity equations;
-- finance/economic-method references;
-- independent arithmetic lock of Sentinel examples.
+Publication packages completed:
+- script outlines;
+- full script drafts;
+- script reviews;
+- source notes.
+
+Current authoritative context checked 2026-09-19:
+- NASA NPR 7123.1D + Appendix G PRR;
+- Lean Enterprise Institute takt/cycle definitions;
+- NIST flow/WIP/capacity research;
+- NIST AMS 200-5 / 200-11 / Smart Investment Tool family;
+- NIST maintenance/investment-return studies.
+
+All current Sentinel capacity/economics arithmetic independently checked.
+
+Hard rule retained:
+No universal pilot quantity, PVT definition, Run-at-Rate duration, ramp-release threshold, acceptable yield, discount rate or payback target.
 
 ### Wave 04 — Automation / Machinery Safety / OEE
-Status: PLANNED
+Status: **NEXT**
 
 Backbone:
 - P2.07
