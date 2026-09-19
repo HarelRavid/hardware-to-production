@@ -549,7 +549,7 @@ Or you are a giant company and the specification is frozen forever.
 
 Real hardware development is not that binary.
 
-In early development, your requirements baseline may contain targets, ranges, assumptions and TBDs.
+In early development, your working requirements set may contain targets, ranges, assumptions and TBDs.
 
 The point is learning.
 
