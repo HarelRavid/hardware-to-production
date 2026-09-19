@@ -1,7 +1,7 @@
 # Hardware-to-Production Data Hub — Project Status
 
 last_updated: 2026-09-19
-status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full-series production architecture audit + Source-Lock Waves 01–02 publication packages
+status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full-series production architecture audit + Source-Lock Waves 01–05 + Wave 06A publication packages
 
 ## Program status
 **Knowledge Architecture V1.0: CLOSED / DEFINED**
@@ -260,20 +260,22 @@ This does not mean those twenty-seven are automatically PUBLISHED or globally PO
 ### Next controlled wave
 **Wave 06B — Polymers / Forming / Elastomers (EP12)**.
 
-Primary backbone:
-- P2.08 Manufacturing Atlas / Digital Thread / Minimum Viable Atlas
-- P2.09 OT/ICS Cybersecurity / IEC 62443 / Recovery / Remote Access
+Primary episode:
+- EP12 — Polymer Parts: Injection Molding and the Alternatives
 
-Primary episode family:
-- EP47–52
-- supporting interfaces into EP35 / EP59 where relevant
+Primary domain:
+- polymer forming / elastomers / bridge manufacturing
 
-Primary source families:
-- ISA-95 / IEC 62264;
-- OPC UA / companion-specification boundaries;
-- NIST digital-thread/manufacturing-data guidance;
-- IEC 62443 family;
-- NIST SP 800-82 Rev.3.
+Source-lock focus:
+- polymer grade/state and conditioning;
+- injection-molding process physics and geometry coupling;
+- shrinkage / warpage / sink / weld-line mechanisms;
+- tooling, gating/ejection and dimensional evidence;
+- bridge routes and route-transfer limits;
+- inspection and cost/evidence boundaries.
+
+Process-family rule:
+No generic wall, draft, shrinkage, tolerance, moisture or processing-temperature number enters the script without material/process/source applicability.
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
 Status: **ACTIVE — 06A COMPLETE / 06B NEXT**.
@@ -310,12 +312,12 @@ Additional evidence enrichment remains allowed without reopening V1.
 Episode purposes, ownership, narrative/teaching flows and publication gates are defined.
 
 ### D. Source/claim verification
-**ACTIVE — TWO SHARED-SOURCE WAVES COMPLETE.**
+**ACTIVE — WAVES 01–05 + WAVE 06A COMPLETE FOR 27 CANONICAL ASSETS.**
 Twenty-seven canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
-Twenty-seven canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
+Twenty-seven canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
 
 ## Current controlled backlog
 1. Execute Source-Lock Wave 06B — Polymers / Forming / Elastomers (EP12).
