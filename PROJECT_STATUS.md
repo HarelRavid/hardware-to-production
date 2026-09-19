@@ -258,31 +258,20 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Season 6 — EP53–EP60**
+**Season 3 — Production System Engineering completion**
 
-Current active preparation:
-- EP53–EP60
+Missing episode preparation:
+- EP20 — EBOM / MBOM / routing
+- EP21 — tooling / fixtures / equipment
+- EP22 — standard work / operator qualification
+- EP25 — layout / material flow
 
-Existing assets:
-- EP53–59 Case Evidence Packs
-- EP53–60 Production Blueprints
-- Season 6 review PASS
-
-Remaining:
-- final freshness/source-status lock;
-- final claim/attribution lock;
-- technical review;
-- final outlines/source-note skeletons;
-- 8 Handoff Manifests;
-- 8 Claude Writing Prompts;
-- Season 6 exit audit.
-
-Season 6 exit target:
-**EP53–EP60 → 8/8 CLAUDE HANDOFF READY**
+Season 3 target:
+**EP20–EP31 → 12/12 CLAUDE HANDOFF READY**
 
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
-Status: **ACTIVE — 06A/06B/06C COMPLETE; 06D NEXT**.
+Status: **PASS — 06A THROUGH 06I COMPLETE; SEASON 2 HANDOFF READY**.
 
 Completed sub-wave:
 - 06A Process Selection / EP11 — complete.
@@ -330,6 +319,9 @@ Primary preparation metric under the official roadmap:
 
 Season 1 exit audit:
 - `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Season 2 exit audit:
+- `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Season 1 Claude prompts/manifests:
 - `podcast/season-1/claude-handoff/`
