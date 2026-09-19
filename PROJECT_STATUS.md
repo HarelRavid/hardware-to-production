@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–04 COMPLETE FOR SELECTED EPISODES**
+**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–05 COMPLETE FOR SELECTED EPISODES**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -136,6 +136,30 @@ Completed:
 
 A1 retains one non-substantive wording patch before final recording lock. A7/A8 packages are ready for final recording/editorial lock under the current script scope.
 
+### Source-Lock Wave 05 — Manufacturing Atlas / Digital Thread / OT Security
+Status: **PASS**.
+
+Direct episode scope:
+- EP47 Systems of Record
+- EP48 Product Genealogy
+- EP49 Claims/Evidence Knowledge Graph
+- EP50 Manufacturing Atlas
+- EP51 OPC UA / ISA-95 / Semantic Integration
+- EP52 Engineering-Grade Manufacturing Data / OT Security
+
+Completed:
+- shared source register;
+- claim lock;
+- internal technical review;
+- source-linked script outlines;
+- full script drafts;
+- script reviews;
+- source notes;
+- publication gate.
+
+Wave 05 current-script P0 source blockers: **0**.
+EP52 retains a final publication-status recheck for IEC 62443-2-1:2024 because IEC lists stability date 2026.
+
 ### Source-Lock Wave 04 — Automation / Machinery Safety / OEE
 Status: **PASS**.
 
@@ -228,13 +252,13 @@ Checked 2026-09-19:
 Generic measurement/capability claims are anchored primarily to open NIST sources rather than protected manual content.
 
 ### Publication-package count
-Full source-lock → script-review → source-notes workflow completed for **20 canonical assets**:
-A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40, EP41, EP42, EP43, EP44, EP45, EP46.
+Full source-lock → script-review → source-notes workflow completed for **26 canonical assets**:
+A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40, EP41, EP42, EP43, EP44, EP45, EP46, EP47, EP48, EP49, EP50, EP51, EP52.
 
-This does not mean those twenty are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
+This does not mean those twenty-six are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Wave 05 — Manufacturing Atlas / Digital Thread / OT Security**.
+**Wave 06 — Manufacturing Process Families**.
 
 Primary backbone:
 - P2.08 Manufacturing Atlas / Digital Thread / Minimum Viable Atlas
@@ -276,14 +300,14 @@ Episode purposes, ownership, narrative/teaching flows and publication gates are 
 
 ### D. Source/claim verification
 **ACTIVE — TWO SHARED-SOURCE WAVES COMPLETE.**
-Twenty canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
+Twenty-six canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
-Twenty canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
+Twenty-six canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
 
 ## Current controlled backlog
-1. Execute Source-Lock Wave 05 — Manufacturing Atlas / Digital Thread / OT Security.
+1. Execute Source-Lock Wave 06 — Manufacturing Process Families.
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
