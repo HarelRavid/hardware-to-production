@@ -46,11 +46,11 @@ Those legacy paths are supporting research only and must not be treated as seaso
 | Asset | Blueprint | Research/Claim Set | Source Lock | Tech Review | Final Outline | Source Notes | Handoff Manifest | Claude Prompt | Current status |
 |---|---|---|---|---|---|---|---|---|---|
 | A1 | yes | yes | PASS | PASS | yes | yes | missing | missing | Publication Package Complete |
-| A2 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-A |
-| A3 | yes | CLAIM SET STABLE | source family located | open | missing | missing | missing | missing | S1-A |
-| A4 | yes | CLAIM SET STABLE | final source pack open | open | missing | missing | missing | missing | S1-A |
-| A5 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | missing | S1-A |
-| A6 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | missing | S1-A |
+| A2 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
+| A3 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
+| A4 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
+| A5 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
+| A6 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-A evidence/outline complete |
 | A7 | yes | yes | PASS | PASS | yes | yes | missing | missing | Publication Package Complete |
 | A8 | yes | yes | PASS | PASS | yes | yes | missing | missing | Publication Package Complete |
 | EP01 | yes | CLAIM SET STABLE | partial | open | missing | missing | missing | missing | S1-B |
@@ -111,8 +111,8 @@ Need:
 - exact IPC/JEDEC/compliance requirements only if final narration names them;
 - technical review electronics/embedded + test/NPI.
 
-S1-A exit:
-A2–A6 Source Lock PASS + Technical Review PASS + final Script Outlines.
+S1-A exit: **ACHIEVED**
+A2–A6 Source Lock PASS + Technical Review PASS + final Script Outlines + source-note skeletons.
 
 ## 5. Workstream S1-B — Industrialization/readiness bridge
 
