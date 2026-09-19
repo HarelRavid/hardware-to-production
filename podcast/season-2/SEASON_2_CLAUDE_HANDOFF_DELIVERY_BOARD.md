@@ -37,7 +37,7 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 | EP14 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP15 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP16 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06F evidence/outline complete |
-| EP17 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP17 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06G evidence/outline complete |
 | EP18 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP19 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
 
@@ -46,7 +46,7 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 1. 06D — EP14 Joining — **EVIDENCE/OUTLINE COMPLETE**
 2. 06E — EP15 Composites — **EVIDENCE/OUTLINE COMPLETE**
 3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
-4. 06G — EP17 Additive Manufacturing — **EVIDENCE/OUTLINE COMPLETE**
+4. 06G — EP17 Additive Manufacturing — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
 5. 06H — EP18 Surface / Cleaning / Heat Treatment — **EVIDENCE/OUTLINE COMPLETE**
 6. 06I — EP19 Process Chains — **EVIDENCE/OUTLINE COMPLETE**
 7. Season 2 final continuity review
