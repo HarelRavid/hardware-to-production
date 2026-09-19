@@ -187,21 +187,29 @@ Hard rule retained:
 No universal system-of-record assignment, ISA-95 software stack, OPC UA ontology claim, IEC 62443 topology/security level, or legal OT-security obligation is inferred without exact applicability.
 
 ### Wave 06 — Manufacturing Process Families
-Status: **NEXT**
+Status: **ACTIVE — 06A PASS / 06B NEXT**
 
-Primary episodes:
-- EP11–19
-- DFM/DFA/tolerance support from EP06–09
+Master record:
+- `evidence/source-lock/wave-06/WAVE_06_MASTER_MANIFEST.md`
 
-Source lock will be split by process family rather than one giant wave if source burden becomes too heterogeneous:
-- polymers;
-- metals/machining/forming/casting;
-- joining;
-- composites;
-- ceramics/powders/sintering;
-- additive;
-- surface/cleaning/heat treatment;
-- process-chain selection.
+Sub-wave status:
+- **06A Process Selection / EP11 — PASS**
+  - `evidence/source-lock/SOURCE_LOCK_WAVE_06A_PROCESS_SELECTION_REGISTER.md`
+  - `evidence/source-lock/wave-06/W6A_EP11_CLAIM_LOCK.md`
+  - `evidence/source-lock/wave-06/W6A_INTERNAL_TECHNICAL_REVIEW.md`
+  - `evidence/source-lock/wave-06/W6A_PUBLICATION_GATE.md`
+  - EP11 outline / full script / review / source notes complete.
+- **06B Polymers / Forming / Elastomers — NEXT**
+- 06C Metals / Machining / Casting / Forming — PLANNED
+- 06D Joining — PLANNED
+- 06E Composites — PLANNED
+- 06F Ceramics / Powder / Sintering — PLANNED
+- 06G Additive Manufacturing — PLANNED
+- 06H Surface / Cleaning / Heat Treatment — PLANNED
+- 06I Process-Chain Integration — PLANNED
+
+Wave 06 rule:
+No universal process-family numeric limit, tolerance, material state, tooling threshold or qualification requirement is transferred between sub-waves without exact evidence/applicability.
 
 ### Wave 07 — Case-Study Publication Lock
 Status: PARTIALLY PRE-BUILT / PLANNED FINAL LOCK
