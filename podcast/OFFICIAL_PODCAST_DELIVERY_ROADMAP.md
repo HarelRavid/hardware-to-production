@@ -551,7 +551,10 @@ CLAUDE HANDOFF READY.
 
 ## SEASON 4 — Quality, Suppliers and the Reality of Scale
 
-Status: **ACTIVE**
+Status: **CLAUDE HANDOFF READY — PASS (9/9)**
+
+Exit audit:
+`podcast/season-4/SEASON_4_CLAUDE_HANDOFF_EXIT_AUDIT.md`
 
 Canonical scope:
 EP32–EP40
@@ -595,6 +598,8 @@ CLAUDE HANDOFF READY.
 ---
 
 ## SEASON 5 — Automation, Data and the Connected Factory
+
+Status: **ACTIVE**
 
 Canonical scope:
 EP41–EP52
@@ -736,25 +741,21 @@ NotebookLM output does not bypass editorial/technical QA.
 
 CURRENT ACTIVE SEASON:
 
-**Season 4 — Quality, Suppliers and the Reality of Scale**
+**Season 5 — Automation, Data and the Connected Factory**
 
 COMPLETED SEASONS:
 
 - Season 1 — **18/18 CLAUDE HANDOFF READY — PASS**
 - Season 2 — **9/9 CLAUDE HANDOFF READY — PASS**
 - Season 3 — **12/12 CLAUDE HANDOFF READY — PASS**
+- Season 4 — **9/9 CLAUDE HANDOFF READY — PASS**
 
 CURRENT PREPARATION GOAL:
 
-EP32–EP40 → 9/9 CLAUDE HANDOFF READY.
+EP41–EP52 → 12/12 CLAUDE HANDOFF READY.
 
-Known mature Season 4 packages:
-- EP32
-- EP39
-- EP40
-
-Primary remaining work:
-- EP33–EP38
+Season 5 advantage:
+all 12 episodes already have mature publication packages; remaining work is primarily continuity/current-status recheck + handoff manifests/prompts.
 
 
 # 13. Canonical progress metrics
