@@ -45,7 +45,7 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 
 1. 06D — EP14 Joining — **EVIDENCE/OUTLINE COMPLETE**
 2. 06E — EP15 Composites — **EVIDENCE/OUTLINE COMPLETE**
-3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
+3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE** — **EVIDENCE/OUTLINE COMPLETE**
 4. 06G — EP17 Additive Manufacturing — **EVIDENCE/OUTLINE COMPLETE**
 5. 06H — EP18 Surface / Cleaning / Heat Treatment — **EVIDENCE/OUTLINE COMPLETE**
 6. 06I — EP19 Process Chains — **EVIDENCE/OUTLINE COMPLETE**
