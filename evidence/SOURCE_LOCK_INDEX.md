@@ -210,7 +210,7 @@ Hard rule retained:
 No universal system-of-record assignment, ISA-95 software stack, OPC UA ontology claim, IEC 62443 topology/security level, or legal OT-security obligation is inferred without exact applicability.
 
 ### Wave 06 — Manufacturing Process Families
-Status: **ACTIVE — 06A/06B/06C PASS / 06D NEXT**
+Status: **PASS — 06A–06I COMPLETE; SEASON 2 CLAUDE HANDOFF READY**
 
 Master record:
 - `evidence/source-lock/wave-06/WAVE_06_MASTER_MANIFEST.md`
