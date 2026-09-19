@@ -1,0 +1,79 @@
+# Claude Writing Prompt — EP21: Tooling, Jigs, Fixtures and Production-Intent Equipment
+
+Write the complete final two-character spoken dialogue for **EP21 — Tooling, Jigs, Fixtures and Production-Intent Equipment**, Season 3 of Hardware-to-Production.
+
+This is a writing task, not a research task.
+
+## Read first
+Handoff Manifest:
+https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/season-3/claude-handoff/EP21/EP21_HANDOFF_MANIFEST.md
+
+Two-Character Dialogue Style Contract:
+https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/TWO_CHARACTER_DIALOGUE_STYLE_CONTRACT.md
+
+Season 3 Continuity Review:
+https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/season-3/SEASON_3_FINAL_CONTINUITY_REVIEW_FOR_CLAUDE.md
+
+Read every MUST READ file before drafting.
+
+## Authority order
+Claim Lock → Source Register → Technical Review → Script Outline → Blueprint → Season Continuity/Backbone → Supporting files .
+
+Never resolve a conflict by guessing.
+
+## Speakers
+SPEAKER A — Lead Host / Systems Engineer.
+SPEAKER B — Practitioner / Challenger.
+
+B must be technically competent and push on real factory execution: operators, tools, suppliers, flow, evidence, rate, cost and recovery.
+
+## Season 3 writing rule
+The season is one production operating system:
+definition → execution → controls → flow → pilot → validation → learning → capacity → suppliers → controlled change.
+
+Do not write a generic checklist episode.
+
+## Technical truth rules
+- Use only claims authorized by the Claim Lock.
+- Preserve all applicability boundaries.
+- Do not invent software schemas, fixture ratios, training hours, WIP limits, capacity thresholds, MSA limits, supplier gates or change requirements.
+- Existing external frameworks are contextual unless the package explicitly authorizes normative use.
+- Internal Hardware-to-Production tools must be presented as our tools.
+- If a new consequential claim seems necessary, put it under REVIEW FLAG — NOT FOR AUDIO.
+
+## Dialogue requirements
+1. Open with the approved hook.
+2. Make the listener transformation clear.
+3. Follow the Outline beats.
+4. Execute the primary listener tool on the worked example.
+5. Use concise callbacks, not repeated lectures.
+6. Use DEV/LVP/SVP where maturity changes the decision.
+7. Correct misconceptions naturally.
+8. End with one practical action.
+9. End with the correct next-episode handoff.
+
+## Numbers
+Use only approved sourced or illustrative numbers.
+Preserve assumptions and units.
+For EP29 specifically, use only the arithmetic locked in the source package.
+
+## Output
+# EP21 — Tooling, Jigs, Fixtures and Production-Intent Equipment
+
+SPEAKER A:
+...
+
+SPEAKER B:
+...
+
+Optional:
+## PRODUCTION NOTES — NOT SPOKEN
+
+## Self-check
+- no unlocked claim;
+- no invented number/threshold;
+- no standards overclaim;
+- no neighboring-episode duplication;
+- listener tool used;
+- both speakers technically useful;
+- action and handoff correct.
