@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASONS 1–5 CLAUDE HANDOFF READY; SEASON 6 ACTIVE**
+**Podcast Ready: NO — PRE-CLAUDE PREPARATION COMPLETE; 68/68 CLAUDE HANDOFF READY; DIALOGUE PRODUCTION NEXT**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -288,46 +288,34 @@ Wave 06 is intentionally split by process family so material state, process phys
 Current canonical delivery plan:
 - `podcast/OFFICIAL_PODCAST_DELIVERY_ROADMAP.md`
 
+Full-series handoff exit:
+- `podcast/FULL_SERIES_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
 Supporting Claude handoff contract:
 - `podcast/CLAUDE_EPISODE_HANDOFF_CONTRACT.md`
 
-Delivery order is now strictly:
+Two-character style:
+- `podcast/TWO_CHARACTER_DIALOGUE_STYLE_CONTRACT.md`
+
+Preparation order was completed strictly:
 Season 1 → Season 2 → Season 3 → Season 4 → Season 5 → Season 6.
 
-Preparation endpoint per season:
-**CLAUDE HANDOFF READY** for every canonical asset in that season.
+Preparation endpoint:
+**68 / 68 CLAUDE HANDOFF READY — PASS**
 
-The previous cross-series completion workplan is superseded.
+Current active production phase:
+**Claude Two-Character Dialogue Production**
 
-Current active preparation:
-**Season 6 — EP53–EP60**.
+First active asset:
+**A1 — From an Idea to Engineering Requirements**
 
-Season 1 is **CLAUDE HANDOFF READY — 18/18**.
-Season 2 is **CLAUDE HANDOFF READY — 9/9**.
-Wave 06 is complete.
-
-## Claude handoff progress
-
-Primary preparation metric under the official roadmap:
-
-- Season 1: **18 / 18 CLAUDE HANDOFF READY — PASS**
-- Season 2: **9 / 9 CLAUDE HANDOFF READY — PASS**
-- Season 3: **12 / 12 CLAUDE HANDOFF READY — PASS**
-- Season 4: **9 / 9 CLAUDE HANDOFF READY — PASS**
-- Season 5: **12 / 12 CLAUDE HANDOFF READY — PASS**
-- Season 6: **ACTIVE**
-
-Season 1 exit audit:
-- `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
-
-Season 2 exit audit:
-- `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`
-
-Season 1 Claude prompts/manifests:
-- `podcast/season-1/claude-handoff/`
-
-Season 5 exit audit:
-- `podcast/season-5/SEASON_5_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+Season status:
+- Season 1: 18/18 PASS
+- Season 2: 9/9 PASS
+- Season 3: 12/12 PASS
+- Season 4: 9/9 PASS
+- Season 5: 12/12 PASS
+- Season 6: 8/8 PASS
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
@@ -353,29 +341,33 @@ Additional evidence enrichment remains allowed without reopening V1.
 Episode purposes, ownership, narrative/teaching flows and publication gates are defined.
 
 ### D. Source/claim verification
-**ACTIVE — SEASON-FIRST DELIVERY.**
-44 canonical assets now have source/claim locks and technical review at the level required by their current preparation stage. 29 have the earlier full publication-package workflow; Season 1 additionally has 18/18 Claude handoff packages.
+**COMPLETE TO CLAUDE-HANDOFF SCOPE ACROSS ALL 68 ASSETS.**
 
-### E. Technical review / scripts / recording assets
-**ACTIVE / PARTIAL.**
-Twenty-nine canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 41 canonical assets are still open.
+Current-status / applicability rechecks remain targeted downstream gates before final dialogue freeze and publication; they are not broad preparation blockers.
 
+### E. Claude handoff / dialogue production
+**PREPARATION COMPLETE — 68/68 CLAUDE HANDOFF READY.**
+
+Final dialogue generation/review, NotebookLM production and audio QA remain open.
 ## Current controlled backlog
-1. Close Season 5 continuity/current-status checks.
-2. Create 12 Season 5 Handoff Manifests and Claude Writing Prompts.
-3. Run Season 5 exit audit.
-4. Continue to Season 6 only after Season 5 passes.
-5. Keep all existing full scripts as reference inputs below Claim Lock / Technical Review authority.
 
+1. Generate A1 two-character dialogue using the locked Claude prompt.
+2. Audit the Claude draft against Claim Lock / Technical Review / Continuity controls.
+3. Finalize A1 Source Notes from actual spoken content.
+4. Freeze A1 final dialogue.
+5. Build A1 NotebookLM Production Package.
+6. Continue in canonical order through A2 → ... → EP60.
+7. Run targeted current-standard/case/legal rechecks immediately before final dialogue freeze where specified.
 
 ## Recommended next production mode
-Do not reopen episode architecture unless a verified source exposes a genuine structural contradiction.
 
-Process the remaining preparation work by season:
+Do not reopen broad architecture or source campaigns.
 
-`Source/Claim Lock → Technical Review → Final Outline → Season Continuity Review → Handoff Manifest → Claude Writing Prompt → CLAUDE HANDOFF READY`
+Run the downstream production loop one asset at a time in canonical order:
 
-Existing full-script drafts remain reference inputs only where they already exist.
+`Claude Handoff Ready → Claude Dialogue Draft → Claim/Technical Audit → Quantitative/Case Audit → Editorial Review → Current-Source Recheck → Final Dialogue Freeze → NotebookLM Package → Audio QA → PODCAST READY`
+
+Existing full-script drafts remain reference inputs only.
 
 ## Critical warning
 **PRODUCTION-ARCHITECTURE COMPLETE is not PODCAST READY.**
