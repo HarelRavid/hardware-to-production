@@ -22,10 +22,12 @@ Primary episode: EP12 — Polymer Parts: Injection Molding and the Alternatives
 Canonical gate: `evidence/source-lock/wave-06/W6B_PUBLICATION_GATE.md`
 
 ### 06C — Metals / Machining / Casting / Forming
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGE COMPLETE**
 Primary episode: EP13 — Metal Parts: Casting, Forming or Machining?
+Canonical gate: `evidence/source-lock/wave-06/W6C_PUBLICATION_GATE.md`
 
 ### 06D — Joining
+Status: **NEXT**
 Primary episode: EP14 — Welding, Adhesives, Brazing, Soldering and Fasteners
 
 ### 06E — Composites
