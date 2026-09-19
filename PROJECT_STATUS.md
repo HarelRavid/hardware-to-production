@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–02 COMPLETE FOR SELECTED EPISODES**
+**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–03 COMPLETE FOR SELECTED EPISODES**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -136,6 +136,31 @@ Completed:
 
 A1 retains one non-substantive wording patch before final recording lock. A7/A8 packages are ready for final recording/editorial lock under the current script scope.
 
+### Source-Lock Wave 03 — Pilot / Capacity / Ramp / Economics
+Status: **PASS**.
+
+Direct episode scope:
+- EP26 Pilot Build Planning
+- EP27 Production Validation
+- EP28 Yield / Rework / Scrap
+- EP29 Capacity / Bottlenecks / Takt
+- EP30 Supplier Readiness / CM Management
+- EP31 Engineering Changes During Ramp
+
+Completed:
+- shared source register;
+- claim lock;
+- internal technical review;
+- source-linked script outlines;
+- full script drafts;
+- script reviews;
+- source notes;
+- publication gate.
+
+Wave 03 current-script P0 source blockers: **0**.
+
+All Sentinel Wave 03 capacity and economics arithmetic has been independently checked. Customer-specific PVT/Run-at-Rate rules and organization-specific financial thresholds remain deliberately excluded.
+
 ### Source-Lock Wave 02 — Quality Chain + Supplier Approval Evidence
 Status: **PASS**.
 
@@ -178,13 +203,13 @@ Checked 2026-09-19:
 Generic measurement/capability claims are anchored primarily to open NIST sources rather than protected manual content.
 
 ### Publication-package count
-Full source-lock → script-review → source-notes workflow completed for **8 canonical assets**:
-A1, A7, A8, EP23, EP24, EP32, EP39, EP40.
+Full source-lock → script-review → source-notes workflow completed for **14 canonical assets**:
+A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40.
 
 This does not mean those eight are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Wave 03 — Pilot / Capacity / Ramp / Economics**.
+**Wave 04 — Automation / Machinery Safety / OEE**.
 
 Primary backbone:
 - P2.04 Pilot / PVT / Run-at-Rate / Capacity / Ramp Exit
@@ -218,14 +243,14 @@ Episode purposes, ownership, narrative/teaching flows and publication gates are 
 
 ### D. Source/claim verification
 **ACTIVE — TWO SHARED-SOURCE WAVES COMPLETE.**
-Eight canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
+Fourteen canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
-Eight canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
+Fourteen canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
 
 ## Current controlled backlog
-1. Execute Source-Lock Wave 03 — Pilot / Capacity / Ramp / Economics.
+1. Execute Source-Lock Wave 04 — Automation / Machinery Safety / OEE.
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
