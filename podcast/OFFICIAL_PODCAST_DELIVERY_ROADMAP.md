@@ -446,7 +446,7 @@ Then and only then preparation moves to Season 2.
 
 ## SEASON 2 — How Hardware Is Actually Made
 
-Status: **ACTIVE — 06A/06B/06C COMPLETE; 06D NEXT**
+Status: **CLAUDE HANDOFF READY — PASS (9/9)**
 
 Canonical scope:
 EP11–EP19
@@ -501,6 +501,8 @@ Then move to Season 3.
 ---
 
 ## SEASON 3 — Build the Factory Before You Need the Factory
+
+Status: **ACTIVE**
 
 Canonical scope:
 EP20–EP31
