@@ -1,7 +1,8 @@
 # Source-Lock Wave 03 — Pilot / Capacity / Ramp / Economics
 
-status: ACTIVE — SHARED SOURCES LOCKED; CLAIM LOCK IN PROGRESS
+status: COMPLETE — PUBLICATION WORKFLOW PASS FOR CURRENT GENERIC SCRIPT SCOPE
 opened: 2026-09-19
+closed: 2026-09-19
 scope_type: shared-source-family wave
 baseline_head_at_open: 55c0f1742636388bddd7f5227d677f4b7b41a7da
 
