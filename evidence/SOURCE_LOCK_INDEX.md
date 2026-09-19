@@ -1,6 +1,6 @@
 # Source-Lock Index — Hardware-to-Production
 
-status: ACTIVE — PUBLICATION EVIDENCE PHASE
+status: ACTIVE — SEASON-FIRST EVIDENCE / HANDOFF PHASE
 updated: 2026-09-19
 purpose: Canonical index for shared-source-family evidence locking after completion of the 68-asset production architecture.
 
@@ -40,6 +40,29 @@ Primary source families:
 - NASA NPR 7123.1D for NASA-specific applicability/current procedural context;
 - ISO/IEC/IEEE 29148:2018 official status/scope watch;
 - ISO 10007:2017 official status/scope watch.
+
+### Season 1 — Handoff Completion Locks
+Status: **PASS — 18/18 CLAUDE HANDOFF READY**
+
+Shared completion registers:
+- `evidence/source-lock/SOURCE_LOCK_SEASON_1_S1A_OPENING_FOUNDATIONS_REGISTER.md`
+- `evidence/source-lock/SOURCE_LOCK_SEASON_1_S1B_READINESS_NPI_REGISTER.md`
+- `evidence/source-lock/SOURCE_LOCK_SEASON_1_S1C_DFX_TEST_TOL_RELIABILITY_REGISTER.md`
+
+Technical reviews:
+- `evidence/source-lock/season-1/S1A_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/season-1/S1B_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/season-1/S1C_INTERNAL_TECHNICAL_REVIEW.md`
+
+Season exit:
+- `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Handoff artifacts:
+- 18 manifests;
+- 18 Claude writing prompts;
+- 0 missing mandatory handoff paths.
+
+Current active preparation moves to Season 2 / Wave 06D.
 
 ### Wave 02 — Quality Chain + Supplier Approval Evidence
 Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
