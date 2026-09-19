@@ -33,12 +33,12 @@ See `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`.
 | EP11 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP12 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP13 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
-| EP14 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
-| EP15 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
-| EP16 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06F evidence/outline complete |
-| EP17 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06G evidence/outline complete |
-| EP18 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06H evidence/outline complete |
-| EP19 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06I evidence/outline complete |
+| EP14 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP15 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP16 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP17 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP18 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
+| EP19 | yes | PASS | PASS | yes | skeleton | yes | yes | yes | CLAUDE HANDOFF READY |
 
 ## 3. Season 2 execution order
 
