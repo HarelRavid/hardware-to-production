@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASON 1 CLAUDE HANDOFF READY; SEASON 2 ACTIVE**
+**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASONS 1–2 CLAUDE HANDOFF READY; SEASON 3 ACTIVE**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -307,17 +307,18 @@ Preparation endpoint per season:
 The previous cross-series completion workplan is superseded.
 
 Current active preparation:
-**Season 2 — EP11–EP19**.
+**Season 3 — EP20–EP31**.
 
 Season 1 is **CLAUDE HANDOFF READY — 18/18**.
-
-Wave 06 is active and resumes at **06D / EP14 Joining**.
+Season 2 is **CLAUDE HANDOFF READY — 9/9**.
+Wave 06 is complete.
 
 ## Claude handoff progress
 
 Primary preparation metric under the official roadmap:
 
 - Season 1: **18 / 18 CLAUDE HANDOFF READY — PASS**
+- Season 2: **9 / 9 CLAUDE HANDOFF READY — PASS**
 - Season 2: **ACTIVE**
 - Seasons 3–6: not yet season-closed under the new handoff model
 
