@@ -17,10 +17,12 @@ Shared dependencies: DFX foundations, Wave 03 economics.
 Canonical gate: `evidence/source-lock/wave-06/W6A_PUBLICATION_GATE.md`
 
 ### 06B — Polymers / Forming / Elastomers
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGE COMPLETE**
 Primary episode: EP12 — Polymer Parts: Injection Molding and the Alternatives
+Canonical gate: `evidence/source-lock/wave-06/W6B_PUBLICATION_GATE.md`
 
 ### 06C — Metals / Machining / Casting / Forming
+Status: **NEXT**
 Primary episode: EP13 — Metal Parts: Casting, Forming or Machining?
 
 ### 06D — Joining
