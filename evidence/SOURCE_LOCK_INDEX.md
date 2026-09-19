@@ -111,26 +111,46 @@ Hard rule retained:
 No universal pilot quantity, PVT definition, Run-at-Rate duration, ramp-release threshold, acceptable yield, discount rate or payback target.
 
 ### Wave 04 — Automation / Machinery Safety / OEE
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
 
-Backbone:
-- P2.07
+Direct episode scope:
+- EP41 — When Not to Automate
+- EP42 — Building the Business Case for Automation
+- EP43 — Semi-Automation, Robotics and Machine Vision
+- EP44 — Automated Inspection and End-of-Line Test
+- EP45 — Automation Qualification, OEE and Maintenance
+- EP46 — Scaling Without Automating Defects
 
-Primary episodes:
-- EP41–46
-- supporting EP25/29/52/59 interfaces
+Canonical records:
+- `evidence/source-lock/SOURCE_LOCK_WAVE_04_AUTOMATION_SAFETY_OEE_REGISTER.md`
+- `evidence/source-lock/wave-04/WAVE_04_MANIFEST.md`
+- `evidence/source-lock/wave-04/W4_EP41_EP42_EP43_EP44_EP45_EP46_CLAIM_LOCK.md`
+- `evidence/source-lock/wave-04/W4_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/wave-04/WAVE_04_PUBLICATION_GATE.md`
 
-Source targets:
-- ISO 12100;
-- ISO 13849 series;
-- IEC 62061;
-- ISO 10218 series;
-- IEC 60204-1;
-- OEE authoritative definition/formula source;
-- jurisdiction-specific machinery safety kept separate.
+Publication packages completed:
+- script outlines;
+- full script drafts;
+- script reviews;
+- source notes.
+
+Current standards/status checked 2026-09-19:
+- ISO 12100:2010 current published; revision active;
+- ISO 13849-1:2023 current;
+- ISO 13849-2:2012 current published; revision active;
+- IEC 62061:2021+A1:2024+A2:2026 current consolidated family;
+- ISO 10218-1/-2:2025 current;
+- IEC 60204-1:2016+A1:2021 current public family;
+- IEC 62381:2024 current;
+- ISO 22400-2:2014+Amd1:2017 current published; revision active.
+
+All current OEE arithmetic independently checked.
+
+Hard rule retained:
+No universal OEE benchmark, safety PL/SIL requirement, FAT/SAT release equivalence, machinery-law obligation or automated-test threshold is inferred without exact applicability/source lock.
 
 ### Wave 05 — Manufacturing Atlas / Digital Thread / OT Security
-Status: PLANNED
+Status: **NEXT**
 
 Backbone:
 - P2.08
