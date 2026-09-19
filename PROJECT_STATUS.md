@@ -1,7 +1,7 @@
 # Hardware-to-Production Data Hub — Project Status
 
-last_updated: 2026-09-10
-status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + Season 6 case-evidence campaign + full-series production architecture audit
+last_updated: 2026-09-19
+status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full-series production architecture audit + Source-Lock Waves 01–02 publication packages
 
 ## Program status
 **Knowledge Architecture V1.0: CLOSED / DEFINED**
@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + Seas
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — SOURCE LOCK / TECHNICAL REVIEW / SCRIPTING REMAIN**
+**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–02 COMPLETE FOR SELECTED EPISODES**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -113,6 +113,86 @@ EP60 uses the fictional Sentinel Node worked example and the frozen canonical fr
 
 Season 6 evidence is sufficient for production blueprints but not yet automatically SCRIPT READY. Exact source locators, current standards/regulatory status, quantitative values, attribution and domain-transfer language remain gated before script lock.
 
+## Publication-production progress
+
+The shared-source-family publication workflow is now validated and operating.
+
+### Source-Lock Wave 01 — Requirements / Verification / Configuration
+Status: **PASS**.
+
+Direct episode scope:
+- A1 Requirements
+- A7 Verification
+- A8 Configuration
+
+Completed:
+- source/claim lock;
+- internal technical review;
+- script outlines;
+- full script drafts;
+- script reviews;
+- source notes;
+- wave publication gate.
+
+A1 retains one non-substantive wording patch before final recording lock. A7/A8 packages are ready for final recording/editorial lock under the current script scope.
+
+### Source-Lock Wave 02 — Quality Chain + Supplier Approval Evidence
+Status: **PASS**.
+
+Direct episode scope:
+- EP23 DFMEA/PFMEA/Control Plans/Quality Gates
+- EP24 Production Testing / Measurement-System Capability
+- EP32 SPC / Process Capability
+- EP39 RFQ / First Production Approval
+- EP40 Supplier Quality / Dual Sourcing / Resilience
+
+Completed:
+- shared source register;
+- claim lock;
+- internal technical review;
+- source-linked script outlines;
+- full script drafts;
+- script reviews;
+- source notes;
+- publication gate.
+
+Wave 02 current-script P0 source blockers: **0**.
+
+Protected/manual-specific details remain deliberately excluded unless licensed/current sources are later added:
+- AIAG/VDA FMEA method details;
+- exact Control Plan fields/phases;
+- MSA acceptance thresholds;
+- AIAG/VDA SPC proprietary method details;
+- PPAP submission/resubmission rules;
+- customer/sector-specific supplier-change and requalification obligations.
+
+### Current public-method status locked in Wave 02
+Checked 2026-09-19:
+- APQP 3rd Edition — Mar 2024;
+- Control Plan 1st Edition — Mar 2024;
+- MSA-4 — current AIAG public catalog listing;
+- PPAP-4, 4th Edition, 2nd Printing — current AIAG public catalog listing;
+- AIAG & VDA SPC Manual 1st Edition — Jul 2026;
+- IAQG 9102 Rev C — current public FAI resource/forms family.
+
+Generic measurement/capability claims are anchored primarily to open NIST sources rather than protected manual content.
+
+### Publication-package count
+Full source-lock → script-review → source-notes workflow completed for **8 canonical assets**:
+A1, A7, A8, EP23, EP24, EP32, EP39, EP40.
+
+This does not mean those eight are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
+
+### Next controlled wave
+**Wave 03 — Pilot / Capacity / Ramp / Economics**.
+
+Primary backbone:
+- P2.04 Pilot / PVT / Run-at-Rate / Capacity / Ramp Exit
+- P2.05 Process Economics / CapEx / NRE / Break-even / NPV / Sensitivity
+
+Primary episode family:
+EP26–31 plus economics/rate dependencies reused in later automation/startup/synthesis episodes.
+
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
 
@@ -137,15 +217,15 @@ Additional evidence enrichment remains allowed without reopening V1.
 Episode purposes, ownership, narrative/teaching flows and publication gates are defined.
 
 ### D. Source/claim verification
-**PARTIAL / UNEVEN BY EPISODE.**
-Pilot packs and Season 6 cases contain substantial evidence work, but exact source-lock/standards/applicability verification is not complete across all 68 assets.
+**ACTIVE — TWO SHARED-SOURCE WAVES COMPLETE.**
+Eight canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
-**NOT COMPLETE.**
-This is now the dominant remaining program workload.
+**ACTIVE / PARTIAL.**
+Eight canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
 
 ## Current controlled backlog
-1. Complete episode-level source/claim verification.
+1. Execute Source-Lock Wave 03 — Pilot / Capacity / Ramp / Economics.
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
