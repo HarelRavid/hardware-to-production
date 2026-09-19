@@ -1,6 +1,6 @@
 # Source-Lock Wave 06 — Manufacturing Process Families
 
-status: ACTIVE — SUB-WAVE EXECUTION
+status: COMPLETE — 06A–06I PASS
 opened: 2026-09-19
 scope_type: process-family master wave
 
@@ -27,22 +27,27 @@ Primary episode: EP13 — Metal Parts: Casting, Forming or Machining?
 Canonical gate: `evidence/source-lock/wave-06/W6C_PUBLICATION_GATE.md`
 
 ### 06D — Joining
-Status: **NEXT**
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP14 — Welding, Adhesives, Brazing, Soldering and Fasteners
 
 ### 06E — Composites
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP15 — Composite Manufacturing
 
 ### 06F — Ceramics / Powder Processing / Sintering
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP16 — Ceramics, Powder Processing and Sintering
 
 ### 06G — Additive Manufacturing
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP17 — Additive Manufacturing
 
 ### 06H — Surface Engineering / Cleaning / Heat Treatment
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP18 — Surface Engineering, Cleaning and Heat Treatment
 
 ### 06I — Manufacturing Process Chains
+Status: **PASS — CLAUDE HANDOFF PREP COMPLETE**
 Primary episode: EP19 — Manufacturing Process Chains: The Sequence Is Part of the Design
 
 ## Cross-process rule
