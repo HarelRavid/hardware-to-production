@@ -1,7 +1,7 @@
 # Hardware-to-Production Data Hub — Project Status
 
 last_updated: 2026-09-19
-status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + Season 1 Claude Handoff Ready + Waves 01–05 + Wave 06A–06C evidence/publication work
+status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 68/68 Claude Handoff Ready + six season exit audits PASS + dialogue production active
 
 ## Program status
 **Knowledge Architecture V1.0: CLOSED / DEFINED**
@@ -111,7 +111,7 @@ The case campaign covers failure reconstruction, successful industrialization, s
 
 EP60 uses the fictional Sentinel Node worked example and the frozen canonical frameworks for the full end-to-end decision story.
 
-Season 6 evidence is sufficient for production blueprints but not yet automatically SCRIPT READY. Exact source locators, current standards/regulatory status, quantitative values, attribution and domain-transfer language remain gated before script lock.
+Season 6 is CLAUDE HANDOFF READY under the completed Season 6 exit audit. Exact source locators, current standards/regulatory status, quantitative values, attribution and domain-transfer language remain targeted downstream recheck gates before final dialogue freeze; they are not blockers to Claude dialogue drafting.
 
 ## Publication-production progress
 
@@ -257,31 +257,30 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
-### Next controlled wave
-**Season 3 — Production System Engineering completion**
+### Historical preparation note — Season 3
+The former Season 3 completion wave is closed.
 
-Missing episode preparation:
-- EP20 — EBOM / MBOM / routing
-- EP21 — tooling / fixtures / equipment
-- EP22 — standard work / operator qualification
-- EP25 — layout / material flow
+Final status:
+**EP20–EP31 → 12/12 CLAUDE HANDOFF READY — PASS**
 
-Season 3 target:
-**EP20–EP31 → 12/12 CLAUDE HANDOFF READY**
+No Season 3 preparation backlog remains. Current execution follows the dialogue-production board.
 
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
 Status: **PASS — 06A THROUGH 06I COMPLETE; SEASON 2 HANDOFF READY**.
 
-Completed sub-wave:
+Completed sub-waves:
 - 06A Process Selection / EP11 — complete.
 - 06B Polymers / Forming / Elastomers / EP12 — complete.
 - 06C Metals / Machining / Casting / Forming / EP13 — complete.
+- 06D Joining / EP14 — complete.
+- 06E Composites / EP15 — complete.
+- 06F Ceramics / Powder / Sintering / EP16 — complete.
+- 06G Additive / EP17 — complete.
+- 06H Surface / Cleaning / Heat Treatment / EP18 — complete.
+- 06I Process Chains / EP19 — complete.
 
-Next:
-- 06D Joining — EP14.
-
-Wave 06 is intentionally split by process family so material state, process physics, defect mechanisms, standards and supplier capability are not generalized across unrelated manufacturing routes.
+Wave 06 is closed. The family split is retained historically because material state, process physics, defect mechanisms, standards and supplier capability must not be generalized across unrelated manufacturing routes.
 
 ## Official delivery roadmap
 

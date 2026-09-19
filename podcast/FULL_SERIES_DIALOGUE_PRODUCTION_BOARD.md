@@ -69,7 +69,21 @@ EP41 → EP42 → EP43 → EP44 → EP45 → EP46 → EP47 → EP48 → EP49 →
 ### Season 6
 EP53 → EP54 → EP55 → EP56 → EP57 → EP58 → EP59 → EP60
 
-## 4. Active asset
+## 4. Season-level Claude master prompts
+
+Use the season master prompt as the session-level orchestration entry point, then use each asset's Handoff Manifest and episode-specific Claude Writing Prompt as the immediate authority.
+
+- Season 1: podcast/season-1/SEASON_1_CLAUDE_MASTER_PROMPT.md
+- Season 2: podcast/season-2/SEASON_2_CLAUDE_MASTER_PROMPT.md
+- Season 3: podcast/season-3/SEASON_3_CLAUDE_MASTER_PROMPT.md
+- Season 4: podcast/season-4/SEASON_4_CLAUDE_MASTER_PROMPT.md
+- Season 5: podcast/season-5/SEASON_5_CLAUDE_MASTER_PROMPT.md
+- Season 6: podcast/season-6/SEASON_6_CLAUDE_MASTER_PROMPT.md
+
+Rule:
+the season master prompt controls order and shared writing behavior only. It never overrides an episode Claim Lock, Source Register, Technical Review, Script Outline, Handoff Manifest or episode-specific Claude Writing Prompt.
+
+## 5. Active asset
 
 **A1 — From an Idea to Engineering Requirements**
 
@@ -88,7 +102,7 @@ podcast/season-1/A1_SCRIPT_DRAFT_V1.md
 Authority rule:
 the existing draft is reference only; Claim Lock / Source Register / Technical Review / Outline remain higher authority.
 
-## 5. Per-episode review checklist after Claude returns a draft
+## 6. Per-episode review checklist after Claude returns a draft
 
 ### Gate D1 — Dialogue format
 - two speakers;
@@ -144,7 +158,7 @@ Check:
 - no invented/fabricated statements;
 - rerender if needed.
 
-## 6. Status vocabulary
+## 7. Status vocabulary
 
 - NEXT — SEND TO CLAUDE
 - CLAUDE DRAFT RECEIVED
@@ -157,7 +171,7 @@ Check:
 - AUDIO QA PASS
 - PODCAST READY
 
-## 7. Program rule
+## 8. Program rule
 
 Do not start a new broad research wave during dialogue production.
 
