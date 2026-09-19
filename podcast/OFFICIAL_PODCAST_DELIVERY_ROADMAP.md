@@ -639,6 +639,8 @@ CLAUDE HANDOFF READY.
 
 ## SEASON 6 — Manufacturing Atlas: Decision Playbooks and Case Studies
 
+Status: **ACTIVE — FINAL PREPARATION SEASON**
+
 Canonical scope:
 EP53–EP60
 Total assets: 8
