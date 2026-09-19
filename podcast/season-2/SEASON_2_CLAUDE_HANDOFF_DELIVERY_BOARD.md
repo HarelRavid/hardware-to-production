@@ -38,7 +38,7 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 | EP15 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06E evidence/outline complete |
 | EP16 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06F evidence/outline complete |
 | EP17 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06G evidence/outline complete |
-| EP18 | yes | open | open | missing | missing | no | missing | missing | 06H planned |
+| EP18 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06H evidence/outline complete |
 | EP19 | yes | open | open | missing | missing | no | missing | missing | 06I planned |
 
 ## 3. Season 2 execution order
@@ -47,7 +47,7 @@ then 9 Handoff Manifests + 9 Claude Writing Prompts.
 2. 06E — EP15 Composites — **EVIDENCE/OUTLINE COMPLETE**
 3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE**
 4. 06G — EP17 Additive Manufacturing — **EVIDENCE/OUTLINE COMPLETE**
-5. 06H — EP18 Surface / Cleaning / Heat Treatment
+5. 06H — EP18 Surface / Cleaning / Heat Treatment — **EVIDENCE/OUTLINE COMPLETE**
 6. 06I — EP19 Process Chains
 7. Season 2 final continuity review
 8. EP11–19 Handoff Manifests
