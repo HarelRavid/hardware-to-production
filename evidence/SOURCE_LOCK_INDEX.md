@@ -1,7 +1,7 @@
 # Source-Lock Index — Hardware-to-Production
 
 status: ACTIVE — PUBLICATION EVIDENCE PHASE
-updated: 2026-09-10
+updated: 2026-09-19
 purpose: Canonical index for shared-source-family evidence locking after completion of the 68-asset production architecture.
 
 ## Rule
@@ -42,28 +42,37 @@ Primary source families:
 - ISO 10007:2017 official status/scope watch.
 
 ### Wave 02 — Quality Chain + Supplier Approval Evidence
-Status: **NEXT**
+Status: **PASS — PUBLICATION PACKAGES COMPLETE FOR CURRENT GENERIC SCRIPT SCOPE**
 
-Backbone:
-- P2.03 Quality Chain
-- P2.06 Supplier Industrialization where PPAP/FAI/change evidence overlaps
+Direct episode scope:
+- EP23 — DFMEA, PFMEA, Control Plans and Quality Gates
+- EP24 — Production Testing and Measurement-System Capability
+- EP32 — Process Capability / SPC
+- EP39 — RFQ Technical Package / First Production Approval
+- EP40 — Supplier Quality / Dual Sourcing / Resilience
 
-Primary episode families:
-- EP23/24
-- EP28/30 where quality/supplier evidence is reused
-- EP32/33
-- EP38/39/40
-- EP56 automotive methods
+Canonical records:
+- `evidence/source-lock/SOURCE_LOCK_WAVE_02_QUALITY_SUPPLIER_REGISTER.md`
+- `evidence/source-lock/wave-02/WAVE_02_MANIFEST.md`
+- `evidence/source-lock/wave-02/W2_EP23_EP24_EP32_EP39_EP40_CLAIM_LOCK.md`
+- `evidence/source-lock/wave-02/W2_INTERNAL_TECHNICAL_REVIEW.md`
+- `evidence/source-lock/wave-02/WAVE_02_PUBLICATION_GATE.md`
 
-Source targets:
-- AIAG Core Tools current editions/status;
-- APQP / Control Plan / PPAP / FMEA / MSA / SPC applicability;
-- IAQG 9102 FAI distinction where needed;
-- NIST/authoritative statistics/metrology support;
-- customer-specific requirements only when deliberately selected.
+Publication packages completed:
+- script outlines;
+- full script drafts;
+- script reviews;
+- source notes.
 
-Hard rule:
-Do not infer manual content from public marketing/index pages. Exact normative/quasi-normative claims require controlled source text.
+Current source findings checked 2026-09-19:
+- APQP 3rd Edition / Control Plan 1st Edition — Mar 2024;
+- MSA-4 and PPAP-4 current public AIAG listings;
+- AIAG & VDA SPC Manual 1st Edition — Jul 2026;
+- IAQG 9102 Rev C public resource/forms family;
+- NIST measurement/capability guidance locked for generic technical claims.
+
+Hard rule retained:
+Exact protected/manual-specific method details, thresholds, submission levels and customer-specific requirements remain gated. Wave 02 scripts intentionally do not require those details.
 
 ### Wave 03 — Pilot / Capacity / Ramp / Economics
 Status: PLANNED
