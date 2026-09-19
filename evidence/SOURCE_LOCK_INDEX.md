@@ -75,7 +75,7 @@ Hard rule retained:
 Exact protected/manual-specific method details, thresholds, submission levels and customer-specific requirements remain gated. Wave 02 scripts intentionally do not require those details.
 
 ### Wave 03 — Pilot / Capacity / Ramp / Economics
-Status: PLANNED
+Status: **NEXT**
 
 Backbone:
 - P2.04
