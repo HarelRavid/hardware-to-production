@@ -105,6 +105,27 @@ integration, commissioning, operation, maintenance, decommissioning and disposal
 Strong episode implication:
 a compliant/safety-rated robot component does not by itself establish a safe integrated application/cell.
 
+### W4-S06A — ISO/TS 15066:2016 + revision watch
+
+Title: Robots and robotic devices — Collaborative robots
+Current published technical specification: ISO/TS 15066:2016, Edition 1
+Published: 2016-02
+Official source:
+https://www.iso.org/standard/62996.html
+
+Current status checked 2026-09-19:
+- still published/current;
+- last reviewed/confirmed in 2022;
+- revision has started;
+- ISO/AWI 15066-1 is under development and is intended to replace ISO/TS 15066:2016.
+
+Publicly supportable scope:
+safety requirements for collaborative industrial robot systems/work environments supplementing ISO 10218 industrial-robot application safety.
+
+Guardrail:
+do not treat ISO/AWI 15066-1 as current normative authority.
+Do not use “cobot” as a complete safety conclusion; the integrated task/application still requires risk assessment and protective-measure validation.
+
 ### W4-S07 — IEC 60204-1
 Title: Safety of machinery — Electrical equipment of machines — Part 1: General requirements
 Current public consolidated family checked:
