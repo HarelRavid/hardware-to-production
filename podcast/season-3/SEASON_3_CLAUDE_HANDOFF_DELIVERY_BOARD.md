@@ -39,12 +39,12 @@ No Season 3 architecture redesign is required.
 
 | Asset | Blueprint | Source/Claim Lock | Tech Review | Final/Reviewed Outline | Source Notes | Existing Draft | Handoff Manifest | Claude Prompt | Current status |
 |---|---|---|---|---|---|---|---|---|---|
-| EP20 | yes | open | open | missing | missing | no | missing | missing | S3-A next |
-| EP21 | yes | open | open | missing | missing | no | missing | missing | S3-A next |
-| EP22 | yes | open | open | missing | missing | no | missing | missing | S3-A next |
+| EP20 | yes | PASS | PASS | yes | skeleton | no | missing | missing | S3-A evidence/outline complete |
+| EP21 | yes | PASS | PASS | yes | skeleton | no | missing | missing | S3-A evidence/outline complete |
+| EP22 | yes | PASS | PASS | yes | skeleton | no | missing | missing | S3-A evidence/outline complete |
 | EP23 | yes | PASS | PASS | yes | yes | yes | missing | missing | package-complete / handoff pending |
 | EP24 | yes | PASS | PASS | yes | yes | yes | missing | missing | package-complete / handoff pending |
-| EP25 | yes | open | open | missing | missing | no | missing | missing | S3-A next |
+| EP25 | yes | PASS | PASS | yes | skeleton | no | missing | missing | S3-A evidence/outline complete |
 | EP26 | yes | PASS | PASS | yes | yes | yes | missing | missing | package-complete / handoff pending |
 | EP27 | yes | PASS | PASS | yes | yes | yes | missing | missing | package-complete / handoff pending |
 | EP28 | yes | PASS | PASS | yes | yes | yes | missing | missing | package-complete / handoff pending |
@@ -132,13 +132,13 @@ Before Claude handoff:
 
 ## 9. Season 3 execution order
 
-1. S3-A shared Source Register
-2. EP20 Claim Lock
-3. EP21 Claim Lock
-4. EP22 Claim Lock
-5. EP25 Claim Lock
-6. S3-A Technical Review
-7. Final Outlines + Source Notes Skeletons EP20/21/22/25
+1. S3-A shared Source Register — **COMPLETE**
+2. EP20 Claim Lock — **COMPLETE**
+3. EP21 Claim Lock — **COMPLETE**
+4. EP22 Claim Lock — **COMPLETE**
+5. EP25 Claim Lock — **COMPLETE**
+6. S3-A Technical Review — **PASS**
+7. Final Outlines + Source Notes Skeletons EP20/21/22/25 — **COMPLETE**
 8. Season 3 Final Continuity Review
 9. 12 Handoff Manifests
 10. 12 Claude Writing Prompts
