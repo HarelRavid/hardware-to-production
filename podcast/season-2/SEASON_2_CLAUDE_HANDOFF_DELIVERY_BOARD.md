@@ -35,7 +35,7 @@ See `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`.
 | EP13 | yes | PASS | PASS | yes | yes | yes | yes | yes | CLAUDE HANDOFF READY |
 | EP14 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
 | EP15 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
-| EP16 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
+| EP16 | yes | PASS | PASS | yes | skeleton | no | missing | missing | 06F evidence/outline complete |
 | EP17 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
 | EP18 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
 | EP19 | yes | PASS | PASS | yes | skeleton | no | yes | yes | CLAUDE HANDOFF READY |
@@ -44,7 +44,7 @@ See `podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md`.
 
 1. 06D — EP14 Joining — **COMPLETE***
 2. 06E — EP15 Composites — **COMPLETE***
-3. 06F — EP16 Ceramics / Powder / Sintering — **COMPLETE*** — **COMPLETE*** — **COMPLETE***
+3. 06F — EP16 Ceramics / Powder / Sintering — **EVIDENCE/OUTLINE COMPLETE** — **COMPLETE*** — **COMPLETE*** — **COMPLETE***
 4. 06G — EP17 Additive Manufacturing — **COMPLETE*** — **COMPLETE***
 5. 06H — EP18 Surface / Cleaning / Heat Treatment — **COMPLETE*** — **COMPLETE***
 6. 06I — EP19 Process Chains — **COMPLETE*** — **COMPLETE***
