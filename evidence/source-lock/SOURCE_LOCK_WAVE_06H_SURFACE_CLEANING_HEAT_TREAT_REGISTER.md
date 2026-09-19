@@ -1,3 +1,12 @@
+# HISTORICAL / SUPERSEDED SOURCE REGISTER
+
+status: SUPERSEDED BY `SOURCE_LOCK_WAVE_06H_SURFACE_CLEANING_HEAT_TREATMENT_REGISTER.md`
+superseded: 2026-09-19
+
+Preserved for source-research history only. Do not use as current EP18 claim authority.
+
+---
+
 # Source-Lock Wave 06H — Surface Engineering / Cleaning / Heat Treatment Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
