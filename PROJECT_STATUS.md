@@ -1,7 +1,7 @@
 # Hardware-to-Production Data Hub — Project Status
 
 last_updated: 2026-09-19
-status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full-series production architecture audit + Source-Lock Waves 01–05 + Wave 06A publication packages
+status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + Season 1 Claude Handoff Ready + Waves 01–05 + Wave 06A–06C evidence/publication work
 
 ## Program status
 **Knowledge Architecture V1.0: CLOSED / DEFINED**
@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–05 COMPLETE FOR SELECTED EPISODES**
+**Podcast Ready: NO — SEASON DELIVERY ACTIVE; SEASON 1 CLAUDE HANDOFF READY; SEASON 2 ACTIVE**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -134,7 +134,7 @@ Completed:
 - source notes;
 - wave publication gate.
 
-A1 retains one non-substantive wording patch before final recording lock. A7/A8 packages are ready for final recording/editorial lock under the current script scope.
+A1 wording patch is complete. A1/A7/A8 remain reviewed reference packages inside the Season 1 Claude handoff set.
 
 ### Source-Lock Wave 05 — Manufacturing Atlas / Digital Thread / OT Security
 Status: **PASS**.
@@ -258,27 +258,27 @@ A1, A7, A8, EP11, EP12, EP13, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP
 This does not mean those twenty-nine are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Season 1 — A1–A8 + EP01–EP10 → CLAUDE HANDOFF READY**.
+**Wave 06D — Joining (EP14)**
 
-Primary episode:
-- EP12 — Polymer Parts: Injection Molding and the Alternatives
+Current active season:
+**Season 2 — How Hardware Is Actually Made**
 
-Primary domain:
-- polymer forming / elastomers / bridge manufacturing
+Season 1:
+**18/18 CLAUDE HANDOFF READY — PASS**
 
-Source-lock focus:
-- polymer grade/state and conditioning;
-- injection-molding process physics and geometry coupling;
-- shrinkage / warpage / sink / weld-line mechanisms;
-- tooling, gating/ejection and dimensional evidence;
-- bridge routes and route-transfer limits;
-- inspection and cost/evidence boundaries.
+Wave 06 status:
+- 06A EP11 Process Selection — PASS
+- 06B EP12 Polymers — PASS
+- 06C EP13 Metals — PASS
+- 06D EP14 Joining — NEXT
+- 06E–06I — PLANNED
 
-Process-family rule:
-No generic wall, draft, shrinkage, tolerance, moisture or processing-temperature number enters the script without material/process/source applicability.
+Season 2 exit target:
+**EP11–EP19 → 9/9 CLAUDE HANDOFF READY**
+
 
 ### Source-Lock Wave 06 — Manufacturing Process Families
-Status: **PAUSED — 06A/06B/06C COMPLETE; RESUME AT 06D WHEN SEASON 2 BECOMES ACTIVE**.
+Status: **ACTIVE — 06A/06B/06C COMPLETE; 06D NEXT**.
 
 Completed sub-wave:
 - 06A Process Selection / EP11 — complete.
@@ -307,9 +307,25 @@ Preparation endpoint per season:
 The previous cross-series completion workplan is superseded.
 
 Current active preparation:
-**Season 1 — A1–A8 + EP01–EP10**.
+**Season 2 — EP11–EP19**.
 
-Wave 06 process-family work is paused after 06C and will resume at 06D when Season 2 becomes the active season.
+Season 1 is **CLAUDE HANDOFF READY — 18/18**.
+
+Wave 06 is active and resumes at **06D / EP14 Joining**.
+
+## Claude handoff progress
+
+Primary preparation metric under the official roadmap:
+
+- Season 1: **18 / 18 CLAUDE HANDOFF READY — PASS**
+- Season 2: **ACTIVE**
+- Seasons 3–6: not yet season-closed under the new handoff model
+
+Season 1 exit audit:
+- `podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Season 1 Claude prompts/manifests:
+- `podcast/season-1/claude-handoff/`
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
@@ -335,8 +351,8 @@ Additional evidence enrichment remains allowed without reopening V1.
 Episode purposes, ownership, narrative/teaching flows and publication gates are defined.
 
 ### D. Source/claim verification
-**ACTIVE — WAVES 01–05 + WAVE 06A COMPLETE FOR 27 CANONICAL ASSETS.**
-Twenty-nine canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
+**ACTIVE — SEASON-FIRST DELIVERY.**
+44 canonical assets now have source/claim locks and technical review at the level required by their current preparation stage. 29 have the earlier full publication-package workflow; Season 1 additionally has 18/18 Claude handoff packages.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
