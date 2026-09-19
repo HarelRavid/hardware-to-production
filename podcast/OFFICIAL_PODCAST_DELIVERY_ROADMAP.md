@@ -368,6 +368,11 @@ Only then does preparation move to the next season.
 
 ## SEASON 1 — Build the Right Hardware Before Production Finds Your Mistakes
 
+Status: **CLAUDE HANDOFF READY — PASS (18/18)**
+
+Exit audit:
+`podcast/season-1/SEASON_1_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
 Canonical scope:
 A1–A8 + EP01–EP10
 Total assets: 18
@@ -440,6 +445,8 @@ Then and only then preparation moves to Season 2.
 ---
 
 ## SEASON 2 — How Hardware Is Actually Made
+
+Status: **ACTIVE — 06A/06B/06C COMPLETE; 06D NEXT**
 
 Canonical scope:
 EP11–EP19
