@@ -58,11 +58,11 @@ Those legacy paths are supporting research only and must not be treated as seaso
 | EP03 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
 | EP04 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
 | EP05 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-B evidence/outline complete |
-| EP06 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
-| EP07 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
-| EP08 | yes | CLAIM SET STABLE | open | open | missing | missing | missing | missing | S1-C |
-| EP09 | yes | CLAIM SET STABLE | high-burden open | open | missing | missing | missing | missing | S1-C |
-| EP10 | yes | CLAIM SET STABLE | high-burden open | open | missing | missing | missing | missing | S1-C |
+| EP06 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-C evidence/outline complete |
+| EP07 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-C evidence/outline complete |
+| EP08 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-C evidence/outline complete |
+| EP09 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-C evidence/outline complete |
+| EP10 | yes | CLAIM SET STABLE | PASS | PASS | yes | skeleton | missing | missing | S1-C evidence/outline complete |
 
 ## 4. Workstream S1-A — Opening foundation evidence closure
 
@@ -174,8 +174,8 @@ Need:
 - no universal acceleration/life/MTBF/confidence number;
 - preserve FIELD EVIDENCE LOOP without duplicating later CAPA.
 
-S1-C exit:
-EP06–10 Source Lock PASS + Technical Review PASS + final Script Outlines.
+S1-C exit: **ACHIEVED**
+EP06–10 Source Lock PASS + Technical Review PASS + final Script Outlines + source-note skeletons.
 
 ## 7. Handoff conversion — all 18 assets
 
