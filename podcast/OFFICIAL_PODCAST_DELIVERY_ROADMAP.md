@@ -26,14 +26,15 @@ Only then do we move to the next season.
 
 This replaces the previous strategy of continuing source-lock waves across the whole series before finishing earlier seasons.
 
-### Immediate effect
+### Current execution effect
 
-- Wave 06 process-family work is PAUSED after 06C.
-- 06A / EP11, 06B / EP12 and 06C / EP13 remain PASS and frozen as completed work.
-- 06D–06I resume only when Season 2 becomes the active season.
-- The current critical path becomes Season 1.
+- Season 1 is **CLAUDE HANDOFF READY — 18/18**.
+- Season 2 is **CLAUDE HANDOFF READY — 9/9**.
+- Wave 06 process-family work is **COMPLETE — 06A–06I PASS**.
+- The current critical path is **Season 3 — EP20–EP31**.
+- Existing completed artifacts remain preserved and are reused as reference inputs under the new handoff hierarchy.
 
-No completed artifact is discarded or rewritten merely to fit the new order.
+No completed artifact is discarded or rewritten merely to fit the season-first order.
 
 ---
 
