@@ -1,7 +1,8 @@
 # Source-Lock Wave 05 — Manufacturing Atlas / Digital Thread / OT Security
 
-status: ACTIVE — SHARED SOURCES LOCKED; CLAIM LOCK IN PROGRESS
+status: COMPLETE — PUBLICATION WORKFLOW PASS FOR CURRENT GENERIC SCRIPT SCOPE
 opened: 2026-09-19
+closed: 2026-09-19
 scope_type: shared-source-family wave
 
 ## 1. Purpose
