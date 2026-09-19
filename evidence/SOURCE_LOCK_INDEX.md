@@ -264,10 +264,57 @@ Handoff artifacts:
 - 22/22 mandatory handoff paths validated.
 
 Current active preparation:
-**Season 5 — EP41–EP52**
+**NONE — PRE-CLAUDE PREPARATION COMPLETE**
+
+### Season 5 — Handoff Completion Locks
+Status: **PASS — 12/12 CLAUDE HANDOFF READY**
+
+Season exit:
+- `podcast/season-5/SEASON_5_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Handoff artifacts:
+- 12 manifests;
+- 12 Claude writing prompts;
+- 28/28 mandatory paths validated.
+
+### Season 6 — Handoff Completion Locks
+Status: **PASS — 8/8 CLAUDE HANDOFF READY**
+
+Shared freshness/current-status register:
+- `evidence/source-lock/SOURCE_LOCK_SEASON_6_CASES_FRESHNESS_REGISTER.md`
+
+Claim locks:
+- `evidence/source-lock/season-6/S6_EP53_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP54_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP55_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP56_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP57_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP58_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP59_CLAIM_LOCK.md`
+- `evidence/source-lock/season-6/S6_EP60_CLAIM_LOCK.md`
+
+Technical review:
+- `evidence/source-lock/season-6/S6_INTERNAL_TECHNICAL_REVIEW.md`
+
+Season exit:
+- `podcast/season-6/SEASON_6_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+
+Handoff artifacts:
+- 8 manifests;
+- 8 Claude writing prompts;
+- 43/43 mandatory Season 6 preparation paths validated.
+
+Full-series preparation exit:
+- `podcast/FULL_SERIES_CLAUDE_HANDOFF_EXIT_AUDIT.md`
+- 68/68 manifests;
+- 68/68 Claude writing prompts;
+- 0 missing.
+
+Current active phase:
+**CLAUDE TWO-CHARACTER DIALOGUE PRODUCTION**
 
 ### Wave 07 — Case-Study Publication Lock
-Status: PARTIALLY PRE-BUILT / PLANNED FINAL LOCK
+Status: **PASS AT CLAUDE-HANDOFF SCOPE — SEASON 6 COMPLETE**
 
 Primary episodes:
 - EP53–59
