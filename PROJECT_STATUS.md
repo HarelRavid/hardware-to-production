@@ -10,7 +10,7 @@ status_basis: frozen Knowledge Backbone V1 + six canonical season reviews + full
 **Canonical Podcast Architecture: 68 ASSETS — PRODUCTION-ARCHITECTURE COMPLETE**
 **Season 6 Case Evidence Campaign: COMPLETE AT BLUEPRINT-GATE LEVEL**
 **Full-Series Production Architecture Audit: PASS**
-**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–03 COMPLETE FOR SELECTED EPISODES**
+**Podcast Ready: NO — PUBLICATION WORKFLOW ACTIVE; WAVES 01–04 COMPLETE FOR SELECTED EPISODES**
 
 The project has transitioned from knowledge/episode-architecture construction into controlled publication production.
 
@@ -136,6 +136,31 @@ Completed:
 
 A1 retains one non-substantive wording patch before final recording lock. A7/A8 packages are ready for final recording/editorial lock under the current script scope.
 
+### Source-Lock Wave 04 — Automation / Machinery Safety / OEE
+Status: **PASS**.
+
+Direct episode scope:
+- EP41 When Not to Automate
+- EP42 Automation Business Case
+- EP43 Semi-Automation / Robotics / Machine Vision
+- EP44 Automated Inspection / EOL Test
+- EP45 Automation Qualification / OEE / Maintenance
+- EP46 Scaling Without Automating Defects
+
+Completed:
+- shared source register;
+- claim lock;
+- internal technical review;
+- source-linked script outlines;
+- full script drafts;
+- script reviews;
+- source notes;
+- publication gate.
+
+Wave 04 current-script P0 source blockers: **0**.
+
+Current safety/OEE source status has been locked and all OEE worked arithmetic independently checked. Exact machinery-safety clauses, PL/SIL calculations and jurisdiction-specific legal obligations remain deliberately outside the generic script scope.
+
 ### Source-Lock Wave 03 — Pilot / Capacity / Ramp / Economics
 Status: **PASS**.
 
@@ -203,29 +228,28 @@ Checked 2026-09-19:
 Generic measurement/capability claims are anchored primarily to open NIST sources rather than protected manual content.
 
 ### Publication-package count
-Full source-lock → script-review → source-notes workflow completed for **14 canonical assets**:
-A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40.
+Full source-lock → script-review → source-notes workflow completed for **20 canonical assets**:
+A1, A7, A8, EP23, EP24, EP26, EP27, EP28, EP29, EP30, EP31, EP32, EP39, EP40, EP41, EP42, EP43, EP44, EP45, EP46.
 
-This does not mean those fourteen are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
+This does not mean those twenty are automatically PUBLISHED or globally PODCAST READY; final recording/editorial lock and any episode-specific publication recheck still apply.
 
 ### Next controlled wave
-**Wave 04 — Automation / Machinery Safety / OEE**.
+**Wave 05 — Manufacturing Atlas / Digital Thread / OT Security**.
 
 Primary backbone:
-- P2.07 Automation / Qualification / OEE / Failure-Recovery / Release
+- P2.08 Manufacturing Atlas / Digital Thread / Minimum Viable Atlas
+- P2.09 OT/ICS Cybersecurity / IEC 62443 / Recovery / Remote Access
 
 Primary episode family:
-- EP41–46
-- supporting interfaces into EP25 / EP29 / EP52 / EP59 where relevant
+- EP47–52
+- supporting interfaces into EP35 / EP59 where relevant
 
 Primary source families:
-- ISO 12100;
-- ISO 13849 series;
-- IEC 62061;
-- ISO 10218 series;
-- IEC 60204-1;
-- authoritative OEE definition/loss-model sources;
-- jurisdiction-specific machinery-safety obligations kept separate from standards guidance.
+- ISA-95 / IEC 62264;
+- OPC UA / companion-specification boundaries;
+- NIST digital-thread/manufacturing-data guidance;
+- IEC 62443 family;
+- NIST SP 800-82 Rev.3.
 
 ## Manufacturing Data Hub maturity language
 Do not use unqualified “COMPLETE architecture” to imply deployed MES/PLM/QMS implementation or publication-ready evidence.
@@ -252,14 +276,14 @@ Episode purposes, ownership, narrative/teaching flows and publication gates are 
 
 ### D. Source/claim verification
 **ACTIVE — TWO SHARED-SOURCE WAVES COMPLETE.**
-Fourteen canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
+Twenty canonical assets have completed the full source-lock through source-notes workflow. Exact source-lock/standards/applicability verification remains incomplete across the rest of the 68-asset roadmap.
 
 ### E. Technical review / scripts / recording assets
 **ACTIVE / PARTIAL.**
-Fourteen canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
+Twenty canonical assets now have full script drafts, internal script reviews and source-note packages. Recording/final editorial lock and the remaining 60 assets are still open.
 
 ## Current controlled backlog
-1. Execute Source-Lock Wave 04 — Automation / Machinery Safety / OEE.
+1. Execute Source-Lock Wave 05 — Manufacturing Atlas / Digital Thread / OT Security.
 2. Verify exact standard/manual editions, clauses and applicability for consequential normative statements.
 3. Verify all engineering-significant quantitative claims, assumptions and calculations.
 4. Finalize public case-study source locators/current-status checks.
