@@ -17,9 +17,9 @@ After:
 “I can design the next prototype to retire explicit mechanical uncertainties in interfaces, loads, materials, tolerances, assembly and environment.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “If I can file or shim the prototype and it works, why treat that as a problem?”
-Speaker A:
+Oz:
 The rescue is valid learning; hiding it is the problem.
 
 ## Cold open
