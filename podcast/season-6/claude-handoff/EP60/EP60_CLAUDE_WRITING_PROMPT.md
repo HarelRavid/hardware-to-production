@@ -2,6 +2,28 @@
 
 You are writing the final episode of the Hardware-to-Production podcast.
 
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 ## TASK
 Write the complete final two-character dialogue for:
 
@@ -47,10 +69,10 @@ At each transition, show:
 - what product/process/supplier/measurement/rate/economic context changed.
 
 ## CHARACTERS
-**SPEAKER A — Lead Host / Systems Engineer**
+**OZ — Lead Host / Systems Engineer**
 Connects the decisions and explains why evidence burden changes with commitment.
 
-**SPEAKER B — Practitioner / Challenger**
+**RONA — Practitioner / Challenger**
 Keeps asking:
 “Why can’t we make this decision once and keep it?”
 and tests whether the framework changes real engineering behavior.
@@ -116,10 +138,10 @@ the goal is not more manufacturing paperwork; it is preserving engineering truth
 ## OUTPUT
 # EP60 — From Prototype to Production: The Full Decision Story
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optionally add:
@@ -135,5 +157,5 @@ Only visual/callback/pronunciation/show-note reminders.
 - no excessive re-teaching;
 - Full Decision Ledger actually used;
 - lifecycle transitions are clear;
-- both speakers technically useful;
+- both Oz and Rona technically useful;
 - final series message matches the locked outline.
