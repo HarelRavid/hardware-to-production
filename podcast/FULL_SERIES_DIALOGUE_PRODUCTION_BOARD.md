@@ -18,14 +18,14 @@ This board does not reopen episode architecture.
 For each asset:
 
 CLAUDE HANDOFF READY
-→ CLAUDE DIALOGUE DRAFT
+→ CLAUDE OZ/RONA DIALOGUE DRAFT
 → CLAIM / TECHNICAL AUDIT
 → QUANTITATIVE / CASE / LEGAL AUDIT where applicable
 → TWO-CHARACTER EDITORIAL REVIEW
 → SOURCE-CURRENTNESS RECHECK
 → FINAL DIALOGUE FREEZE
-→ NOTEBOOKLM PRODUCTION PACKAGE
-→ AUDIO GENERATED
+→ NOTEBOOKLM SOURCE + CUSTOM PROMPT PACKAGE
+→ NOTEBOOKLM AUDIO OVERVIEW GENERATED
 → AUDIO QA
 → PODCAST READY
 
@@ -105,8 +105,11 @@ the existing draft is reference only; Claim Lock / Source Register / Technical R
 ## 6. Per-episode review checklist after Claude returns a draft
 
 ### Gate D1 — Dialogue format
-- two speakers;
-- both technically substantive;
+- canonical hosts are Oz and Rona;
+- output labels are `OZ:` / `RONA:`;
+- both hosts technically substantive;
+- Rona is a young engineer, not a naive student;
+- Oz is a veteran engineer, not the sole technical authority;
 - no citation/URL read aloud;
 - no internal IDs spoken;
 - production notes separated.
@@ -138,22 +141,27 @@ Replace skeleton with only sources actually used by final spoken dialogue.
 Assign final version/status.
 After freeze, any consequential change requires targeted claim/source review.
 
-### Gate D7 — NotebookLM package
+### Gate D7 — Google NotebookLM package
+Build under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`.
+
 Include:
-- final dialogue;
-- speaker roles;
-- pronunciation/acronym notes;
-- episode summary;
-- visual/show-note references;
-- source notes;
-- forbidden-overclaim notes;
-- tone/pacing.
+- frozen final dialogue using `OZ:` / `RONA:`;
+- clean NotebookLM source document;
+- episode-specific NotebookLM custom Audio Overview prompt;
+- pronunciation/acronym notes where relevant;
+- episode summary / must-cover arc;
+- source-vs-synthesis and forbidden-overclaim boundaries;
+- tone, audience, pacing and output-language guidance.
+
+Do not assume NotebookLM will read the final dialogue verbatim.
 
 ### Gate D8 — Audio QA
 Check:
 - omissions;
 - pronunciation;
-- role consistency;
+- Oz/Rona identity and role consistency;
+- no role reversal that changes meaning;
+- Rona remains technically capable rather than a naive student;
 - technical meaning;
 - no invented/fabricated statements;
 - rerender if needed.
@@ -166,8 +174,8 @@ Check:
 - EDITORIAL REVIEW
 - SOURCE RECHECK
 - FINAL DIALOGUE FROZEN
-- NOTEBOOKLM PACKAGE READY
-- AUDIO GENERATED
+- NOTEBOOKLM SOURCE PACKAGE READY
+- NOTEBOOKLM AUDIO OVERVIEW GENERATED
 - AUDIO QA PASS
 - PODCAST READY
 
