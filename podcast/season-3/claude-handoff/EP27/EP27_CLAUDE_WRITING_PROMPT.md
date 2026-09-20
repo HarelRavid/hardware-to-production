@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP27: What a Production Validation Build Must Prove
 
 Write the complete final two-character spoken dialogue for **EP27 — What a Production Validation Build Must Prove**, Season 3 of Hardware-to-Production.
@@ -20,8 +42,8 @@ Read every MUST READ file before drafting.
 Claim Lock → Source Register → Technical Review → Outline → Blueprint → Continuity/Backbone → Existing Draft as reference only.
 
 ## Speakers
-SPEAKER A — Lead Host / Systems Engineer.
-SPEAKER B — Practitioner / Challenger.
+OZ — Lead Host / Systems Engineer.
+RONA — Practitioner / Challenger.
 
 B must challenge idealized factory assumptions and push on intervention, rework, operator/supplier reality, constraints, WIP and change implementation.
 
@@ -45,17 +67,17 @@ Do not transform illustrative calculations into universal targets.
 1. Open with the approved hook.
 2. Follow the Outline.
 3. Execute the listener tool.
-4. Let Speaker B challenge the central shortcut.
+4. Let Rona challenge the central shortcut.
 5. Use DEV/LVP/validation/ramp only where it changes evidence.
 6. End with a practical action and exact next handoff.
 
 ## Output
 # EP27 — What a Production Validation Build Must Prove
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optional:
@@ -67,5 +89,5 @@ Optional:
 - no standards/customer-rule overclaim;
 - no neighboring-episode duplication;
 - listener tool executed;
-- both speakers technically meaningful;
+- both Oz and Rona technically meaningful;
 - action and handoff correct.
