@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP33: Nonconformance, MRB, CAPA and Learning from Failure
 
 Write the complete final two-character spoken dialogue for **EP33 — Nonconformance, MRB, CAPA and Learning from Failure**, Season 4.
@@ -22,10 +44,10 @@ Claim Lock → Source Register → Technical Review → Outline → Blueprint �
 Do not guess when files differ.
 
 ## Speakers
-**SPEAKER A — Lead Host / Systems Engineer**
+**OZ — Lead Host / Systems Engineer**
 Owns the evidence/decision structure, mechanism, applicability and canonical tool.
 
-**SPEAKER B — Practitioner / Challenger**
+**RONA — Practitioner / Challenger**
 Technically competent. Pushes on paperwork, cost, supplier reality, field evidence, practicality and what the team actually does next.
 
 B must carry real technical content.
@@ -57,10 +79,10 @@ Do not turn it into QMS bureaucracy or standards recitation.
 ## Output format
 # EP33 — Nonconformance, MRB, CAPA and Learning from Failure
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optional:
@@ -71,6 +93,6 @@ Before returning, verify:
 - no claim outside locked scope;
 - no invented number or requirement;
 - no duplicate ownership with adjacent episodes;
-- both speakers contribute technically;
+- both Oz and Rona contribute technically;
 - listener tool is actually used;
 - practical action and handoff are correct.
