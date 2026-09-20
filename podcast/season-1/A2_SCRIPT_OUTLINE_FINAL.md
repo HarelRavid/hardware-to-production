@@ -17,8 +17,8 @@ After:
 “I can map consequential engineering responsibilities independently of job titles, see ownership gaps, and decide what can be combined, outsourced or requires specialist review.”
 
 ## Two-character opportunity
-Speaker A frames responsibilities before titles.
-Speaker B challenges:
+Oz frames responsibilities before titles.
+Rona challenges:
 “Are you telling a five-person startup to hire twelve specialists?”
 The answer must distinguish responsibility coverage from headcount.
 
