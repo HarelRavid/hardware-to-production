@@ -14,7 +14,7 @@ Before: “DVT/PVT complete tells me where we are.”
 After: “I can translate any local phase name into entry assumptions, evidence objectives and exit decisions.”
 
 ## Two-character opportunity
-Speaker B asks five people what “DVT done” means and gets five incompatible definitions.
+Rona asks five people what “DVT done” means and gets five incompatible definitions.
 
 ## Beat 1 — Phase labels vary
 Claim: EP05-C01.
