@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP15: Composite Manufacturing
 
 Write the complete final two-character spoken dialogue for **EP15 — Composite Manufacturing** in Season 2 of Hardware-to-Production.
@@ -22,10 +44,10 @@ Claim Lock → Source Register → Technical Review → Script Outline → Produ
 Never resolve a conflict by guessing.
 
 ## Speakers
-SPEAKER A — Lead Host / Systems Engineer.
+OZ — Lead Host / Systems Engineer.
 Owns mechanism, decision logic, canonical tools, evidence/applicability, and lifecycle translation.
 
-SPEAKER B — Practitioner / Challenger.
+RONA — Practitioner / Challenger.
 Technically competent. Pushes on cost, speed, supplier reality, process practicality, inspection and “why not the simpler shortcut?”
 
 B must carry real technical content, not act as a student.
@@ -66,10 +88,10 @@ Keep dense edition/revision material in production/show notes.
 ## Output
 # EP15 — Composite Manufacturing
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optional:
@@ -82,6 +104,6 @@ Before returning, confirm:
 - no universalized process heuristic;
 - no standards/applicability overclaim;
 - listener tool actually used;
-- both speakers technically useful;
+- both Oz and Rona technically useful;
 - adjacent episodes not duplicated;
 - practical action and next handoff correct.
