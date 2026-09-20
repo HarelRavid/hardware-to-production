@@ -17,9 +17,9 @@ After:
 “I can state exactly which claims this prototype supports, which dimensions are nonrepresentative, and when the shortcut expires.”
 
 ## Two-character opportunity
-Speaker B defends speed:
+Rona defends speed:
 “Why make prototypes more production-like if a print and dev board answer the question faster?”
-Speaker A agrees, then narrows what the evidence means.
+Oz agrees, then narrows what the evidence means.
 
 ## Cold open
 [ILLUSTRATIVE]
