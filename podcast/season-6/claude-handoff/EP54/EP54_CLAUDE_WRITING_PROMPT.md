@@ -2,6 +2,28 @@
 
 You are writing the final spoken dialogue for the Hardware-to-Production podcast.
 
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 ## TASK
 
 Write the complete final two-character dialogue for:
@@ -48,10 +70,10 @@ Never resolve a conflict by guessing.
 
 ## TWO CHARACTERS
 
-### SPEAKER A — Lead Host / Systems Engineer
+### OZ — Veteran Engineer / Systems Engineer
 A reconstructs evidence, explains the engineering mechanism, preserves source/applicability boundaries, and connects the case to the canonical framework.
 
-### SPEAKER B — Practitioner / Challenger
+### RONA — Young Engineer / Practitioner / Challenger
 B is technically competent and skeptical.
 B should challenge:
 - hindsight;
@@ -89,7 +111,7 @@ Do not blur the three.
 7. Correct the misconceptions in the Outline.
 8. End with one concrete listener action.
 9. End with the correct conceptual handoff to the next episode.
-10. Keep both speakers technically useful.
+10. Keep both Oz and Rona technically useful.
 
 ## CAUSAL / LEGAL GUARDS
 
@@ -141,10 +163,10 @@ case moment → challenge → evidence reconstruction → mechanism → transfer
 
 # EP54 — Successful Industrialization Patterns
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 After the dialogue, optionally include:
@@ -170,7 +192,7 @@ Before returning verify:
 - no industry obligation was generalized;
 - the framework lesson is explicitly ours;
 - the listener tool was actually used;
-- Speaker B contributed technical challenge;
+- Rona contributed technical challenge;
 - the practical action and next handoff are correct.
 
 If any check fails, revise before returning the draft.
