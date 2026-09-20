@@ -1,12 +1,12 @@
 # Hardware-to-Production Podcast — Official Season-by-Season Delivery Roadmap
 
 status: CANONICAL — ACTIVE
-version: 2.0
-effective_date: 2026-09-19
+version: 2.1
+effective_date: 2026-09-20
 supersedes: podcast/PODCAST_COMPLETION_WORKPLAN.md
 program_goal: Complete the podcast in canonical publication order, Season 1 through Season 6, without losing planning depth, evidence quality, technical rigor, reviews, or execution controls.
 canonical_endpoint_for_preparation: CLAUDE HANDOFF READY
-downstream_generation: Claude writes the final two-character dialogue script; NotebookLM is the intended audio-generation/execution environment.
+downstream_generation: Claude writes the canonical Oz/Rona dialogue; Google NotebookLM (notebook.google.com) generates the downstream Audio Overview from a dedicated source package and custom prompt.
 
 ---
 
@@ -77,13 +77,14 @@ Production Architecture Complete
 ### Downstream writing / production lane
 
 Claude Handoff Ready  
-→ Claude Two-Character Dialogue Draft  
+→ Claude Oz/Rona Canonical Dialogue Draft  
 → Claude Script Technical Review  
 → Claude Script Editorial Review  
 → Source / Current-Status Recheck  
 → Final Dialogue Freeze  
-→ NotebookLM Production Package  
-→ NotebookLM Audio Generation / Execution  
+→ NotebookLM Source Package  
+→ NotebookLM Custom Audio Prompt  
+→ Google NotebookLM Audio Overview Generation  
 → Audio QA / Corrections  
 → Show Notes / Visuals / Metadata  
 → PODCAST READY  
@@ -110,7 +111,7 @@ Verified Evidence
 → Claude Dialogue Script
 
 Reason:
-Claude is the intended writer of the final spoken dialogue.
+Claude is the intended writer of the canonical reviewed dialogue. Google NotebookLM is a generative downstream audio-production layer and is not assumed to read the Claude dialogue verbatim.
 
 Our responsibility before Claude is to eliminate ambiguity about:
 - what the episode must teach;
@@ -140,11 +141,11 @@ This preserves all prior work while eliminating an unnecessary step for unfinish
 
 ## 5. Final writing model — two characters
 
-Every final episode is written for two recurring speaker roles.
+Every final episode is written for two recurring named engineering hosts.
 
-Names may be assigned later; roles are canonical now.
+The names and roles are canonical.
 
-### Character A — Lead Host / Systems Engineer
+### OZ — Veteran Engineer / Systems Engineer
 
 Role:
 - owns the episode structure;
@@ -161,7 +162,7 @@ Voice:
 - technically disciplined;
 - never sounds like a standards document.
 
-### Character B — Practitioner / Challenger
+### RONA — Young Engineer / Practitioner / Challenger
 
 Role:
 - asks the question the listener would ask;
@@ -176,7 +177,7 @@ Voice:
 - technically capable;
 - skeptical but constructive;
 - conversational;
-- does not exist merely to say “yes” or repeat Character A.
+- does not exist merely to say “yes” or repeat Oz.
 
 ### Dialogue rules
 
@@ -189,7 +190,7 @@ The Claude prompt must enforce:
 - no character may introduce an unsourced consequential claim;
 - questions should advance the listener journey;
 - long technical explanation is broken by challenge/example/application;
-- final script must remain natural for two-voice NotebookLM production.
+- final canonical dialogue must remain natural for two-host podcast production; the downstream NotebookLM source/custom-prompt package is created only after dialogue freeze.
 
 ---
 
@@ -301,7 +302,7 @@ Provide:
 
 ### Section F — Two-character dialogue instructions
 
-Specify Character A / Character B behavior and dialogue balance.
+Specify Oz / Rona behavior and dialogue balance.
 
 ### Section G — Spoken-source rules
 
@@ -721,17 +722,17 @@ Claude is a writer, not a new evidence source.
 
 NotebookLM is downstream of final dialogue approval.
 
-Each approved episode should receive a NotebookLM Production Package containing:
+Each approved episode should receive a NotebookLM production package under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md` containing:
 
-- final two-character dialogue script;
-- speaker-role definitions;
-- pronunciation/acronym notes;
-- episode summary;
-- any non-spoken visual/show-note references;
-- final source notes for factual grounding;
-- forbidden paraphrase/overclaim notes where needed;
-- target tone and pacing;
-- episode title and sequence.
+- `<ASSET>_FINAL_DIALOGUE.md` with canonical `OZ:` / `RONA:` labels;
+- `<ASSET>_NOTEBOOKLM_SOURCE.md`;
+- `<ASSET>_NOTEBOOKLM_CUSTOM_PROMPT.md`;
+- pronunciation/acronym notes where relevant;
+- final factual/source boundaries;
+- forbidden-overclaim notes where needed;
+- target tone, audience and pacing.
+
+Google NotebookLM Audio Overview is generative and is not treated as a deterministic script reader.
 
 Audio output must then receive:
 - content/omission check;
@@ -828,5 +829,5 @@ This roadmap controls **delivery order and completion gates**, not technical tru
 **Publication order equals preparation order.**
 **No loss of evidence depth or review rigor.**
 **Claude receives a complete, linked, constrained writing package.**
-**Claude writes the two-character dialogue.**
-**NotebookLM performs the downstream audio-generation/execution step.**
+**Claude writes the canonical Oz/Rona dialogue.**
+**Google NotebookLM generates the downstream Audio Overview from the approved NotebookLM source package and custom prompt.**
