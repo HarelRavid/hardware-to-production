@@ -1,6 +1,6 @@
 # Hardware-to-Production Data Hub — Project Status
 
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 68/68 Claude Handoff Ready + six season exit audits PASS + dialogue production active
 
 ## Program status
@@ -303,7 +303,7 @@ Preparation endpoint:
 **68 / 68 CLAUDE HANDOFF READY — PASS**
 
 Current active production phase:
-**Claude Two-Character Dialogue Production**
+**Claude Oz/Rona Canonical Dialogue Production**
 
 First active asset:
 **A1 — From an Idea to Engineering Requirements**
@@ -350,11 +350,11 @@ Current-status / applicability rechecks remain targeted downstream gates before 
 Final dialogue generation/review, NotebookLM production and audio QA remain open.
 ## Current controlled backlog
 
-1. Generate A1 two-character dialogue using the locked Claude prompt.
+1. Generate/review A1 canonical Oz/Rona dialogue using the locked Claude prompt.
 2. Audit the Claude draft against Claim Lock / Technical Review / Continuity controls.
 3. Finalize A1 Source Notes from actual spoken content.
 4. Freeze A1 final dialogue.
-5. Build A1 NotebookLM Production Package.
+5. Build A1 NotebookLM source package + custom Audio Overview prompt under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`.
 6. Continue in canonical order through A2 → ... → EP60.
 7. Run targeted current-standard/case/legal rechecks immediately before final dialogue freeze where specified.
 
@@ -364,7 +364,7 @@ Do not reopen broad architecture or source campaigns.
 
 Run the downstream production loop one asset at a time in canonical order:
 
-`Claude Handoff Ready → Claude Dialogue Draft → Claim/Technical Audit → Quantitative/Case Audit → Editorial Review → Current-Source Recheck → Final Dialogue Freeze → NotebookLM Package → Audio QA → PODCAST READY`
+`Claude Handoff Ready → Claude Oz/Rona Dialogue Draft → Claim/Technical Audit → Quantitative/Case Audit → Editorial Review → Current-Source Recheck → Final Dialogue Freeze → NotebookLM Source + Custom Prompt Package → Audio Overview Generation → Audio QA → PODCAST READY`
 
 Existing full-script drafts remain reference inputs only.
 
