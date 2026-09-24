@@ -12,9 +12,9 @@ Before: “Successful companies reveal best practices I should copy.”
 After: “I can separate documented change/outcome from causal storytelling and test whether the mechanism transfers to my product, scale and risk.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “If GE and Toyota succeeded with these methods, why not copy them?”
-Speaker A:
+Oz:
 because success stories carry survivorship and context bias.
 
 ## Hook
