@@ -35,8 +35,8 @@ The season moves from internal production evidence to field learning, compliance
 
 ## 3. Two-character narrative strategy
 
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Lead Host / Systems Engineer.
+Rona — Practitioner / Challenger.
 
 Season 4 challenge pattern:
 - A introduces a quality/supplier evidence problem.
