@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “The supplier quote is 30% cheaper. Why would we ever build this in-house?”
 
-Speaker A:
+Oz:
 Because piece price is only one part of the capability/evidence/control decision.
 
 ## Cold open
