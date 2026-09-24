@@ -46,7 +46,7 @@ Season 5 challenge style:
 - B pushes back on automation hype, software buzzwords and cyber overreach.
 - A narrows the decision to process maturity, evidence, economics and consequence.
 - B tests each framework on a realistic production scenario.
-- both speakers keep physical production consequences visible even in data/semantic episodes.
+- both Oz and Rona keep physical production consequences visible even in data/semantic episodes.
 
 B should repeatedly ask:
 - “What problem are we actually solving?”
