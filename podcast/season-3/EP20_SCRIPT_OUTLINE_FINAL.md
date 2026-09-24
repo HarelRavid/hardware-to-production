@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “Why can’t production just build from the engineering BOM?”
 
-Speaker A:
+Oz:
 Because the EBOM says what the product is; manufacturing also needs to know how material and operations transform it into the released unit.
 
 ## Cold open
