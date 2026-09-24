@@ -12,10 +12,10 @@ Before: “I learned many separate tools across the series.”
 After: “I can replay one hardware product from idea to sustained production and understand when each decision, shortcut and evidence object becomes necessary.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “Why can’t we make each decision once and keep it?”
 
-Speaker A:
+Oz:
 because the context, evidence, configuration, volume, supplier/process state and commitment change as the product matures.
 
 ## Hook
