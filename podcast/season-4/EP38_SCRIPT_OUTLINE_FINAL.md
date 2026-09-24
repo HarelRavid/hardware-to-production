@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “They have ISO certification, the same machine model and three perfect samples. What else do you need?”
 
-Speaker A:
+Oz:
 Evidence that the real source system can sustain the actual product/process claim.
 
 ## Cold open
