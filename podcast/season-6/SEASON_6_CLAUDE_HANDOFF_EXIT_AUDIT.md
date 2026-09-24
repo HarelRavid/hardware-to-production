@@ -85,8 +85,8 @@ No unresolved P0 quantitative blocker remains for Claude handoff.
 ## 8. Two-character writing readiness
 
 All Season 6 prompts use:
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Lead Host / Systems Engineer.
+Rona — Practitioner / Challenger.
 
 Season 6 dialogue rule:
 B challenges hindsight, causal overclaim, success-story copying, standards prestige and cross-industry overtransfer.
