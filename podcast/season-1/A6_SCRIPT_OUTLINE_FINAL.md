@@ -17,9 +17,9 @@ After:
 “I can identify the controlled hardware/firmware/configuration evidence required before repeated builds and production-test decisions become trustworthy.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “The dev board works perfectly. Why not just copy the schematic?”
-Speaker A:
+Oz:
 Because the dev platform supplies infrastructure and assumptions that may not exist in the product.
 
 ## Cold open

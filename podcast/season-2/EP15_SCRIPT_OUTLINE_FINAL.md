@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If the supplier uses the same carbon fiber and the same resin, why isn’t it the same material?”
 
-Speaker A:
+Oz:
 Because orientation, layup, cure/consolidation, process defects and tooling help create the realized material state.
 
 Recurring challenge:

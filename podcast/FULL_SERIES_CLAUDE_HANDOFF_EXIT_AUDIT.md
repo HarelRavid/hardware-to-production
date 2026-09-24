@@ -61,10 +61,11 @@ Claude is a writer, not an evidence source.
 
 ## 6. Two-character production model
 
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Veteran Engineer / Systems Engineer.
+Rona — Young Engineer / Practitioner / Challenger.
 
 Canonical style contract: podcast/TWO_CHARACTER_DIALOGUE_STYLE_CONTRACT.md
+Downstream audio contract: podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md
 
 ## 7. What this milestone does NOT mean
 
@@ -96,8 +97,9 @@ Claude Handoff Ready
 → Editorial/Two-Character Review
 → Source-Currentness Recheck
 → Final Dialogue Freeze
-→ NotebookLM Production Package
-→ Audio Generation
+→ NotebookLM Source Package
+→ NotebookLM Custom Audio Prompt
+→ Google NotebookLM Audio Overview Generation
 → Audio QA
 → Podcast Ready.
 

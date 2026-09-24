@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If every process is capable on its own, why should the full chain fail?”
 
-Speaker A:
+Oz:
 Because each operation changes the state and assumptions inherited by the next one.
 
 ## Cold open

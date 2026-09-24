@@ -17,9 +17,9 @@ After:
 “I can connect product function, material, process, supplier, measurement and economics before the design locks in the wrong manufacturing assumptions.”
 
 ## Two-character opportunity
-Speaker B asks:
+Rona asks:
 “If the CNC prototype is perfect, why not just make the molded version from the same CAD?”
-Speaker A shows that DFM is process-specific and claim-specific.
+Oz shows that DFM is process-specific and claim-specific.
 
 ## Cold open
 [ILLUSTRATIVE]

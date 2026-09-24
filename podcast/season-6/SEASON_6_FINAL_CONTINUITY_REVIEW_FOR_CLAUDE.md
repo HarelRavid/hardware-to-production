@@ -50,10 +50,10 @@ PASS.
 
 ## 3. Two-character narrative strategy
 
-Speaker A:
+Oz:
 Lead Host / Systems Engineer.
 
-Speaker B:
+Rona:
 Practitioner / Challenger.
 
 Season 6 dialogue rule:

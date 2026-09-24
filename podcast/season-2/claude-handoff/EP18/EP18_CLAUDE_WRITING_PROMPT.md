@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP18: Surface Engineering, Cleaning and Heat Treatment
 
 Write the complete final two-character spoken dialogue for **EP18 — Surface Engineering, Cleaning and Heat Treatment**, Season 2 of Hardware-to-Production.
@@ -22,8 +44,8 @@ Claim Lock → Source Register → Technical Review → Final Outline → Bluepr
 Never resolve a conflict by guessing.
 
 ## Speakers
-SPEAKER A — Lead Host / Systems Engineer.
-SPEAKER B — Practitioner / Challenger.
+OZ — Lead Host / Systems Engineer.
+RONA — Practitioner / Challenger.
 
 B is technically competent and must challenge process shortcuts, hidden assumptions, supplier/process reality, inspection burden and economics.
 
@@ -62,10 +84,10 @@ Keep revision/status details in production/show notes unless the update itself m
 ## Output
 # EP18 — Surface Engineering, Cleaning and Heat Treatment
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optional:
@@ -78,5 +100,5 @@ Confirm:
 - no standards overclaim;
 - no duplicated neighboring episode;
 - listener tool used;
-- both speakers technically useful;
+- both Oz and Rona technically useful;
 - practical action and handoff correct.

@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If I know my shrink factor and final furnace recipe, why do I need all this intermediate data?”
 
-Speaker A:
+Oz:
 Because the final geometry and properties can depend on green state, load, fixture, atmosphere and thermal history—not only one scalar or recipe line.
 
 ## Cold open

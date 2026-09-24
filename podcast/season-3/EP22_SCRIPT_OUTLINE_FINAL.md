@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If the WI is correct, isn’t operator variation just a training problem?”
 
-Speaker A:
+Oz:
 Only if the process has actually made all critical decisions visible and executable.
 
 ## Cold open

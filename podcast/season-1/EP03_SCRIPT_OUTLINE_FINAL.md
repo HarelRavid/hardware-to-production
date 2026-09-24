@@ -14,9 +14,9 @@ Before: “NPI starts when engineering hands off the design.”
 After: “I can map industrialization responsibilities and evidence closure while product/process decisions are still reversible.”
 
 ## Two-character opportunity
-Speaker B plays design engineer:
+Rona plays design engineer:
 “The design is done. Why is manufacturing asking so many questions?”
-Speaker A reveals missing production-system definition/evidence.
+Oz reveals missing production-system definition/evidence.
 
 ## Cold open
 [ILLUSTRATIVE]

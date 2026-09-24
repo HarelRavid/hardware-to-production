@@ -17,9 +17,9 @@ After:
 “I can design access, observability, programming, calibration, identity and evidence linkage into the product before repeated production depends on engineer-only tools.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “The engineering laptop and debug script already prove the unit works. Why build more infrastructure?”
-Speaker A:
+Oz:
 Because repeated production needs a controlled, reconstructable decision system.
 
 ## Cold open

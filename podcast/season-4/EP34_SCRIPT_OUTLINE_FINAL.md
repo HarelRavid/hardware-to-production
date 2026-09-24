@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “Qualification passed. Why should a handful of field failures make us question the design?”
 
-Speaker A:
+Oz:
 Because the test proved a bounded claim, not every future population/environment/process combination.
 
 ## Cold open

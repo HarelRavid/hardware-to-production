@@ -12,10 +12,10 @@ Before: “Retrofit means replacing an obsolete component.”
 After: “I can treat installed-base modernization as a controlled configuration transition across mechanics, controls, software, networking, safety, commissioning and recoverability.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “The new controller powers up and the machine runs. Why isn’t the retrofit finished?”
 
-Speaker A:
+Oz:
 because recovery/commissioning must restore the demonstrated production state, not only motion.
 
 ## Hook

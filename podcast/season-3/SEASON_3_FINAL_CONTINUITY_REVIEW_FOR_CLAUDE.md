@@ -160,10 +160,10 @@ PASS — no ownership conflict requiring restructuring.
 
 ## 5. Two-character strategy
 
-Speaker A:
+Oz:
 Lead Host / Systems Engineer.
 
-Speaker B:
+Rona:
 Practitioner / Challenger.
 
 Recommended recurring challenges:
@@ -204,7 +204,7 @@ EP30:
 EP31:
 “If the ECO is released, isn’t the change done?”
 
-Speaker B must remain technically competent and push on practical consequences.
+Rona must remain technically competent and push on practical consequences.
 
 ## 6. Callback map
 

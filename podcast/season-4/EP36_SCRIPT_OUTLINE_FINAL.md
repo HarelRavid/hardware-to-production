@@ -18,9 +18,9 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “We’re ISO compliant.”
-Speaker A:
+Oz:
 “Which ISO? Which edition? Which requirement? Which product/process/market? What evidence?”
 
 ## Cold open

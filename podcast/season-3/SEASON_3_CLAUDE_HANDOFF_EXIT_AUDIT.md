@@ -96,8 +96,8 @@ No other unresolved engineering-significant arithmetic blocks Claude handoff.
 ## 7. Two-character writing readiness
 
 All 12 prompts use:
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Lead Host / Systems Engineer.
+Rona — Practitioner / Challenger.
 
 Season-wide dialogue principle:
 factory = controlled definition + execution + evidence + reaction + change.

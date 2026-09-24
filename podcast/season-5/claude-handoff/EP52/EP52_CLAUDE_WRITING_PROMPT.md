@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP52: Manufacturing Data Engineers Can Actually Use
 
 You are writing the final spoken dialogue for the Hardware-to-Production podcast.
@@ -25,10 +47,10 @@ Claim Lock → Source Register → Technical Review → Script Outline → Bluep
 Never resolve a conflict by guessing.
 
 ## Characters
-**SPEAKER A — Lead Host / Systems Engineer**
+**OZ — Lead Host / Systems Engineer**
 Owns decision structure, mechanisms, canonical framework/tool, source/applicability boundaries, lifecycle translation and adjacent-episode handoff.
 
-**SPEAKER B — Practitioner / Challenger**
+**RONA — Practitioner / Challenger**
 Technically competent. Pushes back on automation/data/AI/cyber buzzwords, asks what changes in real production, tests failure/recovery scenarios, and carries real technical content.
 
 ## Dialogue requirements
@@ -79,10 +101,10 @@ Move spatial architecture/standards metadata to production notes rather than ove
 ## Output format
 # EP52 — Manufacturing Data Engineers Can Actually Use
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 After the dialogue you may add:
@@ -98,6 +120,6 @@ Before returning:
 - no strengthened standard/guidance;
 - no duplicated adjacent episode;
 - listener tool used;
-- both speakers technically useful;
+- both Oz and Rona technically useful;
 - practical action explicit;
 - handoff correct.

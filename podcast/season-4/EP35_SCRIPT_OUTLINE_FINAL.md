@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “We already serialize every product. Isn’t that traceability?”
 
-Speaker A:
+Oz:
 Identity tells you which unit; genealogy tells you how it became what it is.
 
 ## Cold open

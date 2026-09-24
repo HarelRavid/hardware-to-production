@@ -16,10 +16,10 @@ After:
 “I can tell when AM creates genuine product/economic value, what evidence burden it creates, and when a conventional or hybrid route is better.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “If the part is complex and I can print it without tooling, why wouldn’t I?”
 
-Speaker A:
+Oz:
 Because printable geometry may create support, post-processing, inspection, qualification and cost burdens that erase the advantage.
 
 ## Cold open

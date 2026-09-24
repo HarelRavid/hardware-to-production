@@ -1,7 +1,7 @@
 # Season 2 Claude Master Prompt — How Hardware Is Actually Made
 
 status: CANONICAL SEASON-LEVEL CLAUDE ORCHESTRATION PROMPT
-version: 1.0
+version: 1.1
 created: 2026-09-20
 season: Season 2
 asset_count: 9
@@ -9,6 +9,7 @@ governed_by:
 - podcast/OFFICIAL_PODCAST_DELIVERY_ROADMAP.md
 - podcast/CLAUDE_EPISODE_HANDOFF_CONTRACT.md
 - podcast/TWO_CHARACTER_DIALOGUE_STYLE_CONTRACT.md
+- podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md
 - podcast/season-2/SEASON_2_CLAUDE_HANDOFF_EXIT_AUDIT.md
 - podcast/season-2/SEASON_2_FINAL_CONTINUITY_REVIEW_FOR_CLAUDE.md
 
@@ -22,7 +23,7 @@ You are not being asked to research the season again.
 You are not allowed to redesign the season architecture.
 You are not allowed to invent new frameworks, technical rules, thresholds, standards obligations, case facts or quantitative claims.
 
-Your job is to convert the approved episode packages into natural, technically deep, two-character spoken dialogue for downstream NotebookLM production.
+Your job is to convert the approved episode packages into natural, technically deep canonical dialogue for Oz and Rona. After project review/freeze, a separate Google NotebookLM source package and Audio Overview custom prompt are created under the NotebookLM production contract.
 
 ## SEASON
 
@@ -53,7 +54,10 @@ https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/season-2/
 5. Season 2 Final Continuity Review  
 https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/season-2/SEASON_2_FINAL_CONTINUITY_REVIEW_FOR_CLAUDE.md
 
-6. Full-Series Dialogue Production Board  
+6. Google NotebookLM Audio Production Contract  
+https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md
+
+7. Full-Series Dialogue Production Board  
 https://github.com/HarelRavid/hardware-to-production/blob/main/podcast/FULL_SERIES_DIALOGUE_PRODUCTION_BOARD.md
 
 ## AUTHORITY MODEL
@@ -76,19 +80,31 @@ For every asset, obey this authority order:
 If two files conflict, do not guess.
 Follow the higher-authority file and flag the conflict in **REVIEW FLAG — NOT FOR AUDIO** if it cannot be resolved from the package.
 
-## TWO RECURRING CHARACTERS
+## TWO RECURRING HOSTS
 
-### SPEAKER A — Lead Host / Systems Engineer
-Owns the engineering decision, mechanism, canonical framework, applicability boundaries and lifecycle connection.
+### OZ — Veteran Engineer / Systems Engineer
+Oz is experienced, practical and technically rigorous.
+He owns the engineering decision, mechanism, canonical framework, applicability boundaries and lifecycle connection, while remaining conversational rather than lecturing.
 
-### SPEAKER B — Practitioner / Challenger
-Is technically competent and challenges practicality, cost, assumptions, supplier/operator reality, scaling and shortcuts.
+### RONA — Young Engineer / Practitioner / Challenger
+Rona is a younger engineer but already technically capable, sharp and confident.
+She challenges practicality, cost, assumptions, supplier/operator reality, scaling and shortcuts, and contributes her own technical reasoning.
 
-Both speakers must carry technical substance.
+Both Oz and Rona must carry technical substance.
 
-Do not turn B into a naive student.
+Do not turn Rona into a naive student.
+Do not portray Oz as the only competent engineer.
 Do not create artificial conflict.
 Do not write alternating monologues.
+
+Historical Speaker A / Character A references mean Oz.
+Historical Speaker B / Character B references mean Rona.
+
+All new dialogue output must use:
+`OZ:`
+`RONA:`
+
+Never output `SPEAKER A:` / `SPEAKER B:`.
 
 ## SEASON EXECUTION PROTOCOL
 
@@ -100,7 +116,7 @@ For each asset:
 2. Read every file marked MUST READ.
 3. Open its episode-specific Claude Writing Prompt.
 4. Treat that episode prompt as the immediate writing instruction.
-5. Write the complete two-character dialogue.
+5. Write the complete canonical Oz/Rona dialogue.
 6. Perform the episode prompt's self-check before returning it.
 7. Stop after that asset.
 8. Do not automatically begin the next asset in the same response.
@@ -108,7 +124,7 @@ For each asset:
 The downstream project team will perform:
 - claim/technical audit;
 - quantitative/case/legal audit where applicable;
-- two-character editorial review;
+- Oz/Rona two-character editorial review;
 - source-currentness recheck;
 - final dialogue freeze.
 
@@ -145,7 +161,16 @@ Across the entire season:
 
 ## OUTPUT RULE
 
-For each requested asset, return only the output format required by that asset's Claude Writing Prompt.
+For each requested asset, return only the output format required by that asset's Claude Writing Prompt, subject to the canonical naming override below.
+
+Canonical speaker-name override:
+- Speaker A / Character A = Oz
+- Speaker B / Character B = Rona
+- output labels must be `OZ:` and `RONA:`
+
+If an older episode prompt or outline still contains legacy `SPEAKER A/B` labels, apply this mapping rather than reproducing the legacy labels.
+
+For each requested asset, return the canonical reviewed-dialogue draft. Do not attempt to create or emulate the Google NotebookLM Audio Overview inside the Claude dialogue response.
 
 Do not produce a season summary instead of the requested dialogue.
 Do not combine multiple episode scripts unless explicitly instructed by the project owner.

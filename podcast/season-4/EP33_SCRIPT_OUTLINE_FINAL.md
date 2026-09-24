@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If the failed unit was reworked and passed, what exactly is still open?”
 
-Speaker A:
+Oz:
 The product disposition may be closed while the process/system learning remains open.
 
 ## Cold open

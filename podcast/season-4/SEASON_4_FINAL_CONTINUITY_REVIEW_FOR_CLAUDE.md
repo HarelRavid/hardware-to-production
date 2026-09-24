@@ -14,7 +14,7 @@ Season 4 remains structurally coherent after S4-A and S4-B evidence/technical re
 
 No architecture change is required.
 
-Every episode can now be handed to Claude as a separate two-character dialogue task once the episode Handoff Manifest and Claude Writing Prompt are created.
+Every episode can now be handed to Claude as a separate Oz/Rona two-character dialogue task once the episode Handoff Manifest and Claude Writing Prompt are created.
 
 Result:
 **PASS TO HANDOFF GENERATION.**
@@ -35,8 +35,8 @@ The season moves from internal production evidence to field learning, compliance
 
 ## 3. Two-character narrative strategy
 
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Lead Host / Systems Engineer.
+Rona — Practitioner / Challenger.
 
 Season 4 challenge pattern:
 - A introduces a quality/supplier evidence problem.

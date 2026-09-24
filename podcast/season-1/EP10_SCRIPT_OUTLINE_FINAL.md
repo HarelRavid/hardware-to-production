@@ -17,9 +17,9 @@ After:
 “I can connect failure mechanisms, use/environment, service architecture and field evidence to controlled product decisions.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “If the product passed validation, why should a handful of field failures make us question the design?”
-Speaker A:
+Oz:
 Because field evidence must be segmented by configuration/exposure/failure mechanism before inference.
 
 ## Cold open

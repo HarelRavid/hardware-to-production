@@ -92,8 +92,8 @@ Any automation-economics example remains bounded by its stated assumptions.
 ## 7. Two-character writing readiness
 
 All prompts use:
-- Speaker A — Lead Host / Systems Engineer.
-- Speaker B — Practitioner / Challenger.
+- Oz — Lead Host / Systems Engineer.
+- Rona — Practitioner / Challenger.
 
 Season 5 dialogue principle:
 keep physical production consequence visible even in automation/data/cyber topics.

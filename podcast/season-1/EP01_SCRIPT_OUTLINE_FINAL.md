@@ -14,8 +14,8 @@ Before: “It works, so we are close to production.”
 After: “I can separate prototype success from the missing product/process/supplier/test/rate/economic evidence required for repeatable production.”
 
 ## Two-character opportunity
-Speaker B: “But we built it and it passed. What exactly is not proven?”
-Speaker A decomposes the evidence gap rather than dismissing the prototype.
+Rona: “But we built it and it passed. What exactly is not proven?”
+Oz decomposes the evidence gap rather than dismissing the prototype.
 
 ## Cold open
 [ILLUSTRATIVE]

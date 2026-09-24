@@ -1,3 +1,25 @@
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 # Claude Writing Prompt — EP35: Traceability, Genealogy and Evidence Retention
 
 Write the complete final two-character spoken dialogue for **EP35 — Traceability, Genealogy and Evidence Retention**, Season 4.
@@ -20,10 +42,10 @@ Read every MUST READ file before drafting.
 Claim Lock → Source Register → Technical Review → Final Outline → Blueprint → Continuity/Backbone → Supporting files.
 
 ## Speakers
-**SPEAKER A — Lead Host / Systems Engineer**
+**OZ — Lead Host / Systems Engineer**
 Owns the evidence/decision structure, mechanism, applicability and canonical listener tool.
 
-**SPEAKER B — Practitioner / Challenger**
+**RONA — Practitioner / Challenger**
 Technically competent. Challenges bureaucracy, cost, supplier assumptions, traceability burden and what the team actually needs to know.
 
 ## Requirements
@@ -46,10 +68,10 @@ Technically competent. Challenges bureaucracy, cost, supplier assumptions, trace
 ## Output
 # EP35 — Traceability, Genealogy and Evidence Retention
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Optional:

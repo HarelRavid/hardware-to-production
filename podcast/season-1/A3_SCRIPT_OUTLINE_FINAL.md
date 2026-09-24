@@ -17,9 +17,9 @@ After:
 “I can identify risky interfaces, define a lightweight contract, assign responsibility and plan evidence before integration failure forces redesign.”
 
 ## Two-character opportunity
-Speaker B begins from:
+Rona begins from:
 “If the connector, PCB and enclosure all meet their own specs, why isn’t the interface proven?”
-Speaker A separates component evidence from interaction evidence.
+Oz separates component evidence from interaction evidence.
 
 ## Cold open
 [ILLUSTRATIVE]

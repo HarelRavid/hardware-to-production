@@ -14,7 +14,7 @@ Season 1 remains structurally sound after source locking, technical review and f
 
 No new architecture change is required.
 
-All intended episode scopes can be handed to Claude as separate two-character dialogue-writing tasks once each episode receives:
+All intended episode scopes can be handed to Claude as separate Oz/Rona two-character dialogue-writing tasks once each episode receives:
 - Episode Handoff Manifest;
 - Claude Episode Writing Prompt.
 
@@ -48,11 +48,11 @@ PASS — no hidden prerequisite gap or missing bridge.
 ## 3. Two-character narrative strategy
 
 Canonical roles:
-- Speaker A — Lead Host / Systems Engineer.
-- Speaker B — Practitioner / Challenger.
+- Oz — Lead Host / Systems Engineer.
+- Rona — Practitioner / Challenger.
 
 Season-wide rule:
-Speaker B must not be a novice caricature. B represents the competent engineer/founder/operator who pushes back on unnecessary rigor, asks what changes in practice, and exposes the failure mode behind abstract guidance.
+Rona must not be a novice caricature. B represents the competent engineer/founder/operator who pushes back on unnecessary rigor, asks what changes in practice, and exposes the failure mode behind abstract guidance.
 
 Recommended recurring dynamic:
 - A introduces the decision problem.

@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If both joints pass a pull test, why should I care whether one is welded, bonded or bolted?”
 
-Speaker A:
+Oz:
 Because the joint can fail through different mechanisms, and each process creates a different production/evidence burden.
 
 Recurring challenge:

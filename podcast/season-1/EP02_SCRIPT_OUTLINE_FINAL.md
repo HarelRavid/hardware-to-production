@@ -15,8 +15,8 @@ After: “I can describe build maturity dimension-by-dimension and choose the ne
 
 ## Two-character opportunity
 Two teams both claim “MVP.”
-Speaker B asks why the label is not enough.
-Speaker A compares evidence dimensions.
+Rona asks why the label is not enough.
+Oz compares evidence dimensions.
 
 ## Beat 1 — Labels are useful shorthand, not evidence
 Claims: EP02-C01/C06.

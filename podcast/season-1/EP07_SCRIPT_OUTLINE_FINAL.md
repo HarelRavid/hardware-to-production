@@ -17,9 +17,9 @@ After:
 “I can identify where product architecture, sequence, access, orientation and tooling create hidden assembly error opportunities and design them out or expose them earlier.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “The inventor assembles it perfectly. Why not just train the technician better?”
-Speaker A:
+Oz:
 Because tacit knowledge and hidden ambiguity are process risks.
 
 ## Cold open

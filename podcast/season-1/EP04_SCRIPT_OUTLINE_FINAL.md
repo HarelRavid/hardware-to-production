@@ -16,7 +16,7 @@ After: “I can separate product and manufacturing evidence and make a readiness
 ## Two-character opportunity
 Case A: product verified, factory unready.
 Case B: factory stable, product still changing.
-Speaker B asks which one is “more ready.”
+Rona asks which one is “more ready.”
 
 ## Beat 1 — Product readiness vs manufacturing readiness
 Claims: EP04-C01/C02/C03.

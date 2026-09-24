@@ -1,8 +1,9 @@
 # Two-Character Dialogue Writing Style Contract
 
 status: CANONICAL — CLAUDE WRITING CONTROL
-version: 1.0
+version: 2.0
 created: 2026-09-19
+updated: 2026-09-20
 governed_by:
 - podcast/OFFICIAL_PODCAST_DELIVERY_ROADMAP.md
 - podcast/CLAUDE_EPISODE_HANDOFF_CONTRACT.md
@@ -14,36 +15,59 @@ Control how Claude converts a verified episode package into the final two-charac
 This contract controls writing style only.
 It does not override Claim Locks, Technical Reviews, Source Registers or canonical episode ownership.
 
-## 2. Speaker roles
+## 2. Canonical recurring hosts
 
-### Speaker A — Lead Host / Systems Engineer
-A should:
+The podcast is led by two named recurring engineering hosts.
+
+### OZ — Veteran Engineer / Systems Engineer
+Oz is the experienced engineering voice.
+
+Oz should:
 - frame the engineering decision;
 - introduce concepts only when needed;
 - explain causal/mechanism logic;
 - preserve applicability and source-vs-synthesis boundaries;
 - execute canonical frameworks accurately;
-- connect DEV/LVP/SVP and adjacent episodes.
+- connect DEV/LVP/SVP and adjacent episodes;
+- bring production, supplier, test, field and scale experience into the discussion.
 
-A should not:
+Oz should not:
 - lecture for long uninterrupted blocks;
 - sound like a standard or compliance auditor;
-- answer every question before B can challenge it.
+- answer every question before Rona can challenge it;
+- be portrayed as infallible or as the only technically capable host.
 
-### Speaker B — Practitioner / Challenger
-B should:
-- be technically competent;
+### RONA — Young Engineer / Practitioner / Challenger
+Rona is a younger engineer, but she is already technically capable, sharp and confident.
+
+Rona should:
 - challenge cost, practicality, necessity and overgeneralization;
-- ask the listener's likely question;
+- ask the listener's likely technical question;
 - test concepts on a concrete example;
 - expose hidden assumptions and common shortcuts;
-- summarize what changes in practice.
+- push on startup constraints, supplier reality, operator reality and implementation effort;
+- summarize what changes in practice;
+- contribute her own technical reasoning rather than merely prompting Oz.
 
-B should not:
+Rona should not:
 - be a naive student;
 - exist only to say “right” / “exactly”;
 - manufacture fake disagreement;
-- introduce unsourced factual claims.
+- introduce unsourced factual claims;
+- be written as less intelligent merely because she is younger.
+
+### Legacy alias rule
+Historical files may contain:
+- Speaker A / Character A = **Oz**
+- Speaker B / Character B = **Rona**
+
+These are legacy aliases only.
+
+All new and revised dialogue output must use the canonical names:
+- `OZ:`
+- `RONA:`
+
+Do not output `SPEAKER A:` or `SPEAKER B:` in final dialogue drafts.
 
 ## 3. Dialogue rhythm
 
@@ -51,7 +75,7 @@ Preferred rhythm:
 problem → challenge → mechanism → example → challenge → listener tool → practical consequence.
 
 Avoid:
-A monologue → B says “yes” → A monologue.
+Oz monologue → Rona says “yes” → Oz monologue.
 
 As a default, neither speaker should dominate more than roughly 65% of the spoken content.
 
@@ -202,7 +226,17 @@ Then add only the new decision layer.
 
 The handoff at the end should explain why the next episode is the next question, not act as an advertisement.
 
-## 14. Production notes
+## 14. Claude canonical-dialogue role
+
+Claude writes the canonical editorial dialogue used for technical and editorial review.
+
+This canonical dialogue is not assumed to be read verbatim by Google NotebookLM Audio Overview.
+
+After final dialogue freeze, the project creates a dedicated NotebookLM source package and Audio Overview customization prompt under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`.
+
+The canonical dialogue therefore serves as the controlled content truth and editorial reference for downstream audio generation.
+
+## 15. Production notes
 
 Claude may include a separate section after the dialogue:
 
@@ -217,27 +251,29 @@ Allowed:
 
 These notes must never be mixed into spoken lines.
 
-## 15. Output format
+## 16. Output format
 
-Use consistent labels:
+Use the canonical host names as labels:
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
+
+Do not use SPEAKER A / SPEAKER B in new final dialogue drafts.
 
 Do not use:
 - tables inside dialogue;
 - markdown bullets as spoken content unless the speakers naturally enumerate;
 - citations/URLs in speech;
-- stage directions that NotebookLM would read as dialogue.
+- stage directions mixed into the spoken dialogue.
 
-## 16. Final writing self-check
+## 17. Final writing self-check
 
 Before returning a draft, Claude must check:
 
-1. Did both speakers contribute technical value?
+1. Did both Oz and Rona contribute technical value?
 2. Is every consequential claim inside the locked scope?
 3. Did I invent any number, standard rule, real case or causal statement?
 4. Did I preserve all applicability guards?

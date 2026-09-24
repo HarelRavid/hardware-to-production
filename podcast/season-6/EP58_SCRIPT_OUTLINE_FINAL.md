@@ -12,10 +12,10 @@ Before: “Aerospace quality is simply more inspection and more paperwork.”
 After: “I can understand why approval, FAI, supplier audits, rework closure and lifecycle inspection remain bounded evidence—and borrow those mechanisms without copying aerospace assurance burden.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “How can a part pass FAI and audits and still have a manufacturing problem?”
 
-Speaker A:
+Oz:
 because approval only proves the characteristics/process evidence actually inside its demonstrated envelope.
 
 ## Hook

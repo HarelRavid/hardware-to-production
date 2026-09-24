@@ -2,6 +2,28 @@
 
 You are writing the final spoken dialogue for the Hardware-to-Production podcast.
 
+## CANONICAL HOST NAMES — OVERRIDES LEGACY A/B LABELS
+
+The recurring podcast hosts are:
+
+**OZ — Veteran Engineer / Systems Engineer**  
+Experienced, practical and technically rigorous. Oz brings systems, product-development, manufacturing, supplier, test, field and scale experience.
+
+**RONA — Young Engineer / Practitioner / Challenger**  
+A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
+
+Legacy mapping:
+- Oz / Oz = Oz
+- Rona / Rona = Rona
+
+Mandatory output labels:
+`OZ:`
+`RONA:`
+
+Never output `OZ:` / `RONA:`.
+
+Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
+
 ## TASK
 
 Write the complete final two-character dialogue draft for:
@@ -11,7 +33,7 @@ Write the complete final two-character dialogue draft for:
 Season:
 **Season 1 — Build the Right Hardware Before Production Finds Your Mistakes**
 
-The intended downstream production environment is NotebookLM with two recurring voices.
+The downstream audio environment is Google NotebookLM. Claude writes the canonical Oz/Rona dialogue; after review/freeze a separate NotebookLM source/custom-prompt package is created.
 
 This is not a research task.
 Do not redesign the episode.
@@ -53,7 +75,7 @@ Never resolve a conflict by guessing.
 
 ## TWO CHARACTERS
 
-### SPEAKER A — Lead Host / Systems Engineer
+### OZ — Veteran Engineer / Systems Engineer
 A owns:
 - the engineering decision;
 - causal/mechanism explanations;
@@ -64,7 +86,7 @@ A owns:
 
 A must sound experienced and practical, not academic or bureaucratic.
 
-### SPEAKER B — Practitioner / Challenger
+### RONA — Young Engineer / Practitioner / Challenger
 B is technically competent.
 
 B should:
@@ -141,10 +163,10 @@ Return exactly:
 
 # A1 — From an Idea to Engineering Requirements
 
-SPEAKER A:
+OZ:
 ...
 
-SPEAKER B:
+RONA:
 ...
 
 Continue alternating naturally.
@@ -172,7 +194,7 @@ Before returning the draft verify:
 - No adjacent episode was substantially re-taught.
 - Canonical framework names were preserved.
 - The listener tool was actually used.
-- Speaker B carried real technical value.
+- Rona carried real technical value.
 - The practical action is explicit.
 - The next-episode handoff is correct.
 - Illustrative scenarios remain obviously illustrative.

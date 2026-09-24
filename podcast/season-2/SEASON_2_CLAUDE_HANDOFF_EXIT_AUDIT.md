@@ -136,10 +136,10 @@ No structural repair required.
 
 Every prompt follows the canonical roles:
 
-Speaker A:
+Oz:
 Lead Host / Systems Engineer.
 
-Speaker B:
+Rona:
 Practitioner / Challenger.
 
 Season 2 style rule:
