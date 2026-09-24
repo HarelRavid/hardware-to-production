@@ -31,7 +31,7 @@ This replaces the previous strategy of continuing source-lock waves across the w
 - Season 1 is **CLAUDE HANDOFF READY — 18/18**.
 - Season 2 is **CLAUDE HANDOFF READY — 9/9**.
 - Wave 06 process-family work is **COMPLETE — 06A–06I PASS**.
-- The current critical path is **Season 3 — EP20–EP31**.
+- The preparation critical path is closed. The current critical path is **A1 onward in canonical Claude Oz/Rona dialogue production order**.
 - Existing completed artifacts remain preserved and are reused as reference inputs under the new handoff hierarchy.
 
 No completed artifact is discarded or rewritten merely to fit the season-first order.
@@ -742,7 +742,7 @@ Audio output must then receive:
 - technical meaning check;
 - correction/rerender if needed.
 
-NotebookLM output does not bypass editorial/technical QA.
+Google NotebookLM output does not bypass editorial/technical QA and is accepted only after comparison against the frozen canonical dialogue/source package.
 
 ---
 
@@ -765,14 +765,14 @@ Full-series exit audit:
 
 CURRENT ACTIVE PHASE:
 
-**Claude Two-Character Dialogue Production**
+**Claude Oz/Rona Canonical Dialogue Production**
 
 Canonical production order:
 
 A1 → A2 → A3 → A4 → A5 → A6 → A7 → A8 → EP01 → ... → EP60.
 
 For each asset:
-Claude draft → claim/technical review → quantitative/case review where applicable → editorial/two-character review → current-source recheck → final dialogue freeze → NotebookLM production package → audio generation → audio QA.
+Claude Oz/Rona draft → claim/technical review → quantitative/case review where applicable → Oz/Rona editorial review → current-source recheck → final dialogue freeze → NotebookLM source package + custom Audio Overview prompt → Google NotebookLM Audio Overview generation → audio QA.
 
 FIRST ACTIVE ASSET:
 
@@ -797,7 +797,7 @@ Current baseline at roadmap activation: 29 / 68.
 ### C. Claude Handoff Ready
 **68 / 68 — COMPLETE.**
 
-### D. Final Dialogue / NotebookLM Ready
+### D. Final Dialogue / NotebookLM Audio Ready
 Downstream production metric.
 
 Do not use one blended percentage to hide where work actually remains.
