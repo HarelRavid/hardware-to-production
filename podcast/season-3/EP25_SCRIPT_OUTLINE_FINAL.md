@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “We already have enough machine capacity. Why are we still missing output?”
 
-Speaker A:
+Oz:
 Because the system spends time walking, waiting, lifting, searching and routing rework.
 
 ## Cold open
