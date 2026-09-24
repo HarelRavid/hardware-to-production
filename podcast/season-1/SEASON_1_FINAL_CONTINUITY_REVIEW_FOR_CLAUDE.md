@@ -14,7 +14,7 @@ Season 1 remains structurally sound after source locking, technical review and f
 
 No new architecture change is required.
 
-All intended episode scopes can be handed to Claude as separate two-character dialogue-writing tasks once each episode receives:
+All intended episode scopes can be handed to Claude as separate Oz/Rona two-character dialogue-writing tasks once each episode receives:
 - Episode Handoff Manifest;
 - Claude Episode Writing Prompt.
 
