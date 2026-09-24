@@ -17,9 +17,9 @@ After:
 “I can reason from function to allowable variation, reference strategy, tolerance accumulation, measurement and population evidence.”
 
 ## Two-character opportunity
-Speaker B:
+Rona:
 “Why not just tighten every dimension until the stack works?”
-Speaker A:
+Oz:
 Because that may raise cost without creating functional margin or measurable capability.
 
 ## Cold open
