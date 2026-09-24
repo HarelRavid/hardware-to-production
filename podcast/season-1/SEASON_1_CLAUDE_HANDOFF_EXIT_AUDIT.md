@@ -142,10 +142,10 @@ Season 1 handoff packages correctly preserve:
 
 The Season 1 prompts require:
 
-Speaker A:
+Oz:
 Lead Host / Systems Engineer.
 
-Speaker B:
+Rona:
 Practitioner / Challenger.
 
 Season-wide style controls:
