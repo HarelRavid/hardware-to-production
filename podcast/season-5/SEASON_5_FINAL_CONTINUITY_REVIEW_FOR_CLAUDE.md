@@ -36,10 +36,10 @@ The season first asks whether and how to automate a controlled production system
 
 ## 3. Two-character narrative strategy
 
-Speaker A:
+Oz:
 Lead Host / Systems Engineer.
 
-Speaker B:
+Rona:
 Practitioner / Challenger.
 
 Season 5 challenge style:
