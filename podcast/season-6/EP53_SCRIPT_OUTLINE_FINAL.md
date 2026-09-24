@@ -12,9 +12,9 @@ Before: “A famous launch failure has an obvious root cause in hindsight.”
 After: “I can reconstruct which claim/evidence/configuration boundary failed, what the source actually establishes, and what new evidence a corrective action must produce.”
 
 ## Two-character tension
-Speaker B challenges hindsight:
+Rona challenges hindsight:
 “Now that we know how it failed, aren’t we just reverse-engineering a moral?”
-Speaker A must reconstruct only source-supported facts and explicitly separate our framework lesson.
+Oz must reconstruct only source-supported facts and explicitly separate our framework lesson.
 
 ## Hook
 Samsung Note7 replacement phones were themselves later included in the expanded recall.
