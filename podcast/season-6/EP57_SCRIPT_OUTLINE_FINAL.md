@@ -12,10 +12,10 @@ Before: “Regulated manufacturing is mainly extra paperwork.”
 After: “I can see how product state, process evidence, packaging, remediation/rework, genealogy and effectiveness interact—and separate transferable engineering mechanisms from U.S.-specific obligations.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “If the recall fixes the original problem, why should the replacement process need its own qualification?”
 
-Speaker A:
+Oz:
 because remediation creates a new material/process/configuration state.
 
 ## Hook
