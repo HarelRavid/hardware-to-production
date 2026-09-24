@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “If the machined part already passed inspection, why should coating or heat treatment force us to revisit dimensions?”
 
-Speaker A:
+Oz:
 Because the final product state exists after the state-changing process, not before it.
 
 ## Cold open
