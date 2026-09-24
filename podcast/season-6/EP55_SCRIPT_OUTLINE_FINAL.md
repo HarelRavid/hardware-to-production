@@ -12,7 +12,7 @@ Before: “Either I copy mature-company manufacturing discipline or I stay scrap
 After: “I can choose proportionate controls and bridge processes with explicit expiration conditions so speed does not become invisible manufacturing debt.”
 
 ## Two-character tension
-Speaker B:
+Rona:
 “We have six people and little cash. What is the minimum control we actually need?”
 
 ## Hook
