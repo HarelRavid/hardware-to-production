@@ -99,8 +99,8 @@ The handoff packages explicitly prevent:
 ## 7. Two-character writing readiness
 
 All prompts use:
-Speaker A — Lead Host / Systems Engineer.
-Speaker B — Practitioner / Challenger.
+Oz — Lead Host / Systems Engineer.
+Rona — Practitioner / Challenger.
 
 Season 4 writing principle:
 problem → evidence gap → decision tool → practical action.
