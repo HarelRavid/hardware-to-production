@@ -62,8 +62,8 @@ Do not let later episodes re-teach the earlier family owners.
 
 ## 5. Two-character strategy
 
-Speaker A: Lead Host / Systems Engineer.
-Speaker B: Practitioner / Challenger.
+Oz: Lead Host / Systems Engineer.
+Rona: Practitioner / Challenger.
 
 Season-wide recurring challenge:
 Why isn’t the obvious/simple process conclusion enough?
@@ -79,7 +79,7 @@ Examples:
 - EP18: Why revisit a part that already passed inspection?
 - EP19: If each process is capable, why does the chain fail?
 
-Speaker B must remain technically competent, not a novice.
+Rona must remain technically competent, not a novice.
 
 ## 6. Callback map
 
