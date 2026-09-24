@@ -18,10 +18,10 @@ After:
 
 ## Two-character opportunity
 
-Speaker B:
+Rona:
 “The printed jig made ten perfect units. Why are we treating the jig like an engineering object?”
 
-Speaker A:
+Oz:
 Because by unit sixty, wear or operator compensation can become part of the process.
 
 ## Cold open
