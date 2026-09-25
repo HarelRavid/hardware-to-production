@@ -1,7 +1,7 @@
 # Source-Lock Wave 06G — Additive Manufacturing Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
-checked: 2026-09-19
+checked: 2026-09-25
 scope: EP17 — Additive Manufacturing: When It Creates Value and When It Does Not
 dependencies: Wave 06A process selection + Wave 02 measurement/quality + Wave 03 economics + Wave 01 configuration/change
 
@@ -122,6 +122,9 @@ https://www.iso.org/committee/629086/x/catalogue/
 
 Current public examples:
 - ISO/ASTM 52919:2025
+- ISO/ASTM 52927:2024
+- ISO/ASTM 52928:2024
+- ISO/ASTM 52929:2025
 - ISO/ASTM 52920:2023
 - ISO/ASTM 52924:2023
 - ISO/ASTM 52925:2022
@@ -132,6 +135,21 @@ demonstrates that AM qualification/material/operator standards are process/appli
 
 Guardrail:
 EP17 does not teach these standards’ protected details.
+
+### W6G-S08A — ISO/ASTM 52927:2024
+Title: Additive manufacturing — General principles — Main characteristics and corresponding test methods
+Status: current/published.
+Use: AM characteristics/test methods are process/evidence specific.
+
+### W6G-S08B — ISO/ASTM 52928:2024
+Title: Additive manufacturing of metals — Feedstock materials — Powder life cycle management
+Status: current/published.
+Use: feedstock state/reuse/history are controlled production-evidence objects.
+
+### W6G-S08C — ISO/ASTM 52929:2025
+Title: Additive manufacturing of metals — Powder bed fusion — Presentation of material properties in material data sheets
+Status: current/published.
+Use: material-property statements remain process/material context dependent.
 
 ## 5. Economics source family
 
