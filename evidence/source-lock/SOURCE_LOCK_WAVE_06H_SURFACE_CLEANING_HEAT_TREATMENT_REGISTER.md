@@ -1,7 +1,7 @@
 # Source-Lock Wave 06H — Surface Engineering / Cleaning / Heat Treatment Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
-checked: 2026-09-19
+checked: 2026-09-25
 scope: EP18 — Surface Engineering, Cleaning and Heat Treatment
 dependencies: EP14 joining + Wave02 measurement/quality + Wave01 configuration/change + EP13/17 material-state context
 
@@ -52,6 +52,20 @@ surface preparation is part of the coating system.
 Guardrail:
 steel-paint preparation grades are not generic cleanliness levels for all materials/processes.
 
+### W6H-S02A — ISO 8501-3:2025
+Title: Preparation of steel substrates before application of paints and related products — Part 3
+Official:
+https://www.iso.org/standard/78818.html
+
+Current status:
+Edition 3, published 2025-08/current.
+
+Use:
+current preparation-grade context for welds, edges and surface imperfections before corrosion protection.
+
+Guardrail:
+steel/coating context only.
+
 ### W6H-S03 — ISO 8501-4:2020
 Title: Preparation of steel substrates before application of paints and related products — Part 4: water-jetting conditions/preparation grades
 Official:
@@ -95,6 +109,17 @@ https://www.iso.org/standard/78375.html
 Use:
 coating thickness may require specific measurement method and geometry/surface conditions.
 
+### W6H-S06A — ISO 7599:2018
+Title: Anodizing of aluminium and its alloys — Method for specifying decorative and protective anodic oxidation coatings on aluminium
+Official:
+https://www.iso.org/standard/70156.html
+
+Current status:
+Edition 3/current; confirmed 2023.
+
+Use:
+scoped example showing pretreatment/coating properties/test methods are part of the surface system.
+
 ### W6H-S07 — ASTM E376-26
 Title: Measuring Coating Thickness by Magnetic-Field or Eddy Current Testing Methods
 Official:
@@ -122,6 +147,17 @@ corrosion/coating performance tests are comparative/scoped to system/test condit
 
 Guard:
 accelerated test outcome is not automatically direct field life.
+
+### W6H-S08A — ISO 9227:2022 + Amd1:2024
+Title: Corrosion tests in artificial atmospheres — Salt spray tests
+Official:
+https://www.iso.org/standard/81744.html
+
+Current status:
+Edition 5 + Amendment 1:2024.
+
+Public support:
+salt-spray methods are scoped quality/corrosion-resistance tests and are not intended as direct long-term corrosion-life prediction or generic material ranking.
 
 ## 4. Heat-treatment / pyrometry source family
 
@@ -217,13 +253,16 @@ Status: APPLICABILITY GUARDRAIL.
 
 ## 7. Current-status lock
 
-Checked 2026-09-19:
+Checked 2026-09-25:
 - ISO 14644-9:2022 current.
 - ISO 8501-1:2007 current; revision project active.
+- ISO 8501-3:2025 current.
 - ISO 8501-4:2020 current/confirmed 2026.
 - ISO 2178:2016 current/confirmed 2026.
 - ISO 2360:2017 current.
 - ISO 4518:2021 current.
+- ISO 7599:2018 current/confirmed.
+- ISO 9227:2022 + Amd1:2024 current.
 - ASTM E376-26 active/current.
 - ASTM D1654-24e1 active.
 - SAE AMS2750H current revision, July 2024.
