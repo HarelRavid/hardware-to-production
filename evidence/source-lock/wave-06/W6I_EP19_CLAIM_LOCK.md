@@ -1,7 +1,7 @@
 # Wave 06I Claim Lock — EP19 Manufacturing Process Chains
 
 status: CLAIM-LEVEL EVIDENCE LOCK COMPLETE
-checked: 2026-09-19
+checked: 2026-09-25
 shared_register: ../SOURCE_LOCK_WAVE_06I_PROCESS_CHAINS_REGISTER.md
 
 # EP19 — Manufacturing Process Chains: The Sequence Is Part of the Design
