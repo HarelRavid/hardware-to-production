@@ -1,7 +1,7 @@
 # Source-Lock Wave 06I — Manufacturing Process Chains Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
-checked: 2026-09-19
+checked: 2026-09-25
 scope: EP19 — Manufacturing Process Chains: The Sequence Is Part of the Design
 dependencies:
 - Wave 06A process selection
