@@ -1,7 +1,7 @@
 # Source-Lock Wave 06F — Ceramics / Powder Processing / Sintering Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
-checked: 2026-09-19
+checked: 2026-09-25
 scope: EP16 — Ceramics, Powder Processing and Sintering
 dependencies: Wave 06A process selection + Wave 02 measurement/quality + Wave 03 change/economics + Wave 01 configuration
 
@@ -163,6 +163,34 @@ process-history concept only.
 Guardrail:
 individual material recipes are NOT generalized.
 
+### W6F-S11 — ISO 4492:2017
+Title: Metallic powders, excluding powders for hardmetals — Determination of dimensional changes associated with compacting and sintering
+Official:
+https://www.iso.org/standard/72857.html
+
+Current status:
+Edition 4; confirmed 2023; current.
+
+Public support:
+dimensional changes associated with compacting and sintering can be measured under controlled comparable conditions.
+
+Episode use:
+direct standards anchor for dimensional-change/shrinkage evidence in metallic powder routes.
+
+### W6F-S12 — ASTM B610-24
+Title: Standard Test Method for Measuring Dimensional Changes Associated with Processing Metal Powders Intended for Die Compaction
+Official family:
+https://store.astm.org/b0610-24.html
+
+Current status:
+Active current revision.
+
+Public support:
+dimensional change can be affected by powder grade/type/lot, particle-size distribution, additions/lubricant, green density, heating rate, sintering time/temperature/atmosphere and cooling rate.
+
+Episode use:
+strong direct support that one global shrink factor is not a universal engineering truth.
+
 ## 6. EP16 engineering claims
 
 ### W6F-C01 — powder/feedstock state matters to downstream processing
@@ -183,11 +211,11 @@ Sources: W6F-S04/S05/S07/S08.
 
 ### W6F-C05 — one global shrink factor should not be assumed universally valid across geometry/orientation/green state/furnace condition
 Status: VERIFIED PREMISE + V6 SYNTHESIS.
-Sources: W6F-S04 + green-body/process-state evidence.
+Sources: W6F-S04/S11/S12 + green-body/process-state evidence.
 
 ### W6F-C06 — final geometry can depend on green density, support/fixture, furnace load/position, atmosphere and thermal history where relevant
 Status: VERIFIED PREMISE + V6 SYNTHESIS.
-Sources: W6F-S04/S09/S10 + domain evidence.
+Sources: W6F-S04/S09/S10/S12 + domain evidence.
 
 ### W6F-C07 — final density/porosity is not a universal proxy for every mechanical/functional property
 Status: V6 SYNTHESIS.
@@ -232,6 +260,8 @@ Checked 2026-09-19:
 - ISO 18753:2017 current/confirmed.
 - ASTM B962-23 active.
 - ISO 2738:2026 current, replacing 1999.
+- ISO 4492:2017 current/confirmed 2023.
+- ASTM B610-24 active current revision.
 
 ## 9. Episode gate
 
