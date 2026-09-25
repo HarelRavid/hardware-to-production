@@ -16,7 +16,7 @@ Mandatory output labels:
 `OZ:`
 `RONA:`
 
-Never output `OZ:` / `RONA:`.
+Never output legacy `SPEAKER A:` / `SPEAKER B:` labels.
 
 Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
 
