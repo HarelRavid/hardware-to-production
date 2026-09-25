@@ -1,7 +1,7 @@
 # Wave 06H Claim Lock — EP18 Surface Engineering, Cleaning and Heat Treatment
 
 status: CLAIM-LEVEL EVIDENCE LOCK COMPLETE
-checked: 2026-09-19
+checked: 2026-09-25
 shared_register: ../SOURCE_LOCK_WAVE_06H_SURFACE_CLEANING_HEAT_TREATMENT_REGISTER.md
 
 # EP18 — Surface Engineering, Cleaning and Heat Treatment
