@@ -1,7 +1,7 @@
 # EP18 Source Notes Skeleton — Surface Engineering, Cleaning and Heat Treatment
 
 status: SOURCE NOTES SKELETON COMPLETE — FINALIZE AFTER CLAUDE SCRIPT
-checked: 2026-09-19
+checked: 2026-09-25
 claim_lock: evidence/source-lock/wave-06/W6H_EP18_CLAIM_LOCK.md
 shared_register: evidence/source-lock/SOURCE_LOCK_WAVE_06H_SURFACE_CLEANING_HEAT_TREAT_REGISTER.md
 technical_review: evidence/source-lock/wave-06/W6H_INTERNAL_TECHNICAL_REVIEW.md
