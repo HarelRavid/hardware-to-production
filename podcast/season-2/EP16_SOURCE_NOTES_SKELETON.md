@@ -1,7 +1,7 @@
 # EP16 Source Notes Skeleton — Ceramics, Powder Processing and Sintering
 
 status: SOURCE NOTES SKELETON COMPLETE — FINALIZE AFTER CLAUDE SCRIPT
-checked: 2026-09-19
+checked: 2026-09-25
 claim_lock: evidence/source-lock/wave-06/W6F_EP16_CLAIM_LOCK.md
 shared_register: evidence/source-lock/SOURCE_LOCK_WAVE_06F_CERAMICS_POWDER_SINTERING_REGISTER.md
 technical_review: evidence/source-lock/wave-06/W6F_INTERNAL_TECHNICAL_REVIEW.md
@@ -21,6 +21,8 @@ technical_review: evidence/source-lock/wave-06/W6F_INTERNAL_TECHNICAL_REVIEW.md
 ### Powder metallurgy density / porosity
 - ASTM B962-23 — active.
 - ISO 2738:2026 — current, replaces 1999 edition.
+- ISO 4492:2017 — current/confirmed dimensional-change test context.
+- ASTM B610-24 — active current dimensional-change test method for metal powders.
 
 ## Source-use boundary
 
@@ -47,7 +49,7 @@ Hardware-to-Production constructs:
 ## Publication re-check
 
 Before final dialogue freeze/publication:
-1. recheck ISO 21821 / ISO 18754 / ASTM B962 / ISO 2738 status if materially named;
+1. recheck ISO 21821 / ISO 18754 / ASTM B962 / ISO 2738 / ISO 4492 / ASTM B610 status if materially named;
 2. verify no material-specific furnace/debind/shrink/density number was inserted without scope;
 3. verify ISO 21821 pressureless/natural-sintering scope is not generalized to pressure-assisted processes;
 4. retain only source families actually used in Claude narration.
