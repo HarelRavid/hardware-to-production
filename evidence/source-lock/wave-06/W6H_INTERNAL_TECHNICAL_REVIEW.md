@@ -1,7 +1,7 @@
 # Wave 06H Internal Technical Review — EP18 Surface / Cleaning / Heat Treatment
 
 status: PASS TO FINAL SCRIPT OUTLINE
-review_date: 2026-09-19
+review_date: 2026-09-25
 review_type: internal technical / standards-scope / process-sequence review
 human_independent_review: NOT CLAIMED
 
