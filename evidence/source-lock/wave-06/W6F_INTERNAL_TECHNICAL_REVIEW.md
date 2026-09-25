@@ -1,7 +1,7 @@
 # Wave 06F Internal Technical Review — EP16 Ceramics, Powder Processing and Sintering
 
 status: PASS TO FINAL SCRIPT OUTLINE
-review_date: 2026-09-19
+review_date: 2026-09-25
 review_type: internal technical / process-state / quantitative-boundary review
 human_independent_review: NOT CLAIMED
 
@@ -51,7 +51,7 @@ give generic ramp/hold recipes.
 
 PASS.
 
-ISO 21821 gives a strong generic densification framework for pressureless/natural sintering.
+ISO 21821 gives a strong generic densification framework for pressureless/natural sintering. ISO 4492:2017 and ASTM B610-24 provide direct dimensional-change anchors for metallic powder processing.
 
 Guard:
 do not apply its scope to pressure-assisted routes without qualification.
