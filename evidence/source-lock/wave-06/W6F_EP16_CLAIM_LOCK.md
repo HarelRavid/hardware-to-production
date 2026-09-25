@@ -1,7 +1,7 @@
 # Wave 06F Claim Lock — EP16 Ceramics, Powder Processing and Sintering
 
 status: CLAIM-LEVEL EVIDENCE LOCK COMPLETE
-checked: 2026-09-19
+checked: 2026-09-25
 shared_register: ../SOURCE_LOCK_WAVE_06F_CERAMICS_POWDER_SINTERING_REGISTER.md
 
 # EP16 — Ceramics, Powder Processing and Sintering
@@ -29,12 +29,12 @@ Sources: W6F-S04/S05/S07/S08.
 ## EP16-C05
 Claim: one universal shrink factor is not justified across different materials/green states/geometry/process conditions.
 Lock: VERIFIED PREMISE + V6 SYNTHESIS.
-Sources: W6F-S04 + process-state sources.
+Sources: W6F-S04/S11/S12 + process-state sources.
 
 ## EP16-C06
 Claim: furnace load/position, fixture/support, atmosphere and thermal history can affect final state where relevant.
 Lock: VERIFIED PREMISE + V6 SYNTHESIS.
-Sources: W6F-S04/S09/S10 + domain evidence.
+Sources: W6F-S04/S09/S10/S12 + domain evidence.
 
 ## EP16-C07
 Claim: density/porosity is useful evidence but does not alone establish every final functional property.
