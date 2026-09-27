@@ -1,7 +1,7 @@
 # Source-Lock Wave 06F — Ceramics / Powder Processing / Sintering Shared Source Register
 
 status: SHARED SOURCE REGISTER LOCKED
-checked: 2026-09-25
+checked: 2026-09-27
 scope: EP16 — Ceramics, Powder Processing and Sintering
 dependencies: Wave 06A process selection + Wave 02 measurement/quality + Wave 03 change/economics + Wave 01 configuration
 
@@ -254,7 +254,7 @@ Status: DEPENDENCY — A4/Wave03.
 
 ## 8. Current-status lock
 
-Checked 2026-09-19:
+Checked 2026-09-27:
 - ISO 21821:2019 current/confirmed 2025.
 - ISO 18754:2020 current/published, under review.
 - ISO 18753:2017 current/confirmed.
