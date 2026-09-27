@@ -102,6 +102,28 @@ podcast/season-1/A1_SCRIPT_DRAFT_V1.md
 Authority rule:
 the existing draft is reference only; Claim Lock / Source Register / Technical Review / Outline remain higher authority.
 
+## 5A. Pre-dialogue host-label QA
+
+Checked: 2026-09-27
+
+Canonical host controls were revalidated after repository-wide prompt cleanup.
+
+Result:
+**PASS**
+
+Verified:
+- Oz = veteran engineer / systems engineer;
+- Rona = young engineer / practitioner-challenger;
+- Rona remains technically capable and is not written as a naive student;
+- new dialogue output uses only `OZ:` and `RONA:`;
+- historical `SPEAKER A/B` and `Character A/B` remain legacy aliases only;
+- Two-Character Style Contract: PASS;
+- Claude Episode Handoff Contract: PASS;
+- Gemini/NotebookLM Audio Production Contract: PASS;
+- representative episode prompts from Seasons 1, 2 and 6: PASS.
+
+The GitHub code-search index may temporarily show stale pre-patch strings; direct file reads are authoritative for this QA.
+
 ## 6. Per-episode review checklist after Claude returns a draft
 
 ### Gate D1 — Dialogue format
