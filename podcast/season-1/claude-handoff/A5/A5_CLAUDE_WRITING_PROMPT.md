@@ -20,7 +20,7 @@ Mandatory output labels:
 `OZ:`
 `RONA:`
 
-Never output legacy `SPEAKER A:` / `SPEAKER B:` labels.
+Never output legacy `RONA:` / `OZ:` labels.
 
 Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
 
@@ -76,7 +76,7 @@ Never resolve a conflict by guessing.
 ## TWO CHARACTERS
 
 ### OZ — Veteran Engineer / Systems Engineer
-A owns:
+Oz owns:
 - the engineering decision;
 - causal/mechanism explanations;
 - canonical framework/tool;
@@ -84,12 +84,12 @@ A owns:
 - DEV/LVP/SVP translation;
 - connection to adjacent episodes.
 
-A must sound experienced and practical, not academic or bureaucratic.
+Oz must sound experienced and practical, not academic or bureaucratic.
 
 ### RONA — Young Engineer / Practitioner / Challenger
-B is technically competent.
+Rona is technically competent.
 
-B should:
+Rona should:
 - challenge whether the rigor is really needed;
 - ask what changes in practice;
 - push on cost, speed, suppliers, operators and real build constraints;
@@ -97,7 +97,7 @@ B should:
 - expose common shortcuts and misunderstandings;
 - help summarize the practical action.
 
-B must not be a naive student or a character who only agrees.
+Rona must not be a naive student or a character who only agrees.
 
 ## DIALOGUE REQUIREMENTS
 
