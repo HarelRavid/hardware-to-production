@@ -65,7 +65,7 @@ All new Claude dialogue output must use:
 - `OZ:`
 - `RONA:`
 
-Do not return `SPEAKER A:` / `SPEAKER B:` labels.
+Do not return `RONA:` / `OZ:` labels.
 
 ## Prompt output requirement
 
