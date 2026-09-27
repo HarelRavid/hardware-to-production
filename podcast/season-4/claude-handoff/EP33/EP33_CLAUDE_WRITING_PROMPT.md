@@ -9,8 +9,8 @@ Experienced, practical and technically rigorous. Oz brings systems, product-deve
 A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
 
 Legacy mapping:
-- Oz / Oz = Oz
-- Rona / Rona = Rona
+- Speaker A / Character A = Oz
+- Speaker B / Character B = Rona
 
 Mandatory output labels:
 `OZ:`
