@@ -183,7 +183,7 @@ Voice:
 
 The Claude prompt must enforce:
 - genuine back-and-forth, not alternating monologues;
-- both characters carry technical content;
+- Rona and Oz carry technical content;
 - no fake conflict for entertainment;
 - no invented real-world anecdotes;
 - illustrative scenarios explicitly remain illustrative;
@@ -331,7 +331,7 @@ Claude must verify:
 - no framework renaming;
 - no real case presented without attribution;
 - every example is correctly labeled;
-- both speakers contribute meaningfully.
+- both Rona and Oz contribute meaningfully.
 
 ---
 
