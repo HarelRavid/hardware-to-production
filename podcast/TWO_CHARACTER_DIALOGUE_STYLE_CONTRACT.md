@@ -67,7 +67,7 @@ All new and revised dialogue output must use the canonical names:
 - `OZ:`
 - `RONA:`
 
-Do not output `RONA:` or `OZ:` in final dialogue drafts.
+Do not output legacy `SPEAKER A:` or `SPEAKER B:` in final dialogue drafts.
 
 ## 3. Dialogue rhythm
 
