@@ -1,6 +1,6 @@
 # Hardware-to-Production Data Hub — Project Status
 
-last_updated: 2026-09-20
+last_updated: 2026-09-27
 status_basis: frozen Knowledge Backbone V1 + 68-asset production architecture + 68/68 Claude Handoff Ready + six season exit audits PASS + dialogue production active
 
 ## Program status
@@ -348,6 +348,22 @@ Current-status / applicability rechecks remain targeted downstream gates before 
 **PREPARATION COMPLETE — 68/68 CLAUDE HANDOFF READY.**
 
 Final dialogue generation/review, NotebookLM production and audio QA remain open.
+## Dialogue-production QA status
+
+Checked 2026-09-27:
+
+- Full-series Claude handoff preparation: **68 / 68 PASS**
+- Handoff Manifests: **68 / 68**
+- Claude Writing Prompts: **68 / 68**
+- Canonical hosts: **OZ / RONA**
+- Canonical output labels: `OZ:` / `RONA:`
+- Legacy `SPEAKER A/B` labels: prohibited in new dialogue output
+- Core writing/NotebookLM contracts: direct QA PASS after host-label correction
+- Active production asset: **A1 — From an Idea to Engineering Requirements**
+
+No new broad source/evidence wave is required before dialogue production.
+Targeted source work opens only if a Claude draft exposes a consequential gap or a current source materially changes.
+
 ## Current controlled backlog
 
 1. Generate/review A1 canonical Oz/Rona dialogue using the locked Claude prompt.
