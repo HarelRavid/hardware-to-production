@@ -9,14 +9,14 @@ Experienced, practical and technically rigorous. Oz brings systems, product-deve
 A younger engineer who is already technically capable, sharp, curious and confident. Rona challenges assumptions, practicality, cost and overgeneralization and contributes her own technical reasoning. She is not a naive student.
 
 Legacy mapping:
-- Oz / Oz = Oz
-- Rona / Rona = Rona
+- Speaker A / Character A = Oz
+- Speaker B / Character B = Rona
 
 Mandatory output labels:
 `OZ:`
 `RONA:`
 
-Never output legacy `RONA:` / `OZ:` labels.
+Never output legacy `SPEAKER A:` / `SPEAKER B:` labels.
 
 Claude writes the canonical reviewed-dialogue draft. After project review and final dialogue freeze, the downstream Google NotebookLM package is built separately under `podcast/GEMINI_NOTEBOOK_AUDIO_PRODUCTION_CONTRACT.md`. Do not assume NotebookLM will read this dialogue verbatim.
 
