@@ -88,7 +88,7 @@ the season master prompt controls order and shared writing behavior only. It nev
 **A1 — From an Idea to Engineering Requirements**
 
 Status:
-**NEXT — SEND TO CLAUDE**
+**READY FOR EXTERNAL CLAUDE EXECUTION**
 
 Prompt:
 podcast/season-1/claude-handoff/A1/A1_CLAUDE_WRITING_PROMPT.md
@@ -98,6 +98,12 @@ podcast/season-1/claude-handoff/A1/A1_HANDOFF_MANIFEST.md
 
 Existing internal draft:
 podcast/season-1/A1_SCRIPT_DRAFT_V1.md
+
+A1 Claude launch packet:
+podcast/season-1/dialogue-production/A1/A1_CLAUDE_LAUNCH_RETURN_PACKET.md
+
+A1 dialogue review template:
+podcast/season-1/dialogue-production/A1/A1_CLAUDE_DIALOGUE_REVIEW_TEMPLATE.md
 
 Authority rule:
 the existing draft is reference only; Claim Lock / Source Register / Technical Review / Outline remain higher authority.
